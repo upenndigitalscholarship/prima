@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html>
-<header>
-    {% block header %}{% endblock %}
-</header>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    {% for key, value in metadata.items() %}
+    {% if key == 'title' %}
+    <title>{{ value|first }}</title>
+    {% else %}
+    <meta data-pagefind-filter="{{ key }}" name="{{ key }}" content="{{value|first}}" />
+    {% endif %}
+    {% endfor %}
+    <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/_pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search" });
+        });
+    </script>
+</head>
 <body>
-
+    <div id="search"></div>
     {% block content %}{% endblock %}
 
     {% include 'footer.html' %}
