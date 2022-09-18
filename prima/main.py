@@ -16,7 +16,7 @@ templates = Jinja2Templates(directory="prima/templates")
 
 @app.get("/")
 def root(request:Request):
-    content, metadata = read_md('prima/content/index.md')
+    content, metadata = read_md('prima/content/pages/index.md')
     context = {"request": request, "content":content, "metadata":metadata}
     return templates.TemplateResponse("index.html", context)
     

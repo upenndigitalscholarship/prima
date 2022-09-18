@@ -56,3 +56,12 @@ https://www.serverlessops.io/blog/static-websites-on-aws-s3-with-serverless-fram
 all projects should have Google Analytics ids
 project partners should have access to GA dashboard
 we should periodically review what data has relevance for grants, departments and other stakeholders
+
+
+## Inspiration 
+https://forensic-architecture.org/
+https://course.spacy.io/en/
+https://calmcode.io/
+https://yougotthis.io/
+https://geekle.us/geeklibrary
+https://www.codecademy.com/catalog
