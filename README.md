@@ -1,6 +1,22 @@
 # prima
 PRIMA (Pedagogical Repository for Italian Media Activities)
 
+# Installation 
+1. If you don't have Python 3.10+ installed, you'll need to do that first: 
+    - Mac `brew install python@3.10`
+    - [Windows](https://www.digitalocean.com/community/tutorials/install-python-windows-10)
+    - [Linux](https://computingforgeeks.com/how-to-install-python-on-ubuntu-linux-system/) 
+2. Create a Python 3.10 virtual environment.
+    - for example `python3.10 -m venv venv`
+1. Download the project files: `git clone https://github.com/upenndigitalscholarship/prima.git`
+2. Install poetry: `curl -sSL https://install.python-poetry.org | python3.10 -`
+3. `poetry install`
+4. you should now have a `prima` command
+
+# Usage 
+- To build the site: `prima build`
+- Development server: `prima serve`
+
 # Goals
 -  PageFind, worth adding Rust? compare to Lunr.js
 -  Box SDK, store assets, hooks for updates/new assets?

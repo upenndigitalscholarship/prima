@@ -13,14 +13,7 @@
   <meta data-pagefind-filter="{{ key }}" name="{{ key }}" content="{{value|first}}" />
   {% endif %}
   {% endfor %}
-  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
-  <script src="/_pagefind/pagefind-ui.js" type="text/javascript" defer></script>
-  <script>
-      window.addEventListener('DOMContentLoaded', (event) => {
-          new PagefindUI({ element: "#search" });
-      });
-  </script>
-
+  
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -50,11 +43,7 @@
 
 <body>
     {% include 'navbar.html' %}
-    <section id="about" class="about" style="margin-top:10px">
-        <div class="container" data-aos="fade-up">
-            <div id="search"></div>
-        </div>
-    </section>  
+    
     <main id="main">
 
     {% block content %}{% endblock %}
@@ -74,6 +63,21 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script>
+        let index;
+        fetch("assets/lunr/search.json").then(
+            function(u){ return u.json();}
+        ).then(
+            function(json){
+            index = lunr.Index.load(json);
+        });
+
+        const search = (query) => { 
+            search_results = index.search(query)
+        }
+
+    </script>
   
 </body>
 </html> 

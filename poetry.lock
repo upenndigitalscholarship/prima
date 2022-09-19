@@ -164,6 +164,17 @@ MarkupSafe = ">=2.0"
 i18n = ["Babel (>=2.7)"]
 
 [[package]]
+name = "lunr"
+version = "0.6.2"
+description = "A Python implementation of Lunr.js"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+languages = ["nltk"]
+
+[[package]]
 name = "markdown"
 version = "3.4.1"
 description = "Python implementation of Markdown."
@@ -458,7 +469,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "7dcadfeac289b45314c2d34e643492ec641f24d5ab6a9dab1b4a5247314d165e"
+content-hash = "b099bfbae98baeff8b58a4137f069525d3113fa0051898a96084dce3781fd5b1"
 
 [metadata.files]
 anyio = []
@@ -481,6 +492,7 @@ fastapi = []
 h11 = []
 idna = []
 jinja2 = []
+lunr = []
 markdown = []
 markupsafe = []
 more-itertools = []

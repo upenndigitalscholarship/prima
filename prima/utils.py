@@ -38,3 +38,13 @@ def read_db_csv():
             entry += f"# {row['Clip']}"
             filename = slugify(row['Clip']) +'.md'
             (content / 'lessons' / filename).write_text(entry)
+
+def gather_documents(lessons:list[dict]) -> list[dict]:
+    documents = []
+    for lesson in lessons:
+        doc = {}
+        doc['content'] = lesson['content']
+        doc['filename'] = lesson['href']
+        doc = doc | lesson['metadata']
+        documents.append(doc)
+    return documents

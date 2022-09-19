@@ -8,7 +8,8 @@ from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from .utils import read_md
+from .utils import read_md, gather_documents
+from lunr import lunr
 
 typer_app = typer.Typer()
 app = FastAPI()
@@ -42,6 +43,16 @@ def build():
     if not site_path.exists():
         site_path.mkdir(parents=True, exist_ok=True)
     
+    # Search index 
+    documents = gather_documents(lessons)
+    fields = list(documents[0].keys())
+    idx = lunr(ref="filename", fields=fields, documents=documents)
+    serialized_idx = idx.serialize()
+    index_path = Path.cwd() / 'prima'/ 'assets' / 'lunr' 
+    if not index_path.exists():
+        index_path.mkdir(parents=True, exist_ok=True)
+    srsly.write_json(index_path / 'search.json', serialized_idx)
+    
     # move all assets 
     site_static = (site_path / 'assets')
     if not site_static.exists():
@@ -54,12 +65,11 @@ def build():
 
     #Lesson pages
     for lesson_ in lessons:
-        print(lesson_['href'])
         page = lesson(Request, lesson_["href"])
         (site_path / (lesson_["href"] +'.html')).write_bytes(page.body)
 
+    
 
-    subprocess.run(["pagefind"])
     print(f"[bold green] 🐢 Site built sucessfully in {time.time() - start_time} seconds[/bold green]")
 
 @typer_app.command()
