@@ -14,12 +14,26 @@ app = FastAPI()
 app.mount("/assets", StaticFiles(directory="prima/assets"), name="assets")
 templates = Jinja2Templates(directory="prima/templates")
 
+def load_lessons():
+    lessons = []
+    for lesson in Path('prima/content/lessons/').iterdir():
+        content, metadata = read_md(str(lesson))
+        lessons.append(dict(content=content, metadata=metadata, href=lesson.stem))
+    return lessons
+lessons = load_lessons()
+
 @app.get("/")
 def root(request:Request):
     content, metadata = read_md('prima/content/pages/index.md')
-    context = {"request": request, "content":content, "metadata":metadata}
+    context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
     return templates.TemplateResponse("index.html", context)
-    
+
+@app.get('/{lesson}')
+def lesson(request:Request, lesson:str):
+    content, metadata = read_md(f'prima/content/lessons/{lesson}.md')
+    context = {"request": request, "content":content, "metadata":metadata}
+    return templates.TemplateResponse("lesson.html", context)
+
 @typer_app.command()
 def build():
     start_time = time.time()
@@ -34,7 +48,7 @@ def build():
 
 @typer_app.command()
 def serve():
-    subprocess.run(["uvicorn", "prima.main:app"])
+    subprocess.run(["uvicorn", "prima.main:app", "--reload"])
 
 
 @typer_app.command()

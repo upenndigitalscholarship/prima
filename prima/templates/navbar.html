@@ -1,0 +1,5 @@
+{% for lesson in lessons %}
+
+<a href="{{ lesson.href }}">{{ lesson.metadata.clip|first }}</a><br>
+
+{% endfor %}
