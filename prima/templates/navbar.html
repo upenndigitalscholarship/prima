@@ -1,5 +1,33 @@
-{% for lesson in lessons %}
 
-<a href="{{ lesson.href }}">{{ lesson.metadata.clip|first }}</a><br>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-{% endfor %}
+      <a href="/" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>PRIMA<span>.</span></h1>
+      </a>
+      <div id="search"></div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Lessons</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+                {% for lesson in lessons %}
+
+                <li><a href="{{ lesson.href }}.html">{{ lesson.metadata.clip|first }}</a></li>
+
+                {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    
+    
+    </div>
+    
+  </header><!-- End Header -->

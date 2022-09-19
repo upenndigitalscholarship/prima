@@ -1,4 +1,5 @@
 import srsly 
+import shutil 
 import time
 import subprocess
 import typer
@@ -28,7 +29,7 @@ def root(request:Request):
     context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
     return templates.TemplateResponse("index.html", context)
 
-@app.get('/{lesson}')
+@app.get('/{lesson}.html')
 def lesson(request:Request, lesson:str):
     content, metadata = read_md(f'prima/content/lessons/{lesson}.md')
     context = {"request": request, "content":content, "metadata":metadata}
@@ -40,9 +41,24 @@ def build():
     site_path = Path.cwd() / 'site'
     if not site_path.exists():
         site_path.mkdir(parents=True, exist_ok=True)
+    
+    # move all assets 
+    site_static = (site_path / 'assets')
+    if not site_static.exists():
+        site_static.mkdir(parents=True, exist_ok=True)
+    shutil.copytree(str((Path.cwd() / 'prima'/ 'assets')), str(site_static), dirs_exist_ok=True) 
 
+    #Main page
     page = root(Request)
     (site_path / 'index.html').write_bytes(page.body)
+
+    #Lesson pages
+    for lesson_ in lessons:
+        print(lesson_['href'])
+        page = lesson(Request, lesson_["href"])
+        (site_path / (lesson_["href"] +'.html')).write_bytes(page.body)
+
+
     subprocess.run(["pagefind"])
     print(f"[bold green] 🐢 Site built sucessfully in {time.time() - start_time} seconds[/bold green]")
 
