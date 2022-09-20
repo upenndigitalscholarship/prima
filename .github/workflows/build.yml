@@ -35,4 +35,4 @@ jobs:
         run: poetry install
       
       - name: Run a build
-        run: python prima/main.py
+        run: poetry run python prima/main.py
