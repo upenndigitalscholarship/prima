@@ -31,7 +31,8 @@ jobs:
         uses: snok/install-poetry@v1
       
       # Runs a set of commands using the runners shell
-      - name: Run Build
-        run: |
-          poetry install
-          prima build
+      - name: Install Prima
+        run: poetry install
+      
+      - name: Run a build
+        run: prima build
