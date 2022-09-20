@@ -1,10 +1,10 @@
 [build]
 publish = "site/"
 command = """
-apt install software-properties-common -y &&
-add-apt-repository ppa:deadsnakes/ppa &&
-apt install python3.10 &&
-apt install python3.10-venv &&
+sudo apt install software-properties-common -y &&
+sudo add-apt-repository ppa:deadsnakes/ppa &&
+sudo apt install python3.10 &&
+sudo apt install python3.10-venv &&
 python3.10 -m venv venv &&
 source venv/bin/activate &&
 curl -sSL https://install.python-poetry.org | python3.10 - &&
