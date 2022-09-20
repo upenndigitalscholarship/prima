@@ -8,7 +8,7 @@ from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from .utils import read_md, gather_documents
+import utils
 from lunr import lunr
 
 typer_app = typer.Typer()
@@ -19,7 +19,7 @@ templates = Jinja2Templates(directory="prima/templates")
 def load_lessons():
     lessons = []
     for lesson in Path('prima/content/lessons/').iterdir():
-        content, metadata = read_md(str(lesson))
+        content, metadata = utils.read_md(str(lesson))
         lessons.append(dict(content=content, metadata=metadata, href=lesson.stem))
     return lessons
 lessons = load_lessons()
@@ -28,7 +28,7 @@ pages = [page.stem for page in (Path.cwd() / 'prima'/ 'content' / 'pages').iterd
 
 @app.get("/")
 def root(request:Request):
-    content, metadata = read_md('prima/content/pages/index.md')
+    content, metadata = utils.read_md('prima/content/pages/index.md')
     context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
     return templates.TemplateResponse("index.html", context)
 
@@ -36,11 +36,11 @@ def root(request:Request):
 @app.get('/{lesson}.html')
 def lesson(request:Request, lesson:str):
     if lesson in pages:
-        content, metadata = read_md(f'prima/content/pages/{lesson}.md')
+        content, metadata = utils.read_md(f'prima/content/pages/{lesson}.md')
         context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
         return templates.TemplateResponse("index.html", context)
     else:    
-        content, metadata = read_md(f'prima/content/lessons/{lesson}.md')
+        content, metadata = utils.read_md(f'prima/content/lessons/{lesson}.md')
         context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
         return templates.TemplateResponse("lesson.html", context)
 
@@ -53,7 +53,7 @@ def build():
         site_path.mkdir(parents=True, exist_ok=True)
     
     # Search index 
-    documents = gather_documents(lessons)
+    documents = utils.gather_documents(lessons)
     fields = list(documents[0].keys())
     idx = lunr(ref="filename", fields=fields, documents=documents)
     serialized_idx = idx.serialize()
@@ -100,3 +100,7 @@ def serve():
 @typer_app.command()
 def deploy():
     print(f"[bold red]feature in progress[/bold red]")
+
+
+if __name__ == "__main__":
+    typer.run(build)
