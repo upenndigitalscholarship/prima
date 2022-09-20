@@ -24,17 +24,26 @@ def load_lessons():
     return lessons
 lessons = load_lessons()
 
+pages = [page.stem for page in (Path.cwd() / 'prima'/ 'content' / 'pages').iterdir()]
+
 @app.get("/")
 def root(request:Request):
     content, metadata = read_md('prima/content/pages/index.md')
     context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
     return templates.TemplateResponse("index.html", context)
 
+
 @app.get('/{lesson}.html')
 def lesson(request:Request, lesson:str):
-    content, metadata = read_md(f'prima/content/lessons/{lesson}.md')
-    context = {"request": request, "content":content, "metadata":metadata}
-    return templates.TemplateResponse("lesson.html", context)
+    if lesson in pages:
+        content, metadata = read_md(f'prima/content/pages/{lesson}.md')
+        context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
+        return templates.TemplateResponse("index.html", context)
+    else:    
+        content, metadata = read_md(f'prima/content/lessons/{lesson}.md')
+        context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
+        return templates.TemplateResponse("lesson.html", context)
+
 
 @typer_app.command()
 def build():
@@ -58,10 +67,21 @@ def build():
     if not site_static.exists():
         site_static.mkdir(parents=True, exist_ok=True)
     shutil.copytree(str((Path.cwd() / 'prima'/ 'assets')), str(site_static), dirs_exist_ok=True) 
-
-    #Main page
-    page = root(Request)
-    (site_path / 'index.html').write_bytes(page.body)
+    
+    #Admin page
+    admin_path = (site_path / 'admin')
+    if not admin_path.exists():
+        admin_path.mkdir(parents=True, exist_ok=True)
+    shutil.copytree(str((Path.cwd() / 'prima'/ 'admin')), str(admin_path), dirs_exist_ok=True) 
+    
+    #Pages
+    for page in pages:
+        if page == 'index':
+            html = root(Request)
+            (site_path / 'index.html').write_bytes(html.body)
+        else:
+            html = lesson(Request, page)
+            (site_path / (page +'.html')).write_bytes(html.body)
 
     #Lesson pages
     for lesson_ in lessons:

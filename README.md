@@ -28,13 +28,6 @@ PRIMA (Pedagogical Repository for Italian Media Activities)
 - need to push/fetch content to Box or other object storage
 
 
-## PageFind
-- Install Rust`curl https://sh.rustup.rs -sSf | sh`
-- `sudo apt install cargo`
-- `cargo install pagefind`
-- `pagefind --source "site"`
-### also works in npx, might be better given CMS is Gatsby
-
 ## Assets
 This project has many existing assets, particularly video files, in Box.
 These files can stay there and be fetched  with a direct download URI. 
@@ -46,8 +39,14 @@ https://www.isc.upenn.edu/security/data-box-amazon#Confidential-University-Data
 Current box storage limit is **TBD**
 Dependent on University affiliation, deleted with email (bad for term-faculty, adjuncts, students that move) 
 
-DO Spaces
+
+### DO Spaces
 - $5 per month, 250GiB
+
+### git lfs
+- System for handling large media, adds a text pointer to a repo pointing to a large file
+- Git’s system of tracking diffs doesn’t work with these files, so it saves full copies of every version in your Git repository.
+- A paid service from MSFT (1G free)
 
 ## Deployment
 Many workflows currently trigger GitHub Actions and Pages deployment on every commit.
