@@ -8,27 +8,73 @@ from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-import utils
 from lunr import lunr
+import markdown
 
 typer_app = typer.Typer()
 app = FastAPI()
 app.mount("/assets", StaticFiles(directory="prima/assets"), name="assets")
 templates = Jinja2Templates(directory="prima/templates")
 
+def read_md(path:str):
+    md = markdown.Markdown(extensions = ['meta'])
+    md.convert(Path(path).read_text())
+    metadata = md.Meta
+    content = ""
+    for line in md.lines:
+        content += markdown.markdown(line) + '<br>'
+
+    return content, metadata
+
 def load_lessons():
     lessons = []
     for lesson in Path('prima/content/lessons/').iterdir():
-        content, metadata = utils.read_md(str(lesson))
+        content, metadata = read_md(str(lesson))
         lessons.append(dict(content=content, metadata=metadata, slug=lesson.stem))
     return lessons
 lessons = load_lessons()
+
+
+
+def slugify(s:str):
+  s = s.lower().strip()
+  s = re.sub(r'[^\w\s-]', '', s)
+  s = re.sub(r'[\s_-]+', '-', s)
+  s = re.sub(r'^-+|-+$', '', s)
+  return s
+
+
+def read_db_csv():
+    """A utility function to read the original materials database sheet and generate md records for each item"""
+    with open('prima/content/materials_database.csv') as f:
+        content = Path('prima/content')
+        data = csv.DictReader(f)
+        for row in data:
+            entry = "---\n"
+            entry += f"level: {row['Level']}\n"
+            entry += f"week: {row['week ']}\n"
+            entry += f"clip: {row['Clip']}\n"
+            entry += f"grammar-content: {row['Grammar/Content']}\n"
+            entry += f"prerequisites: {row['Pre-requisistes']}\n"
+            entry += "---\n"
+            entry += f"# {row['Clip']}"
+            filename = slugify(row['Clip']) +'.md'
+            (content / 'lessons' / filename).write_text(entry)
+
+def gather_documents(lessons:list[dict]) -> list[dict]:
+    documents = []
+    for lesson in lessons:
+        doc = {}
+        doc['content'] = lesson['content']
+        doc = doc | lesson['metadata']
+        documents.append(doc)
+    return documents
 
 pages = [page.stem for page in (Path.cwd() / 'prima'/ 'content' / 'pages').iterdir()]
 
 @app.get("/")
 def root(request:Request):
-    content, metadata = utils.read_md('prima/content/pages/index.md')
+    content, metadata = read_md('prima/content/pages/index.md')
     context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
     return templates.TemplateResponse("index.html", context)
 
@@ -36,11 +82,11 @@ def root(request:Request):
 @app.get('/{lesson}.html')
 def lesson(request:Request, lesson:str):
     if lesson in pages:
-        content, metadata = utils.read_md(f'prima/content/pages/{lesson}.md')
+        content, metadata = read_md(f'prima/content/pages/{lesson}.md')
         context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
         return templates.TemplateResponse("index.html", context)
     else:    
-        content, metadata = utils.read_md(f'prima/content/lessons/{lesson}.md')
+        content, metadata = read_md(f'prima/content/lessons/{lesson}.md')
         context = {"request": request, "content":content, "metadata":metadata, "lessons":lessons}
         return templates.TemplateResponse("lesson.html", context)
 
@@ -53,7 +99,7 @@ def build():
         site_path.mkdir(parents=True, exist_ok=True)
     
     # Search index 
-    documents = utils.gather_documents(lessons)
+    documents = gather_documents(lessons)
     fields = list(documents[0].keys())
     idx = lunr(ref="slug", fields=fields, documents=documents)
     serialized_idx = idx.serialize()
@@ -85,8 +131,8 @@ def build():
 
     #Lesson pages
     for lesson_ in lessons:
-        page = lesson(Request, lesson_["href"])
-        (site_path / (lesson_["href"] +'.html')).write_bytes(page.body)
+        page = lesson(Request, lesson_["slug"])
+        (site_path / (lesson_["slug"] +'.html')).write_bytes(page.body)
 
     
 

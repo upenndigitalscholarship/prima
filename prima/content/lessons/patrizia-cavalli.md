@@ -4,5 +4,6 @@ week: Unit 8
 clip: Patrizia Cavalli
 grammar-content: Objects
 prerequisites: Direct and indirect objects, agreements
+slug: patrizia-cavalli
 ---
 # Patrizia Cavalli
