@@ -55,7 +55,7 @@ def build():
     # Search index 
     documents = utils.gather_documents(lessons)
     fields = list(documents[0].keys())
-    idx = lunr(ref="filename", fields=fields, documents=documents)
+    idx = lunr(ref="slug", fields=fields, documents=documents)
     serialized_idx = idx.serialize()
     index_path = Path.cwd() / 'prima'/ 'assets' / 'lunr' 
     if not index_path.exists():
