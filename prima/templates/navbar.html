@@ -6,12 +6,12 @@
       <a href="/" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>PRIMA<span>.</span></h1>
+        <h1>PRIMA<span><img src="assets/img/bean-sprout.svg"/></span></h1>
       </a>
       <nav id="navbar" class="navbar align-items-center">
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Lessons</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="about.html">Informazioni</a></li>
+          <li class="dropdown"><a href="#"><span>Lezioni</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
                 {% for lesson in lessons %}
 
@@ -20,9 +20,18 @@
                 {% endfor %}
             </ul>
           </li>
-        </ul>
-      </nav><!-- .navbar -->
+          <li>
+            <div class="input-group mb-3 mt-3">
+              <input id="search_bar" type="text" class="form-control" placeholder="Ricerca" aria-label="search" aria-describedby="basic-addon1">
+              <button class="btn btn-outline-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-search-heart"></i></button>
 
+            </div>
+          </li>
+        </ul>
+        
+        
+
+      </nav><!-- .navbar -->
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     

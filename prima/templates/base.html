@@ -73,10 +73,13 @@
             index = lunr.Index.load(json);
         });
 
-        const search = (query) => { 
+        function search() { 
+            let query = document.querySelector('#search_bar').value + '~1'
             search_results = index.search(query)
+            console.log(search_results)
         }
-
+        let search_bar = document.querySelector('#search_bar')
+        search_bar.addEventListener('keyup', search);
     </script>
   
 </body>

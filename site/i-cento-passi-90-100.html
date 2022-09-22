@@ -68,83 +68,92 @@
       <a href="/" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>PRIMA<span>.</span></h1>
+        <h1>PRIMA<span><img src="assets/img/bean-sprout.svg"/></span></h1>
       </a>
       <nav id="navbar" class="navbar align-items-center">
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Lessons</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="about.html">Informazioni</a></li>
+          <li class="dropdown"><a href="#"><span>Lezioni</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
                 
 
-                <li><a href=".html">Sorelle</a></li>
+                <li><a href="sorelle.html">Sorelle</a></li>
 
                 
 
-                <li><a href=".html">Asia Occidente, Mahmood</a></li>
+                <li><a href="asia-occidente-mahmood.html">Asia Occidente, Mahmood</a></li>
 
                 
 
-                <li><a href=".html">Patrizia Cavalli</a></li>
+                <li><a href="patrizia-cavalli.html">Patrizia Cavalli</a></li>
 
                 
 
-                <li><a href=".html">Le fate ignoranti</a></li>
+                <li><a href="le-fate-ignoranti.html">Le fate ignoranti</a></li>
 
                 
 
-                <li><a href=".html">Benjamin Button</a></li>
+                <li><a href="benjamin-button.html">Benjamin Button</a></li>
 
                 
 
-                <li><a href=".html">Mettici la salsa</a></li>
+                <li><a href="mettici-la-salsa.html">Mettici la salsa</a></li>
 
                 
 
-                <li><a href=".html">Le compere</a></li>
+                <li><a href="le-compere.html">Le compere</a></li>
 
                 
 
-                <li><a href=".html">La vita è bella</a></li>
+                <li><a href="la-vita-è-bella.html">La vita è bella</a></li>
 
                 
 
-                <li><a href=".html">Master of None</a></li>
+                <li><a href="master-of-none.html">Master of None</a></li>
 
                 
 
-                <li><a href=".html">Sotto il sole di Riccione</a></li>
+                <li><a href="sotto-il-sole-di-riccione.html">Sotto il sole di Riccione</a></li>
 
                 
 
-                <li><a href=".html">I cento passi 90-100</a></li>
+                <li><a href="i-cento-passi-90-100.html">I cento passi 90-100</a></li>
 
                 
 
-                <li><a href=".html">I cento passi 1-10</a></li>
+                <li><a href="i-cento-passi-1-10.html">I cento passi 1-10</a></li>
 
                 
 
-                <li><a href=".html">Prisencolinensinainciusol</a></li>
+                <li><a href="prisencolinensinainciusol.html">Prisencolinensinainciusol</a></li>
 
                 
 
-                <li><a href=".html">Viaggio sola</a></li>
+                <li><a href="viaggio-sola.html">Viaggio sola</a></li>
 
                 
 
-                <li><a href=".html">Benvenuti al Sud</a></li>
+                <li><a href="benvenuti-al-sud.html">Benvenuti al Sud</a></li>
 
                 
 
-                <li><a href=".html">Baaria</a></li>
+                <li><a href="baaria.html">Baaria</a></li>
 
                 
             </ul>
           </li>
-        </ul>
-      </nav><!-- .navbar -->
+          <li>
+            <div class="input-group mb-3 mt-3">
+              <input id="search_bar" type="text" class="form-control" placeholder="Ricerca" aria-label="search" aria-describedby="basic-addon1">
+              <button class="btn btn-outline-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-search-heart"></i></button>
 
+            </div>
+          </li>
+        </ul>
+        
+        
+
+      </nav><!-- .navbar -->
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     
@@ -208,10 +217,13 @@
             index = lunr.Index.load(json);
         });
 
-        const search = (query) => { 
+        function search() { 
+            let query = document.querySelector('#search_bar').value + '~1'
             search_results = index.search(query)
+            console.log(search_results)
         }
-
+        let search_bar = document.querySelector('#search_bar')
+        search_bar.addEventListener('keyup', search);
     </script>
   
 </body>
