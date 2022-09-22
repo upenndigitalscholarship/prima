@@ -44,7 +44,6 @@ def gather_documents(lessons:list[dict]) -> list[dict]:
     for lesson in lessons:
         doc = {}
         doc['content'] = lesson['content']
-        doc['filename'] = lesson['href']
         doc = doc | lesson['metadata']
         documents.append(doc)
     return documents

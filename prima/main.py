@@ -20,7 +20,7 @@ def load_lessons():
     lessons = []
     for lesson in Path('prima/content/lessons/').iterdir():
         content, metadata = utils.read_md(str(lesson))
-        lessons.append(dict(content=content, metadata=metadata, href=lesson.stem))
+        lessons.append(dict(content=content, metadata=metadata, slug=lesson.stem))
     return lessons
 lessons = load_lessons()
 
