@@ -15,7 +15,7 @@
             <ul>
                 {% for lesson in lessons %}
 
-                <li><a href="{{ lesson.slug }}.html">{{ lesson.metadata.clip|first }}</a></li>
+                <li><a href="{{ lesson.slug }}.html">{{ lesson.metadata.clip }}</a></li>
 
                 {% endfor %}
             </ul>
