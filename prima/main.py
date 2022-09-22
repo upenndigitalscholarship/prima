@@ -104,6 +104,7 @@ def lesson(request:Request, lesson:str):
 @typer_app.command()
 def build():
     start_time = time.time()
+    templates.env.globals["DEBUG"] = False
     site_path = Path.cwd() / 'site'
     if not site_path.exists():
         site_path.mkdir(parents=True, exist_ok=True)
