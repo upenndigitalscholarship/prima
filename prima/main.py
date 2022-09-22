@@ -1,5 +1,6 @@
 import srsly 
 import shutil 
+import arel 
 import time
 import subprocess
 import typer
@@ -15,6 +16,14 @@ typer_app = typer.Typer()
 app = FastAPI()
 app.mount("/assets", StaticFiles(directory="prima/assets"), name="assets")
 templates = Jinja2Templates(directory="prima/templates")
+
+# Update browser on change https://gist.github.com/vrslev/6d0602bfa939a01844f645c608afb85a
+hot_reload = arel.HotReload(paths=[arel.Path("prima")])
+app.add_websocket_route("/hot-reload", route=hot_reload, name="hot-reload")
+app.add_event_handler("startup", hot_reload.startup)
+app.add_event_handler("shutdown", hot_reload.shutdown)
+templates.env.globals["DEBUG"] = True
+templates.env.globals["hot_reload"] = hot_reload
 
 def read_md(path:str):
     md = markdown.Markdown(extensions = ['meta'])
@@ -33,7 +42,6 @@ def load_lessons():
         lessons.append(dict(content=content, metadata=metadata, slug=lesson.stem))
     return lessons
 lessons = load_lessons()
-
 
 
 def slugify(s:str):
@@ -66,6 +74,8 @@ def gather_documents(lessons:list[dict]) -> list[dict]:
     for lesson in lessons:
         doc = {}
         doc['content'] = lesson['content']
+        for key, value in lesson['metadata'].items():
+            lesson['metadata'][key] = value[0]
         doc = doc | lesson['metadata']
         documents.append(doc)
     return documents

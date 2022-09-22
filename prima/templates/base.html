@@ -75,12 +75,16 @@
 
         function search() { 
             let query = document.querySelector('#search_bar').value + '~1'
+            let resultdiv = document.querySelector('#resultdiv')
             search_results = index.search(query)
-            console.log(search_results)
+            //resultdiv.empty();
+            for (item in search_results) {
+                resultdiv.innerHTML += `<div class="result"><a href="${search_results[item].ref}.html">${search_results[item].ref}</a></div>`
+            }
         }
         let search_bar = document.querySelector('#search_bar')
         search_bar.addEventListener('keyup', search);
     </script>
-  
+    {% if DEBUG %} {{ hot_reload.script(url_for('hot-reload')) | safe }} {% endif %}
 </body>
 </html> 

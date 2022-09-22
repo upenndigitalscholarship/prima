@@ -12,8 +12,9 @@ fastapi = "^0.85.0"
 Markdown = "^3.4.1"
 srsly = "^2.4.4"
 Jinja2 = "^3.1.2"
-uvicorn = "^0.18.3"
+uvicorn = {extras = ["standard"], version = "^0.18.3"}
 lunr = "^0.6.2"
+arel = "^0.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
