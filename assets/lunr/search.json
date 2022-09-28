@@ -1,0 +1,5366 @@
+{
+  "version":"2.3.9",
+  "fields":[
+    "content",
+    "level",
+    "week",
+    "clip",
+    "grammar-content",
+    "prerequisites",
+    "slug"
+  ],
+  "fieldVectors":[
+    [
+      "content/baaria",
+      [
+        0,
+        3.409
+      ]
+    ],
+    [
+      "level/baaria",
+      [
+        1,
+        0.961
+      ]
+    ],
+    [
+      "week/baaria",
+      [
+        2,
+        0.401,
+        3,
+        1.619
+      ]
+    ],
+    [
+      "clip/baaria",
+      [
+        4,
+        2.592
+      ]
+    ],
+    [
+      "grammar-content/baaria",
+      [
+        5,
+        2.294,
+        6,
+        2.294
+      ]
+    ],
+    [
+      "prerequisites/baaria",
+      [
+        7,
+        2.002
+      ]
+    ],
+    [
+      "slug/baaria",
+      [
+        4,
+        2.592
+      ]
+    ],
+    [
+      "content/le-fate-ignoranti",
+      [
+        8,
+        1.14,
+        9,
+        0.94,
+        10,
+        1.444,
+        11,
+        1.444,
+        12,
+        1.444,
+        13,
+        1.444,
+        14,
+        1.444,
+        15,
+        1.14,
+        16,
+        1.444
+      ]
+    ],
+    [
+      "level/le-fate-ignoranti",
+      [
+        17,
+        0.818
+      ]
+    ],
+    [
+      "week/le-fate-ignoranti",
+      [
+        2,
+        0.401,
+        18,
+        2.488
+      ]
+    ],
+    [
+      "clip/le-fate-ignoranti",
+      [
+        9,
+        1.524,
+        19,
+        1.281,
+        20,
+        1.848
+      ]
+    ],
+    [
+      "grammar-content/le-fate-ignoranti",
+      [
+        21,
+        2.944
+      ]
+    ],
+    [
+      "prerequisites/le-fate-ignoranti",
+      [
+        22,
+        2.458,
+        23,
+        2.458
+      ]
+    ],
+    [
+      "slug/le-fate-ignoranti",
+      [
+        9,
+        1.524,
+        19,
+        1.281,
+        20,
+        1.848
+      ]
+    ],
+    [
+      "content/sotto-il-sole-di-riccione",
+      [
+        24,
+        2.028,
+        25,
+        1.32,
+        26,
+        1.32,
+        27,
+        1.32,
+        28,
+        2.028
+      ]
+    ],
+    [
+      "level/sotto-il-sole-di-riccione",
+      [
+        29,
+        1.917
+      ]
+    ],
+    [
+      "week/sotto-il-sole-di-riccione",
+      [
+        30,
+        1.353,
+        31,
+        1.138,
+        32,
+        1.353
+      ]
+    ],
+    [
+      "clip/sotto-il-sole-di-riccione",
+      [
+        25,
+        1.184,
+        26,
+        1.184,
+        27,
+        1.184,
+        33,
+        1.436,
+        34,
+        1.436
+      ]
+    ],
+    [
+      "grammar-content/sotto-il-sole-di-riccione",
+      [
+        35,
+        2.944
+      ]
+    ],
+    [
+      "prerequisites/sotto-il-sole-di-riccione",
+      [
+
+      ]
+    ],
+    [
+      "slug/sotto-il-sole-di-riccione",
+      [
+        25,
+        1.184,
+        26,
+        1.184,
+        27,
+        1.184,
+        33,
+        1.436,
+        34,
+        1.436
+      ]
+    ],
+    [
+      "content/benjamin-button",
+      [
+        15,
+        1.601,
+        36,
+        2.028,
+        37,
+        2.028,
+        38,
+        2.028,
+        39,
+        2.028
+      ]
+    ],
+    [
+      "level/benjamin-button",
+      [
+        40,
+        2.428
+      ]
+    ],
+    [
+      "week/benjamin-button",
+      [
+        30,
+        1.353,
+        41,
+        2.078,
+        42,
+        1.641
+      ]
+    ],
+    [
+      "clip/benjamin-button",
+      [
+        43,
+        2.158,
+        44,
+        2.158
+      ]
+    ],
+    [
+      "grammar-content/benjamin-button",
+      [
+        32,
+        1.036,
+        45,
+        1.591,
+        46,
+        1.591,
+        47,
+        1.591
+      ]
+    ],
+    [
+      "prerequisites/benjamin-button",
+      [
+        31,
+        0.672,
+        32,
+        0.798,
+        48,
+        1.227,
+        49,
+        1.227,
+        50,
+        0.57,
+        51,
+        1.227,
+        52,
+        1.227
+      ]
+    ],
+    [
+      "slug/benjamin-button",
+      [
+        43,
+        2.158,
+        44,
+        2.158
+      ]
+    ],
+    [
+      "content/viaggio-sola",
+      [
+        53,
+        2.913,
+        54,
+        2.913
+      ]
+    ],
+    [
+      "level/viaggio-sola",
+      [
+        1,
+        0.961
+      ]
+    ],
+    [
+      "week/viaggio-sola",
+      [
+        2,
+        0.335,
+        55,
+        2.078,
+        56,
+        2.078
+      ]
+    ],
+    [
+      "clip/viaggio-sola",
+      [
+        57,
+        2.158,
+        58,
+        2.158
+      ]
+    ],
+    [
+      "grammar-content/viaggio-sola",
+      [
+        59,
+        2.944
+      ]
+    ],
+    [
+      "prerequisites/viaggio-sola",
+      [
+
+      ]
+    ],
+    [
+      "slug/viaggio-sola",
+      [
+        57,
+        2.158,
+        58,
+        2.158
+      ]
+    ],
+    [
+      "content/patrizia-cavalli",
+      [
+        60,
+        2.913,
+        61,
+        2.913
+      ]
+    ],
+    [
+      "level/patrizia-cavalli",
+      [
+        17,
+        0.818
+      ]
+    ],
+    [
+      "week/patrizia-cavalli",
+      [
+        2,
+        0.401,
+        62,
+        2.488
+      ]
+    ],
+    [
+      "clip/patrizia-cavalli",
+      [
+        63,
+        2.158,
+        64,
+        2.158
+      ]
+    ],
+    [
+      "grammar-content/patrizia-cavalli",
+      [
+        65,
+        2.324
+      ]
+    ],
+    [
+      "prerequisites/patrizia-cavalli",
+      [
+        65,
+        1.385,
+        66,
+        1.754,
+        67,
+        1.754,
+        68,
+        1.754
+      ]
+    ],
+    [
+      "slug/patrizia-cavalli",
+      [
+        63,
+        2.158,
+        64,
+        2.158
+      ]
+    ],
+    [
+      "content/i-cento-passi-1-10",
+      [
+        50,
+        0.943,
+        69,
+        1.601,
+        70,
+        0.803,
+        71,
+        0.803,
+        72,
+        2.028
+      ]
+    ],
+    [
+      "level/i-cento-passi-1-10",
+      [
+        1,
+        0.961
+      ]
+    ],
+    [
+      "week/i-cento-passi-1-10",
+      [
+        2,
+        0.401,
+        3,
+        1.619
+      ]
+    ],
+    [
+      "clip/i-cento-passi-1-10",
+      [
+        50,
+        0.952,
+        70,
+        0.811,
+        71,
+        0.811,
+        73,
+        1.616
+      ]
+    ],
+    [
+      "grammar-content/i-cento-passi-1-10",
+      [
+        74,
+        2.324
+      ]
+    ],
+    [
+      "prerequisites/i-cento-passi-1-10",
+      [
+        75,
+        1.754,
+        76,
+        1.754,
+        77,
+        1.754,
+        78,
+        1.142
+      ]
+    ],
+    [
+      "slug/i-cento-passi-1-10",
+      [
+        50,
+        0.952,
+        70,
+        0.811,
+        71,
+        0.811,
+        73,
+        1.616
+      ]
+    ],
+    [
+      "content/prisencolinensinainciusol",
+      [
+        79,
+        3.409
+      ]
+    ],
+    [
+      "level/prisencolinensinainciusol",
+      [
+        29,
+        1.917
+      ]
+    ],
+    [
+      "week/prisencolinensinainciusol",
+      [
+        30,
+        1.353,
+        42,
+        1.641,
+        80,
+        2.078
+      ]
+    ],
+    [
+      "clip/prisencolinensinainciusol",
+      [
+        81,
+        2.592
+      ]
+    ],
+    [
+      "grammar-content/prisencolinensinainciusol",
+      [
+        82,
+        2.944
+      ]
+    ],
+    [
+      "prerequisites/prisencolinensinainciusol",
+      [
+
+      ]
+    ],
+    [
+      "slug/prisencolinensinainciusol",
+      [
+        81,
+        2.592
+      ]
+    ],
+    [
+      "content/mettici-la-salsa",
+      [
+        83,
+        2.543,
+        84,
+        1.182,
+        85,
+        2.543
+      ]
+    ],
+    [
+      "level/mettici-la-salsa",
+      [
+        17,
+        0.818
+      ]
+    ],
+    [
+      "week/mettici-la-salsa",
+      [
+        2,
+        0.401,
+        86,
+        1.964
+      ]
+    ],
+    [
+      "clip/mettici-la-salsa",
+      [
+        84,
+        1.088,
+        87,
+        1.848,
+        88,
+        1.848
+      ]
+    ],
+    [
+      "grammar-content/mettici-la-salsa",
+      [
+        89,
+        1.811,
+        90,
+        1.811
+      ]
+    ],
+    [
+      "prerequisites/mettici-la-salsa",
+      [
+        91,
+        2.458,
+        92,
+        2.458
+      ]
+    ],
+    [
+      "slug/mettici-la-salsa",
+      [
+        84,
+        1.088,
+        87,
+        1.848,
+        88,
+        1.848
+      ]
+    ],
+    [
+      "content/la-vita-\u00e8-bella",
+      [
+        93,
+        2.257,
+        94,
+        1.469,
+        95,
+        1.469,
+        96,
+        2.257
+      ]
+    ],
+    [
+      "level/la-vita-\u00e8-bella",
+      [
+        17,
+        0.818
+      ]
+    ],
+    [
+      "week/la-vita-\u00e8-bella",
+      [
+        2,
+        0.401,
+        86,
+        1.964
+      ]
+    ],
+    [
+      "clip/la-vita-\u00e8-bella",
+      [
+        84,
+        0.952,
+        94,
+        1.333,
+        95,
+        1.333,
+        97,
+        1.616
+      ]
+    ],
+    [
+      "grammar-content/la-vita-\u00e8-bella",
+      [
+        89,
+        1.483,
+        90,
+        1.483,
+        98,
+        1.879
+      ]
+    ],
+    [
+      "prerequisites/la-vita-\u00e8-bella",
+      [
+
+      ]
+    ],
+    [
+      "slug/la-vita-\u00e8-bella",
+      [
+        84,
+        0.952,
+        94,
+        1.333,
+        95,
+        1.333,
+        97,
+        1.616
+      ]
+    ],
+    [
+      "content/Commesse-essere-avere",
+      [
+        99,
+        2.913,
+        100,
+        2.913
+      ]
+    ],
+    [
+      "level/Commesse-essere-avere",
+      [
+        17,
+        0.818
+      ]
+    ],
+    [
+      "week/Commesse-essere-avere",
+      [
+        50,
+        1.44
+      ]
+    ],
+    [
+      "clip/Commesse-essere-avere",
+      [
+        78,
+        1.524,
+        101,
+        1.848,
+        102,
+        1.848
+      ]
+    ],
+    [
+      "grammar-content/Commesse-essere-avere",
+      [
+        103,
+        1.368
+      ]
+    ],
+    [
+      "prerequisites/Commesse-essere-avere",
+      [
+        103,
+        1.43
+      ]
+    ],
+    [
+      "slug/Commesse-essere-avere",
+      [
+        78,
+        1.524,
+        101,
+        1.848,
+        102,
+        1.848
+      ]
+    ],
+    [
+      "content/i-cento-passi-90-100",
+      [
+        69,
+        1.601,
+        70,
+        0.803,
+        71,
+        0.803,
+        104,
+        1.32,
+        105,
+        2.028
+      ]
+    ],
+    [
+      "level/i-cento-passi-90-100",
+      [
+        1,
+        0.961
+      ]
+    ],
+    [
+      "week/i-cento-passi-90-100",
+      [
+        2,
+        0.401,
+        31,
+        1.362
+      ]
+    ],
+    [
+      "clip/i-cento-passi-90-100",
+      [
+        70,
+        0.811,
+        71,
+        0.811,
+        104,
+        1.333,
+        106,
+        1.616
+      ]
+    ],
+    [
+      "grammar-content/i-cento-passi-90-100",
+      [
+        103,
+        1.368
+      ]
+    ],
+    [
+      "prerequisites/i-cento-passi-90-100",
+      [
+        74,
+        1.941,
+        107,
+        1.941
+      ]
+    ],
+    [
+      "slug/i-cento-passi-90-100",
+      [
+        70,
+        0.811,
+        71,
+        0.811,
+        104,
+        1.333,
+        106,
+        1.616
+      ]
+    ],
+    [
+      "content/asia-occidente-mahmood",
+      [
+        108,
+        2.543,
+        109,
+        1.656,
+        110,
+        2.543
+      ]
+    ],
+    [
+      "level/asia-occidente-mahmood",
+      [
+        17,
+        0.818
+      ]
+    ],
+    [
+      "week/asia-occidente-mahmood",
+      [
+        111,
+        3.099
+      ]
+    ],
+    [
+      "clip/asia-occidente-mahmood",
+      [
+        109,
+        1.524,
+        112,
+        1.848,
+        113,
+        1.848
+      ]
+    ],
+    [
+      "grammar-content/asia-occidente-mahmood",
+      [
+        114,
+        2.294,
+        115,
+        2.294
+      ]
+    ],
+    [
+      "prerequisites/asia-occidente-mahmood",
+      [
+        7,
+        2.002
+      ]
+    ],
+    [
+      "slug/asia-occidente-mahmood",
+      [
+        109,
+        1.524,
+        112,
+        1.848,
+        113,
+        1.848
+      ]
+    ],
+    [
+      "content/benvenuti-al-sud",
+      [
+        116,
+        2.543,
+        117,
+        1.656,
+        118,
+        2.543
+      ]
+    ],
+    [
+      "level/benvenuti-al-sud",
+      [
+        1,
+        0.961
+      ]
+    ],
+    [
+      "week/benvenuti-al-sud",
+      [
+        2,
+        0.401,
+        31,
+        1.362
+      ]
+    ],
+    [
+      "clip/benvenuti-al-sud",
+      [
+        117,
+        1.524,
+        119,
+        1.848,
+        120,
+        1.848
+      ]
+    ],
+    [
+      "grammar-content/benvenuti-al-sud",
+      [
+        121,
+        2.294,
+        122,
+        1.811
+      ]
+    ],
+    [
+      "prerequisites/benvenuti-al-sud",
+      [
+        122,
+        2.085,
+        123,
+        1.754,
+        124,
+        1.754
+      ]
+    ],
+    [
+      "slug/benvenuti-al-sud",
+      [
+        117,
+        1.524,
+        119,
+        1.848,
+        120,
+        1.848
+      ]
+    ],
+    [
+      "content/master-of-none",
+      [
+        125,
+        2.913,
+        126,
+        2.913
+      ]
+    ],
+    [
+      "level/master-of-none",
+      [
+        1,
+        0.961
+      ]
+    ],
+    [
+      "week/master-of-none",
+      [
+        2,
+        0.401,
+        3,
+        1.619
+      ]
+    ],
+    [
+      "clip/master-of-none",
+      [
+        103,
+        1.27,
+        127,
+        2.158
+      ]
+    ],
+    [
+      "grammar-content/master-of-none",
+      [
+        128,
+        1.879,
+        129,
+        1.879,
+        130,
+        1.879
+      ]
+    ],
+    [
+      "prerequisites/master-of-none",
+      [
+        7,
+        2.002
+      ]
+    ],
+    [
+      "slug/master-of-none",
+      [
+        103,
+        1.27,
+        127,
+        2.158
+      ]
+    ],
+    [
+      "content/le-compere",
+      [
+        8,
+        2.3,
+        131,
+        2.913
+      ]
+    ],
+    [
+      "level/le-compere",
+      [
+        17,
+        0.818
+      ]
+    ],
+    [
+      "week/le-compere",
+      [
+        2,
+        0.401,
+        132,
+        2.488
+      ]
+    ],
+    [
+      "clip/le-compere",
+      [
+        19,
+        1.496,
+        133,
+        1.779
+      ]
+    ],
+    [
+      "grammar-content/le-compere",
+      [
+        133,
+        1.493,
+        134,
+        2.294
+      ]
+    ],
+    [
+      "prerequisites/le-compere",
+      [
+        107,
+        1.385,
+        135,
+        1.754,
+        136,
+        1.754,
+        137,
+        1.754
+      ]
+    ],
+    [
+      "slug/le-compere",
+      [
+        19,
+        1.496,
+        133,
+        1.779
+      ]
+    ]
+  ],
+  "invertedIndex":[
+    [
+      "+",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benjamin-button":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":51
+      }
+    ],
+    [
+      "1",
+      {
+        "content":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "clip":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benjamin-button":{
+
+          }
+        },
+        "slug":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "_index":50
+      }
+    ],
+    [
+      "10",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "_index":73
+      }
+    ],
+    [
+      "100",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "_index":106
+      }
+    ],
+    [
+      "100</h1><br><br><br>",
+      {
+        "content":{
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":105
+      }
+    ],
+    [
+      "10</h1><br><br><br>",
+      {
+        "content":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":72
+      }
+    ],
+    [
+      "110",
+      {
+        "content":{
+
+        },
+        "level":{
+          "baaria":{
+
+          },
+          "viaggio-sola":{
+
+          },
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          },
+          "benvenuti-al-sud":{
+
+          },
+          "master-of-none":{
+
+          }
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":1
+      }
+    ],
+    [
+      "12",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "benjamin-button":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":41
+      }
+    ],
+    [
+      "120",
+      {
+        "content":{
+
+        },
+        "level":{
+          "le-fate-ignoranti":{
+
+          },
+          "patrizia-cavalli":{
+
+          },
+          "mettici-la-salsa":{
+
+          },
+          "la-vita-\u00e8-bella":{
+
+          },
+          "Commesse-essere-avere":{
+
+          },
+          "asia-occidente-mahmood":{
+
+          },
+          "le-compere":{
+
+          }
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":17
+      }
+    ],
+    [
+      "13",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "benjamin-button":{
+
+          },
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":42
+      }
+    ],
+    [
+      "130",
+      {
+        "content":{
+
+        },
+        "level":{
+          "sotto-il-sole-di-riccione":{
+
+          },
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":29
+      }
+    ],
+    [
+      "14",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":80
+      }
+    ],
+    [
+      "140",
+      {
+        "content":{
+
+        },
+        "level":{
+          "benjamin-button":{
+
+          }
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":40
+      }
+    ],
+    [
+      "2",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "sotto-il-sole-di-riccione":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          },
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benjamin-button":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":31
+      }
+    ],
+    [
+      "3",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "benjamin-button":{
+
+          }
+        },
+        "prerequisites":{
+          "benjamin-button":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":32
+      }
+    ],
+    [
+      "4",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "viaggio-sola":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":55
+      }
+    ],
+    [
+      "6",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "mettici-la-salsa":{
+
+          },
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":86
+      }
+    ],
+    [
+      "7",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":18
+      }
+    ],
+    [
+      "8",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":62
+      }
+    ],
+    [
+      "9",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "le-compere":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":132
+      }
+    ],
+    [
+      "90",
+      {
+        "content":{
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "_index":104
+      }
+    ],
+    [
+      "<br><p>wzxhzdk:0</p><br><br><br><br><p><a",
+      {
+        "content":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":99
+      }
+    ],
+    [
+      "<h1>asia",
+      {
+        "content":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":108
+      }
+    ],
+    [
+      "<h1>baaria</h1><br><br><br>",
+      {
+        "content":{
+          "baaria":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":0
+      }
+    ],
+    [
+      "<h1>benjamin",
+      {
+        "content":{
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":36
+      }
+    ],
+    [
+      "<h1>benvenuti",
+      {
+        "content":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":116
+      }
+    ],
+    [
+      "<h1>i",
+      {
+        "content":{
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":69
+      }
+    ],
+    [
+      "<h1>la",
+      {
+        "content":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":93
+      }
+    ],
+    [
+      "<h1>le",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          },
+          "le-compere":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":8
+      }
+    ],
+    [
+      "<h1>master",
+      {
+        "content":{
+          "master-of-none":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":125
+      }
+    ],
+    [
+      "<h1>mettici",
+      {
+        "content":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":83
+      }
+    ],
+    [
+      "<h1>patrizia",
+      {
+        "content":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":60
+      }
+    ],
+    [
+      "<h1>prisencolinensinainciusol</h1><br><br><br>",
+      {
+        "content":{
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":79
+      }
+    ],
+    [
+      "<h1>sotto",
+      {
+        "content":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":24
+      }
+    ],
+    [
+      "<h1>viaggio",
+      {
+        "content":{
+          "viaggio-sola":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":53
+      }
+    ],
+    [
+      "action",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":13
+      }
+    ],
+    [
+      "agreement",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":68
+      }
+    ],
+    [
+      "al",
+      {
+        "content":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "_index":117
+      }
+    ],
+    [
+      "asia",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "_index":112
+      }
+    ],
+    [
+      "aver",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "_index":102
+      }
+    ],
+    [
+      "baaria",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "baaria":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "baaria":{
+
+          }
+        },
+        "_index":4
+      }
+    ],
+    [
+      "bella",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "_index":97
+      }
+    ],
+    [
+      "bella</h1><br><br><br>",
+      {
+        "content":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":96
+      }
+    ],
+    [
+      "benjamin",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "benjamin-button":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "benjamin-button":{
+
+          }
+        },
+        "_index":43
+      }
+    ],
+    [
+      "benvenuti",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "_index":119
+      }
+    ],
+    [
+      "button",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "benjamin-button":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "benjamin-button":{
+
+          }
+        },
+        "_index":44
+      }
+    ],
+    [
+      "button</h1><br><br><p>thi",
+      {
+        "content":{
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":37
+      }
+    ],
+    [
+      "caval",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "_index":64
+      }
+    ],
+    [
+      "cavalli</h1><br><br><br>",
+      {
+        "content":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":61
+      }
+    ],
+    [
+      "cento",
+      {
+        "content":{
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "_index":70
+      }
+    ],
+    [
+      "chang",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          },
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":15
+      }
+    ],
+    [
+      "change!</p><br><br><br>",
+      {
+        "content":{
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":39
+      }
+    ],
+    [
+      "cloth",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "le-compere":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":135
+      }
+    ],
+    [
+      "color",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "le-compere":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":136
+      }
+    ],
+    [
+      "commess",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "_index":101
+      }
+    ],
+    [
+      "comper",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "le-compere":{
+
+          }
+        },
+        "grammar-content":{
+          "le-compere":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "le-compere":{
+
+          }
+        },
+        "_index":133
+      }
+    ],
+    [
+      "compere</h1><br><br><br>",
+      {
+        "content":{
+          "le-compere":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":131
+      }
+    ],
+    [
+      "condizional",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benjamin-button":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":52
+      }
+    ],
+    [
+      "content</p><br><br><br>",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":16
+      }
+    ],
+    [
+      "cook",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":91
+      }
+    ],
+    [
+      "descript",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "i-cento-passi-90-100":{
+
+          },
+          "le-compere":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":107
+      }
+    ],
+    [
+      "di",
+      {
+        "content":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "_index":27
+      }
+    ],
+    [
+      "dieci",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "viaggio-sola":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":56
+      }
+    ],
+    [
+      "direct",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":66
+      }
+    ],
+    [
+      "esser",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "slug":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "_index":78
+      }
+    ],
+    [
+      "fare",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "le-compere":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":134
+      }
+    ],
+    [
+      "fate",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "_index":9
+      }
+    ],
+    [
+      "food",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "mettici-la-salsa":{
+
+          },
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":89
+      }
+    ],
+    [
+      "futuro",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":115
+      }
+    ],
+    [
+      "greet",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "master-of-none":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":128
+      }
+    ],
+    [
+      "hotel",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "viaggio-sola":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":59
+      }
+    ],
+    [
+      "href=\"https://view.officeapps.live.com/op/embed.aspx?src=https://upenn.box.com/s/8r3gk4u60i5ogkx3qygg48taot5u06xc\">commesse_essere_avere_domande.docx</a></p><br><br><br>",
+      {
+        "content":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":100
+      }
+    ],
+    [
+      "hypothet",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "benjamin-button":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":46
+      }
+    ],
+    [
+      "ignoranti",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "_index":20
+      }
+    ],
+    [
+      "ignoranti</h1><br><br><p>thi",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":10
+      }
+    ],
+    [
+      "il",
+      {
+        "content":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "_index":25
+      }
+    ],
+    [
+      "imperfetto",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":21
+      }
+    ],
+    [
+      "indirect",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":67
+      }
+    ],
+    [
+      "int",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "baaria":{
+
+          },
+          "i-cento-passi-1-10":{
+
+          },
+          "master-of-none":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":3
+      }
+    ],
+    [
+      "ipotetico",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benjamin-button":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":49
+      }
+    ],
+    [
+      "irregular",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":121
+      }
+    ],
+    [
+      "italian",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "master-of-none":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":129
+      }
+    ],
+    [
+      "la",
+      {
+        "content":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "mettici-la-salsa":{
+
+          },
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "mettici-la-salsa":{
+
+          },
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "_index":84
+      }
+    ],
+    [
+      "le",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "le-fate-ignoranti":{
+
+          },
+          "le-compere":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "le-fate-ignoranti":{
+
+          },
+          "le-compere":{
+
+          }
+        },
+        "_index":19
+      }
+    ],
+    [
+      "listen",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":14
+      }
+    ],
+    [
+      "mahmood",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "_index":113
+      }
+    ],
+    [
+      "mahmood</h1><br><br><br>",
+      {
+        "content":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":110
+      }
+    ],
+    [
+      "master",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "master-of-none":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "master-of-none":{
+
+          }
+        },
+        "_index":127
+      }
+    ],
+    [
+      "mettici",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "_index":87
+      }
+    ],
+    [
+      "modal",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":124
+      }
+    ],
+    [
+      "more",
+      {
+        "content":{
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":38
+      }
+    ],
+    [
+      "n/a",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "baaria":{
+
+          },
+          "asia-occidente-mahmood":{
+
+          },
+          "master-of-none":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":7
+      }
+    ],
+    [
+      "new",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":12
+      }
+    ],
+    [
+      "none",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "master-of-none":{
+
+          }
+        },
+        "grammar-content":{
+          "Commesse-essere-avere":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "prerequisites":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "slug":{
+          "master-of-none":{
+
+          }
+        },
+        "_index":103
+      }
+    ],
+    [
+      "none</h1><br><br><br>",
+      {
+        "content":{
+          "master-of-none":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":126
+      }
+    ],
+    [
+      "number",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "prerequisites":{
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":74
+      }
+    ],
+    [
+      "object",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "prerequisites":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":65
+      }
+    ],
+    [
+      "occident",
+      {
+        "content":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "_index":109
+      }
+    ],
+    [
+      "passato",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":22
+      }
+    ],
+    [
+      "passatoprossimo",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":114
+      }
+    ],
+    [
+      "passi",
+      {
+        "content":{
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "i-cento-passi-1-10":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          }
+        },
+        "_index":71
+      }
+    ],
+    [
+      "patrizia",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "patrizia-cavalli":{
+
+          }
+        },
+        "_index":63
+      }
+    ],
+    [
+      "period",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "benjamin-button":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":47
+      }
+    ],
+    [
+      "periodo",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benjamin-button":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":48
+      }
+    ],
+    [
+      "plural",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "baaria":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":6
+      }
+    ],
+    [
+      "poesia",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":82
+      }
+    ],
+    [
+      "preposit",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":98
+      }
+    ],
+    [
+      "prisencolinensinainciusol",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "_index":81
+      }
+    ],
+    [
+      "pronoun",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":77
+      }
+    ],
+    [
+      "prossimo",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":23
+      }
+    ],
+    [
+      "recip",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":92
+      }
+    ],
+    [
+      "regular",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":123
+      }
+    ],
+    [
+      "riccion",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "_index":34
+      }
+    ],
+    [
+      "riccione</h1><br><br><br>",
+      {
+        "content":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":28
+      }
+    ],
+    [
+      "ripasso",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "asia-occidente-mahmood":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":111
+      }
+    ],
+    [
+      "salsa",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "_index":88
+      }
+    ],
+    [
+      "salsa</h1><br><br><br>",
+      {
+        "content":{
+          "mettici-la-salsa":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":85
+      }
+    ],
+    [
+      "singular",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "baaria":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":5
+      }
+    ],
+    [
+      "singular/plural,",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":75
+      }
+    ],
+    [
+      "slang",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":35
+      }
+    ],
+    [
+      "sola",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "viaggio-sola":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "viaggio-sola":{
+
+          }
+        },
+        "_index":58
+      }
+    ],
+    [
+      "sola</h1><br><br><br>",
+      {
+        "content":{
+          "viaggio-sola":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":54
+      }
+    ],
+    [
+      "sole",
+      {
+        "content":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "_index":26
+      }
+    ],
+    [
+      "sotto",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "sotto-il-sole-di-riccione":{
+
+          }
+        },
+        "_index":33
+      }
+    ],
+    [
+      "style",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "le-compere":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":137
+      }
+    ],
+    [
+      "subject",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+          "i-cento-passi-1-10":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":76
+      }
+    ],
+    [
+      "sud",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "_index":120
+      }
+    ],
+    [
+      "sud</h1><br><br><br>",
+      {
+        "content":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":118
+      }
+    ],
+    [
+      "test",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":11
+      }
+    ],
+    [
+      "type",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "benjamin-button":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":45
+      }
+    ],
+    [
+      "unit",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "baaria":{
+
+          },
+          "le-fate-ignoranti":{
+
+          },
+          "viaggio-sola":{
+
+          },
+          "patrizia-cavalli":{
+
+          },
+          "i-cento-passi-1-10":{
+
+          },
+          "mettici-la-salsa":{
+
+          },
+          "la-vita-\u00e8-bella":{
+
+          },
+          "i-cento-passi-90-100":{
+
+          },
+          "benvenuti-al-sud":{
+
+          },
+          "master-of-none":{
+
+          },
+          "le-compere":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":2
+      }
+    ],
+    [
+      "verb",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "prerequisites":{
+          "benvenuti-al-sud":{
+
+          }
+        },
+        "slug":{
+
+        },
+        "_index":122
+      }
+    ],
+    [
+      "viaggio",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "viaggio-sola":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "viaggio-sola":{
+
+          }
+        },
+        "_index":57
+      }
+    ],
+    [
+      "vita",
+      {
+        "content":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "_index":94
+      }
+    ],
+    [
+      "vocabulari",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "mettici-la-salsa":{
+
+          },
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":90
+      }
+    ],
+    [
+      "week",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+          "sotto-il-sole-di-riccione":{
+
+          },
+          "benjamin-button":{
+
+          },
+          "prisencolinensinainciusol":{
+
+          }
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":30
+      }
+    ],
+    [
+      "word",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+          "master-of-none":{
+
+          }
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":130
+      }
+    ],
+    [
+      "\u00e8",
+      {
+        "content":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "la-vita-\u00e8-bella":{
+
+          }
+        },
+        "_index":95
+      }
+    ]
+  ],
+  "pipeline":[
+    "stemmer"
+  ]
+}
