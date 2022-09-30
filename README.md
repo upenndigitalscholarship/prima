@@ -6,7 +6,7 @@ PRIMA (Pedagogical Repository for Italian Media Activities)
     - Mac `brew install python@3.10`
     - [Windows](https://www.digitalocean.com/community/tutorials/install-python-windows-10)
     - [Linux](https://computingforgeeks.com/how-to-install-python-on-ubuntu-linux-system/) 
-2. Create a Python 3.10 virtual environment.
+2. Create a Python 3.10 virtual environment. You may need to install `python3.10-venv`, Anaconda, virtualenv or the enviornment manager of your choice.
     - for example `python3.10 -m venv venv`
 1. Download the project files: `git clone https://github.com/upenndigitalscholarship/prima.git`
 2. Install poetry: `curl -sSL https://install.python-poetry.org | python3.10 -`
@@ -18,14 +18,13 @@ PRIMA (Pedagogical Repository for Italian Media Activities)
 - Development server: `prima serve`
 
 # Goals
--  PageFind, worth adding Rust? compare to Lunr.js
--  Box SDK, store assets, hooks for updates/new assets?
 -  Netlify CMS as independent app outside the Netlify platform
+-  Git LFS, but store objects in DO Space
 -  incremental build. Just re-render posts versus full build. Need condition based on location of changes
+-  What is "most minimal" deployment? A single serverless function to handle SSL pointing to objects in S3 (otherwise, argument about running server and maintenance is less strong)
 
 # TODO
 - add netlify CMS, follow https://github.com/HCDigitalScholarship/anthro281
-- need to push/fetch content to Box or other object storage
 
 
 ## Assets
@@ -47,6 +46,14 @@ Dependent on University affiliation, deleted with email (bad for term-faculty, a
 - System for handling large media, adds a text pointer to a repo pointing to a large file
 - Git’s system of tracking diffs doesn’t work with these files, so it saves full copies of every version in your Git repository.
 - A paid service from MSFT (1G free)
+- GitLab can redirect large files to S3. 
+
+policy:
+- push assets to GitHub as in the past
+- large image files can be stored in IIIF
+- video should be in a streaming service such as Vimeo
+- large audio can go in S3 (how to handle cms, manual entry of uris?)
+
 
 ## Deployment
 Many workflows currently trigger GitHub Actions and Pages deployment on every commit.

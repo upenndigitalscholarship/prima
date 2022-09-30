@@ -11,262 +11,223 @@
   ],
   "fieldVectors":[
     [
-      "content/sorelle",
-      [
-        0,
-        3.282
-      ]
-    ],
-    [
-      "level/sorelle",
-      [
-        1,
-        1.58
-      ]
-    ],
-    [
-      "week/sorelle",
-      [
-        2,
-        1.377,
-        3,
-        1.987
-      ]
-    ],
-    [
-      "clip/sorelle",
-      [
-        4,
-        2.567
-      ]
-    ],
-    [
-      "grammar-content/sorelle",
-      [
-        5,
-        2.329,
-        6,
-        2.329
-      ]
-    ],
-    [
-      "prerequisites/sorelle",
-      [
-        7,
-        1.454,
-        8,
-        1.454,
-        9,
-        1.454,
-        10,
-        1.842
-      ]
-    ],
-    [
-      "slug/sorelle",
-      [
-        4,
-        2.567
-      ]
-    ],
-    [
       "content/asia-occidente-mahmood",
       [
-        11,
-        2.341,
-        12,
-        1.524,
-        13,
-        2.341
+        0,
+        2.578,
+        1,
+        1.679,
+        2,
+        2.578
       ]
     ],
     [
       "level/asia-occidente-mahmood",
       [
-        14,
-        0.961
+        3,
+        0.818
       ]
     ],
     [
       "week/asia-occidente-mahmood",
       [
-        15,
-        3.121
+        4,
+        3.099
       ]
     ],
     [
       "clip/asia-occidente-mahmood",
       [
-        12,
-        1.493,
-        16,
-        1.811,
-        17,
-        1.811
+        1,
+        1.524,
+        5,
+        1.848,
+        6,
+        1.848
       ]
     ],
     [
       "grammar-content/asia-occidente-mahmood",
       [
-        18,
-        2.329,
-        19,
-        2.329
+        7,
+        2.294,
+        8,
+        2.294
       ]
     ],
     [
       "prerequisites/asia-occidente-mahmood",
       [
-        20,
-        2.045
+        9,
+        2.002
       ]
     ],
     [
       "slug/asia-occidente-mahmood",
       [
-        12,
-        1.493,
-        16,
-        1.811,
-        17,
-        1.811
+        1,
+        1.524,
+        5,
+        1.848,
+        6,
+        1.848
       ]
     ],
     [
       "content/patrizia-cavalli",
       [
-        21,
-        2.733,
-        22,
-        2.733
+        10,
+        2.944,
+        11,
+        2.944
       ]
     ],
     [
       "level/patrizia-cavalli",
       [
-        14,
-        0.961
+        3,
+        0.818
       ]
     ],
     [
       "week/patrizia-cavalli",
       [
-        23,
-        0.405,
-        24,
-        2.516
+        12,
+        0.401,
+        13,
+        2.488
       ]
     ],
     [
       "clip/patrizia-cavalli",
       [
-        25,
-        2.124,
-        26,
-        2.124
+        14,
+        2.158,
+        15,
+        2.158
       ]
     ],
     [
       "grammar-content/patrizia-cavalli",
       [
-        27,
-        2.347
+        16,
+        2.324
       ]
     ],
     [
       "prerequisites/patrizia-cavalli",
       [
-        8,
-        1.454,
-        9,
-        1.454,
-        27,
-        1.454,
-        28,
-        1.842
+        16,
+        1.385,
+        17,
+        1.754,
+        18,
+        1.754,
+        19,
+        1.754
       ]
     ],
     [
       "slug/patrizia-cavalli",
       [
-        25,
-        2.124,
-        26,
-        2.124
+        14,
+        2.158,
+        15,
+        2.158
       ]
     ],
     [
       "content/le-fate-ignoranti",
       [
-        29,
-        1.848,
-        30,
-        1.524,
-        31,
-        2.341
+        20,
+        1.167,
+        21,
+        0.962,
+        22,
+        1.478,
+        23,
+        1.478,
+        24,
+        1.478,
+        25,
+        1.478,
+        26,
+        1.478,
+        27,
+        1.167,
+        28,
+        1.478
       ]
     ],
     [
       "level/le-fate-ignoranti",
       [
-        14,
-        0.961
+        3,
+        0.818
       ]
     ],
     [
       "week/le-fate-ignoranti",
       [
-        23,
-        0.405,
-        32,
-        2.516
+        12,
+        0.401,
+        29,
+        2.488
       ]
     ],
     [
       "clip/le-fate-ignoranti",
       [
+        21,
+        1.524,
         30,
-        1.493,
-        33,
-        1.256,
-        34,
-        1.811
+        1.281,
+        31,
+        1.848
       ]
     ],
     [
       "grammar-content/le-fate-ignoranti",
       [
-        35,
-        2.973
+        32,
+        2.944
       ]
     ],
     [
       "prerequisites/le-fate-ignoranti",
       [
-        36,
-        2.543,
-        37,
-        2.543
+        33,
+        2.458,
+        34,
+        2.458
       ]
     ],
     [
       "slug/le-fate-ignoranti",
       [
+        21,
+        1.524,
         30,
-        1.493,
-        33,
-        1.256,
-        34,
-        1.811
+        1.281,
+        31,
+        1.848
       ]
     ],
     [
       "content/benjamin-button",
       [
+        27,
+        2.057,
+        35,
+        1.723,
+        36,
+        1.723,
+        37,
+        1.723,
         38,
-        2.733,
+        1.723,
         39,
-        2.733
+        1.723
       ]
     ],
     [
@@ -279,247 +240,247 @@
     [
       "week/benjamin-button",
       [
-        2,
-        1.154,
         41,
-        2.108,
+        1.353,
         42,
-        1.664
+        2.078,
+        43,
+        1.641
       ]
     ],
     [
       "clip/benjamin-button",
       [
-        43,
-        2.124,
         44,
-        2.124
+        2.158,
+        45,
+        2.158
       ]
     ],
     [
       "grammar-content/benjamin-button",
       [
-        45,
-        1.625,
         46,
-        1.058,
+        1.591,
         47,
-        1.625,
+        1.036,
         48,
-        1.625
+        1.591,
+        49,
+        1.591
       ]
     ],
     [
       "prerequisites/benjamin-button",
       [
-        46,
-        0.848,
-        49,
-        1.303,
+        47,
+        0.798,
         50,
-        1.303,
+        1.227,
         51,
-        0.713,
+        1.227,
         52,
-        0.713,
+        0.57,
         53,
-        1.303,
+        0.672,
         54,
-        1.303
+        1.227,
+        55,
+        1.227
       ]
     ],
     [
       "slug/benjamin-button",
       [
-        43,
-        2.124,
         44,
-        2.124
+        2.158,
+        45,
+        2.158
       ]
     ],
     [
       "content/mettici-la-salsa",
       [
-        55,
-        2.341,
         56,
-        1.088,
+        2.578,
         57,
-        2.341
+        1.199,
+        58,
+        2.578
       ]
     ],
     [
       "level/mettici-la-salsa",
       [
-        14,
-        0.961
+        3,
+        0.818
       ]
     ],
     [
       "week/mettici-la-salsa",
       [
-        23,
-        0.405,
-        58,
-        1.987
+        12,
+        0.401,
+        59,
+        1.964
       ]
     ],
     [
       "clip/mettici-la-salsa",
       [
-        56,
-        1.066,
-        59,
-        1.811,
+        57,
+        1.088,
         60,
-        1.811
+        1.848,
+        61,
+        1.848
       ]
     ],
     [
       "grammar-content/mettici-la-salsa",
       [
-        61,
-        1.839,
         62,
-        1.839
+        1.811,
+        63,
+        1.811
       ]
     ],
     [
       "prerequisites/mettici-la-salsa",
       [
-        63,
-        2.543,
         64,
-        2.543
+        2.458,
+        65,
+        2.458
       ]
     ],
     [
       "slug/mettici-la-salsa",
       [
-        56,
-        1.066,
-        59,
-        1.811,
+        57,
+        1.088,
         60,
-        1.811
+        1.848,
+        61,
+        1.848
       ]
     ],
     [
       "content/le-compere",
       [
-        29,
-        2.158,
-        65,
-        2.733
+        20,
+        2.324,
+        66,
+        2.944
       ]
     ],
     [
       "level/le-compere",
       [
-        14,
-        0.961
+        3,
+        0.818
       ]
     ],
     [
       "week/le-compere",
       [
-        23,
-        0.405,
-        66,
-        2.516
+        12,
+        0.401,
+        67,
+        2.488
       ]
     ],
     [
       "clip/le-compere",
       [
-        33,
-        1.473,
-        67,
-        1.751
+        30,
+        1.496,
+        68,
+        1.779
       ]
     ],
     [
       "grammar-content/le-compere",
       [
-        67,
-        1.516,
         68,
-        2.329
+        1.493,
+        69,
+        2.294
       ]
     ],
     [
       "prerequisites/le-compere",
       [
-        69,
-        1.842,
         70,
-        1.454,
+        1.754,
         71,
-        1.842,
+        1.385,
         72,
-        1.842
+        1.754,
+        73,
+        1.754
       ]
     ],
     [
       "slug/le-compere",
       [
-        33,
-        1.473,
-        67,
-        1.751
+        30,
+        1.496,
+        68,
+        1.779
       ]
     ],
     [
       "content/la-vita-\u00e8-bella",
       [
-        73,
-        2.047,
         74,
-        1.333,
+        2.294,
         75,
-        1.333,
+        1.493,
         76,
-        2.047
+        1.493,
+        77,
+        2.294
       ]
     ],
     [
       "level/la-vita-\u00e8-bella",
       [
-        14,
-        0.961
+        3,
+        0.818
       ]
     ],
     [
       "week/la-vita-\u00e8-bella",
       [
-        23,
-        0.405,
-        58,
-        1.987
+        12,
+        0.401,
+        59,
+        1.964
       ]
     ],
     [
       "clip/la-vita-\u00e8-bella",
       [
-        56,
-        0.929,
-        74,
-        1.302,
+        57,
+        0.952,
         75,
-        1.302,
-        77,
-        1.579
+        1.333,
+        76,
+        1.333,
+        78,
+        1.616
       ]
     ],
     [
       "grammar-content/la-vita-\u00e8-bella",
       [
-        61,
-        1.512,
         62,
-        1.512,
-        78,
-        1.915
+        1.483,
+        63,
+        1.483,
+        79,
+        1.879
       ]
     ],
     [
@@ -531,130 +492,130 @@
     [
       "slug/la-vita-\u00e8-bella",
       [
-        56,
-        0.929,
-        74,
-        1.302,
+        57,
+        0.952,
         75,
-        1.302,
-        77,
-        1.579
+        1.333,
+        76,
+        1.333,
+        78,
+        1.616
       ]
     ],
     [
       "content/master-of-none",
       [
-        79,
-        2.733,
         80,
-        2.733
+        2.944,
+        81,
+        2.944
       ]
     ],
     [
       "level/master-of-none",
       [
-        81,
+        82,
         0.961
       ]
     ],
     [
       "week/master-of-none",
       [
-        23,
-        0.405,
-        82,
-        1.638
+        12,
+        0.401,
+        83,
+        1.619
       ]
     ],
     [
       "clip/master-of-none",
       [
-        83,
-        2.124,
         84,
-        1.751
+        2.158,
+        85,
+        1.27
       ]
     ],
     [
       "grammar-content/master-of-none",
       [
-        85,
-        1.915,
         86,
-        1.915,
+        1.879,
         87,
-        1.915
+        1.879,
+        88,
+        1.879
       ]
     ],
     [
       "prerequisites/master-of-none",
       [
-        20,
-        2.045
+        9,
+        2.002
       ]
     ],
     [
       "slug/master-of-none",
       [
-        83,
-        2.124,
         84,
-        1.751
+        2.158,
+        85,
+        1.27
       ]
     ],
     [
       "content/sotto-il-sole-di-riccione",
       [
-        88,
-        1.819,
         89,
-        1.184,
+        2.066,
         90,
-        1.184,
+        1.345,
         91,
-        1.184,
+        1.345,
         92,
-        1.819
+        1.345,
+        93,
+        2.066
       ]
     ],
     [
       "level/sotto-il-sole-di-riccione",
       [
-        1,
-        1.58
+        94,
+        1.917
       ]
     ],
     [
       "week/sotto-il-sole-di-riccione",
       [
-        2,
-        1.154,
-        46,
-        1.372,
-        52,
-        1.154
+        41,
+        1.353,
+        47,
+        1.353,
+        53,
+        1.138
       ]
     ],
     [
       "clip/sotto-il-sole-di-riccione",
       [
-        89,
-        1.154,
         90,
-        1.154,
+        1.184,
         91,
-        1.154,
-        93,
-        1.399,
-        94,
-        1.399
+        1.184,
+        92,
+        1.184,
+        95,
+        1.436,
+        96,
+        1.436
       ]
     ],
     [
       "grammar-content/sotto-il-sole-di-riccione",
       [
-        95,
-        2.973
+        97,
+        2.944
       ]
     ],
     [
@@ -666,205 +627,264 @@
     [
       "slug/sotto-il-sole-di-riccione",
       [
-        89,
-        1.154,
         90,
-        1.154,
+        1.184,
         91,
-        1.154,
-        93,
-        1.399,
-        94,
-        1.399
+        1.184,
+        92,
+        1.184,
+        95,
+        1.436,
+        96,
+        1.436
+      ]
+    ],
+    [
+      "content/Commesse-essere-avere",
+      [
+        98,
+        2.944,
+        99,
+        2.944
+      ]
+    ],
+    [
+      "level/Commesse-essere-avere",
+      [
+        3,
+        0.818
+      ]
+    ],
+    [
+      "week/Commesse-essere-avere",
+      [
+        52,
+        1.44
+      ]
+    ],
+    [
+      "clip/Commesse-essere-avere",
+      [
+        100,
+        1.848,
+        101,
+        1.524,
+        102,
+        1.848
+      ]
+    ],
+    [
+      "grammar-content/Commesse-essere-avere",
+      [
+        85,
+        1.368
+      ]
+    ],
+    [
+      "prerequisites/Commesse-essere-avere",
+      [
+        85,
+        1.43
+      ]
+    ],
+    [
+      "slug/Commesse-essere-avere",
+      [
+        100,
+        1.848,
+        101,
+        1.524,
+        102,
+        1.848
       ]
     ],
     [
       "content/i-cento-passi-90-100",
       [
-        96,
-        1.436,
-        97,
-        0.72,
-        98,
-        0.72,
-        99,
-        1.184,
-        100,
-        1.819
+        103,
+        1.631,
+        104,
+        0.818,
+        105,
+        0.818,
+        106,
+        1.345,
+        107,
+        2.066
       ]
     ],
     [
       "level/i-cento-passi-90-100",
       [
-        81,
+        82,
         0.961
       ]
     ],
     [
       "week/i-cento-passi-90-100",
       [
-        23,
-        0.405,
-        52,
-        1.377
+        12,
+        0.401,
+        53,
+        1.362
       ]
     ],
     [
       "clip/i-cento-passi-90-100",
       [
-        97,
-        0.792,
-        98,
-        0.792,
-        99,
-        1.302,
-        101,
-        1.579
+        104,
+        0.811,
+        105,
+        0.811,
+        106,
+        1.333,
+        108,
+        1.616
       ]
     ],
     [
       "grammar-content/i-cento-passi-90-100",
       [
-        84,
-        1.935
+        85,
+        1.368
       ]
     ],
     [
       "prerequisites/i-cento-passi-90-100",
       [
-        70,
-        2.008,
-        102,
-        2.008
+        71,
+        1.941,
+        109,
+        1.941
       ]
     ],
     [
       "slug/i-cento-passi-90-100",
       [
-        97,
-        0.792,
-        98,
-        0.792,
-        99,
-        1.302,
-        101,
-        1.579
+        104,
+        0.811,
+        105,
+        0.811,
+        106,
+        1.333,
+        108,
+        1.616
       ]
     ],
     [
       "content/i-cento-passi-1-10",
       [
-        51,
-        0.996,
-        96,
-        1.436,
-        97,
-        0.72,
-        98,
-        0.72,
+        52,
+        0.96,
         103,
-        1.819
+        1.631,
+        104,
+        0.818,
+        105,
+        0.818,
+        110,
+        2.066
       ]
     ],
     [
       "level/i-cento-passi-1-10",
       [
-        81,
+        82,
         0.961
       ]
     ],
     [
       "week/i-cento-passi-1-10",
       [
-        23,
-        0.405,
-        82,
-        1.638
+        12,
+        0.401,
+        83,
+        1.619
       ]
     ],
     [
       "clip/i-cento-passi-1-10",
       [
-        51,
-        1.095,
-        97,
-        0.792,
-        98,
-        0.792,
+        52,
+        0.952,
         104,
-        1.579
+        0.811,
+        105,
+        0.811,
+        111,
+        1.616
       ]
     ],
     [
       "grammar-content/i-cento-passi-1-10",
       [
-        102,
-        2.347
+        109,
+        2.324
       ]
     ],
     [
       "prerequisites/i-cento-passi-1-10",
       [
-        7,
-        1.454,
-        105,
-        1.842,
-        106,
-        1.842,
-        107,
-        1.842
+        101,
+        1.142,
+        112,
+        1.754,
+        113,
+        1.754,
+        114,
+        1.754
       ]
     ],
     [
       "slug/i-cento-passi-1-10",
       [
-        51,
-        1.095,
-        97,
-        0.792,
-        98,
-        0.792,
+        52,
+        0.952,
         104,
-        1.579
+        0.811,
+        105,
+        0.811,
+        111,
+        1.616
       ]
     ],
     [
       "content/prisencolinensinainciusol",
       [
-        108,
-        3.282
+        115,
+        3.43
       ]
     ],
     [
       "level/prisencolinensinainciusol",
       [
-        1,
-        1.58
+        94,
+        1.917
       ]
     ],
     [
       "week/prisencolinensinainciusol",
       [
-        2,
-        1.154,
-        42,
-        1.664,
-        109,
-        2.108
+        41,
+        1.353,
+        43,
+        1.641,
+        116,
+        2.078
       ]
     ],
     [
       "clip/prisencolinensinainciusol",
       [
-        110,
-        2.567
+        117,
+        2.592
       ]
     ],
     [
       "grammar-content/prisencolinensinainciusol",
       [
-        111,
-        2.973
+        118,
+        2.944
       ]
     ],
     [
@@ -876,51 +896,51 @@
     [
       "slug/prisencolinensinainciusol",
       [
-        110,
-        2.567
+        117,
+        2.592
       ]
     ],
     [
       "content/viaggio-sola",
       [
-        112,
-        2.733,
-        113,
-        2.733
+        119,
+        2.944,
+        120,
+        2.944
       ]
     ],
     [
       "level/viaggio-sola",
       [
-        81,
+        82,
         0.961
       ]
     ],
     [
       "week/viaggio-sola",
       [
-        3,
-        1.664,
-        23,
-        0.339,
-        114,
-        2.108
+        12,
+        0.335,
+        121,
+        2.078,
+        122,
+        2.078
       ]
     ],
     [
       "clip/viaggio-sola",
       [
-        115,
-        2.124,
-        116,
-        2.124
+        123,
+        2.158,
+        124,
+        2.158
       ]
     ],
     [
       "grammar-content/viaggio-sola",
       [
-        117,
-        2.973
+        125,
+        2.944
       ]
     ],
     [
@@ -932,132 +952,132 @@
     [
       "slug/viaggio-sola",
       [
-        115,
-        2.124,
-        116,
-        2.124
+        123,
+        2.158,
+        124,
+        2.158
       ]
     ],
     [
       "content/benvenuti-al-sud",
       [
-        118,
-        2.341,
-        119,
-        1.524,
-        120,
-        2.341
+        126,
+        2.578,
+        127,
+        1.679,
+        128,
+        2.578
       ]
     ],
     [
       "level/benvenuti-al-sud",
       [
-        81,
+        82,
         0.961
       ]
     ],
     [
       "week/benvenuti-al-sud",
       [
-        23,
-        0.405,
-        52,
-        1.377
+        12,
+        0.401,
+        53,
+        1.362
       ]
     ],
     [
       "clip/benvenuti-al-sud",
       [
-        119,
-        1.493,
-        121,
-        1.811,
-        122,
-        1.811
+        127,
+        1.524,
+        129,
+        1.848,
+        130,
+        1.848
       ]
     ],
     [
       "grammar-content/benvenuti-al-sud",
       [
-        123,
-        2.329,
-        124,
-        1.839
+        131,
+        2.294,
+        132,
+        1.811
       ]
     ],
     [
       "prerequisites/benvenuti-al-sud",
       [
-        124,
-        2.163,
-        125,
-        1.842,
-        126,
-        1.842
+        132,
+        2.085,
+        133,
+        1.754,
+        134,
+        1.754
       ]
     ],
     [
       "slug/benvenuti-al-sud",
       [
-        119,
-        1.493,
-        121,
-        1.811,
-        122,
-        1.811
+        127,
+        1.524,
+        129,
+        1.848,
+        130,
+        1.848
       ]
     ],
     [
       "content/baaria",
       [
-        127,
-        3.282
+        135,
+        3.43
       ]
     ],
     [
       "level/baaria",
       [
-        81,
+        82,
         0.961
       ]
     ],
     [
       "week/baaria",
       [
-        23,
-        0.405,
-        82,
-        1.638
+        12,
+        0.401,
+        83,
+        1.619
       ]
     ],
     [
       "clip/baaria",
       [
-        128,
-        2.567
+        136,
+        2.592
       ]
     ],
     [
       "grammar-content/baaria",
       [
-        129,
-        2.329,
-        130,
-        2.329
+        137,
+        2.294,
+        138,
+        2.294
       ]
     ],
     [
       "prerequisites/baaria",
       [
-        20,
-        2.045
+        9,
+        2.002
       ]
     ],
     [
       "slug/baaria",
       [
-        128,
-        2.567
+        136,
+        2.592
       ]
     ]
   ],
@@ -1088,7 +1108,7 @@
         "slug":{
 
         },
-        "_index":53
+        "_index":54
       }
     ],
     [
@@ -1103,7 +1123,9 @@
 
         },
         "week":{
+          "Commesse-essere-avere":{
 
+          }
         },
         "clip":{
           "i-cento-passi-1-10":{
@@ -1123,7 +1145,7 @@
 
           }
         },
-        "_index":51
+        "_index":52
       }
     ],
     [
@@ -1154,7 +1176,7 @@
 
           }
         },
-        "_index":104
+        "_index":111
       }
     ],
     [
@@ -1185,7 +1207,7 @@
 
           }
         },
-        "_index":101
+        "_index":108
       }
     ],
     [
@@ -1214,7 +1236,7 @@
         "slug":{
 
         },
-        "_index":100
+        "_index":107
       }
     ],
     [
@@ -1243,7 +1265,7 @@
         "slug":{
 
         },
-        "_index":103
+        "_index":110
       }
     ],
     [
@@ -1287,7 +1309,7 @@
         "slug":{
 
         },
-        "_index":81
+        "_index":82
       }
     ],
     [
@@ -1316,7 +1338,7 @@
         "slug":{
 
         },
-        "_index":41
+        "_index":42
       }
     ],
     [
@@ -1343,6 +1365,9 @@
           },
           "la-vita-\u00e8-bella":{
 
+          },
+          "Commesse-essere-avere":{
+
           }
         },
         "week":{
@@ -1360,7 +1385,7 @@
         "slug":{
 
         },
-        "_index":14
+        "_index":3
       }
     ],
     [
@@ -1392,7 +1417,7 @@
         "slug":{
 
         },
-        "_index":42
+        "_index":43
       }
     ],
     [
@@ -1402,9 +1427,6 @@
 
         },
         "level":{
-          "sorelle":{
-
-          },
           "sotto-il-sole-di-riccione":{
 
           },
@@ -1427,7 +1449,7 @@
         "slug":{
 
         },
-        "_index":1
+        "_index":94
       }
     ],
     [
@@ -1456,7 +1478,7 @@
         "slug":{
 
         },
-        "_index":109
+        "_index":116
       }
     ],
     [
@@ -1522,7 +1544,7 @@
         "slug":{
 
         },
-        "_index":52
+        "_index":53
       }
     ],
     [
@@ -1555,7 +1577,7 @@
         "slug":{
 
         },
-        "_index":46
+        "_index":47
       }
     ],
     [
@@ -1568,9 +1590,6 @@
 
         },
         "week":{
-          "sorelle":{
-
-          },
           "viaggio-sola":{
 
           }
@@ -1587,7 +1606,7 @@
         "slug":{
 
         },
-        "_index":3
+        "_index":121
       }
     ],
     [
@@ -1619,7 +1638,7 @@
         "slug":{
 
         },
-        "_index":58
+        "_index":59
       }
     ],
     [
@@ -1648,7 +1667,7 @@
         "slug":{
 
         },
-        "_index":32
+        "_index":29
       }
     ],
     [
@@ -1677,7 +1696,7 @@
         "slug":{
 
         },
-        "_index":24
+        "_index":13
       }
     ],
     [
@@ -1706,7 +1725,7 @@
         "slug":{
 
         },
-        "_index":66
+        "_index":67
       }
     ],
     [
@@ -1739,7 +1758,36 @@
 
           }
         },
-        "_index":99
+        "_index":106
+      }
+    ],
+    [
+      "<br><p>wzxhzdk:0</p><br><br><br><br><p><a",
+      {
+        "content":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":98
       }
     ],
     [
@@ -1768,7 +1816,7 @@
         "slug":{
 
         },
-        "_index":11
+        "_index":0
       }
     ],
     [
@@ -1797,7 +1845,7 @@
         "slug":{
 
         },
-        "_index":127
+        "_index":135
       }
     ],
     [
@@ -1826,7 +1874,7 @@
         "slug":{
 
         },
-        "_index":38
+        "_index":35
       }
     ],
     [
@@ -1855,7 +1903,7 @@
         "slug":{
 
         },
-        "_index":118
+        "_index":126
       }
     ],
     [
@@ -1887,7 +1935,7 @@
         "slug":{
 
         },
-        "_index":96
+        "_index":103
       }
     ],
     [
@@ -1916,7 +1964,7 @@
         "slug":{
 
         },
-        "_index":73
+        "_index":74
       }
     ],
     [
@@ -1948,7 +1996,7 @@
         "slug":{
 
         },
-        "_index":29
+        "_index":20
       }
     ],
     [
@@ -1977,7 +2025,7 @@
         "slug":{
 
         },
-        "_index":79
+        "_index":80
       }
     ],
     [
@@ -2006,7 +2054,7 @@
         "slug":{
 
         },
-        "_index":55
+        "_index":56
       }
     ],
     [
@@ -2035,7 +2083,7 @@
         "slug":{
 
         },
-        "_index":21
+        "_index":10
       }
     ],
     [
@@ -2064,36 +2112,7 @@
         "slug":{
 
         },
-        "_index":108
-      }
-    ],
-    [
-      "<h1>sorelle</h1><br><br><br>",
-      {
-        "content":{
-          "sorelle":{
-
-          }
-        },
-        "level":{
-
-        },
-        "week":{
-
-        },
-        "clip":{
-
-        },
-        "grammar-content":{
-
-        },
-        "prerequisites":{
-
-        },
-        "slug":{
-
-        },
-        "_index":0
+        "_index":115
       }
     ],
     [
@@ -2122,7 +2141,7 @@
         "slug":{
 
         },
-        "_index":88
+        "_index":89
       }
     ],
     [
@@ -2151,7 +2170,36 @@
         "slug":{
 
         },
-        "_index":112
+        "_index":119
+      }
+    ],
+    [
+      "action",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":25
       }
     ],
     [
@@ -2180,7 +2228,7 @@
         "slug":{
 
         },
-        "_index":28
+        "_index":19
       }
     ],
     [
@@ -2213,7 +2261,7 @@
 
           }
         },
-        "_index":119
+        "_index":127
       }
     ],
     [
@@ -2244,7 +2292,38 @@
 
           }
         },
-        "_index":16
+        "_index":5
+      }
+    ],
+    [
+      "aver",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "_index":102
       }
     ],
     [
@@ -2275,7 +2354,7 @@
 
           }
         },
-        "_index":128
+        "_index":136
       }
     ],
     [
@@ -2306,7 +2385,7 @@
 
           }
         },
-        "_index":77
+        "_index":78
       }
     ],
     [
@@ -2335,7 +2414,7 @@
         "slug":{
 
         },
-        "_index":76
+        "_index":77
       }
     ],
     [
@@ -2366,7 +2445,7 @@
 
           }
         },
-        "_index":43
+        "_index":44
       }
     ],
     [
@@ -2397,7 +2476,7 @@
 
           }
         },
-        "_index":121
+        "_index":129
       }
     ],
     [
@@ -2428,11 +2507,11 @@
 
           }
         },
-        "_index":44
+        "_index":45
       }
     ],
     [
-      "button</h1><br><br><br>",
+      "button</h1><br><br><p>thi",
       {
         "content":{
           "benjamin-button":{
@@ -2457,7 +2536,7 @@
         "slug":{
 
         },
-        "_index":39
+        "_index":36
       }
     ],
     [
@@ -2488,7 +2567,7 @@
 
           }
         },
-        "_index":26
+        "_index":15
       }
     ],
     [
@@ -2517,7 +2596,7 @@
         "slug":{
 
         },
-        "_index":22
+        "_index":11
       }
     ],
     [
@@ -2559,7 +2638,39 @@
 
           }
         },
-        "_index":97
+        "_index":104
+      }
+    ],
+    [
+      "chang",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          },
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":27
       }
     ],
     [
@@ -2588,7 +2699,7 @@
         "slug":{
 
         },
-        "_index":69
+        "_index":70
       }
     ],
     [
@@ -2617,7 +2728,67 @@
         "slug":{
 
         },
-        "_index":71
+        "_index":72
+      }
+    ],
+    [
+      "commess",
+      {
+        "content":{
+
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "_index":100
+      }
+    ],
+    [
+      "commit",
+      {
+        "content":{
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":38
       }
     ],
     [
@@ -2650,7 +2821,7 @@
 
           }
         },
-        "_index":67
+        "_index":68
       }
     ],
     [
@@ -2679,7 +2850,7 @@
         "slug":{
 
         },
-        "_index":65
+        "_index":66
       }
     ],
     [
@@ -2708,7 +2879,36 @@
         "slug":{
 
         },
-        "_index":54
+        "_index":55
+      }
+    ],
+    [
+      "content</p><br><br><br>",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":28
       }
     ],
     [
@@ -2737,7 +2937,7 @@
         "slug":{
 
         },
-        "_index":63
+        "_index":64
       }
     ],
     [
@@ -2769,7 +2969,7 @@
         "slug":{
 
         },
-        "_index":70
+        "_index":71
       }
     ],
     [
@@ -2802,7 +3002,7 @@
 
           }
         },
-        "_index":91
+        "_index":92
       }
     ],
     [
@@ -2831,7 +3031,7 @@
         "slug":{
 
         },
-        "_index":114
+        "_index":122
       }
     ],
     [
@@ -2853,9 +3053,6 @@
 
         },
         "prerequisites":{
-          "sorelle":{
-
-          },
           "patrizia-cavalli":{
 
           }
@@ -2863,36 +3060,7 @@
         "slug":{
 
         },
-        "_index":8
-      }
-    ],
-    [
-      "doppi",
-      {
-        "content":{
-
-        },
-        "level":{
-
-        },
-        "week":{
-
-        },
-        "clip":{
-
-        },
-        "grammar-content":{
-          "sorelle":{
-
-          }
-        },
-        "prerequisites":{
-
-        },
-        "slug":{
-
-        },
-        "_index":6
+        "_index":17
       }
     ],
     [
@@ -2908,7 +3076,9 @@
 
         },
         "clip":{
+          "Commesse-essere-avere":{
 
+          }
         },
         "grammar-content":{
 
@@ -2919,9 +3089,11 @@
           }
         },
         "slug":{
+          "Commesse-essere-avere":{
 
+          }
         },
-        "_index":107
+        "_index":101
       }
     ],
     [
@@ -2950,7 +3122,7 @@
         "slug":{
 
         },
-        "_index":68
+        "_index":69
       }
     ],
     [
@@ -2983,7 +3155,7 @@
 
           }
         },
-        "_index":30
+        "_index":21
       }
     ],
     [
@@ -3015,7 +3187,7 @@
         "slug":{
 
         },
-        "_index":61
+        "_index":62
       }
     ],
     [
@@ -3044,7 +3216,7 @@
         "slug":{
 
         },
-        "_index":19
+        "_index":8
       }
     ],
     [
@@ -3073,7 +3245,7 @@
         "slug":{
 
         },
-        "_index":85
+        "_index":86
       }
     ],
     [
@@ -3102,7 +3274,36 @@
         "slug":{
 
         },
-        "_index":117
+        "_index":125
+      }
+    ],
+    [
+      "href=\"https://view.officeapps.live.com/op/embed.aspx?src=https://upenn.box.com/s/8r3gk4u60i5ogkx3qygg48taot5u06xc\">commesse_essere_avere_domande.docx</a></p><br><br><br>",
+      {
+        "content":{
+          "Commesse-essere-avere":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":99
       }
     ],
     [
@@ -3131,7 +3332,7 @@
         "slug":{
 
         },
-        "_index":47
+        "_index":48
       }
     ],
     [
@@ -3162,11 +3363,11 @@
 
           }
         },
-        "_index":34
+        "_index":31
       }
     ],
     [
-      "ignoranti</h1><br><br><br>",
+      "ignoranti</h1><br><br><p>thi",
       {
         "content":{
           "le-fate-ignoranti":{
@@ -3191,7 +3392,7 @@
         "slug":{
 
         },
-        "_index":31
+        "_index":22
       }
     ],
     [
@@ -3224,7 +3425,7 @@
 
           }
         },
-        "_index":89
+        "_index":90
       }
     ],
     [
@@ -3253,7 +3454,7 @@
         "slug":{
 
         },
-        "_index":35
+        "_index":32
       }
     ],
     [
@@ -3275,9 +3476,6 @@
 
         },
         "prerequisites":{
-          "sorelle":{
-
-          },
           "patrizia-cavalli":{
 
           }
@@ -3285,7 +3483,7 @@
         "slug":{
 
         },
-        "_index":9
+        "_index":18
       }
     ],
     [
@@ -3320,7 +3518,7 @@
         "slug":{
 
         },
-        "_index":82
+        "_index":83
       }
     ],
     [
@@ -3349,7 +3547,7 @@
         "slug":{
 
         },
-        "_index":50
+        "_index":51
       }
     ],
     [
@@ -3378,7 +3576,7 @@
         "slug":{
 
         },
-        "_index":123
+        "_index":131
       }
     ],
     [
@@ -3407,7 +3605,7 @@
         "slug":{
 
         },
-        "_index":86
+        "_index":87
       }
     ],
     [
@@ -3446,7 +3644,7 @@
 
           }
         },
-        "_index":56
+        "_index":57
       }
     ],
     [
@@ -3483,7 +3681,36 @@
 
           }
         },
-        "_index":33
+        "_index":30
+      }
+    ],
+    [
+      "listen",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":26
       }
     ],
     [
@@ -3514,7 +3741,7 @@
 
           }
         },
-        "_index":17
+        "_index":6
       }
     ],
     [
@@ -3543,7 +3770,7 @@
         "slug":{
 
         },
-        "_index":13
+        "_index":2
       }
     ],
     [
@@ -3574,7 +3801,36 @@
 
           }
         },
-        "_index":83
+        "_index":84
+      }
+    ],
+    [
+      "me!</p><br><br><br>",
+      {
+        "content":{
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":39
       }
     ],
     [
@@ -3605,7 +3861,7 @@
 
           }
         },
-        "_index":59
+        "_index":60
       }
     ],
     [
@@ -3634,7 +3890,36 @@
         "slug":{
 
         },
-        "_index":126
+        "_index":134
+      }
+    ],
+    [
+      "more",
+      {
+        "content":{
+          "benjamin-button":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":37
       }
     ],
     [
@@ -3669,7 +3954,36 @@
         "slug":{
 
         },
-        "_index":20
+        "_index":9
+      }
+    ],
+    [
+      "new",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":24
       }
     ],
     [
@@ -3690,19 +4004,24 @@
           }
         },
         "grammar-content":{
+          "Commesse-essere-avere":{
+
+          },
           "i-cento-passi-90-100":{
 
           }
         },
         "prerequisites":{
+          "Commesse-essere-avere":{
 
+          }
         },
         "slug":{
           "master-of-none":{
 
           }
         },
-        "_index":84
+        "_index":85
       }
     ],
     [
@@ -3731,7 +4050,7 @@
         "slug":{
 
         },
-        "_index":80
+        "_index":81
       }
     ],
     [
@@ -3762,7 +4081,7 @@
         "slug":{
 
         },
-        "_index":102
+        "_index":109
       }
     ],
     [
@@ -3793,7 +4112,7 @@
         "slug":{
 
         },
-        "_index":27
+        "_index":16
       }
     ],
     [
@@ -3826,7 +4145,7 @@
 
           }
         },
-        "_index":12
+        "_index":1
       }
     ],
     [
@@ -3855,7 +4174,7 @@
         "slug":{
 
         },
-        "_index":36
+        "_index":33
       }
     ],
     [
@@ -3884,7 +4203,7 @@
         "slug":{
 
         },
-        "_index":18
+        "_index":7
       }
     ],
     [
@@ -3926,7 +4245,7 @@
 
           }
         },
-        "_index":98
+        "_index":105
       }
     ],
     [
@@ -3957,7 +4276,7 @@
 
           }
         },
-        "_index":25
+        "_index":14
       }
     ],
     [
@@ -3986,7 +4305,7 @@
         "slug":{
 
         },
-        "_index":48
+        "_index":49
       }
     ],
     [
@@ -4015,7 +4334,7 @@
         "slug":{
 
         },
-        "_index":49
+        "_index":50
       }
     ],
     [
@@ -4044,7 +4363,7 @@
         "slug":{
 
         },
-        "_index":130
+        "_index":138
       }
     ],
     [
@@ -4073,7 +4392,7 @@
         "slug":{
 
         },
-        "_index":111
+        "_index":118
       }
     ],
     [
@@ -4102,7 +4421,7 @@
         "slug":{
 
         },
-        "_index":78
+        "_index":79
       }
     ],
     [
@@ -4133,36 +4452,7 @@
 
           }
         },
-        "_index":110
-      }
-    ],
-    [
-      "pronomi",
-      {
-        "content":{
-
-        },
-        "level":{
-
-        },
-        "week":{
-
-        },
-        "clip":{
-
-        },
-        "grammar-content":{
-          "sorelle":{
-
-          }
-        },
-        "prerequisites":{
-
-        },
-        "slug":{
-
-        },
-        "_index":5
+        "_index":117
       }
     ],
     [
@@ -4184,9 +4474,6 @@
 
         },
         "prerequisites":{
-          "sorelle":{
-
-          },
           "i-cento-passi-1-10":{
 
           }
@@ -4194,7 +4481,7 @@
         "slug":{
 
         },
-        "_index":7
+        "_index":114
       }
     ],
     [
@@ -4223,7 +4510,7 @@
         "slug":{
 
         },
-        "_index":37
+        "_index":34
       }
     ],
     [
@@ -4252,36 +4539,7 @@
         "slug":{
 
         },
-        "_index":64
-      }
-    ],
-    [
-      "reflex",
-      {
-        "content":{
-
-        },
-        "level":{
-
-        },
-        "week":{
-
-        },
-        "clip":{
-
-        },
-        "grammar-content":{
-
-        },
-        "prerequisites":{
-          "sorelle":{
-
-          }
-        },
-        "slug":{
-
-        },
-        "_index":10
+        "_index":65
       }
     ],
     [
@@ -4310,7 +4568,7 @@
         "slug":{
 
         },
-        "_index":125
+        "_index":133
       }
     ],
     [
@@ -4341,7 +4599,7 @@
 
           }
         },
-        "_index":94
+        "_index":96
       }
     ],
     [
@@ -4370,7 +4628,7 @@
         "slug":{
 
         },
-        "_index":92
+        "_index":93
       }
     ],
     [
@@ -4399,7 +4657,7 @@
         "slug":{
 
         },
-        "_index":15
+        "_index":4
       }
     ],
     [
@@ -4430,7 +4688,7 @@
 
           }
         },
-        "_index":60
+        "_index":61
       }
     ],
     [
@@ -4459,7 +4717,7 @@
         "slug":{
 
         },
-        "_index":57
+        "_index":58
       }
     ],
     [
@@ -4488,7 +4746,7 @@
         "slug":{
 
         },
-        "_index":129
+        "_index":137
       }
     ],
     [
@@ -4517,7 +4775,7 @@
         "slug":{
 
         },
-        "_index":105
+        "_index":112
       }
     ],
     [
@@ -4546,7 +4804,7 @@
         "slug":{
 
         },
-        "_index":95
+        "_index":97
       }
     ],
     [
@@ -4577,7 +4835,7 @@
 
           }
         },
-        "_index":116
+        "_index":124
       }
     ],
     [
@@ -4606,7 +4864,7 @@
         "slug":{
 
         },
-        "_index":113
+        "_index":120
       }
     ],
     [
@@ -4639,38 +4897,7 @@
 
           }
         },
-        "_index":90
-      }
-    ],
-    [
-      "sorel",
-      {
-        "content":{
-
-        },
-        "level":{
-
-        },
-        "week":{
-
-        },
-        "clip":{
-          "sorelle":{
-
-          }
-        },
-        "grammar-content":{
-
-        },
-        "prerequisites":{
-
-        },
-        "slug":{
-          "sorelle":{
-
-          }
-        },
-        "_index":4
+        "_index":91
       }
     ],
     [
@@ -4701,7 +4928,7 @@
 
           }
         },
-        "_index":93
+        "_index":95
       }
     ],
     [
@@ -4730,7 +4957,7 @@
         "slug":{
 
         },
-        "_index":72
+        "_index":73
       }
     ],
     [
@@ -4759,7 +4986,7 @@
         "slug":{
 
         },
-        "_index":106
+        "_index":113
       }
     ],
     [
@@ -4790,7 +5017,7 @@
 
           }
         },
-        "_index":122
+        "_index":130
       }
     ],
     [
@@ -4819,7 +5046,36 @@
         "slug":{
 
         },
-        "_index":120
+        "_index":128
+      }
+    ],
+    [
+      "test",
+      {
+        "content":{
+          "le-fate-ignoranti":{
+
+          }
+        },
+        "level":{
+
+        },
+        "week":{
+
+        },
+        "clip":{
+
+        },
+        "grammar-content":{
+
+        },
+        "prerequisites":{
+
+        },
+        "slug":{
+
+        },
+        "_index":23
       }
     ],
     [
@@ -4848,7 +5104,7 @@
         "slug":{
 
         },
-        "_index":45
+        "_index":46
       }
     ],
     [
@@ -4907,7 +5163,7 @@
         "slug":{
 
         },
-        "_index":23
+        "_index":12
       }
     ],
     [
@@ -4938,7 +5194,7 @@
         "slug":{
 
         },
-        "_index":124
+        "_index":132
       }
     ],
     [
@@ -4969,7 +5225,7 @@
 
           }
         },
-        "_index":115
+        "_index":123
       }
     ],
     [
@@ -5002,7 +5258,7 @@
 
           }
         },
-        "_index":74
+        "_index":75
       }
     ],
     [
@@ -5034,7 +5290,7 @@
         "slug":{
 
         },
-        "_index":62
+        "_index":63
       }
     ],
     [
@@ -5047,9 +5303,6 @@
 
         },
         "week":{
-          "sorelle":{
-
-          },
           "benjamin-button":{
 
           },
@@ -5072,7 +5325,7 @@
         "slug":{
 
         },
-        "_index":2
+        "_index":41
       }
     ],
     [
@@ -5101,7 +5354,7 @@
         "slug":{
 
         },
-        "_index":87
+        "_index":88
       }
     ],
     [
@@ -5134,7 +5387,7 @@
 
           }
         },
-        "_index":75
+        "_index":76
       }
     ]
   ],

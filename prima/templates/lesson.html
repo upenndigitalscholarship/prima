@@ -2,6 +2,12 @@
 {% block content %}
 <section id="about" class="about">
     <div class="container" data-aos="fade-up">
+        {% if metadata.video %}
+        <video width="100%" controls>
+            <source src="{{ video }}" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> 
+        {% endif %}
         {{ content|safe }}
     </div>
 </section>
