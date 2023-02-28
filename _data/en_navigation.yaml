@@ -1,0 +1,8 @@
+items:
+  - text: About
+    url: "/en/about/"
+  - text: Browse Media
+    url: "/en/browse-media"
+  - text: Explore Categories
+    url: "/en/explore-categories"
+  
