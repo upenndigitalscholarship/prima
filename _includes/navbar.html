@@ -1,7 +1,7 @@
 <header class="navbar container">
     <a href="{{ " /" | locale_url }}"><img height="60" src="/assets/img/logo.svg" /></a>
-    <h1 class="logo">{% if page.lang == 'it' %}PRIMA Deposito pedagogico delle attività mediatiche italiane{% else%}
-        PRIMA Pedagogical Repository for Italian Media Activities{% endif %}</h1>
+    <h1 class="logo">{% if page.lang == 'it' %}PRIMA{% else%}
+        PRIMA {% endif %}</h1>
     <ul class="main-nav">
         {% if page.lang == 'it' %}
         {% for item in it_navigation.items %}
@@ -26,5 +26,5 @@
             {% endif %}
             <img height="30" style="margin-top:14px" src="/assets/img/globe.svg" /></a>
 
-        <div id="search"></div>
+        {# <div id="search"></div> #}
 </header>
