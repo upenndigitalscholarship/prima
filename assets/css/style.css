@@ -82,8 +82,7 @@ a {
 
 
 .navbar {
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: .5em;
     background-color: var(--prima-red);
 }
 
