@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/upenndigitalscholarship/prima#readme",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0"
+    "@11ty/eleventy": "^2.0.0",
+    "@zachleat/flex-luthor": "^4.0.2"
   }
 }
