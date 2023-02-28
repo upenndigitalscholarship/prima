@@ -1,0 +1,92 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: main
+  
+media_folder: "/assets/img"
+public_folder: "/assets/img"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+  - name: "lezioni" # Used in routes, e.g., /admin/collections/blog
+    label: "Lezioni (IT)" # Used in the UI
+    identifier_field: clip
+    folder: "it/lezioni" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Clip", name: "clip", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Livello", name: "livello", widget: "string"}
+      - {label: "Video", name: "video", widget: "string"}
+      - {label: "Settimana", name: "settimana", widget: "string"}
+      - {label: "Contenuto grammaticale", name: "contenuto-grammaticale", widget: "string"}
+      - {label: "Prerequisiti", name: "prerequisiti", widget: "string"}
+      - {label: "Testo", name: "body", widget: "markdown"}
+
+  - name: "pagine"
+    label: "Pagine (IT)"
+    folder: "it/pagine"
+    create: true
+    fields: 
+      - {label: "Titolo", name: "titolo", widget: "string"}
+      - {label: "Autore", name: "autore", widget: "string"}
+      - {label: "Testo", name: "body", widget: "markdown"}
+  
+  - name: "lessons" # Used in routes, e.g., /admin/collections/blog
+    label: "Lesson (EN)" # Used in the UI
+    identifier_field: clip
+    folder: "en/lessons" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Clip", name: "clip", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Level", name: "level", widget: "string"}
+      - {label: "Video", name: "video", widget: "string"}
+      - {label: "Week", name: "week", widget: "string"}
+      - {label: "Grammar content", name: "grammar-content", widget: "string"}
+      - {label: "Prerequisites", name: "prerequisites", widget: "string"}
+      - {label: "Text", name: "body", widget: "markdown"}
+  
+  - name: "page-en"
+    label: "Page (EN)"
+    folder: "en/pages"
+    create: true
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Text", name: "body", widget: "markdown"}
+
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation (EN)"
+        name: "nav-en"
+        file: "_data/en_navigation.yaml"
+        fields:
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+      - label: "Navigation (IT)"
+        name: "nav-it"
+        file: "_data/it_navigation.yaml"
+        fields:
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+      

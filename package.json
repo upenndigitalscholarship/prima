@@ -1,0 +1,23 @@
+{
+  "name": "prima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upenndigitalscholarship/prima.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upenndigitalscholarship/prima/issues"
+  },
+  "homepage": "https://github.com/upenndigitalscholarship/prima#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
+}
