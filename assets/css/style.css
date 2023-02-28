@@ -34,7 +34,7 @@ a {
 .logo {
 	margin: 0;
 	font-size: 1.45em;
-    margin-top: 5px;
+    margin-top: 10px;
     color: rgb(255, 255, 255);
 
 }
@@ -68,8 +68,6 @@ a {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	background-color: var(--prima-red);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 }
 
 
