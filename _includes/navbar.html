@@ -1,10 +1,30 @@
-<header class="navbar">
-    <img height="60" src="/assets/img/logo.svg"/> <h1 class="logo">PRIMA Pedagogical Repository for Italian Media Activities</h1>
-  <ul class="main-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-  </ul>
-  <div id="search"></div>
-</header> 
+<header class="navbar container">
+    <a href="{{ " /" | locale_url }}"><img height="60" src="/assets/img/logo.svg" /></a>
+    <h1 class="logo">{% if page.lang == 'it' %}PRIMA Deposito pedagogico delle attività mediatiche italiane{% else%}
+        PRIMA Pedagogical Repository for Italian Media Activities{% endif %}</h1>
+    <ul class="main-nav">
+        {% if page.lang == 'it' %}
+        {% for item in it_navigation.items %}
+        <li>
+            <a href="{{ item.url | locale_url }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+        {% endif %}
+
+        {% if page.lang == 'en' %}
+        {% for item in en_navigation.items %}
+        <li>
+            <a href="{{ item.url | locale_url }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+        {% endif %}
+    </ul>
+    {% if page.lang == 'it' %}
+    <a href="/en">
+        {% else %}
+        <a href="/it">
+            {% endif %}
+            <img height="30" style="margin-top:14px" src="/assets/img/globe.svg" /></a>
+
+        <div id="search"></div>
+</header>

@@ -1,0 +1,8 @@
+items:
+  - text: Informazioni
+    url: "/it/informazioni/"
+  - text: Sfoglia i media
+    url: "/it/sfoglia-i-media"
+  - text: Esplora le categorie
+    url: "/it/esplora-le-categorie"
+  
