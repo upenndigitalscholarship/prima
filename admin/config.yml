@@ -68,6 +68,7 @@ collections:
         media_library:
           config:
             multiple: true
+        #TODO How to alt text? 
 
   - name: "page-en"
     label: "Page (EN)"

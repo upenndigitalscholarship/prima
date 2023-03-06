@@ -35,6 +35,26 @@
 </div>
 
   <div id="grid" class="my-shuffle-container">
+    {%- for lesson in collections.lessons -%}
+    <figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["space"]' data-date-created="2016-03-07" data-title="SpaceX">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="{{ lesson.data.thumbnail}}"
+              alt="SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title"><a href="{{ lesson.url }}" target="_blank" rel="noopener">{{ lesson.data.clip }}</a></figcaption>
+          {# <p class="picture-item__tags hidden@xs">space</p> #}
+        </div>
+        <div class="picture-item__description">{{ lesson.content|safe}}</div>
+      </div>
+    </figure>
+
+
+      
+    {%- endfor -%}
     <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["nature"]' data-date-created="2017-04-30" data-title="Lake Walchen">
       <div class="picture-item__inner">
         <div class="aspect aspect--16x9">
@@ -49,6 +69,7 @@
         </div>
       </div>
     </figure>
+    
     <figure class="col-3@xs col-8@sm col-6@md picture-item picture-item--overlay" data-groups='["city"]' data-date-created="2016-07-01" data-title="Golden Gate Bridge">
       <div class="picture-item__inner">
 
