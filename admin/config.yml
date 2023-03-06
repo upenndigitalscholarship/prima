@@ -25,6 +25,14 @@ collections:
       - {label: "Contenuto grammaticale", name: "contenuto-grammaticale", widget: "string"}
       - {label: "Prerequisiti", name: "prerequisiti", widget: "string"}
       - {label: "Testo", name: "body", widget: "markdown"}
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        default: "/assets/img/default.png"
+        media_library:
+          config:
+            multiple: true
 
   - name: "pagine"
     label: "Pagine (IT)"
@@ -50,7 +58,15 @@ collections:
       - {label: "Grammar content", name: "grammar-content", widget: "string"}
       - {label: "Prerequisites", name: "prerequisites", widget: "string"}
       - {label: "Text", name: "body", widget: "markdown"}
-  
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        default: "/assets/img/default.png"
+        media_library:
+          config:
+            multiple: true
+            
   - name: "page-en"
     label: "Page (EN)"
     folder: "en/pages"
