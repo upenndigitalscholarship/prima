@@ -1,3 +1,8 @@
+---
+text: About
+---
+# This is the about page
+
 I saw it in the mirror, I saw it in my face
 That I'm no longer needed, anyone can take my place
 I saw it in the mirror when I look into my eyes

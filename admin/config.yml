@@ -35,14 +35,6 @@ collections:
           config:
             multiple: true
 
-  - name: "pagine"
-    label: "Pagine (IT)"
-    folder: "it/pagine"
-    create: true
-    fields: 
-      - {label: "Titolo", name: "titolo", widget: "string"}
-      - {label: "Autore", name: "autore", widget: "string", required: false}
-      - {label: "Testo", name: "body", widget: "markdown", required: false}
   
   - name: "lessons" # Used in routes, e.g., /admin/collections/blog
     label: "Lesson (EN)" # Used in the UI
@@ -70,14 +62,6 @@ collections:
             multiple: true
         #TODO How to alt text? 
 
-  - name: "page-en"
-    label: "Page (EN)"
-    folder: "en/pages"
-    create: true
-    fields: 
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string", required: false}
-      - {label: "Text", name: "body", widget: "markdown", required: false}
 
   - label: "Settings"
     name: "settings"
@@ -108,3 +92,16 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
+      - name: "about-en"
+        label: "About (EN)"
+        file: "/en/about.md"
+        fields:
+          - { label: Title, name: text, widget: string }
+          - {label: "Text", name: "body", widget: "markdown", required: false}
+
+      - name: "informazioni-it"
+        label: "Informazioni (IT)"
+        file: "/it/informazioni.md"
+        fields:
+          - { label: Titolo, name: text, widget: string }
+          - {label: "Text", name: "body", widget: "markdown", required: false}
