@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "npx eleventy && npx pagefind --source '_site'"
+  command = "npx eleventy"
 
 # Default
 [[redirects]]
