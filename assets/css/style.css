@@ -6,7 +6,7 @@
 
 video {
     /* override other styles to make responsive */
-    width: 100%    !important;
+    width: 50%    !important;
     height: auto   !important;
 }
 

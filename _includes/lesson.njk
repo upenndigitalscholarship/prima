@@ -3,16 +3,15 @@
 {% block content %}
     <a href="{{ "/browse-media/" | locale_url }}">
         < back</a>
-            <div class="container">
-                <div>
+
+           <div class="container"> 
+               <div>
                     <h1>{{ lesson }}</h1>
-                    <p>Level: {{ level }}</p>
-                    <p>Week: {{ week }}</p>
-                    <p>Grammar: {{ grammar_content }}</p>
                 </div>
+            
+                
                 <div>
                     {% if video %}
-                    
                         <video controls>
                             <source src="{{ video }}" type="video/mp4">
                         </video>
@@ -21,4 +20,7 @@
                     {% endif %}
                 </div>
             </div>
+
+           
+                
         {% endblock %}
