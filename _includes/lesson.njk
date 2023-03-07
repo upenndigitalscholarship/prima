@@ -12,7 +12,7 @@
                 </div>
                 <div>
                     {% if video %}
-                        <video width="320" height="240" controls>
+                        <video width="this.videoWidth" height="this.videoHeight" controls>
                             <source src="{{ video }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
