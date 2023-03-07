@@ -1,6 +1,10 @@
 <footer class="container">
     <div>
-        <p>© CC License 2023 | Terms of Use</p>
+        {% if page.lang == 'en' %}
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.en">© CC License 2023</a>
+        {% else %}
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.it">© Attribuzione 4.0 Internazionale (CC BY 4.0)</a>
+        {% endif %}
     </div>
     <div>
         <p>DOI TK.TKTKT/2023cts</p>

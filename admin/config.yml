@@ -3,8 +3,8 @@ backend:
   name: git-gateway
   branch: main
   
-media_folder: "/assets/img"
-public_folder: "/assets/img"
+media_folder: "/assets/media"
+public_folder: "/assets/media"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
@@ -12,15 +12,17 @@ local_backend: true
 collections:
   - name: "lezioni" # Used in routes, e.g., /admin/collections/blog
     label: "Lezioni (IT)" # Used in the UI
-    identifier_field: clip
+    identifier_field: lezioni
     folder: "it/lezioni" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Clip", name: "clip", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Livello", name: "livello", widget: "string", required: false}
-      - {label: "Video", name: "video", widget: "string", required: false}
+      - {label: "Lezione", name: "lezioni", widget: "string"}
+      - label: "Livello"
+        name: "livello"
+        required: false
+        widget: "list"
+        allow_add: true
       - {label: "Settimana", name: "settimana", widget: "string", required: false}
       - {label: "Contenuto grammaticale", name: "contenuto-grammaticale", widget: "string", required: false}
       - {label: "Prerequisiti", name: "prerequisiti", widget: "string", required: false}
@@ -34,24 +36,62 @@ collections:
         media_library:
           config:
             multiple: true
-
+      - label: "File di video"
+        name: "video"
+        required: false
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
+      - label: "English Version"
+        name: "lesson"
+        required: false
+        widget: "relation"
+        collection: "lessons"
+        search_fields: ["lesson"]
+        value_field: "lesson"
+        display_fields: ["lesson"]
   
   - name: "lessons" # Used in routes, e.g., /admin/collections/blog
     label: "Lesson (EN)" # Used in the UI
-    identifier_field: clip
+    identifier_field: lesson
     folder: "en/lessons" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Clip Name", name: "clip", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Level", name: "level", widget: "string", required: false}
-      - {label: "Video", name: "video", widget: "string", required: false}
+      - label: "Lesson Name"
+        name: "lesson"
+        widget: "string"
+
+      - label: "Medium / Media Type"
+        name: "medium"
+        widget: "list"
+        required: false
+        allow_add: true
+
+      - label: "Practice"
+        name: "practice"
+        required: false
+        widget: "list"
+        allow_add: true
+
+      - label: "Learning Outcome"
+        name: "learning_outcome"
+        required: false
+        widget: "list"
+        allow_add: true
+
+      - label: "Level"
+        name: "level"
+        required: false
+        widget: "list"
+        allow_add: true
       - {label: "Week", name: "week", widget: "string", required: false}
-      - {label: "Grammar content", name: "grammar-content", widget: "string", required: false}
+      - {label: "Citation Invormation", name: "citation", widget: "text", required: false}
+      
       - {label: "Prerequisites", name: "prerequisites", widget: "string", required: false}
       - {label: "Text", name: "body", widget: "markdown", required: false}
-      - label: "Featured Image"
+      - label: "Featured Image" 
         name: "thumbnail"
         widget: "image"
         choose_url: true
@@ -60,38 +100,27 @@ collections:
         media_library:
           config:
             multiple: true
-        #TODO How to alt text? 
-
+      - label: "Video File"
+        name: "video"
+        widget: "file"
+        required: false
+        media_library:
+          config:
+            multiple: true
+      - label: "Italian Version"
+        name: "lezioni"
+        required: false
+        widget: "relation"
+        collection: "lezioni"
+        search_fields: ["lezioni"]
+        value_field: "lezioni"
+        display_fields: ["lezioni"]
 
   - label: "Settings"
     name: "settings"
     editor:
       preview: false
     files:
-      - label: "Navigation (EN)"
-        name: "nav-en"
-        file: "_data/en_navigation.yaml"
-        fields:
-          - label: Nav Items
-            name: items
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Navigation (IT)"
-        name: "nav-it"
-        file: "_data/it_navigation.yaml"
-        fields:
-          - label: Nav Items
-            name: items
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
       - name: "about-en"
         label: "About (EN)"
         file: "/en/about.md"

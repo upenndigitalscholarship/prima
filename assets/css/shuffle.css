@@ -64,10 +64,10 @@ p {
 }
 
 .picture-item__inner {
+  border: solid;
   position: relative;
   height: 100%;
   overflow: hidden;
-  background: #ecf0f1;
 }
 
 .picture-item__details {
@@ -345,7 +345,7 @@ p {
 }
 
 .aspect--16x9 {
-  padding-bottom: 56.25%;
+  padding-bottom: 85%;
 }
 
 .col-1\@xs,
