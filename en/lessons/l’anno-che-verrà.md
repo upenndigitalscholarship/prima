@@ -19,4 +19,5 @@ citation: |-
   Written and performed by: Lucio Dalla
   Video source: Youtube
 thumbnail: /assets/media/marco_martinelli_condizionale_presente_eng_html_69bbd2dcd65331e9.png
+video: /assets/media/marco-martinelli-condizionale-presente-video-ufficiale-.mp4
 ---
