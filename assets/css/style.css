@@ -4,6 +4,12 @@
     --prima-red: #B61339;
 }
 
+video {
+    /* override other styles to make responsive */
+    width: 100%    !important;
+    height: auto   !important;
+}
+
 .container {
     display: flex;
     /* or inline-flex */
