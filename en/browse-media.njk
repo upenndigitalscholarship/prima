@@ -2,58 +2,69 @@
 <script type="text/javascript" src="/assets/js/shuffle-demo.js"></script>
 <link rel="stylesheet" href="/assets/css/shuffle.css">
 
-
 <div class="container">
-  
-      <div class="filters-group">
-        <label for="filters-search-input" class="filter-label">Search</label>
-        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
-      </div>
-      <div class="filters-group">
-        <p class="filter-label">Filter</p>
-        <div class="btn-group filter-options">
-          <button class="btn btn--primary" data-group="space">Space</button>
-          <button class="btn btn--primary" data-group="nature">Nature</button>
-          <button class="btn btn--primary" data-group="animal">Animal</button>
-          <button class="btn btn--primary" data-group="city">City</button>
-        </div>
-      </div>
-      <fieldset class="filters-group">
-        <legend class="filter-label">Sort</legend>
-        <div class="btn-group sort-options">
-          <label class="btn active">
-            <input type="radio" name="sort-value" value="dom" checked /> Default
+
+  <div class="filters-group">
+    <label for="filters-search-input" class="filter-label">Search</label>
+    <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"/>
+  </div>
+  <div class="filters-group">
+    <p class="filter-label">Filter</p>
+    <div class="btn-group filter-options">
+      <button class="btn btn--primary" data-group="Grammar">Grammar</button>
+      <button class="btn btn--primary" data-group="Writing">Writing</button>
+      <button class="btn btn--primary" data-group="Reading">Reading</button>
+      
+    </div>
+  </div>
+  <fieldset class="filters-group">
+    <legend class="filter-label">Sort</legend>
+    <div class="btn-group sort-options">
+      <label class="btn active">
+        <input type="radio" name="sort-value" value="dom" checked/> Default
           </label>
-          <label class="btn">
-            <input type="radio" name="sort-value" value="title" /> Title
+      <label class="btn">
+        <input type="radio" name="sort-value" value="title"/> Title
           </label>
-          <label class="btn">
-            <input type="radio" name="sort-value" value="date-created" /> Date Created
+      <label class="btn">
+        <input type="radio" name="sort-value" value="date-created"/> Date Created
           </label>
-        </div>
-      </fieldset>
+    </div>
+  </fieldset>
 </div>
 
-  <div id="grid" class="my-shuffle-container">
-    {%- for lesson in collections.lessons -%}
-    <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["space"]' data-date-created="2016-03-07" data-title="SpaceX">
+<div id="grid" class="my-shuffle-container">
+  {%- for lesson in collections.lessons -%}
+    <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='[{% for practice in lesson.data.practice%}{% if loop.last %}"{{ practice }}"{% else %}"{{ practice }}",{% endif %}{% endfor %}]' data-date-created="2016-03-07" data-title="SpaceX">
       <div class="picture-item__inner">
         <div class="aspect aspect--16x9">
           <div class="aspect__inner">
             <img src="{{ lesson.data.thumbnail}}"
-              alt="SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station" />
+              alt="SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station"/>
           </div>
         </div>
         <div class="picture-item__details">
-          <figcaption class="picture-item__title"><a rel="noopener">{{ lesson.data.lesson }}</a></figcaption>
+          <figcaption class="picture-item__title">
+            <a rel="noopener">{{ lesson.data.lesson }}</a>
+          </figcaption>
           {# <p class="picture-item__tags hidden@xs">space</p> #}
         </div>
-        <div class="picture-item__description">{{ lesson.content|safe}}</div>
+        <div class="picture-item__description">
+          {% if lesson.data.level%}
+          Level:
+          {% for level in lesson.data.level%}
+            {% if loop.last %}
+              {{ level }}
+            {% else %}
+              {{ level }},
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+        </div>
       </div>
     </figure>
-    {%- endfor -%}
-    
-        <div class="col-1@sm col-1@xs my-sizer-element"></div>
-  </div>
-</div>
+  {%- endfor -%}
 
+  <div class="col-1@sm col-1@xs my-sizer-element"></div>
+</div>
+</div>
