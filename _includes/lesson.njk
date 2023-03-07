@@ -12,10 +12,12 @@
                 </div>
                 <div>
                     {% if video %}
-                        <video width="this.videoWidth" height="this.videoHeight" controls>
+                    <div class="container">
+                        <video controls>
                             <source src="{{ video }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    </div>
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
                     {% endif %}
