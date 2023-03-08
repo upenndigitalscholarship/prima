@@ -11,9 +11,9 @@
             
                 
                 <div>
-                    {% if video %}
+                    {% if video_url %}
                         <video controls>
-                            <source src="{{ video }}" type="video/mp4">
+                            <source src="{{ video_url }}" type="video/mp4">
                         </video>
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
