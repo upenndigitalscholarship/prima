@@ -19,6 +19,6 @@ citation: |-
   Year: 2022
   Directed by: N/A
   Produced by: Simone Privitera, Papa D & Piccolo Cobra
-thumbnail: /assets/media/rappresentante-di-lista_body-parts-and-imperatives-eng-_html_a5b9f3d5937efa78.png
+thumbnail: /assets/media/ciao-ciao.png
 video: /assets/media/la-rappresentante-di-lista-ciao-ciao-official-video-sanremo-2022-.mp4
 ---
