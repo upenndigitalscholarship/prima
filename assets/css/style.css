@@ -2,12 +2,28 @@
 
 :root {
     --prima-red: #B61339;
+    --light-background:#F0F3EA;
+}
+
+body{
+    background-color:var(--light-background);
 }
 
 video {
     /* override other styles to make responsive */
-    width: 50%    !important;
+    width: 100%    !important;
     height: auto   !important;
+}
+
+.video-container {
+    display:inline-block;
+    width:50%;
+/*    height:50%;
+*/}
+
+.clip-title{
+    font-size:1.6rem;
+    text-align:center;
 }
 
 .container {
@@ -15,9 +31,17 @@ video {
     /* or inline-flex */
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.metadata{
+    width:30vw;
+}
+
+.breadcrumb{
+    text-decoration:underline dotted var(--prima-red) 2px;
 }
 
 * {
@@ -54,17 +78,30 @@ a {
 
 
 
-.logo {
+.logo-title {
     margin: 0;
-    font-size: 1.45em;
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+/*    margin-top: 10px;
+*/  color: rgb(255, 255, 255);
+    font-weight:normal;
+
+}
+
+.logo-subtitle {
+    margin:0;
+    font-size:1em;
+    color:white;
+    font-weight:normal;
+}
+
+.logo-items{
+    margin-right:auto;
 
 }
 
 .main-nav {
-    margin-top: 5px;
-    color: rgb(255, 255, 255);
+/*    margin-top: 5px;
+*/    color: rgb(255, 255, 255);
 
 }
 
