@@ -13,4 +13,8 @@ module.exports = function(eleventyConfig) {
         errorMode: "never"
     });
     eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+    // eleventyConfig.addFilter("find", function find(collection = [], slug = "") {
+    //     return collection.filter(post => post.lezioni === slug);
+    //   });
+    
   };

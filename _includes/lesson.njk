@@ -25,7 +25,20 @@
                     {% endif %}
                 </div>
             </div>
-
-           
+            {% if page.lang == 'en' %}
+                {% for lezione in collections.lezioni %}
+                    {% if lezione.data.lezioni == lezioni %}
+                        <a href="{{lezione.url }}">Link to Italian</a>
+                    {% endif %}            
+                {% endfor %}
+            {% endif %}
+            {% if page.lang == 'it' %}
+                {% for lesson in collections.lessons %}
+                    {% if lesson.data.lezioni == lezioni %}
+                        <a href="{{lesson.url }}">Collegamento alla versione inglese</a>
+                    {% endif %}            
+                {% endfor %}
+            {% endif %}
+          
                 
         {% endblock %}
