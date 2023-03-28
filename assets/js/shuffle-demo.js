@@ -156,4 +156,20 @@ document.addEventListener('DOMContentLoaded', () => {
     //click filter button
     filterButton.click();
   }
+  let search = url.searchParams.get("q");
+  if (search){
+    //get search input
+    let searchInput = document.querySelector(`.js-shuffle-search`);
+    //set search input value
+    searchInput.value = search;
+    //trigger search
+    searchInput.dispatchEvent(new Event('keyup'));
+  }
+  let sort = url.searchParams.get("sort");
+  if (sort){
+    //get sort button
+    let sortButton = document.querySelector(`.sort-options [value="${sort}"]`);
+    //click sort button
+    sortButton.click();
+  }
 });
