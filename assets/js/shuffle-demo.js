@@ -147,4 +147,13 @@ class Demo {
 
 document.addEventListener('DOMContentLoaded', () => {
   window.demo = new Demo(document.getElementById('grid'));
+  //get arguments from url
+  let url = new URL(window.location.href);
+  let filter = url.searchParams.get("filter");
+  if (filter){
+    //get filter button
+    let filterButton = document.querySelector(`.filter-options [data-group="${filter}"]`);
+    //click filter button
+    filterButton.click();
+  }
 });
