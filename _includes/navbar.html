@@ -22,12 +22,13 @@
         {% endfor %}
         {% endif %}
     </ul>
+
     {% if page.lang == 'it' %}
-    <a href="/en">
-        {% else %}
-        <a href="/it">
-            {% endif %}
-            <img height="30" style="margin-right:10px" src="/assets/img/globe.svg" /></a>
+        <a href="/en"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+    {% else %}
+        <a href="/it"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+    {% endif %}
+            
 
         {# <div id="search"></div> #}
 </header>
