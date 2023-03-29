@@ -30,9 +30,14 @@ p {
   It will set it for you, but it'll cause another style recalculation and layout.
   AKA worse performance - so just set it here
  */
+
+.shuffle-container{
+  display: flex;
+}
+
 .my-shuffle-container {
   position: relative;
-  overflow: hidden;
+  width: 60%;
 }
 
 .my-sizer-element {
@@ -291,18 +296,18 @@ p {
   color: #34495e;
 }
 
-.container {
+.shuffle-nav-container {
   padding-left: 3.5%;
   padding-right: 3.5%;
 }
 
-.container:after,
-.container:before {
+.shuffle-nav-container:after,
+.shuffle-nav-container:before {
   content: " ";
   display: table;
 }
 
-.container:after {
+.shuffle-nav-container:after {
   clear: both;
 }
 
@@ -482,7 +487,7 @@ p {
     width: 100%;
   }
 
-  .container {
+  .shuffle-nav-container {
     padding-left: 7%;
     padding-right: 7%;
   }
