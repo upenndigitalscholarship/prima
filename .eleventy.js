@@ -21,13 +21,16 @@ module.exports = function(eleventyConfig) {
         let values = new Set();
         collection.filter(function(item) {
             let value = item.data[key];
-            if (!values.has(value)) {
-                values.add(value);
-                return true;
-            }
+            value.forEach(function(item) { 
+                if (!values.has(item)) {
+                    values.add(item);
+                    return true;
+                }
+            });
             return false;
         });
-        return values;
+        
+        return [...values].sort();
         
     });
   };
