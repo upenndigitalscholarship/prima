@@ -23,7 +23,7 @@
           <input type="checkbox" data-group="{{ practice }}" value="{{ practice }}">
           <label for="{{ practice }}">{{ practice }}</label><br>
         {% endfor %}
-        
+
         <p><b>Learning outcomes</b></p>
         {% for learning_outcome in collections.lessons | distinct('learning_outcome') %}
           <input type="checkbox" data-group="{{ learning_outcome }}" value="{{ learning_outcome }}">
@@ -36,31 +36,22 @@
 
   <div id="grid" class="my-shuffle-container">
     {%- for lesson in collections.lessons -%}
-      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='[{% for practice in lesson.data.practice%}{% if loop.last %}"{{ practice }}"{% else %}"{{ practice }}",{% endif %}{% endfor %}]' data-date-created="2016-03-07" data-title="SpaceX">
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='[{% for level in lesson.data.level%}"{{ level }}",{% endfor %}{% for practice in lesson.data.practice%}"{{ practice }}",{% endfor %}{% for learning_outcome in lesson.data.learning_outcome%}{% if loop.last %}"{{ learning_outcome }}"{% else %}"{{ learning_outcome }}",{% endif %}{% endfor %}]' data-title="{{ lesson.data.lesson|slugify}}">
         <div class="picture-item__inner">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
               <img src="{{ lesson.data.thumbnail}}"
-              alt="SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station"/>
+              alt="{{ lesson.data.lesson }}"/>
             </div>
           </div>
-          <div class="picture-item__details">
+          <div class="picture-item__details container">
             <figcaption class="picture-item__title">
               <a rel="noopener">{{ lesson.data.lesson }}</a>
             </figcaption>
             {# <p class="picture-item__tags hidden@xs">space</p> #}
           </div>
           <div class="picture-item__description">
-            {% if lesson.data.level%}
-          Level:
-          {% for level in lesson.data.level%}
-                {% if loop.last %}
-                  {{ level }}
-                {% else %}
-                  {{ level }},
-          {% endif %}
-              {% endfor %}
-            {% endif %}
+          
           </div>
         </div>
       </figure>
