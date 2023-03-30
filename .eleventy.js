@@ -17,4 +17,17 @@ module.exports = function(eleventyConfig) {
     //     return collection.filter(post => post.lezioni === slug);
     //   });
     
+    eleventyConfig.addFilter("distinct", function(collection, key) {
+        let values = new Set();
+        collection.filter(function(item) {
+            let value = item.data[key];
+            if (!values.has(value)) {
+                values.add(value);
+                return true;
+            }
+            return false;
+        });
+        return values;
+        
+    });
   };

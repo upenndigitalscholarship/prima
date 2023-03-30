@@ -36,7 +36,11 @@ class Demo {
     }
     
     const filterButtons = Array.from(options.children);
+    const checkboxes = options.querySelectorAll(":scope > input");
     const onClick = this._handleFilterClick.bind(this);
+    checkboxes.forEach((button) => {
+      button.addEventListener('click', onClick, false);
+    });
     filterButtons.forEach((button) => {
       button.addEventListener('click', onClick, false);
     });
