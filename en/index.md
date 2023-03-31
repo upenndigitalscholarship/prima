@@ -1,1 +1,3 @@
-I am also Hello!
+---
+layout: homepage
+---

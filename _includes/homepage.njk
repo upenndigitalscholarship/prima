@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>{{title}}</title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+   
+    <body>
+{% include "./navbar.html" %}
+<style>
+    .button1 {
+       float: left;
+       position: absolute;
+       left: 50px;
+       top: 350px;
+       z-index: 1000;
+       background-color: #B61339;
+       padding: 10px;
+       color: #FFFFFF;
+       font-weight: bold;
+    }
+    .button2 {
+       float: left;
+       position: absolute;
+       left: 200px;
+       top: 350px;
+       z-index: 1000;
+       background-color: #B61339;
+       padding: 10px;
+       color: #FFFFFF;
+       font-weight: bold;
+    }
+    .search-button {
+       float: left;
+       position: absolute;
+       left: 400px;
+       top: 370px;
+       z-index: 1000;
+       background-color:#D9D9D9;
+       color:black;
+       padding: 10px;
+       color: #FFFFFF;
+       font-weight: bold;
+    }
+    ::placeholder { 
+        color: black;
+        opacity: 1; 
+    }
+</style>
+<div class="container"> 
+<div class="container">
+    <img width="100%" src="/assets/img/main.jpg" /> 
+    <div></div>
+    <div><a href="/en/explore-categories"><p class="button1">Explore by Type</p></a></div>
+    <div><a href="/en/browse-media"><p class="button2">Browse All Media</p></a></div>
+    <div><input class="search-button" type="text" name="q" placeholder="Search" /></div>  
+</div>
+
+    <p>PRIMA is an interactive Open Educational Resource designed for Italian language learning and instruction through searchable media clips, short narratives, and pedagogical resources.</p>
+               
+</div>    
+          
+                
+</body>
+<html>
