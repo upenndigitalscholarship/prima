@@ -7,6 +7,8 @@ practice:
   - Hypothetical period
 level:
   - Intermediate
+learning_outcome:
+  - Fixing bug
 week: Unit 5
 thumbnail: /assets/media/bbutton.png
 video_url: https://mediaspace.library.upenn.edu/id/1_br2kzcje?width=400&height=285&playerId=9757771
