@@ -19,7 +19,7 @@ citation: |-
   Written and performed by: Lucio Dalla
   Video source: Youtube
 thumbnail: /assets/media/marco_martinelli_condizionale_presente_ENG_html_69bbd2dcd65331e9.png
-video_url: https://upenn.box.com/shared/static/wkbtf5mj28ehdlewk4mg3ee0507ickfo.mp4
+video_embed: null
 video: /assets/media/marco-martinelli-condizionale-presente-video-ufficiale-.mp4
 lezioni: L’anno che verrà
 ---

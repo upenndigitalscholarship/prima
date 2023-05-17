@@ -13,13 +13,11 @@
                     <li>Director <b>{{director}}</b></li>
                     <li>Year of release <b>{{date}}</b></li>
                     <li>Actors <b>{{actors}}</b></li>
-                    <li>Paolo Sorrentino’s film, La grande bellezza (2014), tells of the life of Jep Gambardella, a writer and rich socialite from Rome (socialite). In this scene, Jep finds a man (Alfredo Marti) waiting outside his apartment, who delivers some tragic news about a person they both knew.</li>
+                    <li></li>
                 </div>
                 <div class="video-container">
-                    {% if video_url %}
-                        <video controls>
-                            <source src="{{ video_url }}" type="video/mp4">
-                        </video>
+                    {% if video_embed %}
+                        {{ video_embed|safe }}
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
                     {% endif %}
