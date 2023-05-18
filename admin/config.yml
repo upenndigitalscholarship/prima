@@ -36,13 +36,7 @@ collections:
         media_library:
           config:
             multiple: true
-      - label: "File di video"
-        name: "video"
-        required: false
-        widget: "file"
-        media_library:
-          config:
-            multiple: true
+      - {label: "Incorporamento video", name: "video_embed", widget: "string", required: false}
       - label: "English Version"
         name: "lesson"
         required: false
@@ -100,14 +94,8 @@ collections:
         media_library:
           config:
             multiple: true
-      - {label: "Box Video URL", name: "video_url", widget: "string", required: false}
-      - label: "Video File"
-        name: "video"
-        widget: "file"
-        required: false
-        media_library:
-          config:
-            multiple: true
+      - {label: "Video Embed", name: "video_embed", widget: "string", required: false}
+
       - label: "Italian Version"
         name: "lezioni"
         required: false
