@@ -1,1 +1,0 @@
-Valentina Micciancio è stata incaricata in quanto amica del committente a creare la voce Velocifero Azienda da Alessandro Tartarini creatore dell'azienda Taizhou Velocifero Vehicle Co. Ltd. 
