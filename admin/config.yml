@@ -109,6 +109,79 @@ collections:
         value_field: "lezioni"
         display_fields: ["lezioni"]
 
+  - label: "Items"
+    name: "lesson_items"
+    editor:
+      preview: false
+    files:
+      - label: "Items (EN)"
+        name: "items-en"
+        file: "_data/en_items.yaml"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            allow_add: true
+            collapsed: false
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: "Related Lesson"
+                name: "lesson"
+                required: false
+                widget: "relation"
+                collection: "lessons"
+                search_fields: ["lesson"]
+                value_field: "lesson"
+                display_fields: ["lesson"]
+              - label: "PDF File"
+                name: "pdf_file"
+                widget: "file"
+                required: false
+              - label: "DOC File"
+                name: "doc_file"
+                widget: "file"
+                required: false
+              - label: "HTML File"
+                name: "html_file"
+                widget: "file"
+                required: false
+
+      - label: "Items (IT)"
+        name: "items-it"
+        file: "_data/it_items.yaml"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: "Related Lesson"
+                name: "lesson"
+                required: false
+                widget: "relation"
+                collection: "lessons"
+                search_fields: ["lesson"]
+                value_field: "lesson"
+                display_fields: ["lesson"]
+              - label: "PDF File"
+                name: "pdf_file"
+                widget: "file"
+                required: false
+              - label: "DOC File"
+                name: "doc_file"
+                widget: "file"
+                required: false
+              - label: "HTML File"
+                name: "html_file"
+                widget: "file"
+                required: false
+
   - label: "Settings"
     name: "settings"
     editor:
