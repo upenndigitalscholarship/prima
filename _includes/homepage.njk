@@ -63,18 +63,65 @@
     }
 </style>
 <div class="container"> 
+    
+
 <div class="container">
     <img width="100%" src="/assets/img/main.jpg" /> 
     <div></div>
     <div><a href="/en/explore-categories"><p class="button1">Explore by Type</p></a></div>
     <div><a href="/en/browse-media"><p class="button2">Browse All Media</p></a></div>
     <div><input class="search-button" type="text" name="q" placeholder="Search" /></div>  
+    
 </div>
 
     <p>PRIMA is an interactive Open Educational Resource designed for Italian language learning and instruction through searchable media clips, short narratives, and pedagogical resources.</p>
-               
-</div>    
-          
+  
+  
+
+</div>
+  <div id="myBtn" style="z-index: 3; position: absolute; right: 0;">
+        <img style="width: 70%" src="/assets/img/information.png" />
+    </div>  
+</div>
+<div id="myModal" class="modal">
+<div style="z-index: auto; background-color: #B61339; color:white;"class="modal-content">
+    <span class="close">&times;</span>
+    <p>How to use this site</p>
+    <p>PRIMA (Pedagogical Repository of Italian Media Activities) is a language learning tool meant to supplement other grammar books and resources designed for Italian language learning. The activities on this site promote learning through engagement with authentic Italian media and span all levels from beginner to advanced. The activities range in focus from grammatical topics, reading and listening comprehension, vocabulary, and culture. The media files and accompanying worksheets can be accessed from any device with an Internet connection, and may be downloaded and modified according to their intended use. There are accompanying answer keys, captions, and transcripts designed to cater to the specific needs of each user.</p> 
+    <p>By using activities from our repository, instructors are helping students to fill in the gaps where the curriculum often falls short in terms of popular culture and other contemporary subjects. Through PRIMA, students are exposed to Italians of color, queer Italians, and those belonging to non-traditional or minority communities, giving students a broader and more accurate perspective of contemporary Italy that reflects the country’s vibrancy and celebrates the achievements of ALL Italians.</p>
+    <p>Do you have a media-based activity that you would like to have featured on PRIMA? We invite you to write us at: <a href="mailto:prima.contact.us@gmail.com">prima.contact.us@gmail.com </a></p>
+</p>
+  </div>
+</div>
+
+<script>
+  //Modal https://www.w3schools.com/howto/howto_css_modals.asp
+  // Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+</script> 
                 
 </body>
 <html>

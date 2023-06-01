@@ -3,6 +3,5 @@ items:
     url: "/en/about/"
   - text: Browse Media
     url: "/en/browse-media"
-  - text: Explore Categories
-    url: "/en/explore-categories"
-  
+  - text: Index
+    url: "/en/lesson-index"
