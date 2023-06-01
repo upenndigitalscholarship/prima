@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
   <head>
@@ -15,113 +14,160 @@
     <link href="/assets/img/favicon.png" rel="icon">
     <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet">
 
-   
     <body>
-{% include "./navbar.html" %}
-<style>
-    .button1 {
-       float: left;
-       position: absolute;
-       left: 50px;
-       top: 350px;
-       z-index: 1000;
-       background-color: #B61339;
-       padding: 10px;
-       color: #FFFFFF;
-       font-weight: bold;
-    }
-    .button2 {
-       float: left;
-       position: absolute;
-       left: 200px;
-       top: 350px;
-       z-index: 1000;
-       background-color: #B61339;
-       padding: 10px;
-       color: #FFFFFF;
-       font-weight: bold;
-    }
-    .search-button {
-       float: left;
-       position: absolute;
-       left: 400px;
-       top: 370px;
-       z-index: 1000;
-       background-color:#D9D9D9;
-       color:black;
-       padding: 10px;
-       color: #FFFFFF;
-       font-weight: bold;
-    }
-    ::placeholder { 
-        color: black;
-        opacity: 1; 
-    }
-</style>
-<div class="container"> 
+      {% include "./navbar.html" %}
+      <style>
+        .button1 {
+          float: left;
+          position: absolute;
+          left: 50px;
+          top: 350px;
+          z-index: 1000;
+          background-color: #B61339;
+          padding: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+        .button2 {
+          float: left;
+          position: absolute;
+          left: 200px;
+          top: 350px;
+          z-index: 1000;
+          background-color: #B61339;
+          padding: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+        .search-button {
+          float: left;
+          position: absolute;
+          left: 400px;
+          top: 370px;
+          z-index: 1000;
+          background-color: #D9D9D9;
+          color: black;
+          padding: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+        ::placeholder {
+          color: black;
+          opacity: 1;
+        }
+        #background-video {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+        }
+        @media (max-width: 750px) {
+          #background-video {
+            display: none;
+          }
+          body {
+            background: url("/assets/img/main.jpg") no-repeat;
+            background-size: cover;
+          }
+        }
+      </style>
+      <video id="background-video" width="100%" autoplay muted poster="/assets/img/main.jpg">
+            <source src="" type="video/mp4">
+          </video>
+      <div class="container">
+
+        <div class="container">
+          
+          <div>
+           
+          </div>
+          <div>
+            <a href="/en/explore-categories">
+              <p class="button1">Explore by Type</p>
+            </a>
+          </div>
+          <div>
+            <a href="/en/browse-media">
+              <p class="button2">Browse All Media</p>
+            </a>
+          </div>
+          <div><input class="search-button" type="text" name="q" placeholder="Search"/></div>
+
+        </div>
+        
+      </div>
+        
+      <div id="myBtn" style="z-index: 3; position: absolute; right: 0;">
+        <img style="width: 70%" src="/assets/img/information.png"/>
+      </div>
+    </div>
     
-
-<div class="container">
-    <img width="100%" src="/assets/img/main.jpg" /> 
-    <div></div>
-    <div><a href="/en/explore-categories"><p class="button1">Explore by Type</p></a></div>
-    <div><a href="/en/browse-media"><p class="button2">Browse All Media</p></a></div>
-    <div><input class="search-button" type="text" name="q" placeholder="Search" /></div>  
+          
     
-</div>
-
-    <p>PRIMA is an interactive Open Educational Resource designed for Italian language learning and instruction through searchable media clips, short narratives, and pedagogical resources.</p>
-  
-  
-
-</div>
-  <div id="myBtn" style="z-index: 3; position: absolute; right: 0;">
-        <img style="width: 70%" src="/assets/img/information.png" />
-    </div>  
-</div>
-<div id="myModal" class="modal">
-<div style="z-index: auto; background-color: #B61339; color:white;"class="modal-content">
-    <span class="close">&times;</span>
-    <p>How to use this site</p>
-    <p>PRIMA (Pedagogical Repository of Italian Media Activities) is a language learning tool meant to supplement other grammar books and resources designed for Italian language learning. The activities on this site promote learning through engagement with authentic Italian media and span all levels from beginner to advanced. The activities range in focus from grammatical topics, reading and listening comprehension, vocabulary, and culture. The media files and accompanying worksheets can be accessed from any device with an Internet connection, and may be downloaded and modified according to their intended use. There are accompanying answer keys, captions, and transcripts designed to cater to the specific needs of each user.</p> 
-    <p>By using activities from our repository, instructors are helping students to fill in the gaps where the curriculum often falls short in terms of popular culture and other contemporary subjects. Through PRIMA, students are exposed to Italians of color, queer Italians, and those belonging to non-traditional or minority communities, giving students a broader and more accurate perspective of contemporary Italy that reflects the country’s vibrancy and celebrates the achievements of ALL Italians.</p>
-    <p>Do you have a media-based activity that you would like to have featured on PRIMA? We invite you to write us at: <a href="mailto:prima.contact.us@gmail.com">prima.contact.us@gmail.com </a></p>
-</p>
+    <div id="myModal" class="modal">
+      <div style="z-index: auto; background-color: #B61339; color:white;"class="modal-content">
+        <span class="close">&times;</span>
+        <p>How to use this site</p>
+        <p>PRIMA (Pedagogical Repository of Italian Media Activities) is a language learning tool meant to supplement other grammar books and resources designed for Italian language learning. The activities on this site promote learning through engagement with authentic Italian media and span all levels from beginner to advanced. The activities range in focus from grammatical topics, reading and listening comprehension, vocabulary, and culture. The media files and accompanying worksheets can be accessed from any device with an Internet connection, and may be downloaded and modified according to their intended use. There are accompanying answer keys, captions, and transcripts designed to cater to the specific needs of each user.</p>
+        <p>By using activities from our repository, instructors are helping students to fill in the gaps where the curriculum often falls short in terms of popular culture and other contemporary subjects. Through PRIMA, students are exposed to Italians of color, queer Italians, and those belonging to non-traditional or minority communities, giving students a broader and more accurate perspective of contemporary Italy that reflects the country’s vibrancy and celebrates the achievements of ALL Italians.</p>
+        <p>Do you have a media-based activity that you would like to have featured on PRIMA? We invite you to write us at: <a href="mailto:prima.contact.us@gmail.com">prima.contact.us@gmail.com </a>
+        </p>
+      </p>
+    </div>
   </div>
-</div>
+<p style=" width:100%;color:white; padding: 20px; background-color: grey; position: fixed; bottom: 0;">PRIMA is an interactive Open Educational Resource designed for Italian language learning and <br>
+              instruction through searchable media clips, short narratives, and pedagogical resources.</p>
+  <script>
+    //Modal https://www.w3schools.com/howto/howto_css_modals.asp
+    // Get the modal
+    let modal = document.getElementById("myModal");
 
-<script>
-  //Modal https://www.w3schools.com/howto/howto_css_modals.asp
-  // Get the modal
-let modal = document.getElementById("myModal");
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
 
-// Get the button that opens the modal
-let btn = document.getElementById("myBtn");
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
 
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
-</script> 
-                
+    let videos = ['https://upenn.box.com/shared/static/mhjl2otskjgojjg57erlvmcb4kw0m6wc.mov', 'https://upenn.box.com/shared/static/gx6csjn4k10wts3qxxhdigybzqsugsoe.mp4', 'https://upenn.box.com/shared/static/x5oz55op4uu2op4yfa43eu6hqq5bzwfp.mp4', 'https://upenn.box.com/shared/static/rxao6lrqn0dbtp53v3bgrep5jm766gn8.mp4', 'https://upenn.box.com/shared/static/op3imal0lof5p9psw57i4a00wji5hxod.mp4','https://upenn.box.com/shared/static/1nl63jl9067j15pdx43gv8c3pop5whcr.mp4']
+    let backgroundDiv = document.getElementById('background-video')    
+    // play each of the videos in the array, when one video is over, move to the next
+    function playVideo(i) {
+      backgroundDiv.src = videos[i]
+      backgroundDiv.onended = function () {
+        playVideo((i + 1))
+      }
+    }
+    playVideo(0)
+        
+
+
+
+  </script>
+
 </body>
 <html>
