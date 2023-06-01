@@ -229,7 +229,7 @@ collections:
               - label: Alt text
                 name: alt-text
                 widget: string
-              - label: "Video File"
-                name: "video_file"
-                widget: "file"
+              - label: "Video URL"
+                name: "video_url"
+                widget: string
                 required: false
