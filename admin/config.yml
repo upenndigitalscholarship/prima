@@ -47,7 +47,10 @@ collections:
         search_fields: ["lesson"]
         value_field: "lesson"
         display_fields: ["lesson"]
-  
+      - label: "Fair Use File"
+        name: "fair-use"
+        widget: "file"
+        required: false
   - name: "lessons" # Used in routes, e.g., /admin/collections/blog
     label: "Lesson (EN)" # Used in the UI
     editor:
@@ -108,6 +111,10 @@ collections:
         search_fields: ["lezioni"]
         value_field: "lezioni"
         display_fields: ["lezioni"]
+      - label: "Fair Use File"
+        name: "fair-use"
+        widget: "file"
+        required: false
 
   - label: "Items"
     name: "lesson_items"
@@ -200,3 +207,29 @@ collections:
         fields:
           - { label: Titolo, name: text, widget: string }
           - {label: "Text", name: "body", widget: "markdown", required: false}
+  
+  - label: "Landing Page Video"
+    name: "landing-video"
+    editor:
+      preview: false
+    files:
+      - label: "Videos"
+        name: "videos"
+        file: "_data/videos.yaml"
+        fields:
+          - label: files
+            name: files
+            widget: list
+            allow_add: true
+            collapsed: false
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Alt text
+                name: alt-text
+                widget: string
+              - label: "Video File"
+                name: "video_file"
+                widget: "file"
+                required: false
