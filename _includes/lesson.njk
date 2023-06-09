@@ -18,7 +18,7 @@
                     </div>
                     {% if video_embed_subtitles %}
                     <div class="subtitles">
-                        <button onclick="swapVideo()">Show subtitles</button>
+                        <button onclick="swapVideo()">Show with subtitles</button>
                     </div>
                     {% endif %}
                     {% else %}
@@ -58,8 +58,15 @@
             {% if video_embed_subtitles %}
             <script>
             let videoEmbedSubtitles = `{{ video_embed_subtitles | safe }}`;
+            let videoEmbed = `{{ video_embed | safe }}`;
             let swapVideo = function() {
-                document.getElementById('video_embed').innerHTML = videoEmbedSubtitles;
+                // if innerHTML is equal to videoEmbedSubtitles, switch to videoEmbed
+                if (document.getElementById('video_embed').innerHTML == videoEmbedSubtitles) {
+                    document.getElementById('video_embed').innerHTML = videoEmbed;
+                    return;
+                } else {
+                    document.getElementById('video_embed').innerHTML = videoEmbedSubtitles;
+                }
             }
             </script>    
             {% endif %}
