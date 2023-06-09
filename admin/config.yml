@@ -102,7 +102,7 @@ collections:
           config:
             multiple: true
       - {label: "Video Embed", name: "video_embed", widget: "string", required: false}
-
+      - {label: "Video Embed Subtitles", name: "video_embed_subtitles", widget: "string", required: false}
       - label: "Italian Version"
         name: "lezioni"
         required: false

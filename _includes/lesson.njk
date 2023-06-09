@@ -13,7 +13,14 @@
 
                <div class="row video-container">
                     {% if video_embed %}
+                    <div id="video_embed">
                         {{ video_embed|safe }}
+                    </div>
+                    {% if video_embed_subtitles %}
+                    <div class="subtitles">
+                        <button onclick="swapVideo()">Show subtitles</button>
+                    </div>
+                    {% endif %}
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
                     {% endif %}
@@ -48,5 +55,13 @@
             </div>
             
           
-                
+            {% if video_embed_subtitles %}
+            <script>
+            let videoEmbedSubtitles = `{{ video_embed_subtitles | safe }}`;
+            let swapVideo = function() {
+                document.getElementById('video_embed').innerHTML = videoEmbedSubtitles;
+            }
+            </script>    
+            {% endif %}
+
         {% endblock %}
