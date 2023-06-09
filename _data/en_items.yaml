@@ -1,5 +1,6 @@
 items:
   - title: Il periodo ipotetico – l’impossibilità
+    description: This is an item.
     media: Il caso curioso di Benjamin Button
     pdf_file: null
     doc_file: /assets/media/benjamin_button_periodo_ipotetico-eng-.docx

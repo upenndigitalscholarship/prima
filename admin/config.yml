@@ -134,6 +134,12 @@ collections:
               - label: Title
                 name: title
                 widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: "Citation Information"
+                name: citation_information
+                widget: text
               - label: "Related Lesson"
                 name: "lesson"
                 required: false
