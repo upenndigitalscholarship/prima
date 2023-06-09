@@ -88,8 +88,9 @@ collections:
         widget: "list"
         allow_add: true
       - {label: "Week", name: "week", widget: "string", required: false}
-      - {label: "Citation Invormation", name: "citation", widget: "text", required: false}
-      
+      - label: "Citation Information"
+        name: citation_information
+        widget: markdown
       - {label: "Prerequisites", name: "prerequisites", widget: "string", required: false}
       - {label: "Text", name: "body", widget: "markdown", required: false}
       - label: "Featured Image" 
@@ -137,9 +138,6 @@ collections:
               - label: Description
                 name: description
                 widget: string
-              - label: "Citation Information"
-                name: citation_information
-                widget: text
               - label: "Related Lesson"
                 name: "lesson"
                 required: false
