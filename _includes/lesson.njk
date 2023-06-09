@@ -1,3 +1,6 @@
+--- 
+templateEngineOverride: njk,md
+--- 
 {% extends "base.njk" %}
 
 {% block content %}
@@ -25,9 +28,9 @@
                         <img height="50%" src="{{ thumbnail }}"/>
                     {% endif %}
                     <div class="metadata">
-                
-                    <p>{{ citation_information }}</p>
-
+                    {% if citation_information %}
+                    {{ citation_information | markdownify | safe }}
+                    {% endif %}
                     </div>  
                     {% if page.lang == 'en' %}
                 {% for lezione in collections.lezioni %}

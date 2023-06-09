@@ -1,5 +1,11 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const yaml = require("js-yaml");
+const md = require("markdown-it")({
+    html: true,
+    linkify: true,
+    typographer: true,
+    breaks: true
+  });
 
 module.exports = function(eleventyConfig) {
     // Output directory: _site
@@ -17,6 +23,13 @@ module.exports = function(eleventyConfig) {
     //     return collection.filter(post => post.lezioni === slug);
     //   });
     
+    /* Markdown-It 'markdownify' filter
+    source: https://github.com/11ty/eleventy/issues/236
+    */
+    eleventyConfig.addFilter("markdownify", (markdownString) =>
+        md.renderInline(markdownString)
+    );
+
     eleventyConfig.addFilter("distinct", function(collection, key) {
         let values = new Set();
         collection.filter(function(item) {
