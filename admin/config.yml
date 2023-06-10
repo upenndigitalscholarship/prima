@@ -190,10 +190,6 @@ collections:
                 name: "doc_file"
                 widget: "file"
                 required: false
-              - label: "HTML File"
-                name: "html_file"
-                widget: "file"
-                required: false
               - label: "Solution"
                 name: "solution"
                 widget: "file"

@@ -27,8 +27,6 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
                         Download as docx
                     </button>
                     {% endif %}
-                    {% if item.html_file %}
-                    {% endif %}
                     {% if item.solution %}
                     <button target="_blank" onclick="window.location.href='{{ item.solution }}';">
                         Download solution
@@ -43,7 +41,7 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
                         {% if lesson.title == item.title %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
                             <b><a href="/en/lessons/{{ lesson.lesson | slugify }}/">{{ item.lesson }}</a></b>
-                            
+                            <br>
                             
                             <img width="20%" src="{{ collections.lessons | thumbnail(lesson.lesson) }}"
                             alt="{{ lesson.lesson }}"/>
