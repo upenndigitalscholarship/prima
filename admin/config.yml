@@ -119,6 +119,7 @@ collections:
 
   - label: "Items"
     name: "lesson_items"
+    extension: "json"
     editor:
       preview: false
     files:
@@ -161,7 +162,7 @@ collections:
 
       - label: "Items (IT)"
         name: "items-it"
-        file: "_data/it_items.yaml"
+        file: "_data/it_items.json"
         fields:
           - label: Items
             name: items
