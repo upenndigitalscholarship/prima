@@ -47,7 +47,7 @@
                 </div>
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
                     <h3>LESSONS + RESOURCES</h3>
-                    {% for item in en_items %}
+                    {% for item in en_items.items %}
                         {% if item.lesson == lesson %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
                             <b><a href="/en/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
