@@ -138,7 +138,8 @@ collections:
                 widget: string
               - label: Description
                 name: description
-                widget: string
+                widget: markdown
+                required: false
               - label: "Related Lesson"
                 name: "lesson"
                 required: false
