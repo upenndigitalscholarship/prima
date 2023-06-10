@@ -120,6 +120,7 @@ collections:
   - label: "Items"
     name: "lesson_items"
     extension: "json"
+    create: true
     editor:
       preview: false
     files:
