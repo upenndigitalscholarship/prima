@@ -46,4 +46,10 @@ module.exports = function(eleventyConfig) {
         return [...values].sort();
         
     });
+    eleventyConfig.addFilter("thumbnail", function(collection, key) {
+        console.log(collection, key);
+        // find item with lesson equal to key
+        let item = collection.find(item => item.data.lesson === key);
+        return item.data.thumbnail;
+    });
   };

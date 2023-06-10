@@ -6,5 +6,38 @@ pagination:
 permalink: "/en/items/{{ item.title | slugify }}/index.html"
 ---
 
-<a href="/en/lessons/{{ item.lesson | slug }}">{{ item.lesson }}</a>
-<h1>{{ item.title }}</h1>
+<span>< <a class="breadcrumb" href="/en/lessons/{{ item.lesson | slug }}">
+        back</a></span>
+                <div>
+                    <h1 class="clip-title">{{ item.title }}</h1>
+                </div>
+           
+           <div class="container"> 
+
+
+                <div>
+                    I hold place
+                    {% if item.pdf_file %}
+                    {% endif %}
+                    {% if item.doc_file %}
+                    {% endif %}
+                    {% if item.html_file %}
+                    {% endif %}
+                    </div>  
+        
+                <div class="description" style="background:#F9FCF3; padding: 10px;">
+                    <h3>MEDIA</h3>
+                    {% for lesson in en_items.items %}
+                        {% if lesson.title == item.title %}    
+                            <div style="border: solid var(--prima-red); padding:20px"> 
+                            <b><a href="/en/lessons/{{ lesson.lesson | slugify }}/">{{ item.lesson }}</a></b>
+                            
+                            <p>{{ item.description }}</p>
+                            <img width="20%" src="{{ collections.lessons | thumbnail(lesson.lesson) }}"
+                            alt="{{ lesson.lesson }}"/>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                
+            </div>
