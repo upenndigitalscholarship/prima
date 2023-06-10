@@ -124,7 +124,7 @@ collections:
     files:
       - label: "Items (EN)"
         name: "items-en"
-        file: "_data/en_items.yaml"
+        file: "_data/en_items.json"
         fields:
           - label: Items
             name: items

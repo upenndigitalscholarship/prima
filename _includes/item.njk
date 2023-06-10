@@ -1,52 +1,9 @@
-{% extends "base.njk" %}
+---
+pagination:
+    data: en_items
+    size: 1
+    alias: item
+permalink: "items/{{ pagination.items[0].title | slug }}/"
+---
 
-{% block content %}
-
-    <span>< <a class="breadcrumb" href="{{ "/browse-media/" | locale_url }}">
-        back</a></span>
-                <div>
-                    <h1 class="clip-title">{{ lesson }}</h1>
-                </div>
-           
-           <div class="container"> 
-
-
-               <div class="row video-container">
-                    {% if video_embed %}
-                        {{ video_embed|safe }}
-                    {% else %}
-                        <img height="50%" src="{{ thumbnail }}"/>
-                    {% endif %}
-                    <div class="metadata">
-                    <ul>
-                        <li>Director <b>{{director}}</b></li>
-                        <li>Year of release <b>{{date}}</b></li>
-                        <li>Actors <b>{{actors}}</b></li>
-                        <li></li>
-                    </ul>
-                    
-                    </div>  
-                    {% if page.lang == 'en' %}
-                {% for lezione in collections.lezioni %}
-                    {% if lezione.data.lezioni == lezioni %}
-                        <a href="{{lezione.url }}">Link to Italian</a>
-                    {% endif %}            
-                {% endfor %}
-            {% endif %}
-            {% if page.lang == 'it' %}
-                {% for lesson in collections.lessons %}
-                    {% if lesson.data.lezioni == lezioni %}
-                        <a href="{{lesson.url }}">Collegamento alla versione inglese</a>
-                    {% endif %}            
-                {% endfor %}
-            {% endif %}  
-                </div>
-                <div class="description" style="background:#F9FCF3; padding: 20px;">
-                    <h3>LESSONS + RESOURCES</h3>
-                </div>
-                
-            </div>
-            
-          
-                
-        {% endblock %}
+<h1>{{ pagination.items[0].title }}</h1>
