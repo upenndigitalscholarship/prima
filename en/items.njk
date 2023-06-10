@@ -16,18 +16,23 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
 
 
                 <div>
-                    I hold place
+                    <p>{{ item.description | markdownify |safe }}</p>
                     {% if item.pdf_file %}
-                    <button>
+                    <button target="_blank" onclick="window.location.href='{{ item.pdf_file }}';">
                         Download as pdf
                     </button>
                     {% endif %}
                     {% if item.doc_file %}
-                    <button>
+                    <button target="_blank" onclick="window.location.href='{{ item.doc_file }}';">
                         Download as docx
                     </button>
                     {% endif %}
                     {% if item.html_file %}
+                    {% endif %}
+                    {% if item.solution %}
+                    <button target="_blank" onclick="window.location.href='{{ item.solution }}';">
+                        Download solution
+                    </button>
                     {% endif %}
                     </div>  
         

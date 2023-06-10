@@ -51,7 +51,7 @@
                         {% if item.lesson == lesson %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
                             <b><a href="/en/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
-                            <p>{{ item.description }}</p>
+                            <p>{{ item.description | markdownify |safe }}</p>
                             </div>
                         {% endif %}
                     {% endfor %}

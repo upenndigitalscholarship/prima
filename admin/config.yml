@@ -194,6 +194,10 @@ collections:
                 name: "html_file"
                 widget: "file"
                 required: false
+              - label: "Solution"
+                name: "solution"
+                widget: "file"
+                required: false
 
   - label: "Settings"
     name: "settings"
