@@ -18,8 +18,14 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
                 <div>
                     I hold place
                     {% if item.pdf_file %}
+                    <button>
+                        Download as pdf
+                    </button>
                     {% endif %}
                     {% if item.doc_file %}
+                    <button>
+                        Download as docx
+                    </button>
                     {% endif %}
                     {% if item.html_file %}
                     {% endif %}
