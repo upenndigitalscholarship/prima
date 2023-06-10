@@ -3,8 +3,8 @@ pagination:
     data: en_items
     size: 1
     alias: item
-permalink: "/en/items/{{ item.lesson | slugify }}/index.html"
+permalink: "/en/items/{{ item.title | slugify }}/index.html"
 ---
 
-
-<h1>{{ item.lesson }}</h1>
+<a href="/en/lessons/{{ item.lesson | slug }}">{{ item.lesson }}</a>
+<h1>{{ item.title }}</h1>

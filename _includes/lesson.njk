@@ -46,11 +46,11 @@
             {% endif %}  
                 </div>
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
-                    <h3>Media</h3>
-                    {% for item in en_items.items %}
+                    <h3>LESSONS + RESOURCES</h3>
+                    {% for item in en_items %}
                         {% if item.lesson == lesson %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
-                            <b>{{ item.title }}</b>
+                            <b><a href="/en/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
                             <p>{{ item.description }}</p>
                             </div>
                         {% endif %}
