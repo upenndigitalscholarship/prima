@@ -5,7 +5,7 @@ medium:
 practice:
   - Vocabulary
   - Food and Drinks
-learning_outcome: []
+learning_outcome:
 level:
   - "110"
   - Beginner

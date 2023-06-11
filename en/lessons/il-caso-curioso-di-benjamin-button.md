@@ -14,7 +14,7 @@ medium:
 practice:
   - Grammar
   - Hypothetical period
-learning_outcome: []
+learning_outcome: 
 week: Unit 5
 citation_information: |-
   **Medium**: Film

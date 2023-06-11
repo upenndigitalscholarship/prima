@@ -48,7 +48,11 @@
 
   <div id="grid" class="my-shuffle-container">
     {%- for lesson in collections.lessons -%}
-      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='[{% for level in lesson.data.level%}"{{ level }}",{% endfor %}{% for practice in lesson.data.practice%}"{{ practice }}",{% endfor %}{% for learning_outcome in lesson.data.learning_outcome%}{% if loop.last %}"{{ learning_outcome }}"{% else %}"{{ learning_outcome }}",{% endif %}{% endfor %}]' data-title="{{ lesson.data.lesson|slugify}}">
+      {% set all_values = [] %}
+      {% if lesson.data.level%}{% for level in lesson.data.level%}{% set all_values = (all_values.push(level), all_values) %}{% endfor %}{% endif%}
+      {% if lesson.data.practice%}{% for practice in lesson.data.practice%}{% set all_values = (all_values.push(practice), all_values) %}{% endfor %}{% endif%}
+      {% if lesson.data.learning_outcome%}{% for learning_outcome in lesson.data.learning_outcome%}{% set all_values = (all_values.push(learning_outcome), all_values) %}{% endfor %}{% endif%}
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}">
         <div class="picture-item__inner">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
@@ -58,12 +62,15 @@
           </div>
           <div class="picture-item__details container">
             <figcaption class="picture-item__title">
-              <a rel="noopener">{{ lesson.data.lesson }}</a>
+              
             </figcaption>
             {# <p class="picture-item__tags hidden@xs">space</p> #}
           </div>
           <div class="picture-item__description">
-          
+            <b><a rel="noopener">{{ lesson.data.lesson }}</a></b><br><hr>            
+            {% for value in all_values%}
+            {{ value }}
+            {% endfor %}
           </div>
         </div>
       </figure>
