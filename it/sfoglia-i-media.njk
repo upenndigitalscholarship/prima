@@ -58,12 +58,11 @@
             </div>
           </div>
           <div class="picture-item__details container">
-            <figcaption class="picture-item__title">
-            </figcaption>
+           
             {# <p class="picture-item__tags hidden@xs">space</p> #}
           </div>
           <div class="picture-item__description">
-          <b><a rel="noopener">{{ lesson.data.lezione }}</a></b><br><hr>            
+          <b><a class="picture-item__title" rel="noopener">{{ lesson.data.lezione }}</a></b><br><hr>            
             {% for value in all_values%}
             {{ value }}
             {% endfor %}
