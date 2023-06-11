@@ -1,0 +1,109 @@
+<script type="text/javascript" src="/assets/js/shuffle.js"></script>
+<script type="text/javascript" src="/assets/js/shuffle-demo.js"></script>
+
+<link rel="stylesheet" href="/assets/css/shuffle.css">
+
+<!-- The Modal -->
+<div class="container">
+  <div id="myBtn" style="z-index: 10; position: absolute; right: 0;"><img style="width: 70%" src="/assets/img/information.png" /></div>
+
+</div>
+<div class="container">
+  <div><h2>Sfoglia i media</h2></div>
+
+</div>
+<div class="shuffle-container">
+  <div class="shuffle-nav-container" style="border-right: #B61339 dashed;">
+    <div class="filters-group">
+      <label for="filters-search-input" class="filter-label">Search</label>
+      <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"/>
+    </div>
+    <div class="filters-group">
+      <p class="filter-label">Filtro</p>
+      <div class="btn-group filter-options">
+        <p><b>Livello</b></p>
+        {% for livello in collections.lezioni | distinct('livello') %}
+          <input type="checkbox" data-group="{{ livello }}" value="{{ livello }}">
+          <label for="{{ livello }}">{{ livello }}</label><br>
+        {% endfor %}
+
+        <p><b>Pratica</b></p>
+        {% for pratica in collections.lezioni | distinct('pratica') %}
+          <input type="checkbox" data-group="{{ pratica }}" value="{{ pratica }}">
+          <label for="{{ pratica }}">{{ pratica }}</label><br>
+        {% endfor %}
+
+        <p><b>Risultato</b></p>
+        {% for risultato in collections.lezioni | distinct('risultato') %}
+          <input type="checkbox" data-group="{{ risultato }}" value="{{ risultato }}">
+          <label for="{{ risultato }}">{{ risultato }}</label><br>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+  <div id="grid" class="my-shuffle-container">
+    {%- for lesson in collections.lezioni -%}
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='[{% for level in lesson.data.livello%}"{{ level }}",{% endfor %}{% for practice in lesson.data.pratica%}"{{ practice }}",{% endfor %}{% for learning_outcome in lesson.data.risultato%}{% if loop.last %}"{{ learning_outcome }}"{% else %}"{{ learning_outcome }}",{% endif %}{% endfor %}]' data-title="{{ lesson.data.lezione|slugify}}">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src="{{ lesson.data.thumbnail}}"
+              alt="{{ lesson.data.lezione }}"/>
+            </div>
+          </div>
+          <div class="picture-item__details container">
+            <figcaption class="picture-item__title">
+              <a rel="noopener">{{ lesson.data.lezione }}</a>
+            </figcaption>
+            {# <p class="picture-item__tags hidden@xs">space</p> #}
+          </div>
+          <div class="picture-item__description">
+          
+          </div>
+        </div>
+      </figure>
+    {%- endfor -%}
+
+    <div class="col-1@sm col-1@xs my-sizer-element"></div>
+  </div>
+</div>
+
+</div>
+<div id="myModal" class="modal">
+<div style="background-color: #B61339; color:white;"class="modal-content">
+    <span class="close">&times;</span>
+    <p>Come utilizzare questo sito</p>
+    <p>INSERIRE QUI LE ISTRUZIONI SPECIFICHE PER QUESTA PAGINA!</p>
+</p>
+  </div>
+
+<script>
+  //Modal https://www.w3schools.com/howto/howto_css_modals.asp
+  // Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+</script>

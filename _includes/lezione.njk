@@ -1,0 +1,79 @@
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+    <span>< <a class="breadcrumb" href="{{ "sfoglia-i-media" | locale_url }}">
+        Indietro</a></span>
+                <div>
+                    <h1 class="clip-title">{{ lesson }}</h1>
+                </div>
+           
+           <div class="container"> 
+
+
+               <div class="row">
+                    {% if video_embed %}
+                    <div id="video_embed">
+                        {{ video_embed|safe }}
+                    </div>
+                    {% if video_embed_subtitles %}
+                    <div class="subtitles">
+                        <button onclick="swapVideo()">Spettacolo con sottotitoli</button>
+                    </div>
+                    {% endif %}
+                    {% else %}
+                        <img height="50%" src="{{ thumbnail }}"/>
+                    {% endif %}
+                    <div class="metadata">
+                    {% if citation_information %}
+                    {{ citation_information | markdownify | safe }}
+                    {% endif %}
+                    </div>  
+                    {% if page.lang == 'en' %}
+                {% for lezione in collections.lezioni %}
+                    {% if lezione.data.lezioni == lezioni %}
+                        <a href="{{lezione.url }}">Link to Italian</a>
+                    {% endif %}            
+                {% endfor %}
+            {% endif %}
+            {% if page.lang == 'it' %}
+                {% for lesson in collections.lessons %}
+                    {% if lesson.data.lezioni == lezioni %}
+                        <a href="{{lesson.url }}">Collegamento alla versione inglese</a>
+                    {% endif %}            
+                {% endfor %}
+            {% endif %}  
+                </div>
+                <div class="description" style="background:#F9FCF3; padding: 10px;">
+                    <h3>LESSONS + RESOURCES</h3>
+                    {% for item in it_items.items %}
+                        {% if item.lesson == lesson %}    
+                            <div style="border: solid var(--prima-red); padding:20px"> 
+                            <b><a href="/it/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
+                            <p>{{ item.description | markdownify |safe }}</p>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                
+            </div>
+            
+          
+            {% if video_embed_subtitles %}
+            <script>
+            let videoEmbedSubtitles = `{{ video_embed_subtitles | safe }}`;
+            let videoEmbed = `{{ video_embed | safe }}`;
+            let swapVideo = function() {
+                // if innerHTML is equal to videoEmbedSubtitles, switch to videoEmbed
+                if (document.getElementById('video_embed').innerHTML == videoEmbedSubtitles) {
+                    document.getElementById('video_embed').innerHTML = videoEmbed;
+                    return;
+                } else {
+                    document.getElementById('video_embed').innerHTML = videoEmbedSubtitles;
+                }
+            }
+            </script>    
+            {% endif %}
+
+        {% endblock %}
