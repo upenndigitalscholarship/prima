@@ -51,7 +51,6 @@ module.exports = function(eleventyConfig) {
         
     });
     eleventyConfig.addFilter("thumbnail", function(collection, key) {
-        console.log(collection, key);
         if (collection && key) {
             // find item with lesson equal to key
             let item = collection.find(item => item.data.lesson === key);
