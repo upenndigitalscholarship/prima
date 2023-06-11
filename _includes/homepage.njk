@@ -90,17 +90,34 @@
            
           </div>
           <div>
+            {% if page.lang == "it" %}
+            <a href="/it/esplora-le-categorie/">
+              <p class="button1">Visualizza le lezioni</p>
+            </a>
+            {% else%}
             <a href="/en/lesson-index">
               <p class="button1">View Lessons</p>
             </a>
+            {% endif %}
           </div>
           <div>
+            {% if page.lang == "it" %}
+            <a href="/it/sfoglia-i-media/">
+              <p class="button2">Visualizza tutti i media</p>
+            </a>
+            {% else%}
             <a href="/en/browse-media">
               <p class="button2">Browse All Media</p>
             </a>
+            {% endif %}
           </div>
-          <div><input class="search-button" type="text" name="q" placeholder="Search"/></div>
-
+          <div>
+            {% if page.lang == "it" %}
+            <input class="search-button" type="text" name="q" placeholder="Ricerca"/>
+            {% else%}
+            <input class="search-button" type="text" name="q" placeholder="Search"/>
+            {% endif %}
+            </div>
         </div>
         
       </div>
