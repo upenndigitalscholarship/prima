@@ -1,6 +1,7 @@
 ---
 level:
   - Intermediate
+  - 140+
 lezioni: Il caso curioso di Benjamin Button
 citation: |-
   Medium: Film
@@ -13,8 +14,7 @@ medium:
 practice:
   - Grammar
   - Hypothetical period
-learning_outcome:
-  - Fixing bug
+learning_outcome: []
 week: Unit 5
 citation_information: |-
   **Medium**: Film
@@ -24,6 +24,7 @@ citation_information: |-
   **Produced by**: Paramount Pictures
 
   **Directed by**: David Fincher
+prerequisites: Periodo ipotetico (1, 2, 3) + condizionale
 thumbnail: /assets/media/bbutton.png
 video_embed: <iframe id="kaltura_player"
   src="https://cdnapisec.kaltura.com/p/1147242/sp/114724200/embedIframeJs/uiconf_id/9757771/partner_id/1147242?iframeembed=true&playerId=kaltura_player&entry_id=1_br2kzcje&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_vw0ubmnt"
@@ -34,4 +35,5 @@ video_embed: <iframe id="kaltura_player"
   allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation
   allow-top-navigation-by-user-activation" frameborder="0"
   title="periodo_ipotetico_benjamin_button"></iframe>
+fair-use: /assets/media/140_benjamin_button_ipotetico.docx
 ---

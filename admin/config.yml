@@ -231,6 +231,10 @@ collections:
                 name: "doc_file"
                 widget: "file"
                 required: false
+              - label: "Solution"
+                name: "solution"
+                widget: "file"
+                required: false
               
 
       - label: "Items (IT)"
@@ -264,6 +268,10 @@ collections:
                 required: false
               - label: "File DOC"
                 name: "doc_file"
+                widget: "file"
+                required: false
+              - label: "Soluzione"
+                name: "solution"
                 widget: "file"
                 required: false
               
