@@ -6,7 +6,7 @@ pagination:
 permalink: "/it/elementi/{{ item.title | slugify }}/index.html"
 ---
 
-<span>< <a class="breadcrumb" href="../../../it/lezioni/{{ item.lesson | slug }}">
+<span>< <a class="breadcrumb" href="../../../it/lezioni/{{ item.lezione | slug }}">
         Indietro</a></span>
                 <div>
                     <h1 class="clip-title">{{ item.title }}</h1>
@@ -32,19 +32,24 @@ permalink: "/it/elementi/{{ item.title | slugify }}/index.html"
                         Scarica la soluzione
                     </button>
                     {% endif %}
+                    {% if item.description %}
                     <p>{{ item.description | markdownify |safe }}</p>
+                    {% endif %}
                 </div>  
-        
+                
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
                     <h3>MEDIA</h3>
-                    {% for lesson in en_items.items %}
+                    {% for lesson in it_items.items %}
                         {% if lesson.title == item.title %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
-                            <b><a href="/it/lezioni/{{ lesson.lesson | slugify }}/">{{ item.lesson }}</a></b>
+                            <b><a href="/it/lezioni/{{ lesson.lezione | slugify }}/">{{ item.lezione }}</a></b>
                             <br>
                             
-                            <img width="20%" src="{{ collections.lessons | thumbnail(lesson.lesson) }}"
-                            alt="{{ lesson.lesson }}"/>
+                            {# TODO, this is causing  Cannot read properties of undefined (reading 'data') (via Template render error) #}
+                            {# <img width="20%" src="{{ collections.lezioni | thumbnail(item.lezione) }}"
+                            alt="{{ item.lezione }}"/> #}
+                            
+                            
                             </div>
                         {% endif %}
                     {% endfor %}

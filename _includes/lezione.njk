@@ -6,7 +6,7 @@
     <span>< <a class="breadcrumb" href="../../../it/sfoglia-i-media">
         Indietro</a></span>
                 <div>
-                    <h1 class="clip-title">{{ lesson }}</h1>
+                    <h1 class="clip-title">{{ lezione }}</h1>
                 </div>
            
            <div class="container"> 
@@ -24,6 +24,11 @@
                     {% endif %}
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
+                    {% endif %}
+                    {% if second_video_embed %}
+                    <div id="second_video_embed">
+                        {{ second_video_embed|safe }}
+                    </div>
                     {% endif %}
                     <div class="metadata">
                     {% if citation_information %}

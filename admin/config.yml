@@ -56,6 +56,7 @@ collections:
       - label: "Informazioni sulla citazione"
         name: citation_information
         widget: markdown
+        required: false
       # Prerequisites
       - label: "Prerequisiti" 
         name: "prerequisiti" 
@@ -84,6 +85,11 @@ collections:
       # Video Embed Subtitles
       - label: "Sottotitoli incorporati nel video" 
         name: "video_embed_subtitles" 
+        widget: "string" 
+        required: false
+      # Second Video Embed
+      - label: "Secondo incorporamento video" 
+        name: "second_video_embed" 
         widget: "string" 
         required: false
       # English Version
@@ -177,6 +183,11 @@ collections:
         name: "video_embed_subtitles" 
         widget: "string" 
         required: false
+ 
+      - label: "Second Video Embed" 
+        name: "second_video_embed" 
+        widget: "string" 
+        required: false
 
       - label: "Italian Version"
         name: "lezioni"
@@ -255,13 +266,13 @@ collections:
                 widget: markdown
                 required: false
               - label: "Lezione correlata"
-                name: "lesson"
+                name: "lezione"
                 required: false
                 widget: "relation"
                 collection: "lezioni"
                 search_fields: ["lezioni"]
-                value_field: "lesson"
-                display_fields: ["lesson"]
+                value_field: "lezione"
+                display_fields: ["lezione"]
               - label: "File PDF"
                 name: "pdf_file"
                 widget: "file"

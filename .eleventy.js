@@ -31,25 +31,30 @@ module.exports = function(eleventyConfig) {
     );
 
     eleventyConfig.addFilter("distinct", function(collection, key) {
-        let values = new Set();
-        collection.filter(function(item) {
-            let value = item.data[key];
-            value.forEach(function(item) { 
-                if (!values.has(item)) {
-                    values.add(item);
-                    return true;
-                }
-            });
-            return false;
-        });
         
-        return [...values].sort();
+            let values = new Set();
+            collection.filter(function(item) {
+                let value = item.data[key];
+                if (value) {
+                    value.forEach(function(item) { 
+                        if (!values.has(item)) {
+                            values.add(item);
+                            return true;
+                        }
+                    });
+                    return false;
+                };
+            });
+            
+            return [...values].sort();
+        
         
     });
     eleventyConfig.addFilter("thumbnail", function(collection, key) {
         console.log(collection, key);
-        // find item with lesson equal to key
-        let item = collection.find(item => item.data.lesson === key);
-        return item.data.thumbnail;
-    });
+        if (collection && key) {
+            // find item with lesson equal to key
+            let item = collection.find(item => item.data.lesson === key);
+            return item.data.thumbnail;
+        }});
   };

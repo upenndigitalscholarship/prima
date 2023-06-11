@@ -25,6 +25,11 @@
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
                     {% endif %}
+                    {% if second_video_embed %}
+                    <div id="second_video_embed">
+                        {{ second_video_embed|safe }}
+                    </div>
+                    {% endif %}
                     <div class="metadata">
                     {% if citation_information %}
                     {{ citation_information | markdownify | safe }}
