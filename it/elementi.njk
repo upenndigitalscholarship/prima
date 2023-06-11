@@ -1,0 +1,53 @@
+---
+pagination:
+    data: it_items.items
+    size: 1
+    alias: item
+permalink: "/it/elementi/{{ item.title | slugify }}/index.html"
+---
+
+<span>< <a class="breadcrumb" href="../../../it/lezioni/{{ item.lesson | slug }}">
+        Indietro</a></span>
+                <div>
+                    <h1 class="clip-title">{{ item.title }}</h1>
+                </div>
+           
+           <div class="container"> 
+
+
+                <div>
+                    
+                    {% if item.pdf_file %}
+                    <button target="_blank" onclick="window.location.href='{{ item.pdf_file }}';">
+                        Scarica come pdf
+                    </button>
+                    {% endif %}
+                    {% if item.doc_file %}
+                    <button target="_blank" onclick="window.location.href='{{ item.doc_file }}';">
+                        Scarica come docx
+                    </button>
+                    {% endif %}
+                    {% if item.solution %}
+                    <button target="_blank" onclick="window.location.href='{{ item.solution }}';">
+                        Scarica la soluzione
+                    </button>
+                    {% endif %}
+                    <p>{{ item.description | markdownify |safe }}</p>
+                </div>  
+        
+                <div class="description" style="background:#F9FCF3; padding: 10px;">
+                    <h3>MEDIA</h3>
+                    {% for lesson in en_items.items %}
+                        {% if lesson.title == item.title %}    
+                            <div style="border: solid var(--prima-red); padding:20px"> 
+                            <b><a href="/it/lezioni/{{ lesson.lesson | slugify }}/">{{ item.lesson }}</a></b>
+                            <br>
+                            
+                            <img width="20%" src="{{ collections.lessons | thumbnail(lesson.lesson) }}"
+                            alt="{{ lesson.lesson }}"/>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                
+            </div>

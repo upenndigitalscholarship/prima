@@ -243,14 +243,14 @@ collections:
             allow_add: true
             collapsed: false
             fields:
-              - label: Title
+              - label: Titolo
                 name: title
                 widget: string
-              - label: Description
+              - label: Descrizione
                 name: description
                 widget: markdown
                 required: false
-              - label: "Related Lesson"
+              - label: "Lezione correlata"
                 name: "lesson"
                 required: false
                 widget: "relation"
@@ -258,11 +258,11 @@ collections:
                 search_fields: ["lezioni"]
                 value_field: "lesson"
                 display_fields: ["lesson"]
-              - label: "PDF File"
+              - label: "File PDF"
                 name: "pdf_file"
                 widget: "file"
                 required: false
-              - label: "DOC File"
+              - label: "File DOC"
                 name: "doc_file"
                 widget: "file"
                 required: false

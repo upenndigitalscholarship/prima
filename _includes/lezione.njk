@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <span>< <a class="breadcrumb" href="{{ "sfoglia-i-media" | locale_url }}">
+    <span>< <a class="breadcrumb" href="../../../it/sfoglia-i-media">
         Indietro</a></span>
                 <div>
                     <h1 class="clip-title">{{ lesson }}</h1>
@@ -50,7 +50,7 @@
                     {% for item in it_items.items %}
                         {% if item.lesson == lesson %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
-                            <b><a href="/it/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
+                            <b><a href="/it/elementi/{{ item.title | slugify }}/">{{ item.title }}</a></b>
                             <p>{{ item.description | markdownify |safe }}</p>
                             </div>
                         {% endif %}
