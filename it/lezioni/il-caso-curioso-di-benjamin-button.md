@@ -1,5 +1,5 @@
 ---
-lezioni: Il caso curioso di Benjamin Button
+lezione: Il caso curioso di Benjamin Button
 livello:
   - Film
 thumbnail: /assets/media/bbutton.png

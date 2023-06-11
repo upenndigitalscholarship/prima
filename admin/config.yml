@@ -14,22 +14,60 @@ collections:
     editor:
       preview: false
     label: "Lezioni (IT)" # Used in the UI
-    identifier_field: lezioni
+    identifier_field: lezione
     folder: "it/lezioni" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Lezione", name: "lezioni", widget: "string"}
+      # Lesson
+      - label: "Lezione"
+        name: "lezione"
+        widget: "string"
+      # Medium
+      - label: "Medio"
+        name: "medio"
+        widget: "list"
+        required: false
+        allow_add: true
+      # Practice
+      - label: "Pratica"
+        name: "pratica"
+        required: false
+        widget: "list"
+        allow_add: true
+      # Learning Outcome
+      - label: "Risultato"
+        name: "risultato"
+        required: false
+        widget: "list"
+        allow_add: true
+      # Level
       - label: "Livello"
         name: "livello"
         required: false
         widget: "list"
         allow_add: true
-      - {label: "Settimana", name: "settimana", widget: "string", required: false}
-      - {label: "Contenuto grammaticale", name: "contenuto-grammaticale", widget: "string", required: false}
-      - {label: "Prerequisiti", name: "prerequisiti", widget: "string", required: false}
-      - {label: "Testo", name: "body", widget: "markdown", required: false}
-      - label: "Featured Image"
+      # Week
+      - label: "Settimana"
+        name: "settimana"
+        widget: "string"
+        required: false
+      #Citation Information
+      - label: "Informazioni sulla citazione"
+        name: citation_information
+        widget: markdown
+      # Prerequisites
+      - label: "Prerequisiti" 
+        name: "prerequisiti" 
+        widget: "string" 
+        required: false
+      # Text
+      - label: "Testo" 
+        name: "body" 
+        widget: "markdown" 
+        required: false
+      # Featured Image
+      - label: "Immagine in primo piano"
         name: "thumbnail"
         widget: "image"
         choose_url: true
@@ -38,7 +76,17 @@ collections:
         media_library:
           config:
             multiple: true
-      - {label: "Incorporamento video", name: "video_embed", widget: "string", required: false}
+      # Video Embed
+      - label: "Incorporamento video" 
+        name: "video_embed" 
+        widget: "string" 
+        required: false
+      # Video Embed Subtitles
+      - label: "Sottotitoli incorporati nel video" 
+        name: "video_embed_subtitles" 
+        widget: "string" 
+        required: false
+      # English Version
       - label: "English Version"
         name: "lesson"
         required: false
@@ -47,10 +95,12 @@ collections:
         search_fields: ["lesson"]
         value_field: "lesson"
         display_fields: ["lesson"]
-      - label: "Fair Use File"
+      # Fair Use File
+      - label: "File di uso corretto"
         name: "fair-use"
         widget: "file"
         required: false
+
   - name: "lessons" # Used in routes, e.g., /admin/collections/blog
     label: "Lesson (EN)" # Used in the UI
     editor:
@@ -87,12 +137,27 @@ collections:
         required: false
         widget: "list"
         allow_add: true
-      - {label: "Week", name: "week", widget: "string", required: false}
+
+      - label: "Week"
+        name: "week"
+        widget: "string"
+        required: false
+
       - label: "Citation Information"
         name: citation_information
         widget: markdown
-      - {label: "Prerequisites", name: "prerequisites", widget: "string", required: false}
-      - {label: "Text", name: "body", widget: "markdown", required: false}
+        required: false
+
+      - label: "Prerequisites" 
+        name: "prerequisites" 
+        widget: "string" 
+        required: false
+
+      - label: "Text" 
+        name: "body" 
+        widget: "markdown" 
+        required: false
+
       - label: "Featured Image" 
         name: "thumbnail"
         widget: "image"
@@ -102,16 +167,26 @@ collections:
         media_library:
           config:
             multiple: true
-      - {label: "Video Embed", name: "video_embed", widget: "string", required: false}
-      - {label: "Video Embed Subtitles", name: "video_embed_subtitles", widget: "string", required: false}
+      
+      - label: "Video Embed" 
+        name: "video_embed" 
+        widget: "string" 
+        required: false
+
+      - label: "Video Embed Subtitles" 
+        name: "video_embed_subtitles" 
+        widget: "string" 
+        required: false
+
       - label: "Italian Version"
         name: "lezioni"
         required: false
         widget: "relation"
         collection: "lezioni"
-        search_fields: ["lezioni"]
-        value_field: "lezioni"
-        display_fields: ["lezioni"]
+        search_fields: ["lezione"]
+        value_field: "lezione"
+        display_fields: ["lezione"]
+
       - label: "Fair Use File"
         name: "fair-use"
         widget: "file"
@@ -156,10 +231,7 @@ collections:
                 name: "doc_file"
                 widget: "file"
                 required: false
-              - label: "HTML File"
-                name: "html_file"
-                widget: "file"
-                required: false
+              
 
       - label: "Items (IT)"
         name: "items-it"
@@ -168,18 +240,22 @@ collections:
           - label: Items
             name: items
             widget: list
-            allow_add: false
+            allow_add: true
             collapsed: false
             fields:
               - label: Title
                 name: title
                 widget: string
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
               - label: "Related Lesson"
                 name: "lesson"
                 required: false
                 widget: "relation"
-                collection: "lessons"
-                search_fields: ["lesson"]
+                collection: "lezioni"
+                search_fields: ["lezioni"]
                 value_field: "lesson"
                 display_fields: ["lesson"]
               - label: "PDF File"
@@ -190,10 +266,7 @@ collections:
                 name: "doc_file"
                 widget: "file"
                 required: false
-              - label: "Solution"
-                name: "solution"
-                widget: "file"
-                required: false
+              
 
   - label: "Settings"
     name: "settings"
