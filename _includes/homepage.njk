@@ -117,9 +117,9 @@
           </div>
           <div>
             {% if page.lang == "it" %}
-            <div id="search" class="search"></div>
+            <div id="search" class="search-button search"></div>
             {% else%}
-            <div id="search" class="search"></div>
+            <div id="search" class="search-button search"></div>
             {% endif %}
             </div>
         </div>
@@ -222,7 +222,7 @@
 
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search" });
+        new PagefindUI({ element: "#search", showImages: false });
     });
 </script>
 </body>
