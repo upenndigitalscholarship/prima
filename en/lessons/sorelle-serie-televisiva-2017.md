@@ -28,5 +28,6 @@ video_embed: <iframe id="kaltura_player"
   allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation
   allow-top-navigation-by-user-activation" frameborder="0"
   title="sorelle_pronomi"></iframe>
+lezioni: Sorelle
 fair-use: /assets/media/120_sorelle_pronomi.docx
 ---
