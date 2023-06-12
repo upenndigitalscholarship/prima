@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>{{title}}</title>
+    {% if page.lang == "en" %}
+    <title>{{lesson}}</title>
+    {% endif %}
+    {% if page.lang == "it" %}
+    <title>{{ lezione }}</title>
+    {% endif %}
     {% if description %}
       <meta name="description" content="{{description}}"/>
     {% endif %}
