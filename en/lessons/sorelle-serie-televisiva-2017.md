@@ -1,5 +1,5 @@
 ---
-lesson: Sorelle (serie televisiva, 2017)
+lesson: Sorelle
 medium:
   - Television
 learning_outcome:
