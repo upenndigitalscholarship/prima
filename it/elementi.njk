@@ -40,7 +40,7 @@ permalink: "/it/elementi/{{ item.title | slugify }}/index.html"
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
                     <h3>MEDIA</h3>
                     {% for lesson in it_items.items %}
-                        {% if lesson.title == item.title %}    
+                        {% if lesson.lezione == item.lezione %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
                             <b><a href="/it/lezioni/{{ lesson.lezione | slugify }}/">{{ item.lezione }}</a></b>
                             <br>

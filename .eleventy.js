@@ -1,5 +1,6 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const yaml = require("js-yaml");
+const { execSync } = require('child_process')
 const md = require("markdown-it")({
     html: true,
     linkify: true,
@@ -56,4 +57,7 @@ module.exports = function(eleventyConfig) {
             let item = collection.find(item => item.data.lesson === key);
             return item.data.thumbnail;
         }});
+    eleventyConfig.on('eleventy.after', () => {
+        execSync(`npx pagefind --source _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
+        })
   };

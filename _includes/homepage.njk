@@ -16,8 +16,12 @@
 
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet">
-
-    <body>
+    <!-- Pagefind for search  -->
+    <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  
+    <script src="/_pagefind/pagefind-ui.js"></script>
+    
+    <body data-pagefind-body>
       {% include "./navbar.html" %}
       <style>
         .button1 {
@@ -113,9 +117,9 @@
           </div>
           <div>
             {% if page.lang == "it" %}
-            <input class="search-button" type="text" name="q" placeholder="Ricerca"/>
+            <div id="search" class="search"></div>
             {% else%}
-            <input class="search-button" type="text" name="q" placeholder="Search"/>
+            <div id="search" class="search"></div>
             {% endif %}
             </div>
         </div>
@@ -128,7 +132,24 @@
     </div>
     
           
-    
+    <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+			<header class="modal__header">
+				<h2 class="modal__title" id="modal-2-title">
+					Search
+				</h2>
+			</header>
+			<main class="modal__content" id="modal-2-content">
+				<div id="search"></div>
+			</main>
+			<footer class="modal__footer">
+					<button class="modal__btn modal__btn-primary" data-micromodal-close="" aria-label="Close this dialog window">Close</button>
+			</footer>
+		</div>
+	</div>
+</div>
+
     <div id="myModal" class="modal">
       <div style="z-index: auto; background-color: #B61339; color:white;"class="modal-content">
         
@@ -194,10 +215,15 @@
     }
     playVideo(0)
         
-
+  
 
 
   </script>
 
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search" });
+    });
+</script>
 </body>
 <html>

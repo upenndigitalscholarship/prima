@@ -9,6 +9,7 @@ items:
       **Attività 2.** Adesso guardiamo un videoclip dal film.
     doc_file: /assets/media/benjamin_button_periodo_ipotetico_ITAL.docx
     solution: /assets/media/benjamin_button_periodo_ipotetico_SOLUZIONI.docx
+    lezione: Il caso curioso di Benjamin Button
   - title: Il festival di Sanremo
     description: |-
       **Attività 1**. Che cos’è il festival di Sanremo?
@@ -19,6 +20,7 @@ items:
     lezione: Il festival di Sanremo
   - title: Le bibite e gli articoli
     lezione: Le fate ignoranti (2001)
+    lesson: Le fate ignoranti (Le bibite)
     doc_file: /assets/media/le-bibite-ital-.docx
     solution: /assets/media/le-bibite-soluzioni.docx
     description: "**Attività:** Guardate la scena e segnate cosa offre l’uomo alla
