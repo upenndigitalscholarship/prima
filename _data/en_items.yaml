@@ -1,9 +1,17 @@
 items:
   - title: Il periodo ipotetico – l’impossibilità
-    description: "**Activity 1**. Read the description of the film Il caso curioso
-      di [Benjamin
-      Button](https://www.reuters.com/article/us-button/italian-writer-raises-c\
-      ase-against-button-idUSTRE50U01020090131)"
+    description: >-
+      **Activity 1**. Read the description of the film Il caso curioso di
+      [Benjamin
+      Button](https://www.reuters.com/article/us-button/italian-writer-raises-case-against-button-idUSTRE50U01020090131)
+
+
+
+
+      This is a picture of Bread
+
+
+      ![This is mad bread](/assets/media/default.png "Mad Bread")
     lesson: Il caso curioso di Benjamin Button
     doc_file: /assets/media/benjamin_button_periodo_ipotetico-eng-.docx
     solution: /assets/media/benjamin_button_periodo_ipotetico_SOLUZIONI.docx
