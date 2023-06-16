@@ -36,6 +36,11 @@ video {
     gap: 20px;
 }
 
+.flex-item{
+    width:max-content;
+    display:inline-block;
+}
+
 .metadata{
     width:30vw;
 }

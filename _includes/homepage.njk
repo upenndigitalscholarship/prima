@@ -24,39 +24,51 @@
     <body data-pagefind-body>
       {% include "./navbar.html" %}
       <style>
-        .button1 {
-          float: left;
-          position: absolute;
-          left: 50px;
-          top: 350px;
-          z-index: 1000;
+        .button {
+          margin-left:auto;
+          margin-right:auto;
+          margin-bottom:2em;
           background-color: #B61339;
           padding: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+          display:block;
+          width:max-content;
+          cursor:pointer;
+        }
+        .button1 {
+          z-index: 10;
+          background-color: #B61339;
+          padding: 10px;
+          margin:10px;
           color: #FFFFFF;
           font-weight: bold;
         }
         .button2 {
-          float: left;
-          position: absolute;
-          left: 200px;
-          top: 350px;
-          z-index: 1000;
+          z-index: 10;
           background-color: #B61339;
           padding: 10px;
+          margin:10px;
           color: #FFFFFF;
           font-weight: bold;
         }
         .search-button {
-          float: left;
-          position: absolute;
-          left: 400px;
-          top: 370px;
-          z-index: 1000;
+          z-index: 10;
           background-color: #D9D9D9;
           color: black;
           padding: 10px;
           color: #FFFFFF;
           font-weight: bold;
+        }
+        .container-body{
+          position:absolute;
+          top:300px;
+          left:2em;
+          width:100vw;
+          height:70vh;
+        }
+        .modal {
+          z-index:20;
         }
         ::placeholder {
           color: black;
@@ -64,15 +76,20 @@
         }
         #background-video {
           width: 100vw;
-          height: 100vh;
+          height: 70vh;
           object-fit: cover;
-          position: fixed;
-          left: 0;
+/*          position: fixed;
+*/          left: 0;
           right: 0;
           top: 0;
-          bottom: 0;
+          
           z-index: -1;
         }
+
+        p{
+          padding:2em;
+        }
+
         @media (max-width: 750px) {
           #background-video {
             display: none;
@@ -88,12 +105,9 @@
           </video>
       <div class="container">
 
-        <div class="container">
+        <div class="container-body">
           
-          <div>
-           
-          </div>
-          <div>
+          <div class="flex-item">
             {% if page.lang == "it" %}
             <a href="/it/esplora-le-categorie/">
               <p class="button1">Visualizza le lezioni</p>
@@ -104,7 +118,7 @@
             </a>
             {% endif %}
           </div>
-          <div>
+          <div class="flex-item">
             {% if page.lang == "it" %}
             <a href="/it/sfoglia-i-media/">
               <p class="button2">Visualizza tutti i media</p>
@@ -115,20 +129,15 @@
             </a>
             {% endif %}
           </div>
-          <div>
+          <div class="flex-item">
             {% if page.lang == "it" %}
             <div id="search" class="search-button search"></div>
             {% else%}
             <div id="search" class="search-button search"></div>
             {% endif %}
-            </div>
-        </div>
-        
+            </div>        
       </div>
         
-      <div id="myBtn" style="z-index: 3; position: absolute; right: 0;">
-        <img style="width: 70%" src="/assets/img/information.png"/>
-      </div>
     </div>
     
           
@@ -169,13 +178,19 @@
     </div>
   </div>
   {% if page.lang == "it" %}
-<p style=" width:100%;color:white; padding: 20px; background-color: grey; position: fixed; bottom: 0;">PRIMA è una risorsa educativa aperta interattiva progettata per l'apprendimento e la <br>della lingua italiana
+<p>PRIMA è una risorsa educativa aperta interattiva progettata per l'apprendimento e la <br>della lingua italiana
                istruzioni attraverso clip multimediali ricercabili, brevi narrazioni e risorse pedagogiche.</p>
 
   {% else %}
-<p style=" width:100%;color:white; padding: 20px; background-color: grey; position: fixed; bottom: 0;">PRIMA is an interactive Open Educational Resource designed for Italian language learning and <br>
+<p>PRIMA is an interactive Open Educational Resource designed for Italian language learning and <br>
               instruction through searchable media clips, short narratives, and pedagogical resources.</p>
   {% endif %}
+
+<a class="button" id="myBtn">
+              About the Site
+            </a>
+
+  {% include "./footer.html" %}
   <script>
     //Modal https://www.w3schools.com/howto/howto_css_modals.asp
     // Get the modal
