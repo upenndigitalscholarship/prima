@@ -1,5 +1,5 @@
 ---
-lesson: Sorelle
+lesson: Sisters
 medium:
   - Television
 learning_outcome:
