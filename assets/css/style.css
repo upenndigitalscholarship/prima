@@ -26,6 +26,20 @@ video {
     text-align:center;
 }
 
+.lesson-title{
+    text-align:center;
+}
+
+.lesson-item{
+    border: solid var(--prima-red); 
+    padding:10px;
+    margin:4vw;
+    min-width:200px !important;
+}
+.row{
+    width:40vw !important;
+}
+
 .container {
     display: flex;
     /* or inline-flex */
@@ -33,7 +47,42 @@ video {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    column-gap: 20px;
+}
+
+.container-top {
+    display: flex;
+    /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 20px;
+    row-gap:2em;
+}
+
+.container-top-lesson {
+    display: flex;
+    /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+/*    column-gap: 20px;
+*/    column-gap:2em;
+}
+
+.description{
+    width:40vw;
+    min-height:60vh;
+    min-width:300px !important;
+}
+
+iframe{
+    min-width:300px !important;
+    width:40vw !important;
+    height:100% !important;
+    aspect-ratio: 16/9 !important;
 }
 
 .flex-item{
@@ -42,7 +91,7 @@ video {
 }
 
 .metadata{
-    width:30vw;
+    width:40vw;
 }
 
 .breadcrumb{

@@ -9,7 +9,7 @@
                     <h1 class="clip-title">{{ lesson }}</h1>
                 </div>
            
-           <div class="container"> 
+           <div class="container-top"> 
 
 
                <div class="row">
@@ -51,10 +51,10 @@
             {% endif %}  
                 </div>
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
-                    <h3>LESSONS + RESOURCES</h3>
+                    <h3 class="lesson-title">LESSONS + RESOURCES</h3>
                     {% for item in en_items.items %}
                         {% if item.lesson == lesson %}    
-                            <div style="border: solid var(--prima-red); padding:20px"> 
+                            <div class="lesson-item" 
                             <b><a href="/en/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
                             <p>{{ item.description | markdownify |safe }}</p>
                             </div>

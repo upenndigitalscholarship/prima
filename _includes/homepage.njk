@@ -92,15 +92,16 @@
 
         @media (max-width: 750px) {
           #background-video {
-            display: none;
+/*            display: none;
+*/            visibility:hidden;
           }
-          body {
+/*          body {
             background: url("/assets/img/main.jpg") no-repeat;
             background-size: cover;
-          }
+          }*/
         }
       </style>
-      <video id="background-video" width="100%" autoplay muted poster="/assets/img/main.jpg">
+      <video id="background-video" width="100%" autoplay muted poster="/assets/media/background-default.gif">
             <source src="" type="video/mp4">
           </video>
       <div class="container">
@@ -182,8 +183,7 @@
                istruzioni attraverso clip multimediali ricercabili, brevi narrazioni e risorse pedagogiche.</p>
 
   {% else %}
-<p>PRIMA is an interactive Open Educational Resource designed for Italian language learning and <br>
-              instruction through searchable media clips, short narratives, and pedagogical resources.</p>
+<p>PRIMA is an interactive Open Educational Resource designed for Italian language learning and instruction through searchable media clips, short narratives, and pedagogical resources.</p>
   {% endif %}
 
 <a class="button" id="myBtn">
