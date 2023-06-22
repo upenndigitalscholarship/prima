@@ -1,12 +1,7 @@
 items:
   - lesson: Il caso curioso di Benjamin Button
-    title: Il periodo ipotetico – l’impossibilità
-    description: >-
-      **Attività 1.** Ecco una descrizione del film *Il caso curioso di Benjamin
-      Button*.
-
-
-      **Attività 2.** Adesso guardiamo un videoclip dal film.
+    title: Il periodo ipotetico dell'irrealtà
+    description: ""
     doc_file: /assets/media/benjamin_button_periodo_ipotetico_ITAL.docx
     solution: /assets/media/benjamin_button_periodo_ipotetico_SOLUZIONI.docx
     lezione: Il caso curioso di Benjamin Button
@@ -23,9 +18,7 @@ items:
     lesson: Le fate ignoranti (Le bibite)
     doc_file: /assets/media/le-bibite-ital-.docx
     solution: /assets/media/le-bibite-soluzioni.docx
-    description: "**Attività:** Guardate la scena e segnate cosa offre l’uomo alla
-      donna. Poi, scrivete un articolo adatto per ogni opzione (es. un, una, il,
-      lo, del, dell’, ecc.) Conoscete tutte queste bibite?"
+    description: ""
   - title: Pronomi (riflessivi, diretti, indiretti)
     description: >-
       **Attività 1.** Questa conversazione ha quattro interlocutori. Ascolta la

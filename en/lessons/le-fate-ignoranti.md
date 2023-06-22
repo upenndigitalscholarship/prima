@@ -1,15 +1,13 @@
 ---
-lesson: "Le fate ignoranti (Le bibite)"
+lesson: The Ignorant Fairies (Drinks)
 medium:
   - Film
 practice:
   - Vocabulary
   - Food and Drinks
-learning_outcome:
+learning_outcome: null
 level:
-  - "110"
   - Beginner
-  - Unit 2
   - Grammar
   - Partitives
 citation_information: >-
@@ -40,3 +38,28 @@ video_embed: <iframe id="kaltura_player"
 second_video_embed: null
 fair-use: /assets/media/110_le_fate_ignoranti_le_bibite.docx
 ---
+# A﻿ctivity 1: Watch the scene and mark each item the man offers the woman. Then, write an appropriate article for each option (ex. un, una, il, lo, del, dell', etc.0 Do you know all of these beverages? 
+
+1. \_\_\_\_\_\_\_\_\_\__ spritz                     no \_\_\_\_\_\_  yes\_\_\_\_\_\_ 
+2. \_\_\_\_\_\_\_\_\_\__ acqua                    no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+3. \_\_\_\_\_\_\_\_\_\__ caffé shakerato    no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+4. \_\_\_\_\_\_\_\_\_\__ caffé freddo          no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+5. \_\_\_\_\_\_\_\_\_\__ aranciata               no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+6. \_\_\_\_\_\_\_\_\_\__ limonata                no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+7. \_\_\_\_\_\_\_\_\_\__ coca                      no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+8. \_\_\_\_\_\_\_\_\_\__ negroni                 no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+9. \_\_\_\_\_\_\_\_\_\__ caffé                     no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+10. \_\_\_\_\_\_\_\_\_\__ spritz             no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+11. \_\_\_\_\_\_\_\_\_\__ macchiato            no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+12. \_\_\_\_\_\_\_\_\_\__ americano            no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+13. \_\_\_\_\_\_\_\_\_\__ latte                      no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+14. \_\_\_\_\_\_\_\_\_\__ spritz             no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+15. \_\_\_\_\_\_\_\_\_\__ té (caldo)             no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+16. \_\_\_\_\_\_\_\_\_\__ té (freddo)           no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+17. _﻿\_\_\_\_\_\_\_\_\_\_ vino                      no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+18. _﻿\_\_\_\_\_\_\_\_\_\_ gin e tonic.          no \_\_\_\_\_\_  yes\_\_\_\_\_\_
+
+## A﻿ctivity 2: Respond to the questions using full sentences.
+
+1. What else does the man offer the woman? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
+2. W﻿hat does the woman end up choosing? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
