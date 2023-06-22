@@ -26,7 +26,7 @@ video_embed: <iframe id="kaltura_player"
 lesson: Sorelle
 fair-use: /assets/media/120_sorelle_pronomi.docx
 ---
-# A﻿ttivit 1: Questa conversazione ha quattro interlocutori. Ascoltate la loro conversazione e scrivete il pronome corretto (di oggetto diretto, indiretto, riflessivo, doppio, ecc.) negli spazi vuoti. 
+### A﻿ttivit 1: Questa conversazione ha quattro interlocutori. Ascoltate la loro conversazione e scrivete il pronome corretto (di oggetto diretto, indiretto, riflessivo, doppio, ecc.) negli spazi vuoti. 
 
 **C﻿assiera:** E \_\_\_\_\_\_\_\_ vedi che v'aveva ragione Patrizia allora? 
 
@@ -64,7 +64,7 @@ fair-use: /assets/media/120_sorelle_pronomi.docx
 
 
 
-## A﻿ttivit 2: L'uso dei pronomi riflessivi. Rispondete alle domande che seguono.
+### A﻿ttivit 2: L'uso dei pronomi riflessivi. Rispondete alle domande che seguono.
 
 1. N﻿el dialogo dicono "ti trattieni" dal verbo riflessivo "trattenersi." Quali altri verbi riflessivi ci sono nel dialogo? Elencate tutti qui.
 
@@ -91,7 +91,7 @@ fair-use: /assets/media/120_sorelle_pronomi.docx
 
 
 
-#### A﻿ttivit 4: Il significato dei pronomi indiretti. Ci sono anche alcuni pronomi indiretti nel dialogo (mi, ti, gli, le, ecc). Seguite le indicazioni qui sotto per praticare i pronomi indiretti.
+### A﻿ttivit 4: Il significato dei pronomi indiretti. Ci sono anche alcuni pronomi indiretti nel dialogo (mi, ti, gli, le, ecc). Seguite le indicazioni qui sotto per praticare i pronomi indiretti.
 
 **E﻿lencate qui le frasi che hanno pronomi indiretti, poi riscrivete le frasi in un modo diverso per non dover usare il pronome indiretto. (esempio: Mi pare che sta un po' meglio. Pare a me che sta un po' meglio.)**
 
@@ -104,7 +104,7 @@ _﻿\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 
 
-##### A﻿ttivit 5: Pronomi doppi. A volte i pronomi di oggetto diretto e quelli di oggetto indiretto possono essere usati nella stessa frase. Seguite le indicazioni per praticare i pronomi doppi. 
+### A﻿ttivit 5: Pronomi doppi. A volte i pronomi di oggetto diretto e quelli di oggetto indiretto possono essere usati nella stessa frase. Seguite le indicazioni per praticare i pronomi doppi. 
 
 **Riguardate il dialogo ed elencate qui tutti gli esempi di pronomi combinati che trovate. Poi riscrivete le frasi usando prima solo il pronome di oggetto diretto e poi solo il pronome di oggetto indiretto.** 
 
