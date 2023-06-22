@@ -11,7 +11,7 @@ citation_information: >-
 
   **Creato da**: Cinzia Torrini
 
-  Breve descrizione: In Sorelle, l'avvocato Chiara Silani torna nella sua città natale, Matera, per indagare sulla scomparsa della sorella. In questa clip, Chiara si ferma in un negozio di alimentari per fare un acquisto veloce.
+  **Breve descrizione:** In Sorelle, l'avvocato Chiara Silani torna nella sua città natale, Matera, per indagare sulla scomparsa della sorella. In questa clip, Chiara si ferma in un negozio di alimentari per fare un acquisto veloce.
 prerequisiti: "Pronomi: diretti, indiretti, riflessivi, ci/ne"
 thumbnail: /assets/media/sorelle.png
 video_embed: <iframe id="kaltura_player"
