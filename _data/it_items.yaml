@@ -6,10 +6,7 @@ items:
     solution: /assets/media/benjamin_button_periodo_ipotetico_SOLUZIONI.docx
     lezione: Il caso curioso di Benjamin Button
   - title: Il festival di Sanremo
-    description: |-
-      **Attività 1**. Che cos’è il festival di Sanremo?
-
-      **Attività 2.** Piccola ricerca
+    description: ""
     lesson: The Sanremo Music Festival
     doc_file: /assets/media/140-festival_sanremo-ital-.doc
     lezione: Il festival di Sanremo
@@ -20,14 +17,11 @@ items:
     solution: /assets/media/le-bibite-soluzioni.docx
     description: ""
   - title: Pronomi (riflessivi, diretti, indiretti)
-    description: >-
-      **Attività 1.** Questa conversazione ha quattro interlocutori. Ascolta la
-      loro conversazione e scrivi il pronome corretto (possono essere pronomi di
-      ogetto diretto, pronomi di ogetto indiretto, pronomi riflessivi, pronomi
-      doppi ecc) negli spazi vuoti (ie. *mi ti lo la gli le si ci*, ecc.).
-
-
-      **Attività 2.** L’uso dei pronomi riflessivi
+    description: ""
     lezione: Sorelle
     doc_file: /assets/media/sorelle_pronomi_ITAL.docx
     solution: /assets/media/sorelle_pronomi_SOLUZIONI.docx
+  - title: Parti del corpo e L'imperativo informale
+    pdf_file: /assets/media/rappresentante-di-lista_ital.pdf
+    doc_file: /assets/media/rappresentante-di-lista_ital.docx
+    solution: /assets/media/rappresentante-di-lista_soluzioni.pdf
