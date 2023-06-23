@@ -1,7 +1,6 @@
 ---
 livello:
   - Intermedio
-  - Unità 5
 citation: |-
   Medium: Film
   Year: 2008
@@ -34,6 +33,6 @@ video_embed: <iframe id="kaltura_player"
   allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation
   allow-top-navigation-by-user-activation" frameborder="0"
   title="periodo_ipotetico_benjamin_button"></iframe>
-lesson: Il caso curioso di Benjamin Button
+lesson: The Curious Case of Benjamin Botton
 fair-use: /assets/media/140_benjamin_button_ipotetico.docx
 ---
