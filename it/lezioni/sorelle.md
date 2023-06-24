@@ -2,6 +2,10 @@
 lezione: Sorelle
 medio:
   - Televisione
+pratica:
+  - Pronomi diretti
+  - pronomi indiretti
+  - pronomi doppi
 livello:
   - Intermedio
 citation_information: >-
@@ -23,10 +27,10 @@ video_embed: <iframe id="kaltura_player"
   allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation
   allow-top-navigation-by-user-activation" frameborder="0"
   title="sorelle_pronomi"></iframe>
-lesson: Sorelle
+lesson: Sisters
 fair-use: /assets/media/120_sorelle_pronomi.docx
 ---
-### A﻿ttivit 1: Questa conversazione ha quattro interlocutori. Ascoltate la loro conversazione e scrivete il pronome corretto (di oggetto diretto, indiretto, riflessivo, doppio, ecc.) negli spazi vuoti. 
+### A﻿ttivit: Questa conversazione ha quattro interlocutori. Ascoltate la loro conversazione e scrivete il pronome corretto (di oggetto diretto, indiretto, riflessivo, doppio, ecc.) negli spazi vuoti.
 
 **C﻿assiera:** E \_\_\_\_\_\_\_\_ vedi che v'aveva ragione Patrizia allora? 
 
@@ -62,8 +66,6 @@ fair-use: /assets/media/120_sorelle_pronomi.docx
 
 **C﻿assiera:** Perch? Non e vero che quelle sono due zoccole, Alfré?
 
-
-
 ### A﻿ttivit 2: L'uso dei pronomi riflessivi. Rispondete alle domande che seguono.
 
 1. N﻿el dialogo dicono "ti trattieni" dal verbo riflessivo "trattenersi." Quali altri verbi riflessivi ci sono nel dialogo? Elencate tutti qui.
@@ -79,17 +81,13 @@ fair-use: /assets/media/120_sorelle_pronomi.docx
 
    _﻿\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
-
-
-### A﻿ttivit 3: Il significato dei pronomi diretti. Nel dialogo usano un pronome diretto nella frase "Non la vediamo mai." Il pronome sostituisce "Chiara" in quell'esempio. Seguite le indicazioni qui sotto per praticare i pronomi diretti. 
+### A﻿ttivit 3: Il significato dei pronomi diretti. Nel dialogo usano un pronome diretto nella frase "Non la vediamo mai." Il pronome sostituisce "Chiara" in quell'esempio. Seguite le indicazioni qui sotto per praticare i pronomi diretti.
 
 **S﻿crivete 3 altre frasi che hanno pronomi diretti qui. Poi riscrivete le frasi inserendo la parola che il pronome sostituisce. (esempio: Non la vediamo mai. Non vediamo Chiara mai.)**
 
 1. _﻿\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 2. _﻿\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 3. _﻿\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
-
-
 
 ### A﻿ttivit 4: Il significato dei pronomi indiretti. Ci sono anche alcuni pronomi indiretti nel dialogo (mi, ti, gli, le, ecc). Seguite le indicazioni qui sotto per praticare i pronomi indiretti.
 
@@ -102,9 +100,7 @@ Q﻿ual è la differenza tra un oggetto indiretto e un oggetto diretto?
 
 _﻿\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
-
-
-### A﻿ttivit 5: Pronomi doppi. A volte i pronomi di oggetto diretto e quelli di oggetto indiretto possono essere usati nella stessa frase. Seguite le indicazioni per praticare i pronomi doppi. 
+### A﻿ttivit 5: Pronomi doppi. A volte i pronomi di oggetto diretto e quelli di oggetto indiretto possono essere usati nella stessa frase. Seguite le indicazioni per praticare i pronomi doppi.
 
 **Riguardate il dialogo ed elencate qui tutti gli esempi di pronomi combinati che trovate. Poi riscrivete le frasi usando prima solo il pronome di oggetto diretto e poi solo il pronome di oggetto indiretto.** 
 
