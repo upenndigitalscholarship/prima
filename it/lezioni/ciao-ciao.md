@@ -16,6 +16,7 @@ citation_information: |-
 
   A﻿nno: 2021
 thumbnail: /assets/media/ciao_ciao_lrdl.jpeg
+lesson: Ciao Ciao
 ---
 ### Attività 1. Scrittura: Cosa dici a una persona che… Usando l’imperativo informale, di’ a queste persone cosa fare. 
 
