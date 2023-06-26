@@ -1,12 +1,12 @@
 ---
-lezione: Le fate ignoranti (2001)
+lezione: Le fate ignoranti (bibite)
 medio:
   - Film
 pratica:
   - Vocabolario-Cibo e bevande
   - Grammatica-Partitivi
 livello:
-  - Principiante
+  - Elementare
   - Cultura
 citation_information: >-
   **Mezzo**: Film
