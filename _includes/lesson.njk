@@ -37,7 +37,7 @@
                     </div>  
                     {% if page.lang == 'en' %}
                 {% for lezione in collections.lezioni %}
-                    {% if lezione.data.lezioni == lezioni %}
+                    {% if lezione.data.lesson == lesson %}
                         <a href="{{lezione.url }}">Link to Italian</a>
                     {% endif %}            
                 {% endfor %}

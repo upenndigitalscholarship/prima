@@ -211,8 +211,8 @@ collections:
         name: "visible"
         widget: "boolean"
         required: false
-        
-  - label: "Items"
+
+  - label: "Lessons/Activities"
     name: "lesson_items"
 
     editor:
