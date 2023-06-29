@@ -179,16 +179,20 @@
     </div>
   </div>
   {% if page.lang == "it" %}
-<p>PRIMA è una risorsa educativa aperta interattiva progettata per l'apprendimento e la <br>della lingua italiana
-               istruzioni attraverso clip multimediali ricercabili, brevi narrazioni e risorse pedagogiche.</p>
-
+<p>PRIMA è una risorsa educativa aperta interattiva progettata per l'apprendimento e l'istruzione della lingua italiana attraverso clip multimediali ricercabili, narrazioni brevi, e risorse pedagogiche.</p>
   {% else %}
 <p>PRIMA is an interactive Open Educational Resource designed for Italian language learning and instruction through searchable media clips, short narratives, and pedagogical resources.</p>
   {% endif %}
 
+{% if page.lang == "it" %}
+<a class="button" id="myBtn">
+              Informazioni sul sito
+            </a>
+{% else %}
 <a class="button" id="myBtn">
               About the Site
             </a>
+{% endif %}
 
   {% include "./footer.html" %}
   <script>
@@ -237,8 +241,9 @@
 
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showImages: false });
+        new PagefindUI({ element: "#search", showImages: false, resetStyles: false, showResults: true, showResultCount: true });
     });
+    
 </script>
 </body>
 <html>
