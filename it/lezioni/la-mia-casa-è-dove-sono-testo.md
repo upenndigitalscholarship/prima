@@ -3,7 +3,7 @@ lezione: La mia casa è dove sono (testo)
 medio:
   - Testo
 livello:
-  - Intermedio
+  - Cultura
 citation_information: >-
   Titolo: La mia casa è dove sono
 
