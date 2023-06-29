@@ -9,6 +9,9 @@ body{
     background-color:var(--light-background);
 }
 
+.search-button {
+    background-color: transparent !important;
+}
 video {
     /* override other styles to make responsive */
     width: 100%    !important;
