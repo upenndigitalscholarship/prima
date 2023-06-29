@@ -11,15 +11,16 @@ citation_information: >-
   Scritto da: Igiaba Scego
 
 
+  Pubblicato dad: Rizzoli
+
+
   Anno: 2010
 
 
   Descrizione: Il romanzo *La mia casa è dove sono* parla delle due culture e identità della narratrice. Questo breve tratto parla delle differenze culturali tra l'Italia e la Somalia.
 thumbnail: ""
 ---
-### Attività 1. La mia casa è dove sono.
-
-Igiaba Scego è una scrittrice e attivista italo-somala. Riflettete sulle domande seguenti.
+### Attività 1. La mia casa è dove sono. Igiaba Scego è una scrittrice e attivista italo-somala. Riflettete sulle domande seguenti.
 
 1. Cosa vuol dire per te la parola “casa”?
 2. Questo è il primo libro autobiografico che Scego ha scritto. Cosa vuol dire il titolo, La mia casa è dove sono, secondo te?
