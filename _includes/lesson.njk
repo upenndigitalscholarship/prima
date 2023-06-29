@@ -52,16 +52,18 @@
                 </div>
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
                     <h3 class="lesson-title">LESSONS + RESOURCES</h3>
-                    {% if item.lesson %}
+                    
                     {% for item in en_items.items %}
                         {% if item.lesson == lesson %}    
                             <div class="lesson-item" 
                             <b><a href="/en/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
+                            {% if item.description %}
                             <p>{{ item.description | markdownify |safe }}</p>
+                            {% endif %}
                             </div>
                         {% endif %}
                     {% endfor %}
-                    {% endif %}
+                    
                 </div>
                 
             </div>

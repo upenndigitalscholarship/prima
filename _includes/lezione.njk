@@ -52,16 +52,19 @@
                 </div>
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
                     <h3>LESSONS + RESOURCES</h3>
-                    {% if item.lesson %}
+                    
                     {% for item in it_items.items %}
-                        {% if item.lesson == lesson %}    
+                        {% if item.lezione == lezione %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
                             <b><a href="/it/elementi/{{ item.title | slugify }}/">{{ item.title }}</a></b>
+                            {% if item.description %}
                             <p>{{ item.description | markdownify |safe }}</p>
+                            {% endif %}
+                        
                             </div>
                         {% endif %}
                     {% endfor %}
-                    {% endif %}
+                   
                 </div>
                 
             </div>
