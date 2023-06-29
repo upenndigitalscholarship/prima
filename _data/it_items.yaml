@@ -1,6 +1,6 @@
 items:
   - lesson: Il caso curioso di Benjamin Button
-    title: "Il periodo ipotetico dell'irrealtà"
+    title: Il periodo ipotetico dell'irrealtà
     description: ""
     doc_file: /assets/media/benjamin_button_periodo_ipotetico_ITAL.docx
     solution: /assets/media/benjamin_button_periodo_ipotetico_SOLUZIONI.docx
@@ -26,8 +26,12 @@ items:
     doc_file: /assets/media/rappresentante-di-lista_ital.docx
     solution: /assets/media/rappresentante-di-lista_soluzioni.pdf
     lezione: Ciao Ciao
-  - title: "Passato Prossimo e L'Imperfetto"
+  - title: Passato Prossimo e L'Imperfetto
     pdf_file: /assets/media/le_fate_ignoranti_imperfetto-ital-.pdf
     doc_file: /assets/media/le_fate_ignoranti_imperfetto-ital-.docx
     solution: /assets/media/le_fate_ignoranti_imperfetto-soluzioni.pdf
     lezione: Le fate ignoranti (passato prossimo e imperfetto)
+  - title: Fiabe e Identità
+    pdf_file: /assets/media/scego_la_mia_casa_activity_ital.pdf
+    doc_file: /assets/media/scego_la_mia_casa_activity_ital.docx
+    solution: /assets/media/scego_la_mia_casa-soluzioni.pdf
