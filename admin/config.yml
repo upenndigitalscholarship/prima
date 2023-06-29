@@ -13,7 +13,7 @@ collections:
   - name: "lezioni" # Used in routes, e.g., /admin/collections/blog
     editor:
       preview: false
-    label: "Lezioni (IT)" # Used in the UI
+    label: "Video (IT)" # Used in the UI
     identifier_field: lezione
     folder: "it/lezioni" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -106,9 +106,13 @@ collections:
         name: "fair-use"
         widget: "file"
         required: false
+      - label: "Visible"
+        name: "visible"
+        widget: "boolean"
+        required: false
 
   - name: "lessons" # Used in routes, e.g., /admin/collections/blog
-    label: "Lesson (EN)" # Used in the UI
+    label: "Video (EN)" # Used in the UI
     editor:
       preview: false
     identifier_field: lesson
@@ -202,14 +206,19 @@ collections:
         name: "fair-use"
         widget: "file"
         required: false
-
+      
+      - label: "Visible"
+        name: "visible"
+        widget: "boolean"
+        required: false
+        
   - label: "Items"
     name: "lesson_items"
 
     editor:
       preview: false
     files:
-      - label: "Items (EN)"
+      - label: "Lessons (EN)"
         name: "items-en"
         file: "_data/en_items.yaml"
         fields:
@@ -226,7 +235,7 @@ collections:
                 name: description
                 widget: markdown
                 required: false
-              - label: "Related Lesson"
+              - label: "Related Video"
                 name: "lesson"
                 required: false
                 widget: "relation"
@@ -248,7 +257,7 @@ collections:
                 required: false
               
 
-      - label: "Items (IT)"
+      - label: "Lezione (IT)"
         name: "items-it"
         file: "_data/it_items.yaml"
         fields:
@@ -265,7 +274,7 @@ collections:
                 name: description
                 widget: markdown
                 required: false
-              - label: "Lezione correlata"
+              - label: "Video correlata"
                 name: "lezione"
                 required: false
                 widget: "relation"
