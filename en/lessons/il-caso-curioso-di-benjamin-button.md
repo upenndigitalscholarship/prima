@@ -1,4 +1,13 @@
 ---
+level:
+  - Intermediate
+  - advanced
+lezioni: Il caso curioso di Benjamin Button
+citation: |-
+  Medium: Film
+  Year: 2008
+  Produced by: Paramount Pictures
+  Directed by: David Fincher
 lesson: The Curious Case of Benjamin Botton
 medium:
   - Film
@@ -6,17 +15,11 @@ practice:
   - Grammar
   - If/Then Conditional
 learning_outcome: null
-level:
-  - Intermediate
-  - advanced
 week: ""
 citation_information: |-
   **Medium**: Film
-
   **Year**: 2008
-
   **Produced by**: Paramount Pictures
-
   **Directed by**: David Fincher
 prerequisites: Past Subjunctive, Past Conditional
 thumbnail: /assets/media/bbutton.png
@@ -29,11 +32,5 @@ video_embed: <iframe id="kaltura_player"
   allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation
   allow-top-navigation-by-user-activation" frameborder="0"
   title="periodo_ipotetico_benjamin_button"></iframe>
-lezioni: Il caso curioso di Benjamin Button
-citation: |-
-  Medium: Film
-  Year: 2008
-  Produced by: Paramount Pictures
-  Directed by: David Fincher
 fair-use: /assets/media/140_benjamin_button_ipotetico.docx
 ---
