@@ -57,9 +57,7 @@
                         {% if item.lezione == lezione %}    
                             <div style="border: solid var(--prima-red); padding:20px"> 
                             <b><a href="/it/elementi/{{ item.title | slugify }}/">{{ item.title }}</a></b>
-                            {% if item.description %}
-                            <p>{{ item.description | markdownify |safe }}</p>
-                            {% endif %}
+                            
                         
                             </div>
                         {% endif %}
