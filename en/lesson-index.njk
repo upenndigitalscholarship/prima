@@ -3,29 +3,40 @@
 <h1> Lesson Index</h1>
 
 </div>
-<div class="container-top">
-        <div>
+        <div class="container" style="flex-direction: column;">
         <p><b>Level</b></p>
+        <ul style="list-style:inside;">
         {% for level in collections.lessons | distinct('level') %}
           
-          <label for="{{ level }}">{{ level }}</label><br>
+          <li>{{ level }}</li>
         {% endfor %}
+        </ul>
         </div>
-        <div>
+
+        <div class="container" style="flex-direction: column;">
         <p><b>Practice</b></p>
+        <ul style="list-style:inside;">
         {% for practice in collections.lessons | distinct('practice') %}
           
-          <label for="{{ practice }}">{{ practice }}</label><br>
+          <li>{{ practice }}</li>
         {% endfor %}
-         </div>
-        <div>
+        </ul>
+        
+        </div>
+        
+        <div class="container" style="flex-direction: column;">
         <p><b>Learning outcomes</b></p>
+        <ul style="list-style:inside;">
         {% for learning_outcome in collections.lessons | distinct('learning_outcome') %}
           
-          <label for="{{ learning_outcome }}">{{ learning_outcome }}</label><br>
+          <li>{{ learning_outcome }}</li>
         {% endfor %}
-         </div>
+        </ul>
+        
+        </div>
+        
 </div>
+
 <div id="myModal" class="modal">
 <div style="background-color: #B61339; color:white;"class="modal-content">
     <span class="close">&times;</span>
