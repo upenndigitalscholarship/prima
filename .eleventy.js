@@ -46,7 +46,7 @@ module.exports = function(eleventyConfig) {
                     return false;
                 };
             });
-            
+            console.log(key, [...values].sort());
             return [...values].sort();
         
         
