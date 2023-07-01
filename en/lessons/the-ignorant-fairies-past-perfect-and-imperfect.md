@@ -7,16 +7,16 @@ level:
   - Beginner
   - Intermediate
 citation_information: >-
-  Medium: Film
+  **Medium:** Film
 
 
-  Year: 2002
+  **Year:** 2002
 
 
-  Directed by: Ferzan Özpetek
+  **Directed by:** Ferzan Özpetek
 
 
-  Produced by: R&C Produzioni, Les Films Balenciaga
+  **Produced by:** R&C Produzioni, Les Films Balenciaga
 
 
   Brief Description: In this clip from Le fate ignoranti (2002), Antonia and Michele speak of Massimo, a\
