@@ -1,7 +1,7 @@
 ---
 lezione: Le fate ignoranti (passato prossimo e imperfetto)
 pratica:
-  - Passato Prossimo
+  - Passato prossimo
   - Imperfetto
 livello:
   - Elementare
