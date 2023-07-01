@@ -6,20 +6,21 @@ practice:
   - Reading
 level:
   - Culture
+  - Advanced
 citation_information: >-
-  Title: My Home is Where I am
+  **Title:** My Home is Where I Am
 
 
-  Written by: Igiaba Scego
+  **Written by:** Igiaba Scego
 
 
-  Published by: Rizzoli
+  **Published by:** Rizzoli
 
 
-  Year: 2010
+  **Year:** 2010
 
 
-  Description: Igiaba Scego's novel *My Home is Where I am* recounts the protagonist's dual cultures and identities. This excerpt focuses on cultural differences between Italy and Somalia
+  **Description:** Igiaba Scego's novel *My Home is Where I am* recounts the protagonist's dual cultures and identities. This excerpt focuses on cultural differences between Italy and Somalia
 thumbnail: ""
 lezioni: La mia casa è dove sono (testo)
 ---
