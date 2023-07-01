@@ -3,7 +3,10 @@ lesson: Sisters
 medium:
   - Television
 learning_outcome:
-  - Pronouns
+  - Pronouns (Reflexive
+  - Definite
+  - Indefinite
+  - Combined)
 level:
   - Intermediate
 citation_information: >-
