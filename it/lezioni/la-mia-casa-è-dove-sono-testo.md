@@ -4,6 +4,7 @@ medio:
   - Testo
 livello:
   - Cultura
+  - Avanzato
 citation_information: >-
   Titolo: La mia casa è dove sono
 
@@ -11,7 +12,7 @@ citation_information: >-
   Scritto da: Igiaba Scego
 
 
-  Pubblicato dad: Rizzoli
+  Pubblicato da: Rizzoli
 
 
   Anno: 2010
