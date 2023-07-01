@@ -6,19 +6,19 @@ livello:
   - Cultura
   - Avanzato
 citation_information: >-
-  Titolo: La mia casa è dove sono
+  **Titolo:** La mia casa è dove sono
 
 
-  Scritto da: Igiaba Scego
+  **Scritto da:** Igiaba Scego
 
 
-  Pubblicato da: Rizzoli
+  **Pubblicato da:** Rizzoli
 
 
-  Anno: 2010
+  **Anno:** 2010
 
 
-  Descrizione: Il romanzo *La mia casa è dove sono* parla delle due culture e identità della narratrice. Questo breve tratto parla delle differenze culturali tra l'Italia e la Somalia.
+  **Descrizione:** Il romanzo *La mia casa è dove sono* parla delle due culture e identità della narratrice. Questo breve tratto parla delle differenze culturali tra l'Italia e la Somalia.
 thumbnail: ""
 lesson: My Home is Where I am (text)
 ---
