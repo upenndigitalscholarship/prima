@@ -8,7 +8,7 @@ practice:
   - Partitive
 learning_outcome: null
 level:
-  - Beginner
+  - Elementary
 citation_information: >-
   **Medium**: Film
 
