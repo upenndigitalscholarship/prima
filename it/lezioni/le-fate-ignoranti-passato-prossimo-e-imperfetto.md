@@ -7,19 +7,19 @@ livello:
   - Elementare
   - Intermedio
 citation_information: >-
-  Media: Film
+  **Media:** Film
 
 
-  Anno: 2002
+  **Anno:** 2002
 
 
-  Diretto da: Ferzan Özpetek
+  **Diretto da:** Ferzan Özpetek
 
 
-  Prodotto da: R&C Produzioni, Les Films Balenciaga
+  **Prodotto da:** R&C Produzioni, Les Films Balenciaga
 
 
-  Descrizione: In questo clip Atonio e Michele parlano di una persona che i due hanno in comune.
+  **Descrizione:** In questo clip Atonio e Michele parlano di una persona che i due hanno in comune.
 prerequisiti: Passato Prossimo e Imperfetto
 thumbnail: /assets/media/foto-le-fate-ignoranti.jpeg
 video_embed: <iframe id="kaltura_player"
