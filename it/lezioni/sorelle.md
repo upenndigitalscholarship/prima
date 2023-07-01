@@ -4,8 +4,8 @@ medio:
   - Televisione
 pratica:
   - Pronomi diretti
-  - pronomi indiretti
-  - pronomi doppi
+  - Pronomi indiretti
+  - Pronomi doppi
 livello:
   - Intermedio
 citation_information: >-
