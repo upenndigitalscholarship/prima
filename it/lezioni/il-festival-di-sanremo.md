@@ -1,11 +1,11 @@
 ---
 lezione: Il festival di Sanremo
 pratica:
-  - passato prossimo
-  - futuro
+  - Passato prossimo
+  - Futuro
 livello:
-  - intermedio
-  - cultura
+  - Intermedio
+  - Cultura
 thumbnail: /assets/media/sanremo.png
 video_embed: <iframe
   id="kaltura_player"   src="https://cdnapisec.kaltura.com/p/1147242/sp/114724200/embedIframeJs/uiconf_id/9757771/partner_id/1147242?iframeembed=true&playerId=kaltura_player&entry_id=1_khfz8ig1&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_p438ypzh"   width="400"
