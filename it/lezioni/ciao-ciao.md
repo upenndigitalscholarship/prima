@@ -4,7 +4,7 @@ medio:
   - Video
 pratica:
   - Parti del corpo
-  - imperativo informale
+  - Imperativo informale
 livello:
   - Elementare
 citation_information: |-
