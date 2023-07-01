@@ -32,7 +32,7 @@ video_embed: <iframe id="kaltura_player"
 lesson: Le fate ignoranti (Le bibite)
 fair-use: /assets/media/110_le_fate_ignoranti_le_bibite.docx
 ---
-# **Attività 1:** Guardate la scena e indicate cosa offre l’uomo alla donna. Poi, scrivete un articolo adatto per ogni opzione (es. un, una, il, lo, del, dell’, ecc.) Conoscete tutte queste bibite?
+### **Attività 1:** Guardate la scena e indicate cosa offre l’uomo alla donna. Poi, scrivete un articolo adatto per ogni opzione (es. un, una, il, lo, del, dell’, ecc.) Conoscete tutte queste bibite?
 
 1. \_\_\_\_\_\_\_\_\_\__ spritz                      no \_\_\_\_\_  sì \_\_\_\_\_ 
 2. \_\_\_\_\_\_\_\_\_\__ acqua                     no \_\_\_\_\_  sì \_\_\_\_\_
@@ -51,7 +51,7 @@ fair-use: /assets/media/110_le_fate_ignoranti_le_bibite.docx
 15. \_\_\_\_\_\_\_\_\_\__ vino                      no \_\_\_\_\_  sì \_\_\_\_\_
 16. \_\_\_\_\_\_\_\_\_\__ gin e tonic           no \_\_\_\_\_  sì \_\_\_\_\_
 
-## A﻿ttivit 2: Rispondete alle domande con frasi complete.
+### A﻿ttivit 2: Rispondete alle domande con frasi complete.
 
 1. Cos’altro offre l’uomo alla donna? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__ 
 2. Alla fine, cosa prende la donna? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
