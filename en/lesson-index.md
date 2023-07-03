@@ -40,7 +40,9 @@ Pronouns:
 * Direct object- Indirect object
 * Relative
 * Double objects
-* Reflexive**Prepositions**:
+* Reflexive
+
+**Prepositions**:
 * Simple
 * Combined
 * Adverbial
