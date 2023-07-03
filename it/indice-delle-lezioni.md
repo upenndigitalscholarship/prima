@@ -1,24 +1,26 @@
 ---
 text: Indice delle lezioni
 ---
-**Grammatica**:
+<style>
+ul {
+    list-style: disc;
+    margin-left:    15px;
+}
+</style>
+**Grammatica**:  
 Articoli:
-
 * Definitivi
 * Indefinitivi
 * Partitivi
 
 Aggettivi:
-
 * Aggettivi e contrari
 * Aggettivi e descrizioni
 
-Avverbi:
-
+Avverbi:  
 * Avverbi
 
 Verbi:
-
 * Essere
 * Avere
 * Presente
@@ -33,21 +35,18 @@ Verbi:
 * Si impersonale
 
 Pronomi:
-
 * di oggetto diretto
 * Pronomi di oggetto indiretto
 * Pronomi relativi
 * Pronomi doppi
 
 Preposizioni:
-
 * Semplici
 * Articolate
 * Avverbiali
 * Connettivi
 
 **Vocabolario**:
-
 * Stanze e oggetti della casa
 * Cibo e ristoranti
 * Aula e scuola
@@ -57,7 +56,6 @@ Preposizioni:
 * Alberghi e viaggi
 
 **Cultura**:
-
 * San Remo
 * Poesie
 * Ius Soli

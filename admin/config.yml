@@ -315,7 +315,7 @@ collections:
           - {label: "Text", name: "body", widget: "markdown", required: false}
       
       - name: "index-en"
-        label: "Home (EN)"
+        label: "Lesson Index (EN)"
         file: "/en/lesson-index.md"
         fields:
           - { label: Title, name: text, widget: string }
