@@ -294,10 +294,9 @@ collections:
                 name: "solution"
                 widget: "file"
                 required: false
-              
-
-  - label: "Settings"
-    name: "settings"
+  
+  - label: "Pages"
+    name: "pages"
     editor:
       preview: false
     files:
@@ -314,7 +313,21 @@ collections:
         fields:
           - { label: Titolo, name: text, widget: string }
           - {label: "Text", name: "body", widget: "markdown", required: false}
-  
+      
+      - name: "index-en"
+        label: "Home (EN)"
+        file: "/en/lesson-index.md"
+        fields:
+          - { label: Title, name: text, widget: string }
+          - {label: "Text", name: "body", widget: "markdown", required: false}
+      
+      - name: "lesson-index-it"
+        label: "Indice delle lezioni (IT)"
+        file: "/it/indice-delle-lezioni.md"
+        fields:
+          - { label: Titolo, name: text, widget: string }
+          - {label: "Text", name: "body", widget: "markdown", required: false}
+
   - label: "Landing Page Video"
     name: "landing-video"
     editor:
