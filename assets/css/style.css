@@ -11,6 +11,9 @@ body{
 
 .search-button {
     border-radius: 10px;
+    max-width: 60vw !important;
+    max-height: 40vh !important;
+    overflow: scroll;
 }
 video {
     /* override other styles to make responsive */
