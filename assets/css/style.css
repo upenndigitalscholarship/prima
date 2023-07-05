@@ -116,7 +116,7 @@ main {
     margin: 70px;
 }
 
-ul {
+.main-nav li {
     margin: 0;
     padding: 0;
     list-style: none;

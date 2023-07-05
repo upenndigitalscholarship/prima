@@ -1,12 +1,6 @@
 ---
 text: "Lesson Index"
 ---
-<style>
-ul {
-    list-style: disc;
-    margin-left:    15px;
-}
-</style>
 
 **Grammar**:  
 Articles:

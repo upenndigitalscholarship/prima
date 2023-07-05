@@ -1,12 +1,6 @@
 ---
 text: Indice delle lezioni
 ---
-<style>
-ul {
-    list-style: disc;
-    margin-left:    15px;
-}
-</style>
 **Grammatica**:  
 Articoli:
 * Definitivi
