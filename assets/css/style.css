@@ -10,7 +10,7 @@ body{
 }
 
 .search-button {
-    background-color: transparent !important;
+    border-radius: 10px;
 }
 video {
     /* override other styles to make responsive */
