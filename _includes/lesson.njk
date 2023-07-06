@@ -25,6 +25,7 @@
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
                     {% endif %}
+                    <img hidden data-pagefind-meta="image[src]" src="{{ thumbnail }}"/> 
                     {% if second_video_embed %}
                     <div id="second_video_embed">
                         {{ second_video_embed|safe }}
