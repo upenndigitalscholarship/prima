@@ -3,13 +3,13 @@
 
 {% block content %}
 
-    <span>< <a class="breadcrumb" href="../../../it/sfoglia-i-media">
+    <span>< <a class="breadcrumb" href="{{ "/sfoglia-i-media/" | locale_url }}">
         Indietro</a></span>
                 <div>
                     <h1 class="clip-title">{{ lezione }}</h1>
                 </div>
            
-           <div class="container"> 
+           <div class="container-top"> 
 
 
                <div class="row">
@@ -25,6 +25,8 @@
                     {% else %}
                         <img height="50%" src="{{ thumbnail }}"/>
                     {% endif %}
+                    <img hidden data-pagefind-meta="image[src]" src="{{ thumbnail }}"/> 
+
                     {% if second_video_embed %}
                     <div id="second_video_embed">
                         {{ second_video_embed|safe }}
