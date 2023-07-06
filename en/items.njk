@@ -9,10 +9,11 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
 <span>< <a class="breadcrumb" href="/en/lessons/{{ item.lesson | slug }}">
         back</a></span>
                 <div>
-                    <h1 class="clip-title">{{ item.title }}</h1>
+                    <h1 data-pagefind-meta="title" class="clip-title">{{ item.title }}</h1>
                 </div>
            
            <div class="container"> 
+        <img hidden data-pagefind-meta="image[src]" src="{{ item.thumbnail }}"/> 
 
 
                 <div>

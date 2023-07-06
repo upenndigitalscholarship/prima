@@ -9,9 +9,10 @@ permalink: "/it/elementi/{{ item.title | slugify }}/index.html"
 <span>< <a class="breadcrumb" href="../../../it/lezioni/{{ item.lezione | slug }}">
         Indietro</a></span>
                 <div>
-                    <h1 class="clip-title">{{ item.title }}</h1>
+                    <h1 data-pagefind-meta="title" class="clip-title">{{ item.title }}</h1>
                 </div>
-           
+                   <img hidden data-pagefind-meta="image[src]" src="{{ item.thumbnail }}"/> 
+
            <div class="container"> 
 
 
@@ -44,10 +45,10 @@ permalink: "/it/elementi/{{ item.title | slugify }}/index.html"
                             <div style="border: solid var(--prima-red); padding:20px"> 
                             <b><a href="/it/lezioni/{{ lesson.lezione | slugify }}/">{{ item.lezione }}</a></b>
                             <br>
-                            
+
                             {# TODO, this is causing  Cannot read properties of undefined (reading 'data') (via Template render error) #}
                             {# <img width="20%" src="{{ collections.lezioni | thumbnail(item.lezione) }}"
-                            alt="{{ item.lezione }}"/> #}
+                                alt="{{ item.lezione }}"/> #}
                             
                             
                             </div>
