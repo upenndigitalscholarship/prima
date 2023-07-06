@@ -84,6 +84,11 @@ video {
     min-width:300px !important;
 }
 
+.lesson-content{
+    width:40vw;
+    min-width:300px !important;
+}
+
 iframe{
     min-width:300px !important;
     width:40vw !important;
@@ -278,3 +283,17 @@ footer {
     text-decoration: none;
     cursor: pointer;
   } 
+
+.button {
+          margin-left:auto;
+          margin-right:auto;
+          margin-bottom:2em;
+          background-color: #B61339;
+          padding: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+          display:block;
+          width:max-content;
+          cursor:pointer;
+          border:none;
+}

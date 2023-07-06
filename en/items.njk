@@ -12,43 +12,45 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
                     <h1 data-pagefind-meta="title" class="clip-title">{{ item.title }}</h1>
                 </div>
            
-           <div class="container"> 
+           <div class="container-top"> 
+           <div class="lesson-content">
         <img hidden data-pagefind-meta="image[src]" src="{{ item.thumbnail }}"/> 
 
 
                 <div>
                     
                     {% if item.pdf_file %}
-                    <button target="_blank" onclick="window.location.href='{{ item.pdf_file }}';">
+                    <button class="button" target="_blank" onclick="window.location.href='{{ item.pdf_file }}';">
                         Download as pdf
                     </button>
                     {% endif %}
                     {% if item.doc_file %}
-                    <button target="_blank" onclick="window.location.href='{{ item.doc_file }}';">
+                    <button class="button" target="_blank" onclick="window.location.href='{{ item.doc_file }}';">
                         Download as docx
                     </button>
                     {% endif %}
                     {% if item.solution %}
-                    <button target="_blank" onclick="window.location.href='{{ item.solution }}';">
+                    <button class="button" target="_blank" onclick="window.location.href='{{ item.solution }}';">
                         Download solution
                     </button>
                     {% endif %}
                     <p>{{ item.description | markdownify |safe }}</p>
                 </div>  
-        
+            </div>
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
-                    <h3>MEDIA</h3>
+                    <h3 class="lesson-title">MEDIA</h3>
                     {% for lesson in en_items.items %}
                         {% if lesson.title == item.title %}    
-                            <div style="border: solid var(--prima-red); padding:20px"> 
+                            <div class="lesson-item"> 
+                            <div class="container">
                             <b><a href="/en/lessons/{{ lesson.lesson | slugify }}/">{{ item.lesson }}</a></b>
                             <br>
                             
-                            <img width="20%" src="{{ collections.lessons | thumbnail(lesson.lesson) }}"
+                            <img width="40%" src="{{ collections.lessons | thumbnail(lesson.lesson) }}"
                             alt="{{ lesson.lesson }}"/>
+                            </div>
                             </div>
                         {% endif %}
                     {% endfor %}
                 </div>
-                
             </div>

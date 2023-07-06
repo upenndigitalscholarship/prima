@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <span>< <a class="breadcrumb" href="{{ "/sfoglia-i-media/" | locale_url }}">
+    <span> <a class="breadcrumb" href="{{ "/sfoglia-i-media/" | locale_url }}">
         Indietro</a></span>
                 <div>
                     <h1 class="clip-title">{{ lezione }}</h1>
@@ -57,7 +57,7 @@
                     
                     {% for item in it_items.items %}
                         {% if item.lezione == lezione %}    
-                            <div style="border: solid var(--prima-red); padding:20px"> 
+                            <div class="lesson-item"> 
                             <b><a href="/it/elementi/{{ item.title | slugify }}/">{{ item.title }}</a></b>
                             
                         
