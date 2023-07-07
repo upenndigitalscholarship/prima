@@ -29,14 +29,16 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
                         Download as docx
                     </button>
                     {% endif %}
-                    {% if item.solution %}
+                    
+                    <p>{{ item.description | markdownify |safe }}</p>
+                </div>  
+                {% if item.solution %}
                     <button class="button" target="_blank" onclick="window.location.href='{{ item.solution }}';">
                         Download solution
                     </button>
                     {% endif %}
-                    <p>{{ item.description | markdownify |safe }}</p>
-                </div>  
             </div>
+
                 <div class="description" style="background:#F9FCF3; padding: 10px;">
                     <h3 class="lesson-title">MEDIA</h3>
                     {% for lesson in en_items.items %}
@@ -50,6 +52,7 @@ permalink: "/en/items/{{ item.title | slugify }}/index.html"
                             alt="{{ lesson.lesson }}"/>
                             </div>
                             </div>
+
                         {% endif %}
                     {% endfor %}
                 </div>

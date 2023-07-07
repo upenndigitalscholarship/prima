@@ -1,6 +1,8 @@
 ---
 text: Indice delle lezioni
 ---
+<div style="max-width:fit-content; margin:auto">
+
 **Grammatica**:  
 Articoli:
 * Definitivi
@@ -57,3 +59,5 @@ Preposizioni:
 * Stereotipi
 * La festa della donna
 * Carnevale
+
+</div>

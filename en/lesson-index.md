@@ -1,7 +1,8 @@
 ---
 text: "Lesson Index"
 ---
-
+<div style="max-width:fit-content; margin:auto">
+  
 **Grammar**:  
 Articles:
 
@@ -61,3 +62,4 @@ Pronouns:
 * Stereotypes
 * International Women’s Day
 * Carnevale
+</div>

@@ -1885,7 +1885,7 @@
     gutterWidth: 0,
     // A static number or function that returns a number which tells the plugin
     // how wide the columns are (in pixels).
-    columnWidth: 0,
+    columnWidth: 300,
     // If your group is not json, and is comma delimited, you could set delimiter
     // to ','.
     delimiter: null,

@@ -297,3 +297,8 @@ footer {
           cursor:pointer;
           border:none;
 }
+
+.shuffle-nav-container{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
