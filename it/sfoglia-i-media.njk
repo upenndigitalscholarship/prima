@@ -49,7 +49,7 @@
       {% if lesson.data.livello%}{% for level in lesson.data.livello%}{% set all_values = (all_values.push(level), all_values) %}{% endfor %}{% endif%}
       {% if lesson.data.pratica%}{% for practice in lesson.data.pratica%}{% set all_values = (all_values.push(practice), all_values) %}{% endfor %}{% endif%}
       {% if lesson.data.risultato%}{% for learning_outcome in lesson.data.risultato%}{% set all_values = (all_values.push(learning_outcome), all_values) %}{% endfor %}{% endif%}
-      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lezione }}">
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lezione }}">
         <div class="picture-item__inner">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
