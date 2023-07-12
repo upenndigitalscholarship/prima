@@ -40,7 +40,7 @@ Fiabe somale: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Fiabe europee: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
-### Attività 3. Lavorate in piccoli gruppi. Ogni studente sceglie uno degli elementi da fiaba identificati nell’attività 2B. Insieme, scrivete una breve fiaba.
+### Attività 3. Lavorate in piccoli gruppi. Ogni studente sceglie uno degli elementi della fiaba identificati nell’attività 2B. Insieme, scrivete una breve fiaba.
 
 Elementi della fiaba scelti:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
