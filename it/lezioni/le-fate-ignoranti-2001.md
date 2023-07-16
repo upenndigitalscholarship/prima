@@ -3,6 +3,9 @@ lezione: Le fate ignoranti
 medio:
   - Film
 pratica:
+  - Vocabolario
+  - Grammatica
+risultato:
   - Bevande
   - Partitivi
   - Articoli
