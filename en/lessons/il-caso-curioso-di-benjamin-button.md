@@ -4,8 +4,8 @@ medium:
   - Film
 practice:
   - Grammar
-  - If/Then Conditional
-learning_outcome: null
+learning_outcome:
+  - Conditional Clauses
 level:
   - Intermediate
   - Advanced
