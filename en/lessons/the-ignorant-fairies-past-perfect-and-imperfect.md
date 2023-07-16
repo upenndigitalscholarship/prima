@@ -1,5 +1,5 @@
 ---
-lesson: The Ignorant Fairies (Past Perfect and Imperfect)
+lesson: The Ignorant Fairies
 practice:
   - Past Perfect
   - Imperfect
