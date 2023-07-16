@@ -2,6 +2,11 @@
 lezione: AntoloGaia
 medio:
   - Testo
+pratica:
+  - Leggere
+  - Grammatica
+risultato:
+  - Periodo Ipotetico
 livello:
   - Intermedio
   - Avanzato
