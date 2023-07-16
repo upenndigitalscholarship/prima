@@ -3,6 +3,8 @@ lezione: Ciao Ciao
 medio:
   - Musica
 pratica:
+  - Grammatica
+risultato:
   - Parti del corpo
   - Imperativo informale
 livello:
