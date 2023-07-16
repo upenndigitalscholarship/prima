@@ -1,5 +1,5 @@
 ---
-lezione: La mia casa è dove sono (testo)
+lezione: La mia casa è dove sono
 medio:
   - Testo
 livello:
