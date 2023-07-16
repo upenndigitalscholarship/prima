@@ -3,9 +3,12 @@ lezione: Sorelle
 medio:
   - Televisione
 pratica:
+  - Grammatica
+risultato:
   - Pronomi diretti
   - Pronomi indiretti
   - Pronomi doppi
+  - Pronomi Riflessivi
 livello:
   - Intermedio
 citation_information: >-
