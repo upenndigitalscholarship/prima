@@ -3,6 +3,9 @@ lesson: Ciao Ciao
 medium:
   - Music
 practice:
+  - Vocabulary
+  - Grammar
+learning_outcome:
   - Body Parts
   - Informal Commands
 level:
