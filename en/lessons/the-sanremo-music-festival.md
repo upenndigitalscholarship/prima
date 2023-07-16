@@ -1,5 +1,7 @@
 ---
 lesson: The Sanremo Music Festival
+medium:
+  - Music
 learning_outcome:
   - Past Perfect
   - Future
