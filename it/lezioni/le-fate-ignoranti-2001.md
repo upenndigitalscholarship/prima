@@ -1,5 +1,5 @@
 ---
-lezione: Le fate ignoranti (bibite)
+lezione: Le fate ignoranti
 medio:
   - Film
 pratica:
