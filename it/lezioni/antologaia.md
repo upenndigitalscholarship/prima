@@ -1,5 +1,5 @@
 ---
-lezione: Antologaia
+lezione: AntoloGaia
 medio:
   - Testo
 livello:
@@ -13,5 +13,5 @@ citation_information: |-
   C﻿asa Editrice: Alegre
 
   A﻿nno: 2015
-thumbnail: ""
+thumbnail: /assets/media/porpora.jpeg
 ---
