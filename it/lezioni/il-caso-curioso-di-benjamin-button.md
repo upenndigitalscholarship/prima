@@ -10,8 +10,9 @@ lezione: Il caso curioso di Benjamin Button
 medio:
   - Film
 pratica:
-  - Periodo ipotetico
-risultato: []
+  - Grammatica
+risultato:
+  - Periodo Ipotetico
 settimana: ""
 citation_information: |-
   **Medio**: Film
