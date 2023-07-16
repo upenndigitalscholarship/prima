@@ -21,7 +21,7 @@ citation_information: >-
 
 
   **Description:** Igiaba Scego's novel *My Home is Where I am* recounts the protagonist's dual cultures and identities. This excerpt focuses on cultural differences between Italy and Somalia
-thumbnail: ""
+thumbnail: /assets/media/la-mia-casa.jpeg
 lezioni: La mia casa è dove sono (testo)
 ---
 ### Activity 1. My Home is Where I Am. Igiaba Scego is an Italo-Somali writer and activist. Reflect on the following questions before reading the passage.
