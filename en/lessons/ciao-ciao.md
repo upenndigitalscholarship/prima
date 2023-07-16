@@ -1,7 +1,7 @@
 ---
 lesson: Ciao Ciao
 medium:
-  - Video
+  - Music
 practice:
   - Body Parts
   - Informal Commands
