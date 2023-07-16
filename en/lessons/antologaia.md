@@ -4,6 +4,7 @@ medium:
   - Text
 practice:
   - Grammar
+  - Reading
 learning_outcome:
   - Conditional Clauses of Impossibility
 level:
