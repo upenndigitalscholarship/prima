@@ -3,10 +3,12 @@ lesson: The Ignorant Fairies
 medium:
   - Film
 practice:
+  - Vocabulary
+  - Grammar
+learning_outcome:
   - Drinks
   - Articles
   - Partitive
-learning_outcome: null
 level:
   - Elementary
 citation_information: >-
