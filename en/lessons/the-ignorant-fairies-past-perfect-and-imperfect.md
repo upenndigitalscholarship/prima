@@ -3,6 +3,8 @@ lesson: The Ignorant Fairies
 medium:
   - Film
 practice:
+  - Grammar
+learning_outcome:
   - Past Perfect
   - Imperfect
 level:
