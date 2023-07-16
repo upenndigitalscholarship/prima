@@ -1,5 +1,5 @@
 ---
-lesson: My Home is Where I am (text)
+lesson: My Home is Where I am
 medium:
   - Text
 practice:
