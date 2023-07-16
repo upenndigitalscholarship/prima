@@ -1,5 +1,7 @@
 ---
 lesson: The Ignorant Fairies
+medium:
+  - Film
 practice:
   - Past Perfect
   - Imperfect
