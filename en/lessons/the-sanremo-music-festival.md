@@ -2,6 +2,8 @@
 lesson: The Sanremo Music Festival
 medium:
   - Music
+practice:
+  - Culture
 learning_outcome:
   - Past Perfect
   - Future
