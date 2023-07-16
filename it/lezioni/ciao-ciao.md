@@ -1,7 +1,7 @@
 ---
 lezione: Ciao Ciao
 medio:
-  - Video
+  - Musica
 pratica:
   - Parti del corpo
   - Imperativo informale
