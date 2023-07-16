@@ -2,11 +2,13 @@
 lesson: Sisters
 medium:
   - Television
+practice:
+  - Grammar
 learning_outcome:
-  - Pronouns (Reflexive
-  - Definite
-  - Indefinite
-  - Combined)
+  - Reflexive Pronouns
+  - Direct Object Pronouns
+  - Indirect Object Pronouns
+  - Combined Pronouns
 level:
   - Intermediate
 citation_information: >-
