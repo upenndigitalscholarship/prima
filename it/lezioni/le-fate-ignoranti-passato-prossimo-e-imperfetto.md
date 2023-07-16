@@ -1,5 +1,7 @@
 ---
-lezione: Le fate ignoranti (passato prossimo e imperfetto)
+lezione: Le fate ignoranti
+medio:
+  - Film
 pratica:
   - Passato prossimo
   - Imperfetto
