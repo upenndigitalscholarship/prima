@@ -2,6 +2,9 @@
 lezione: La mia casa è dove sono
 medio:
   - Testo
+pratica:
+  - Lettura
+  - Cultura
 livello:
   - Cultura
   - Avanzato
