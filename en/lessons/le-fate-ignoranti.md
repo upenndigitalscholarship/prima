@@ -1,5 +1,5 @@
 ---
-lesson: The Ignorant Fairies (Drinks)
+lesson: The Ignorant Fairies
 medium:
   - Film
 practice:
