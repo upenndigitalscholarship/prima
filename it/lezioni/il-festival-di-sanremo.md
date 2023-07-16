@@ -3,8 +3,7 @@ lezione: Il festival di Sanremo
 medio:
   - Musica
 pratica:
-  - Passato prossimo
-  - Futuro
+  - Cultura
 livello:
   - Intermedio
   - Cultura
