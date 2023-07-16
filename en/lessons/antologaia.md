@@ -3,6 +3,8 @@ lesson: AntoloGaia
 medium:
   - Text
 practice:
+  - Grammar
+learning_outcome:
   - Conditional Clauses of Impossibility
 level:
   - Intermediate
