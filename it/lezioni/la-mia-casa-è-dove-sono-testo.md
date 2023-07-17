@@ -23,7 +23,7 @@ citation_information: >-
 
   **Descrizione:** Il romanzo *La mia casa è dove sono* parla delle due culture e identità della narratrice. Questo breve tratto parla delle differenze culturali tra l'Italia e la Somalia.
 thumbnail: /assets/media/la-mia-casa.jpeg
-lesson: My Home is Where I am (text)
+lesson: My Home is Where I am
 ---
 ### Attività 1. La mia casa è dove sono. Igiaba Scego è una scrittrice e attivista italo-somala. Riflettete sulle domande seguenti.
 
