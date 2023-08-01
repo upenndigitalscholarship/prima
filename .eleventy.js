@@ -53,10 +53,14 @@ module.exports = function(eleventyConfig) {
     });
     eleventyConfig.addFilter("thumbnail", function(collection, key) {
         if (collection && key) {
-            // find item with lesson equal to key
-            let item = collection.find(item => item.data.lesson === key);
-            return item.data.thumbnail;
-        }});
+          // find item with lesson equal to key
+          let item = collection.find(item => item.data && item.data.lesson === key);
+          return item && item.data && item.data.thumbnail;
+        } 
+      
+        // handle the case when either `collection` or `key` is not defined
+        return "";
+      });
     eleventyConfig.on('eleventy.after', () => {
         execSync(`npx pagefind --source _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
         })
