@@ -57,7 +57,7 @@
                     {% for item in en_items.items %}
                         {% if item.lesson == lesson %}    
                             <div class="lesson-item" 
-                            <b><a href="/en/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
+                            <b><a target="_blank" href="/en/items/{{ item.title | slugify }}/">{{ item.title }}</a></b>
                             
                             </div>
                         {% endif %}
