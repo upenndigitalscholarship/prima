@@ -3,8 +3,7 @@ lezione: Le fate ignoranti
 medio:
   - Film
 pratica:
-  - Passato prossimo
-  - Imperfetto
+  - Grammatica
 livello:
   - Elementare
   - Intermedio
