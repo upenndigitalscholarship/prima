@@ -3,7 +3,7 @@ lezione: AntoloGaia
 medio:
   - Testo
 pratica:
-  - Leggere
+  - Lettura
   - Grammatica
 risultato:
   - Periodo Ipotetico
