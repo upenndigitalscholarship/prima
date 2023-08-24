@@ -4,6 +4,7 @@ medio:
   - Film
 pratica:
   - Grammatica
+  - Scrittura
 risultato:
   - Imperfetto
   - Passato Prossimo
