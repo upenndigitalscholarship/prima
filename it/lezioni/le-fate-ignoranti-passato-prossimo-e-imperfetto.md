@@ -4,6 +4,9 @@ medio:
   - Film
 pratica:
   - Grammatica
+risultato:
+  - Imperfetto
+  - Passato Prossimo
 livello:
   - Elementare
   - Intermedio
