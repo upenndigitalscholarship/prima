@@ -2,8 +2,7 @@
 lezione: Il festival di Sanremo
 medio:
   - Musica
-pratica:
-  - Cultura
+pratica: []
 livello:
   - Intermedio
   - Cultura
