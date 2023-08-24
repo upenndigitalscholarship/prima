@@ -4,7 +4,6 @@ medio:
   - Testo
 pratica:
   - Lettura
-  - Cultura
 livello:
   - Cultura
   - Avanzato
