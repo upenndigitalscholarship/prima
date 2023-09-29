@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
     source: https://github.com/11ty/eleventy/issues/236
     */
     eleventyConfig.addFilter("markdownify", (markdownString) =>
-        md.renderInline(markdownString)
+        md.render(markdownString)
     );
 
     eleventyConfig.addFilter("distinct", function(collection, key) {

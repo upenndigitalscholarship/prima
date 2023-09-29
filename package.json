@@ -20,7 +20,7 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@zachleat/flex-luthor": "^4.0.2",
-    "markdown-it": "^13.0.1",
+    "markdown-it": "^13.0.2",
     "shufflejs": "^6.1.0"
   },
   "devDependencies": {
