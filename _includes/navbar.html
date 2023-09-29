@@ -24,11 +24,32 @@
     </ul>
 
     {% if page.lang == 'it' %}
+    {% if page.url == '/it/informazioni/' %}
+       <a href="/en/about"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+    {% elif page.url == '/it/sfoglia-i-media/' %}
+      <a href="/en/browse-media/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+    {% elif page.url == '/it/indice-delle-lezioni/' %}
+      <a href="/en/lesson-index/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+      {% else %}
         <a href="/en"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
-    {% else %}
-        <a href="/it"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
     {% endif %}
-            
+        <!-- if not lezioni or element, then filter-->
+    <!-- if it's lezioni, use link to english version, has lesson relation-->
+    <!-- if it's elementi, link to english version -->
+    {% endif %}
+    
+    {% if page.lang == 'en' %}
+    {% if page.url == '/en/about/' %}
+       <a href="/it/informazioni"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+    {% elif page.url == '/en/browse-media/' %}
+      <a href="/it/sfoglia-i-media/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+    {% elif page.url == '/en/lesson-index/' %}
+      <a href="/it/indice-delle-lezioni/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+      {% else %}
+      <a href="/it"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+    {% endif %}
+    {% endif %}
+    
 
         {# <div id="search"></div> #}
 
