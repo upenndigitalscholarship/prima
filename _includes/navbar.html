@@ -30,6 +30,12 @@
       <a href="/en/browse-media/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
     {% elif page.url == '/it/indice-delle-lezioni/' %}
       <a href="/en/lesson-index/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+        {% elif '/it/lezioni/' in page.url %}
+                {% for lesson in collections.lessons %}
+                    {% if lesson.data.lezioni == lezioni %}
+                        <a href="{{lesson.url }}"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+                    {% endif %}            
+                {% endfor %}
       {% else %}
         <a href="/en"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
     {% endif %}
@@ -39,15 +45,23 @@
     {% endif %}
     
     {% if page.lang == 'en' %}
-    {% if page.url == '/en/about/' %}
-       <a href="/it/informazioni"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
-    {% elif page.url == '/en/browse-media/' %}
-      <a href="/it/sfoglia-i-media/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
-    {% elif page.url == '/en/lesson-index/' %}
-      <a href="/it/indice-delle-lezioni/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
-      {% else %}
-      <a href="/it"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
-    {% endif %}
+        {% if page.url == '/en/about/' %}
+        <a href="/it/informazioni"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+        {% elif page.url == '/en/browse-media/' %}
+        <a href="/it/sfoglia-i-media/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+        {% elif page.url == '/en/lesson-index/' %}
+        <a href="/it/indice-delle-lezioni/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+        {% elif '/en/lessons/' in page.url %}
+                {% for lezione in collections.lezioni %}
+                    {% if lezione.data.lesson == lesson %}
+                        <a href="{{lezione.url }}"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+                    
+                    {% endif %}            
+                {% endfor %}
+            
+        {% else %}
+        <a href="/it"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+        {% endif %}
     {% endif %}
     
 
