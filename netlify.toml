@@ -1,0 +1,21 @@
+[build]
+  publish = "_site"
+  command = "npx eleventy"
+
+# Default
+[[redirects]]
+  from = "/*"
+  to = "/it/:splat"
+  status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/it/:splat"
+  status = 302
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302
+  conditions = {Language = ["en"]}
