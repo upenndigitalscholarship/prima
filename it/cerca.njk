@@ -1,0 +1,33 @@
+---
+title: Cerca
+---
+{% block head %}
+    <!-- Pagefind for search  -->
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+{% endblock %}
+
+<div id="search" class=""></div>
+
+{% block js %}
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({
+                element: "#search",
+                translations: {
+                    "placeholder": "Cerca",
+                    "clear_search": "Cancella la cronologia",
+                    "load_more": "Mostra più risultati",
+                    "search_label": "Cerca nel sito",
+                    "filters_label": "Filtri di ricerca",
+                    "zero_results": "Nessun risultato per [SEARCH_TERM]",
+                    "many_results": "[COUNT] risultati per [SEARCH_TERM]",
+                    "one_result": "[COUNT] risultato per [SEARCH_TERM]",
+                    "alt_search": "Nessun risultato per [SEARCH_TERM]. Mostrando risultati per [DIFFERENT_TERM] come alternativa.",
+                    "search_suggestion": "Nessun risultato per [SEARCH_TERM]. Prova una delle seguenti ricerche:",
+                    "searching": "Cercando [SEARCH_TERM]..."
+                }
+            });
+        });
+    </script>
+{% endblock %}

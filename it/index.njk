@@ -1,0 +1,190 @@
+---
+layout: base.njk
+title: Prima
+---
+
+{% block head %}
+<style>
+        .button {
+          margin-left:auto;
+          margin-right:auto;
+          margin-bottom:2em;
+          background-color: #B61339;
+          padding: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+          display:block;
+          width:max-content;
+          cursor:pointer;
+        }
+        .button1 {
+          z-index: 10;
+          background-color: #B61339;
+          padding: 10px;
+          margin:10px;
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+        .button2 {
+          z-index: 10;
+          background-color: #B61339;
+          padding: 10px;
+          margin:10px;
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+        .search-button {
+          z-index: 10;
+          background-color: #B61339;
+          padding: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+        .container-body{
+          position:absolute;
+          top:30vh;
+          left:2em;
+          width:100vw;
+/*          height:50vh;
+*/          display: flex;
+          align-items: center;
+        }
+        .modal {
+          z-index:20;
+        }
+        ::placeholder {
+          color: black;
+          opacity: 1;
+        }
+        #background-video {
+          width: 100vw;
+          max-height: 60vh;
+          object-fit: cover;
+/*          position: fixed;
+*/          left: 0;
+          right: 0;
+          top: 0;
+          
+          z-index: -1;
+        }
+
+        p{
+          padding:2em;
+        }
+
+        @media (max-width: 750px) {
+          #background-video {
+/*            display: none;
+*/            visibility:hidden;
+          }
+/*          body {
+            background: url("/assets/img/main.jpg") no-repeat;
+            background-size: cover;
+          }*/
+        }
+      </style>
+      {% endblock %}
+    
+{% block content %}
+<video id="background-video" width="100%" autoplay muted poster="/assets/media/background-default.gif">
+            <source src="" type="video/mp4">
+          </video>
+      <div class="container">
+
+        <div class="container-body">
+          
+          <div class="flex-item">
+            
+            <a href="/it/lezioni">
+              <p class="button2">Lezioni</p>
+            </a>
+            
+          </div>
+          <div class="flex-item">
+            
+            <a href="/it/indice">
+              <p class="button1">Indice</p>
+            </a>
+          </div>
+          <div class="flex-item">
+           
+            <a href="/it/cerca">
+              <p class="button2">Cerca</p>
+            </a>
+            
+            </div>     
+             
+      </div>
+        
+    </div>
+    
+          
+    
+    <div id="myModal" class="modal">
+      <div style="z-index: auto; background-color: #B61339; color:white;"class="modal-content">
+        <span class="close">&times;</span>
+        <p>Come utilizzare questo sito</p>
+        <p>PRIMA (Repository pedagogico delle attività mediatiche italiane) è uno strumento per l'apprendimento delle lingue pensato per integrare altri libri di grammatica e risorse progettate per l'apprendimento della lingua italiana. Le attività su questo sito promuovono l'apprendimento attraverso l'impegno con i media italiani autentici e abbracciano tutti i livelli, dal principiante all'avanzato. Le attività spaziano da argomenti grammaticali, lettura e comprensione orale, vocabolario e cultura. È possibile accedere ai file multimediali e ai fogli di lavoro associati da qualsiasi dispositivo con una connessione Internet e possono essere scaricati e modificati in base all'uso previsto. Sono disponibili chiavi di risposta, didascalie e trascrizioni di accompagnamento progettate per soddisfare le esigenze specifiche di ciascun utente.</p>
+        <p>Utilizzando le attività del nostro archivio, gli istruttori aiutano gli studenti a colmare le lacune in cui il curriculum spesso non è all'altezza in termini di cultura popolare e altre materie contemporanee. Attraverso PRIMA, gli studenti sono esposti agli italiani di colore, agli italiani queer e a quelli appartenenti a comunità non tradizionali o minoritarie, offrendo agli studenti una prospettiva più ampia e accurata dell'Italia contemporanea che riflette la vivacità del paese e celebra i risultati di TUTTI gli italiani.</p>
+        <p>Hai un'attività basata sui media che vorresti fosse presente su PRIMA? Ti invitiamo a scriverci a: <a href="mailto:prima.contact.us@gmail.com">prima.contact.us@gmail.com</a></p>
+    </div>
+  </div>
+  
+<p>PRIMA è una risorsa educativa aperta interattiva progettata per l'apprendimento e l'istruzione della lingua italiana attraverso clip multimediali ricercabili, narrazioni brevi, e risorse pedagogiche.</p>
+
+<a class="button" id="myBtn">
+              Informazioni sul sito
+            </a>
+
+{% endblock %}
+
+{% block js %}
+<script>
+    //Modal https://www.w3schools.com/howto/howto_css_modals.asp
+    // Get the modal
+    let modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    let videos = ['/assets/video/eclisse.mov','/assets/video/short_clips_kids.mp4','/assets/video/short_clips_kuwornu.mp4','/assets/video/short_clips_rappresentante.mp4']
+    let backgroundDiv = document.getElementById('background-video')    
+    // play each of the videos in the array, when one video is over, move to the next
+    function playVideo(p) {
+      let i = Math.floor(Math.random() * videos.length)
+      if (i == p) {
+        i = (i + 1) % videos.length
+      }
+      backgroundDiv.src = videos[i]
+      backgroundDiv.onended = function () {
+        playVideo(i)
+      }
+    }
+    playVideo(0)
+        
+  
+
+
+  </script>
+{% endblock %}
+

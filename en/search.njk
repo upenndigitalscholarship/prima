@@ -1,0 +1,18 @@
+---
+title: Search
+---
+{% block head %}
+    <!-- Pagefind for search  -->
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+{% endblock %}
+
+<div id="search" class=""></div>
+
+{% block js %}
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({element: "#search"});
+        });
+    </script>
+{% endblock %}

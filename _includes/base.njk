@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title data-pagefind-meta="title">{{ title }}</title>
+        {% if description %}
+            <meta name="description" content="{{description}}"/>
+        {% endif %}
+        <meta content="" name="keywords">
+
+        <!-- Favicons -->
+        <link href="/assets/img/default.png" rel="icon">
+
+        <!-- Template Main CSS File -->
+        <link href="/assets/css/style.css" rel="stylesheet">
+        <link href="/assets/css/navbar.css" rel="stylesheet">
+        {% block head %}{% endblock %}
+    </head>
+
+    <body data-pagefind-body>
+        {% include "./navbar.html" %}
+        <main>
+            {{ content | safe }}
+        </main>
+        {% include "./footer.html" %}
+
+        {% if path == "home" %}
+            <!-- Netlify Identity Widget -->
+            <!-- Needed only if you are using Netlify Identity feature -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1.9.2/build/netlify-identity-widget.min.js"></script>
+        {% endif %}
+    {% block js %}{% endblock %}
+    </body>
+</html>
