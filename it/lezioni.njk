@@ -1,3 +1,139 @@
 ---
 title: Lezioni
 ---
+
+{% block head %}
+    <script type="text/javascript" src="/assets/js/shuffle.js"></script>
+    <script type="text/javascript" src="/assets/js/shuffle-demo.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/shuffle.css">
+{% endblock %}
+
+{% block content %}
+
+    <!-- The Modal -->
+<!--     <div class="container">
+        <div id="myBtn" style="z-index: 10; position: absolute; right: 0;"><img style="width: 70%" src="/assets/img/information.png"/></div>
+
+    </div> -->
+    <div class="container">
+        <div>
+            <h2>Lezioni</h2>
+            
+        </div>
+
+    </div>
+
+    <div><p style="margin-left:10vw; margin-right:10vw">
+    Searching through our media collection, users may choose to scroll through the various media clips, or may choose to click on the filter categories to help narrow their search. This is most useful for those looking to browse learning materials by level, learning goal, or or preferred media. If there isn’t something specific you’re looking for, this may be the browsing option for you. 
+    </p>
+    </div>
+
+    <div class="shuffle-container">
+
+        <div class="shuffle-nav-container" style="border-right: #B61339 dashed;">
+    <div class="filters-group">
+      <label for="filters-search-input" class="filter-label">Search</label>
+      <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"/>
+    </div>
+    <div class="filters-group">
+      <p class="filter-label">Filter</p>
+      <div class="btn-group filter-options">
+        <p><b>Grammar</b></p>
+        {% for grammar in collections.lezioni | distinct('grammar') %}
+          <input type="checkbox" data-group="{{ grammar }}" value="{{ grammar }}">
+          <label for="{{ grammar }}">{{ grammar }}</label><br>
+        {% endfor %}
+
+        <p><b>Vocab</b></p>
+        {% for vocab in collections.lezioni | distinct('vocab') %}
+          <input type="checkbox" data-group="{{ vocab }}" value="{{ vocab }}">
+          <label for="{{ vocab }}">{{ vocab }}</label><br>
+        {% endfor %}
+
+        <p><b>Culture</b></p>
+        {% for culture in collections.lezioni | distinct('culture') %}
+          <input type="checkbox" data-group="{{ culture }}" value="{{ culture }}">
+          <label for="{{ culture }}">{{ culture }}</label><br>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+<div id="grid" class="my-shuffle-container">
+    {%- for lesson in collections.lezioni -%}
+      {% set all_values = [] %}
+      {% if lesson.data.grammar%}{% for grammar in lesson.data.grammar%}{% set all_values = (all_values.push(grammar), all_values) %}{% endfor %}
+      {% endif%}
+      {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
+      {% if lesson.data.culture%}{% for culture in lesson.data.culture%}{% set all_values = (all_values.push(culture), all_values) %}{% endfor %}{% endif%}
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src="{{ lesson.data.thumbnail}}"
+              alt="{{ lesson.data.title }}"/>
+            </div>
+          </div>
+          <div class="picture-item__details container">
+           
+            {# <p class="picture-item__tags hidden@xs">space</p> #}
+          </div>
+          <div class="picture-item__description picture-item__title">
+            <b><a class="picture-item__title" rel="noopener">{{ lesson.data.title }}</a></b><br><hr>            
+            {% set comma = joiner() %}
+            <i>{% for value in all_values%}
+            {{ comma() }}
+            {{ value | trim }}
+            {% endfor %}</i>
+          </div>
+        </div>
+      </figure>
+    {%- endfor -%}
+
+    <div class="col-1@sm col-1@xs my-sizer-element"></div>
+  </div>
+</div>
+
+
+<div id="myModal" class="modal">
+    <div style="background-color: #B61339; color:white;"class="modal-content">
+        <span class="close">&times;</span>
+        <p>Browse Media</p>
+        <p>Searching through our media collection, users may choose to scroll through the various media clips, or may choose to click on the filter categories to help narrow their search. This is most useful for those looking to browse learning materials by level, learning goal, or or preferred media. If there isn’t something specific you’re looking for, this may be the browsing option for you. </p>
+    </p>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script>
+    //Modal https://www.w3schools.com/howto/howto_css_modals.asp
+    // Get the modal
+    let modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+{% endblock %}

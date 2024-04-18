@@ -24,22 +24,31 @@ layout: base.njk
                     </button>
 {% endif %}
 
+  
+{% if video %}
+
 <button class="button meta-button" target="_blank" onclick="window.open('{{ video }}', '_blank')">
                         Open video in new tab
                     </button>
 </div>
-
+{% endif %}
 <div class="container lesson-metadata-box">
   <div id="left-box">
   <div>
+    {% if video %}
+
     {{ citation_information  | markdownify | safe }}
+    {% endif %}
     </div>
+
     </div>
 
   
   <div id="right-box" 
     <div id="video_embed">
+      {% if video_embed %}
       {{ video_embed | safe }}
+      {% endif %}
     </div>
   </div>
 </div>
