@@ -1,9 +1,11 @@
 ---
 clip_name: Viaggio sola 2
 level: Elementary
-practice: Vocabulary
-practice_entry: Travel
+practice: 
+    - Vocabulary: Travel
 media: Video
-index_heading: Vocabulary
-index_entry: Travel
+index: 
+    - Vocabulary: Travel
+layout: lesson.njk
+
 ---
