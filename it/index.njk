@@ -5,60 +5,32 @@ title: Prima
 
 {% block head %}
 <style>
-        .button {
-          margin-left:auto;
-          margin-right:auto;
-          margin-bottom:2em;
-          background-color: #B61339;
-          padding: 10px;
-          color: #FFFFFF;
-          font-weight: bold;
-          display:block;
-          width:max-content;
-          cursor:pointer;
+       .flex-item{
+          width:98vw;
+          margin-left:1vw;
+          margin-right:1vw;
+          background-color:rgba(182, 19, 57,0.8);
+          color:white;
+          font-size:1.2em;
         }
-        .button1 {
-          z-index: 10;
-          background-color: #B61339;
-          padding: 10px;
-          margin:10px;
-          color: #FFFFFF;
-          font-weight: bold;
-        }
-        .button2 {
-          z-index: 10;
-          background-color: #B61339;
-          padding: 10px;
-          margin:10px;
-          color: #FFFFFF;
-          font-weight: bold;
-        }
-        .search-button {
-          z-index: 10;
-          background-color: #B61339;
-          padding: 10px;
-          color: #FFFFFF;
-          font-weight: bold;
-        }
+
         .container-body{
           position:absolute;
-          top:30vh;
-          left:2em;
+          bottom:30vh;
+          left:0em;
           width:100vw;
 /*          height:50vh;
 */          display: flex;
           align-items: center;
         }
-        .modal {
-          z-index:20;
-        }
+
         ::placeholder {
           color: black;
           opacity: 1;
         }
         #background-video {
           width: 100vw !important;
-          max-height: 60vh;
+          max-height: 65vh;
           object-fit: cover;
 /*          position: fixed;
 */          left: 0;
@@ -97,46 +69,16 @@ title: Prima
           
           <div class="flex-item">
             
-            <a href="/it/lezioni">
-              <p class="button2">Lezioni</p>
-            </a>
+            <p>PRIMA è una risorsa educativa aperta interattiva progettata per l'apprendimento e l'istruzione della lingua italiana attraverso clip multimediali ricercabili, narrazioni brevi, e risorse pedagogiche.</p>
             
           </div>
-          <div class="flex-item">
-            
-            <a href="/it/indice">
-              <p class="button1">Indice</p>
-            </a>
-          </div>
-          <div class="flex-item">
-           
-            <a href="/it/cerca">
-              <p class="button2">Cerca</p>
-            </a>
-            
-            </div>     
+          
              
       </div>
         
     </div>
     
-          
-    
-    <div id="myModal" class="modal">
-      <div style="z-index: auto; background-color: #B61339; color:white;"class="modal-content">
-        <span class="close">&times;</span>
-        <p>Come utilizzare questo sito</p>
-        <p>PRIMA (Repository pedagogico delle attività mediatiche italiane) è uno strumento per l'apprendimento delle lingue pensato per integrare altri libri di grammatica e risorse progettate per l'apprendimento della lingua italiana. Le attività su questo sito promuovono l'apprendimento attraverso l'impegno con i media italiani autentici e abbracciano tutti i livelli, dal principiante all'avanzato. Le attività spaziano da argomenti grammaticali, lettura e comprensione orale, vocabolario e cultura. È possibile accedere ai file multimediali e ai fogli di lavoro associati da qualsiasi dispositivo con una connessione Internet e possono essere scaricati e modificati in base all'uso previsto. Sono disponibili chiavi di risposta, didascalie e trascrizioni di accompagnamento progettate per soddisfare le esigenze specifiche di ciascun utente.</p>
-        <p>Utilizzando le attività del nostro archivio, gli istruttori aiutano gli studenti a colmare le lacune in cui il curriculum spesso non è all'altezza in termini di cultura popolare e altre materie contemporanee. Attraverso PRIMA, gli studenti sono esposti agli italiani di colore, agli italiani queer e a quelli appartenenti a comunità non tradizionali o minoritarie, offrendo agli studenti una prospettiva più ampia e accurata dell'Italia contemporanea che riflette la vivacità del paese e celebra i risultati di TUTTI gli italiani.</p>
-        <p>Hai un'attività basata sui media che vorresti fosse presente su PRIMA? Ti invitiamo a scriverci a: <a href="mailto:prima.contact.us@gmail.com">prima.contact.us@gmail.com</a></p>
-    </div>
-  </div>
-  
-<p>PRIMA è una risorsa educativa aperta interattiva progettata per l'apprendimento e l'istruzione della lingua italiana attraverso clip multimediali ricercabili, narrazioni brevi, e risorse pedagogiche.</p>
-
-<a class="button" id="myBtn">
-              Informazioni sul sito
-            </a>
+        
 
 {% endblock %}
 

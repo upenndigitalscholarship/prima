@@ -9,7 +9,17 @@ layout: base.njk
      back</a>
 <h3 class="lesson-title">{{ clip_name }}</h3>
 
-<div class="container" style="justify-content:center">
+
+<div class="container lesson-metadata-box" style="row-gap:20px">
+  <div id="left-box">
+  <div>
+    {% if video %}
+
+    {{ citation_information  | markdownify | safe }}
+    {% endif %}
+    </div>
+
+    <div class="container" style="justify-content:center">
 {% if pdf_file %}
 
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ pdf_file }}';">
@@ -30,8 +40,8 @@ layout: base.njk
 <button class="button meta-button" target="_blank" onclick="window.open('{{ video }}', '_blank')">
                         Open video in new tab
                     </button>
-</div>
 {% endif %}
+
 <div class="container lesson-metadata-box">
   <div id="left-box">
   <div>
