@@ -49,19 +49,6 @@ layout: base.njk
     {{ citation_information  | markdownify | safe }}
     {% endif %}
     
-    {% if practice %}
-        {% for item in practice %}
-          {% for name, value in item %}
-            <h4>{{ name }}</h4>
-            <ul>
-              {% for item in value %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          {% endfor %}
-        {% endfor %}
-    {% endif %}
-   
         </div>
 
     </div>

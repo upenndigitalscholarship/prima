@@ -35,22 +35,43 @@ title: Lessons
     <div class="filters-group">
       <p class="filter-label">Filter</p>
       <div class="btn-group filter-options">
-        <p><b>Grammar</b></p>
-        {% for grammar in collections.lessons | distinct('grammar') %}
-          <input type="checkbox" data-group="{{ grammar }}" value="{{ grammar }}">
-          <label for="{{ grammar }}">{{ grammar }}</label><br>
+        <p><b>Level</b></p>
+        {% set distinct_levels = [] %}
+        {% for lesson in collections.lessons %}
+            {% if lesson.data.level and lesson.data.level not in distinct_levels %}
+            {% set distinct_levels = (distinct_levels.push(lesson.data.level), distinct_levels) %}
+            {% endif %}
         {% endfor %}
 
-        <p><b>Vocab</b></p>
-        {% for vocab in collections.lessons | distinct('vocab') %}
-          <input type="checkbox" data-group="{{ vocab }}" value="{{ vocab }}">
-          <label for="{{ vocab }}">{{ vocab }}</label><br>
+        {% for level in distinct_levels|sort %}
+          <input type="checkbox" data-group="{{ level }}" value="{{ level }}">
+          <label for="{{ level }}">{{ level }}</label><br>
         {% endfor %}
 
-        <p><b>Culture</b></p>
-        {% for culture in collections.lessons | distinct('culture') %}
-          <input type="checkbox" data-group="{{ culture }}" value="{{ culture }}">
-          <label for="{{ culture }}">{{ culture }}</label><br>
+        <p><b>Practice</b></p>
+        {% set distinct_practice_cat = [] %}
+        {% for lesson in collections.lessons %}
+          {% if lesson.data.practice %} 
+            {% for item in lesson.data.practice %}
+              {% for key, value in item %}
+                <input type="checkbox" data-group="{{ key }}-{{ value }}" value="{{ key }}-{{ value }}">
+                <label for="{{ key }}-{{ value }}">{{ key }}-{{ value }}</label><br>
+              {% endfor %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        
+
+        {% set distinct_media = [] %}
+        {% for lesson in collections.lessons %}
+            {% if lesson.data.media and lesson.data.media not in distinct_media %}
+            {% set distinct_media = (distinct_media.push(lesson.data.media), distinct_media) %}
+            {% endif %}
+        {% endfor %}
+        <p><b>Media</b></p>
+        {% for media in distinct_media|sort %}
+          <input type="checkbox" data-group="{{ media }}" value="{{ media }}">
+          <label for="{{ media }}">{{ media }}</label><br>
         {% endfor %}
 
       </div>
@@ -60,10 +81,18 @@ title: Lessons
 <div id="grid" class="my-shuffle-container">
     {%- for lesson in collections.lessons -%}
       {% set all_values = [] %}
-      {% if lesson.data.grammar%}{% for grammar in lesson.data.grammar%}{% set all_values = (all_values.push(grammar), all_values) %}{% endfor %}
-      {% endif%}
+      {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
+      {% if lesson.data.practice %} 
+        {% for item in lesson.data.practice %}
+          {% for key, value in item %}
+            {% set all_values = (all_values.push(key+'-'+value), all_values) %}     
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+      
+        
       {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
-      {% if lesson.data.culture%}{% for culture in lesson.data.culture%}{% set all_values = (all_values.push(culture), all_values) %}{% endfor %}{% endif%}
+      {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
       <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}">
         <div class="picture-item__inner">
           <div class="aspect aspect--16x9">
@@ -77,7 +106,7 @@ title: Lessons
             {# <p class="picture-item__tags hidden@xs">space</p> #}
           </div>
           <div class="picture-item__description picture-item__title">
-            <b><a class="picture-item__title" rel="noopener">{{ lesson.data.title }}</a></b><br><hr>            
+            <b><a class="picture-item__title" rel="noopener">{{ lesson.data.clip_name }}</a></b><br><hr>            
             {% set comma = joiner() %}
             <i>{% for value in all_values%}
             {{ comma() }}

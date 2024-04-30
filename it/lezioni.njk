@@ -36,19 +36,19 @@ title: Lezioni
       <p class="filter-label">Filter</p>
       <div class="btn-group filter-options">
         <p><b>Grammar</b></p>
-        {% for grammar in collections.lezioni | distinct('grammar') %}
+        {% for grammar in collections.lezioni  %}
           <input type="checkbox" data-group="{{ grammar }}" value="{{ grammar }}">
           <label for="{{ grammar }}">{{ grammar }}</label><br>
         {% endfor %}
 
         <p><b>Vocab</b></p>
-        {% for vocab in collections.lezioni | distinct('vocab') %}
+        {% for vocab in collections.lezioni  %}
           <input type="checkbox" data-group="{{ vocab }}" value="{{ vocab }}">
           <label for="{{ vocab }}">{{ vocab }}</label><br>
         {% endfor %}
 
         <p><b>Culture</b></p>
-        {% for culture in collections.lezioni | distinct('culture') %}
+        {% for culture in collections.lezioni  %}
           <input type="checkbox" data-group="{{ culture }}" value="{{ culture }}">
           <label for="{{ culture }}">{{ culture }}</label><br>
         {% endfor %}
@@ -77,7 +77,7 @@ title: Lezioni
             {# <p class="picture-item__tags hidden@xs">space</p> #}
           </div>
           <div class="picture-item__description picture-item__title">
-            <b><a class="picture-item__title" rel="noopener">{{ lesson.data.title }}</a></b><br><hr>            
+            <b><a class="picture-item__title" rel="noopener">{{ lesson.data.clip_name }}</a></b><br><hr>            
             {% set comma = joiner() %}
             <i>{% for value in all_values%}
             {{ comma() }}

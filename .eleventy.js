@@ -15,22 +15,6 @@ module.exports = function (eleventyConfig) {
         errorMode: "never"
     });
 
-    eleventyConfig.addFilter("distinct", function (collection, key) {
-        let values = new Set();
-        collection.filter(function (item) {
-            let value = item.data[key];
-            if (value) {
-                value.forEach(function (item) {
-                    if (!values.has(item)) {
-                        values.add(item);
-                        return true;
-                    }
-                });
-                return false;
-            };
-        });
-        return [...values].sort();
-    });
     eleventyConfig.addFilter("thumbnail", function (collection, key) {
         if (collection && key) {
             // find item with lesson equal to key
