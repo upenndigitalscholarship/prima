@@ -1,3 +1,22 @@
 ---
 title: Index
 ---
+
+<div class="container">
+    <div>
+    <h1>Index</h1>
+    <p>Here you can find a list of all the lessons available on the site, organized by topic.</p>
+
+{% for name, lesson in collections.lessons | makeIndex %}
+    <h1>{{ name }}</h1>
+    {% for lesson in lesson %}
+    <p>{{ lesson }}</p>
+    {% endfor %}
+                
+                
+            
+        
+{% endfor %}
+
+</div>
+</div>

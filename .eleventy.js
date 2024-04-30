@@ -25,6 +25,27 @@ module.exports = function (eleventyConfig) {
         // handle the case when either `collection` or `key` is not defined
         return "";
     });
+    
+    eleventyConfig.addFilter("makeIndex", function (collection) {
+        let index = {};
+        for (item of collection) {
+            if (!item.data.index) {
+                continue;
+            }
+            for (entry of item.data.index) {
+                for (let [key, value] of Object.entries(entry)) {
+                    // if not index[key] then create an array
+                    if (!index[key]) {
+                        index[key] = [];
+                    }
+                    index[key].push(value[0]);
+                }
+            }
+            
+        }
+        // change object to array
+        return index;
+    });
     eleventyConfig.addFilter("markdownify", (markdownString) =>
         md.render(markdownString)
     );
