@@ -43,7 +43,6 @@ module.exports = function (eleventyConfig) {
             }
             
         }
-        // change object to array
         return index;
     });
     eleventyConfig.addFilter("markdownify", (markdownString) =>

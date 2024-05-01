@@ -20,16 +20,16 @@ layout: base.njk
     </div>
 
     <div class="container" style="justify-content:center">
-{% if pdf_file %}
+{% if lesson_pdf %}
 
-  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ pdf_file }}';">
+  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ lesson_pdf }}';">
                         Download as pdf
                     </button>
 
 {% endif %}
 
-{% if doc_file %}
-  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ doc_file }}';">
+{% if lesson_doc %}
+  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ lesson_doc }}';">
                         Download as docx
                     </button>
 {% endif %}
@@ -66,10 +66,12 @@ layout: base.njk
 
 
 {{ content | safe }}
-{% if pdf_file %}
-  <embed style="margin-left: 10%;" src="{{ pdf_file }}" width="80%" height="600px" /> 
+{% if lesson_pdf %}
+  <embed style="margin-left: 10%;" src="{{ lesson_pdf }}" width="80%" height="600px" /> 
 {% endif %}
-
+{% if transcript_pdf %}
+  <embed style="margin-left: 10%;" src="{{ transcript_pdf }}" width="80%" height="600px" /> 
+{% endif %}
 
 {% block js %}
   <script>
