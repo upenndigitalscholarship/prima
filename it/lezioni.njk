@@ -25,7 +25,7 @@ title: Lezioni
     </p>
     </div>
 
-    <div class="shuffle-container">
+    <div class="shuffle-container" data-pagefind-ignore>
 
         <div class="shuffle-nav-container" style="border-right: #B61339 dashed;">
     <div class="filters-group">
@@ -57,7 +57,7 @@ title: Lezioni
     </div>
   </div>
 
-<div id="grid" class="my-shuffle-container">
+<div id="grid" class="my-shuffle-container" data-pagefind-ignore>
     {%- for lesson in collections.lezioni -%}
       {% set all_values = [] %}
       {% if lesson.data.grammar%}{% for grammar in lesson.data.grammar%}{% set all_values = (all_values.push(grammar), all_values) %}{% endfor %}
@@ -93,7 +93,7 @@ title: Lezioni
 </div>
 
 
-<div id="myModal" class="modal">
+<div id="myModal" class="modal" data-pagefind-ignore>
     <div style="background-color: #B61339; color:white;"class="modal-content">
         <span class="close">&times;</span>
         <p>Browse Media</p>
