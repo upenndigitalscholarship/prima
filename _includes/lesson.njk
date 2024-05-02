@@ -85,6 +85,8 @@ layout: base.njk
     <div id="video_embed">
       {% if video_embed %}
       {{ video_embed | safe }}
+      {% elif text %}
+        <embed src="{{ text }}" />
       {% endif %}
     </div>
   </div>
