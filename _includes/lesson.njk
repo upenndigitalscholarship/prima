@@ -34,7 +34,29 @@ layout: base.njk
                     </button>
 {% endif %}
 
+{% if transcript_doc %}
+  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ transcript_doc }}';">
+                        Transcription as docx
+                    </button>
+{% endif %}
   
+{% if transcript_pdf %}
+  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ transcript_pdf }}';">
+                        Transcription as pdf
+                    </button>
+{% endif %}
+
+{% if solution_doc %}
+  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ solution_doc }}';">
+                        Solution as docx
+                    </button>
+{% endif %}
+  
+{% if solution_pdf %}
+  <button class="button meta-button" target="_blank" onclick="window.location.href='{{ solution_pdf }}';">
+                        Solution as pdf
+                    </button>
+{% endif %}
 {% if video %}
 
 <button class="button meta-button" target="_blank" onclick="window.open('{{ video }}', '_blank')">
