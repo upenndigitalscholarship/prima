@@ -1,9 +1,14 @@
 ---
 clip_name: Sanremo
 level: Intermediate
-practice: Culture
-practice_entry: Sanremo, Music
+practice: 
+    - Culture: 
+        - Sanremo
+        - Music
 media: Text
-index_heading: Culture
-index_entry: Sanremo, Music
+index: 
+    - Culture: 
+        - Sanremo
+        - Music
+layout: lesson.njk
 ---
