@@ -1,9 +1,20 @@
 ---
 clip_name: AntoloGaia
 level: Advanced
-practice: Grammar
-practice_entry: Hypothetical Construction
+practice: 
+    - Grammar: 
+        - Hypothetical Construction
 media: Text
-index_heading: Grammar
-index_entry: Hypothetical Construction
+index: 
+    - Grammar: 
+        - Hypothetical Construction
+layout: lesson.njk
+thumbnail: /assets/img/antologaia_.jpg
+text: /assets/media/antologaia_text.pdf
+lesson_pdf: "/assets/media/antologaia_(ital).pdf"
+lesson_doc: "/assets/media/antologaia_(ital).docx"
+transcript_doc: ""
+transcript_pdf: ""
+solution: "/assets/media/antologaia_soluzioni.pdf"
+citation_information: ""
 ---
