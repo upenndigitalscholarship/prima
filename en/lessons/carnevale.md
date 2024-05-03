@@ -1,6 +1,6 @@
 ---
 clip_name: Carnevale
-level: Inermediate
+level: Intermediate
 practice: 
     - Culture: 
         - Carnival
