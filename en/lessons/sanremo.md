@@ -11,12 +11,12 @@ index:
         - Sanremo
         - Music
 layout: lesson.njk
-thumbnail: /assets/img/antologaia.jpg
-text: /assets/media/antologaia_text.pdf
-lesson_pdf: "/assets/media/antologaia_(eng).pdf"
-lesson_doc: "/assets/media/antologaia_(eng).docx"
+thumbnail: /assets/img/sanremo.jpg
+text: /assets/media/Sanremo_text.doc
+lesson_pdf: ""
+lesson_doc: "/assets/media/Sanremo_ENG.docx"
 transcript_doc: ""
 transcript_pdf: ""
-solution: "/assets/media/antologaia_soluzioni.pdf"
+solution: ""
 citation_information: ""
 ---
