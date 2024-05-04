@@ -2,12 +2,12 @@
 clip_name: 18 ius soli
 level: Advanced
 practice: 
-    - Culture
+    - Culture:
         - Identity
         - Citizenship
 media: Video
 index: 
-    - Culture
+    - Culture:
         - Identity
         - Citizenship
 layout: lesson.njk
