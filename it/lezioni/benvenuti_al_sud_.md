@@ -1,11 +1,14 @@
 ---
 clip_name: Benvenuti al sud 
 level: Elementary
-practice: Grammar
-practice_entry: Irregular Verbs
+practice:
+    - Grammar: 
+        - Irregular Verbs
 media: Video
 index_heading: Grammar
-index_entry: Verbs - Irregular
+index: 
+    - Grammar: 
+        - Verbs - Irregular
 layout: lesson.njk
 thumbnail: /assets/img/benvenuti_al_sud.jpg
 video: https://mediaspace.library.upenn.edu/id/1_ucxpxpvw?width=400&height=285&playerId=52628472
