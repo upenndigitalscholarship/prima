@@ -2,12 +2,12 @@
 clip_name: Asia occidente
 level: Elementary
 practice: 
-    - Grammar
+    - Grammar:
         - Past Perfect
         - Future
 media: Audio
 index: 
-    - Grammar
+    - Grammar:
         - Verbs - Past Perfect, Future
 layout: lesson.njk
 thumbnail: /assets/img/asia_occidente.jpg
