@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Vocabulary: 
-        - Numbers - 1-30
+        - Numbers (1-30)
 layout: lesson.njk
 thumbnail: /assets/img/cento_passi_1.jpg
 video: https://mediaspace.library.upenn.edu/id/1_r8zdmelp?width=400&height=285&playerId=52628472

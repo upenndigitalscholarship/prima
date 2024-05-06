@@ -38,10 +38,22 @@ module.exports = function (eleventyConfig) {
                     if (!index[key]) {
                         index[key] = [];
                     }
-                    index[key].push(value[0]);
+                    // if there is a hyphen in the value then split it
+                    if (value[0].includes(" - ")) {
+                        let split = value[0].split("-");
+                        for (let i = 0; i < split.length; i++) {
+                            index[key].push(split[i]);
+                        }
+                    } else {
+                        index[key].push(value[0]);
+                    }
                 }
             }
             
+        }
+        // for each key turn the array into a set, sort alphabetically and remove duplicates
+        for (let [key, value] of Object.entries(index)) {
+            index[key] = [...new Set(value)].sort();
         }
         return index;
     });

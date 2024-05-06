@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Vocabulary: 
-        - Food - Drinks
+        - "Food & Drinks"
 layout: lesson.njk
 thumbnail: /assets/img/fate_ignoranti_1.jpg
 video: https://mediaspace.library.upenn.edu/id/1_j3v4cz8m?width=400&height=285&playerId=52628472
