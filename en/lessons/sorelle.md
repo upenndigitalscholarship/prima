@@ -9,7 +9,7 @@ practice:
 media: Video
 index: 
     - Grammar: 
-        - Pronouns - Direct Object
+        - Pronouns | Direct Object
         - Indirect Object
         - Reflexive
 layout: lesson.njk

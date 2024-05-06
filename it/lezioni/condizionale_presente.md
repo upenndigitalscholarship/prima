@@ -7,7 +7,7 @@ practice:
 media: Audio
 index: 
     - Grammar: 
-        - Verbs - Conditional
+        - Verbs | Conditional
 layout: lesson.njk
 thumbnail: /assets/img/condizionale_presente.jpg
 video: https://mediaspace.library.upenn.edu/id/1_0njp41rt?width=400&height=285&playerId=52628472

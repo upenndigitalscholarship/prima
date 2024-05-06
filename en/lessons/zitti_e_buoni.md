@@ -7,7 +7,7 @@ practice:
 media: Audio
 index: 
     - Grammar: 
-        - Verbs - Present Tense
+        - Verbs | Present Tense
 layout: lesson.njk
 thumbnail: /assets/img/Zitti_e_buoni.jpg
 video: https://mediaspace.library.upenn.edu/id/1_mr45ju01?width=400&height=285&playerId=52628472

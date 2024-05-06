@@ -8,7 +8,7 @@ practice:
 media: Audio
 index: 
     - Grammar:
-        - Verbs - Past Perfect, Future
+        - Verbs | Past Perfect, Future
 layout: lesson.njk
 thumbnail: /assets/img/asia_occidente.jpg
 video: https://mediaspace.library.upenn.edu/id/1_cq1n2axc?width=400&height=285&playerId=52628472

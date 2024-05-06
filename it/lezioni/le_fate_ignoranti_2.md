@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Grammar: 
-        - Verbs - Imperfect
+        - Verbs | Imperfect
 layout: lesson.njk
 thumbnail: /assets/img/Le_fate_ignoranti_2.jpg
 video: https://mediaspace.library.upenn.edu/id/1_9kteu4cy?width=400&height=285&playerId=52628472

@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Grammar: 
-        - Verbs - To be and To have
+        - Verbs | To be and To have
 layout: lesson.njk
 thumbnail: /assets/img/commese_1.jpg
 video: https://mediaspace.library.upenn.edu/id/1_82mm6ev1?width=400&height=285&playerId=52628472

@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Grammar: 
-        - Pronouns - Direct Object
+        - Pronouns | Direct Object
 layout: lesson.njk
 thumbnail: /assets/img/Molto_saggia.jpg
 video: https://mediaspace.library.upenn.edu/id/1_frztvylh?width=400&height=285&playerId=52628472

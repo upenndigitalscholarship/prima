@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Grammar: 
-        - Verbs - Imperative
+        - Verbs | Imperative
 layout: lesson.njk
 thumbnail: /assets/img/Il_colore_nascosto_delle_cose_2.jpg
 video: https://mediaspace.library.upenn.edu/id/1_r9qa9p2w?width=400&height=285&playerId=52628472

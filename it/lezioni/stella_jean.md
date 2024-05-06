@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Grammar: 
-        - Pronouns - Relative
+        - Pronouns | Relative
 layout: lesson.njk
 thumbnail: /assets/img/Stella_Jean.jpg
 video: https://mediaspace.library.upenn.edu/id/1_x19hozid?width=400&height=285&playerId=52628472

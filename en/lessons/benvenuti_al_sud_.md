@@ -7,7 +7,7 @@ practice:
 media: Video
 index: 
     - Grammar:
-        - Verbs - Irregular
+        - Verbs | Irregular
 layout: lesson.njk
 thumbnail: /assets/img/benvenuti_al_sud.jpg
 video: https://mediaspace.library.upenn.edu/id/1_ucxpxpvw?width=400&height=285&playerId=52628472
