@@ -10,7 +10,7 @@ title: Index
 {% for name, lesson in collections.lessons | makeIndex %}
     <h1>{{ name }}</h1>
     {% for lesson in lesson %}
-    <p>{{ lesson }}</p>
+    <p><a href="{{ "/en/lessons/?q=" + lesson }}">{{ lesson }}</a></p>
     {% endfor %}
                 
                 
