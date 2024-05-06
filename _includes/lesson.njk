@@ -25,6 +25,7 @@ layout: base.njk
     </div>
 
     <div class="container" style="justify-content:center">
+    <div class="container buttons">
 {% if lesson_pdf %}
 
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ lesson_pdf }}';">
@@ -68,7 +69,7 @@ layout: base.njk
                         Open video in new tab
                     </button>
 {% endif %}
-
+</div>
 <div class="container lesson-metadata-box">
   <div id="left-box">
   <div>

@@ -56,6 +56,13 @@ video {
     column-gap: 20px;
 }
 
+.buttons{
+    max-width:40%;
+    row-gap:20px;
+    justify-content:right;
+
+}
+
 .container-top {
     display: flex;
     /* or inline-flex */
