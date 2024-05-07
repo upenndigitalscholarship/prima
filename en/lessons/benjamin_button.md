@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/benjamin_button_(eng).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/benjamin_button_transcript_eng.pdf"
 solution: "/assets/media/benjamin_button_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Medium: Film</p>
+    <p>Year: 2008</p>
+    <p>Produced by: Paramount Pictures</p>
+    <p>Directed by: David Fincher</p>
 ---
