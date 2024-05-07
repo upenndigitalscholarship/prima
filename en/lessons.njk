@@ -75,11 +75,27 @@ title: Lessons
 <div id="grid" class="my-shuffle-container" data-pagefind-ignore>
     {%- for lesson in collections.lessons -%}
       {% set all_values = [] %}
+      {% set grammar = [] %}
+      {% set culture = [] %}
+      {% set vocab = [] %}
       {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
       {% if lesson.data.practice %} 
         {% for item in lesson.data.practice %}
-          {% for key, value in item %}
-            {% set all_values = (all_values.push(key+'-'+value), all_values) %}     
+          {% for key, value in item %} 
+            {% if key == 'Grammar' %}
+              {% set grammar = (grammar.push(value), grammar) %}
+              {% set all_values = (all_values.push(key), all_values) %}
+            {% endif %}
+            {% if key == 'Culture' %}
+              {% set culture = (culture.push(value), culture) %}
+              {% set all_values = (all_values.push(key), all_values) %}
+            {% endif %}
+            {% if key == 'Vocab' %}
+              {% set vocab = (vocab.push(value), vocab) %}
+              {% set all_values = (all_values.push(key), all_values) %}
+            {% else %}
+              {% set all_values = (all_values.push(key+'-'+value), all_values) %}
+            {% endif %}
           {% endfor %}
         {% endfor %}
       {% endif %}
@@ -87,7 +103,7 @@ title: Lessons
         
       {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
       {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
-      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}">
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}">
         <div class="picture-item__inner">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
@@ -116,43 +132,8 @@ title: Lessons
 </div>
 
 
-<div id="myModal" class="modal" data-pagefind-ignore>
-    <div style="background-color: #B61339; color:white;"class="modal-content">
-        <span class="close">&times;</span>
-        <p>Browse Media</p>
-        <p>Searching through our media collection, users may choose to scroll through the various media clips, or may choose to click on the filter categories to help narrow their search. This is most useful for those looking to browse learning materials by level, learning goal, or or preferred media. If there isn’t something specific you’re looking for, this may be the browsing option for you. </p>
-    </p>
-</div>
-
 {% endblock %}
 
 {% block js %}
-<script>
-    //Modal https://www.w3schools.com/howto/howto_css_modals.asp
-    // Get the modal
-    let modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    let btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 {% endblock %}

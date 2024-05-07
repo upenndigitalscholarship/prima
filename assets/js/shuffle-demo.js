@@ -1,6 +1,6 @@
 var Shuffle = window.Shuffle;
 
-class Demo {
+class Prima {
   constructor(element) {
     this.element = element;
     this.shuffle = new Shuffle(element, {
@@ -9,25 +9,12 @@ class Demo {
     });
 
     // Log events.
-    this.addShuffleEventListeners();
     this._activeFilters = [];
     this.addFilterButtons();
     this.addSorting();
     this.addSearchFilter();
   }
 
-  /**
-   * Shuffle uses the CustomEvent constructor to dispatch events. You can listen
-   * for them like you normally would (with jQuery for example).
-   */
-  addShuffleEventListeners() {
-    this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
-      console.log('layout. data:', data);
-    });
-    this.shuffle.on(Shuffle.EventType.REMOVED, (data) => {
-      console.log('removed. data:', data);
-    });
-  }
 
   addFilterButtons() {
     const options = document.querySelector('.filter-options');
@@ -47,10 +34,12 @@ class Demo {
   }
 
   _handleFilterClick(evt) {
+    
     const btn = evt.currentTarget;
     const isActive = btn.classList.contains('active');
     const btnGroup = btn.getAttribute('data-group');
-    
+    console.log(btnGroup);
+
     this._removeActiveClassFromChildren(btn.parentNode);
     
     let filterGroup;
@@ -61,8 +50,10 @@ class Demo {
       btn.classList.add('active');
       filterGroup = btnGroup;
     }
-    
-    this.shuffle.filter(filterGroup);
+    // get an array of the currently active filters
+    let currentFilters = Array.from(document.querySelectorAll('.filter-options input:checked')).map((el) => el.value);
+    // .filter(['space', 'nature']);
+    this.shuffle.filter(currentFilters);
   }
 
   _removeActiveClassFromChildren(parent) {
@@ -150,7 +141,7 @@ class Demo {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  window.demo = new Demo(document.getElementById('grid'));
+  window.demo = new Prima(document.getElementById('grid'));
   //get arguments from url
   let url = new URL(window.location.href);
   let filter = url.searchParams.get("filter");
