@@ -49,8 +49,8 @@ title: Lessons
         {% endfor %}
 
         <p><b>Practice</b></p>
-        <input type="checkbox" data-group="Vocab" value="Vocab">
-        <label for="Grammar">Vocab</label><br>
+        <input type="checkbox" data-group="Vocabulary" value="Vocabulary">
+        <label for="Grammar">Vocabulary</label><br>
         <input type="checkbox" data-group="Grammar" value="Grammar">
         <label for="Grammar">Grammar</label><br>
         <input type="checkbox" data-group="Culture" value="Culture">
@@ -90,7 +90,7 @@ title: Lessons
               {% set culture = (culture.push(value), culture) %}
               {% set all_values = (all_values.push(key), all_values) %}
             {% endif %}
-            {% if key == 'Vocab' %}
+            {% if key == 'Vocabulary' %}
               {% set vocab = (vocab.push(value), vocab) %}
               {% set all_values = (all_values.push(key), all_values) %}
             {% else %}
