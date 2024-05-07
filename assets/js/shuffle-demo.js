@@ -7,7 +7,7 @@ class Prima {
       itemSelector: '.picture-item',
       sizer: element.querySelector('.my-sizer-element'),
     });
-
+    this.shuffle.options.filterMode = Shuffle.FilterMode.ALL;
     // Log events.
     this._activeFilters = [];
     this.addFilterButtons();
