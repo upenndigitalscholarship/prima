@@ -14,7 +14,6 @@ module.exports = function (eleventyConfig) {
         defaultLanguage: "it", // Required, this site uses Italian
         errorMode: "never"
     });
-
     eleventyConfig.addFilter("thumbnail", function (collection, key) {
         if (collection && key) {
             // find item with lesson equal to key

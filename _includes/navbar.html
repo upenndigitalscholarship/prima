@@ -31,7 +31,11 @@
             <a href="/it/cerca">Cerca</a>
             
         </div>
-        <a href="/en/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+            {% if 'lezioni' in page.url and page.fileSlug != 'lezioni' %}
+                <a href="/en/lessons/{{ page.fileSlug }}"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+            {% else %}              
+                <a href="/en/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+            {% endif %}
         {% endif %}
         {% if page.lang == 'en' %}
         <div class="dropdown">
@@ -56,7 +60,11 @@
             <a href="/en/search">Search</a>
             
         </div>
-        <a href="/it/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+            {% if 'lessons' in page.url and page.fileSlug != 'lessons' %}
+                <a href="/it/lezioni/{{ page.fileSlug }}"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+            {% else %}              
+                <a href="/it/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+            {% endif %}
         {% endif %}
 
     </ul>
