@@ -25,7 +25,7 @@ title: Lessons
     </p>
     </div>
 
-    <div class="shuffle-container">
+    <div class="shuffle-container" data-pagefind-ignore>
 
         <div class="shuffle-nav-container" style="border-right: #B61339 dashed;">
     <div class="filters-group">
@@ -49,18 +49,12 @@ title: Lessons
         {% endfor %}
 
         <p><b>Practice</b></p>
-        {% set distinct_practice_cat = [] %}
-        {% for lesson in collections.lessons %}
-          {% if lesson.data.practice %} 
-            {% for item in lesson.data.practice %}
-              {% for key, value in item %}
-                <input type="checkbox" data-group="{{ key }}-{{ value }}" value="{{ key }}-{{ value }}">
-                <label for="{{ key }}-{{ value }}">{{ key }}-{{ value }}</label><br>
-              {% endfor %}
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-        
+        <input type="checkbox" data-group="Vocab" value="Vocab">
+        <label for="Grammar">Vocab</label><br>
+        <input type="checkbox" data-group="Grammar" value="Grammar">
+        <label for="Grammar">Grammar</label><br>
+        <input type="checkbox" data-group="Culture" value="Culture">
+        <label for="Grammar">Culture</label><br>
 
         {% set distinct_media = [] %}
         {% for lesson in collections.lessons %}
@@ -78,7 +72,7 @@ title: Lessons
     </div>
   </div>
 
-<div id="grid" class="my-shuffle-container">
+<div id="grid" class="my-shuffle-container" data-pagefind-ignore>
     {%- for lesson in collections.lessons -%}
       {% set all_values = [] %}
       {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
@@ -122,7 +116,7 @@ title: Lessons
 </div>
 
 
-<div id="myModal" class="modal">
+<div id="myModal" class="modal" data-pagefind-ignore>
     <div style="background-color: #B61339; color:white;"class="modal-content">
         <span class="close">&times;</span>
         <p>Browse Media</p>

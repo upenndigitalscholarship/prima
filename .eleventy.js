@@ -6,6 +6,7 @@ const md = require("markdown-it")({
     typographer: true,
     breaks: true
   });
+const translations = require("./_data/translations.json");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
@@ -13,6 +14,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(EleventyI18nPlugin, {
         defaultLanguage: "it", // Required, this site uses Italian
         errorMode: "never"
+    });
+    eleventyConfig.addFilter("translate", function (word) {
+        return translations[word];
     });
     eleventyConfig.addFilter("thumbnail", function (collection, key) {
         if (collection && key) {

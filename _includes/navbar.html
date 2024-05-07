@@ -33,9 +33,12 @@
         </div>
             {% if 'lezioni' in page.url and page.fileSlug != 'lezioni' %}
                 <a href="/en/lessons/{{ page.fileSlug }}"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+            {% elif 'lezioni' in page.url and page.fileSlug == 'lezioni' %}
+                <a href="/en/lessons/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
             {% else %}              
-                <a href="/en/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
+                <a href="/en/{{ page.fileSlug | translate }}"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
             {% endif %}
+            
         {% endif %}
         {% if page.lang == 'en' %}
         <div class="dropdown">
@@ -62,8 +65,10 @@
         </div>
             {% if 'lessons' in page.url and page.fileSlug != 'lessons' %}
                 <a href="/it/lezioni/{{ page.fileSlug }}"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+            {% elif 'lessons' in page.url and page.fileSlug == 'lessons' %}
+                <a href="/it/lezioni/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
             {% else %}              
-                <a href="/it/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+                <a href="/it/{{ page.fileSlug | translate }}"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
             {% endif %}
         {% endif %}
 
