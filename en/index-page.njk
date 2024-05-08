@@ -10,7 +10,13 @@ title: Index
 {% for name, lesson in collections.lessons | makeIndex %}
     <h1>{{ name }}</h1>
     {% for lesson in lesson %}
+    {% if '|' in lesson %}
+    <h3>{{ lesson.split('|')[0] }}</h3>
+    <p><a href="{{ "/en/lessons/?q=" + lesson.split('|')[0] }}">{{ lesson.split('|')[1] }}</a></p>
+    {% else %}
     <p><a href="{{ "/en/lessons/?q=" + lesson }}">{{ lesson }}</a></p>
+    {% endif %}
+    
     {% endfor %}
                 
                 

@@ -41,18 +41,11 @@ module.exports = function (eleventyConfig) {
                     if (!index[key]) {
                         index[key] = [];
                     }
-                    // if there is a hyphen in the value then make an array with valu
-                    
-                    if (value[0].includes("|")) {
-                        let split = value[0].split("|");
-                        // trim all parts of split
-                        split = split.map(s => s.trim());
-                        
-            
-                        index[key].push([split[0], split[1]]);
-                    
+                    // if value is an array then add each element to the index
+                    if (Array.isArray(value)) {
+                        index[key].push(...value);
                     } else {
-                        index[key].push(value[0]);
+                        index[key].push(value);
                     }
                 }
             }
@@ -60,8 +53,34 @@ module.exports = function (eleventyConfig) {
         }
         // for each key turn the array into a set, sort alphabetically and remove duplicates
         for (let [key, value] of Object.entries(index)) {
+            
+            // value is an array of strings, some havea pipe, those should be split
+            // for each array in value 
+            for (let i = 0; i < value.length; i++) {
+                // if the value contains a pipe then split on |, add a key for the first value 
+                // and add the value to the key
+                if (typeof value[i] === 'string' && value[i].includes("|")) {
+                    let [first, second] = value[i].split("|");
+                    console.log(first, second)
+                    // create a new object with key of first 
+                    let sub = {};
+                    sub[first] = second;
+                    // add to the index
+                    index[key].push(sub);
+                    // remove the old value
+                    value.splice(i, 1);
+
+
+                }
+            }
+
             index[key] = [...new Set(value)].sort();
+            // if the value contains a pipe then split on |, add a key for the first value 
+            
+            
+
         }
+        
         console.log(index);
         return index;
     });
