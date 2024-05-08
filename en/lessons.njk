@@ -33,7 +33,7 @@ title: Lessons
       <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"/>
     </div>
     <div class="filters-group">
-      <p class="filter-label">Filter</p>
+      <p class="filter-label"></p>
       <div class="btn-group filter-options">
         <p><b>Level</b></p>
         {% set distinct_levels = [] %}
@@ -108,10 +108,6 @@ title: Lessons
         {% endfor %}
       {% endif %}
       
-        {% set sorted_culture = culture|sort %}
-        {% for cult in sorted_culture %}
-          {{ cult }}
-        {% endfor %}
       {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
       {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
       <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}">

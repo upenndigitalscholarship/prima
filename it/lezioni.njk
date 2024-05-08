@@ -21,36 +21,50 @@ title: Lezioni
     </div>
 
     <div><p style="margin-left:10vw; margin-right:10vw">
-    Searching through our media collection, users may choose to scroll through the various media clips, or may choose to click on the filter categories to help narrow their search. This is most useful for those looking to browse learning materials by level, learning goal, or or preferred media. If there isn’t something specific you’re looking for, this may be the browsing option for you. 
-    </p>
+Effettuando una ricerca nella nostra raccolta multimediale, gli utenti possono scegliere di scorrere i vari clip multimediali oppure scegliere di fare clic sulle categorie di filtro per restringere la ricerca. Ciò è molto utile per coloro che desiderano sfogliare i materiali didattici per livello, obiettivo di apprendimento o media preferito. Se non c'è qualcosa di specifico che stai cercando, questa potrebbe essere l'opzione di navigazione adatta a te.    </p>
     </div>
 
     <div class="shuffle-container" data-pagefind-ignore>
 
         <div class="shuffle-nav-container" style="border-right: #B61339 dashed;">
     <div class="filters-group">
-      <label for="filters-search-input" class="filter-label">Search</label>
+      <label for="filters-search-input" class="filter-label">Cerca</label>
       <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"/>
     </div>
     <div class="filters-group">
-      <p class="filter-label">Filter</p>
+      <p class="filter-label"></p>
       <div class="btn-group filter-options">
-        <p><b>Grammar</b></p>
-        {% for grammar in collections.lezioni  %}
-          <input type="checkbox" data-group="{{ grammar }}" value="{{ grammar }}">
-          <label for="{{ grammar }}">{{ grammar }}</label><br>
+        <p><b>Level</b></p>
+        {% set distinct_levels = [] %}
+        {% for lesson in collections.lessons %}
+            {% if lesson.data.level and lesson.data.level not in distinct_levels %}
+            {% set distinct_levels = (distinct_levels.push(lesson.data.level), distinct_levels) %}
+            {% endif %}
         {% endfor %}
 
-        <p><b>Vocab</b></p>
-        {% for vocab in collections.lezioni  %}
-          <input type="checkbox" data-group="{{ vocab }}" value="{{ vocab }}">
-          <label for="{{ vocab }}">{{ vocab }}</label><br>
+        {% for level in distinct_levels|sort %}
+          <input type="checkbox" data-group="{{ level }}" value="{{ level }}">
+          <label for="{{ level }}">{{ level|translate }}</label><br>
         {% endfor %}
 
-        <p><b>Culture</b></p>
-        {% for culture in collections.lezioni  %}
-          <input type="checkbox" data-group="{{ culture }}" value="{{ culture }}">
-          <label for="{{ culture }}">{{ culture }}</label><br>
+        <p><b>Practice</b></p>
+        <input type="checkbox" data-group="Vocabulary" value="Vocabulary">
+        <label for="Grammar">Vocabolario</label><br>
+        <input type="checkbox" data-group="Grammar" value="Grammar">
+        <label for="Grammar">Grammatica</label><br>
+        <input type="checkbox" data-group="Culture" value="Culture">
+        <label for="Grammar">Cultura</label><br>
+
+        {% set distinct_media = [] %}
+        {% for lesson in collections.lessons %}
+            {% if lesson.data.media and lesson.data.media not in distinct_media %}
+            {% set distinct_media = (distinct_media.push(lesson.data.media), distinct_media) %}
+            {% endif %}
+        {% endfor %}
+        <p><b>Media</b></p>
+        {% for media in distinct_media|sort %}
+          <input type="checkbox" data-group="{{ media }}" value="{{ media }}">
+          <label for="{{ media }}">{{ media |translate }}</label><br>
         {% endfor %}
 
       </div>
@@ -58,13 +72,44 @@ title: Lezioni
   </div>
 
 <div id="grid" class="my-shuffle-container" data-pagefind-ignore>
-    {%- for lesson in collections.lezioni -%}
+    {%- for lesson in collections.lessons -%}
       {% set all_values = [] %}
-      {% if lesson.data.grammar%}{% for grammar in lesson.data.grammar%}{% set all_values = (all_values.push(grammar), all_values) %}{% endfor %}
-      {% endif%}
+      {% set grammar = [] %}
+      {% set culture = [] %}
+      {% set vocab = [] %}
+      {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
+      {% if lesson.data.practice %} 
+        {% for item in lesson.data.practice %}
+          {% for key, value in item %} 
+            {% if key == 'Grammar' %}
+              {% set all_values = (all_values.push(key), all_values) %}
+              {% for gram in value %}
+              {% set grammar = (grammar.push(gram), grammar|sort) %}
+              
+              {% endfor %}
+            {% endif %}
+            {% if key == 'Culture' %}
+              {% set all_values = (all_values.push(key), all_values) %}
+              {% for cult in value %}
+              {% set culture = (culture.push(cult), culture|sort) %}
+              {% endfor %}
+            {% endif %}
+            {% if key == 'Vocabulary' %}
+              {% set all_values = (all_values.push(key), all_values) %}
+              {% for voc in value %}
+              {% set vocab = (vocab.push(voc), vocab|sort) %}
+              {% endfor %}
+              
+            {% else %}
+              {% set all_values = (all_values.push(key+'-'+value), all_values) %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+      
       {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
-      {% if lesson.data.culture%}{% for culture in lesson.data.culture%}{% set all_values = (all_values.push(culture), all_values) %}{% endfor %}{% endif%}
-      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}">
+      {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}">
         <div class="picture-item__inner">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
@@ -78,11 +123,17 @@ title: Lezioni
           </div>
           <div class="picture-item__description picture-item__title">
             <b><a class="picture-item__title" rel="noopener">{{ lesson.data.clip_name }}</a></b><br><hr>            
-            {% set comma = joiner() %}
-            <i>{% for value in all_values%}
-            {{ comma() }}
-            {{ value | trim }}
-            {% endfor %}</i>
+            <span class="vocab-display">
+              {{ vocab|join(', ') }}
+            </span>
+            
+            <span class="grammar-display">
+              {{ grammar|join(', ') }}
+            </span>
+            </span>
+            <span class="culture-display">
+              {{ culture|join(', ') }}
+            </span>
           </div>
         </div>
       </figure>
@@ -93,43 +144,8 @@ title: Lezioni
 </div>
 
 
-<div id="myModal" class="modal" data-pagefind-ignore>
-    <div style="background-color: #B61339; color:white;"class="modal-content">
-        <span class="close">&times;</span>
-        <p>Browse Media</p>
-        <p>Searching through our media collection, users may choose to scroll through the various media clips, or may choose to click on the filter categories to help narrow their search. This is most useful for those looking to browse learning materials by level, learning goal, or or preferred media. If there isn’t something specific you’re looking for, this may be the browsing option for you. </p>
-    </p>
-</div>
-
 {% endblock %}
 
 {% block js %}
-<script>
-    //Modal https://www.w3schools.com/howto/howto_css_modals.asp
-    // Get the modal
-    let modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    let btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 {% endblock %}

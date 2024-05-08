@@ -10,5 +10,15 @@
     "accessibilita": "accessibility",
     "termini": "terms",
     "cerca": "search",
-    "indice": "index-page"
+    "indice": "index-page",
+    "Advanced": "Avanzato",
+    "Elementary": "Elementare",
+    "Intermediate": "Intermedio",
+    "Vocabulary": "Vocabolario",
+    "Grammar": "Grammatica",
+    "Culture": "Cultura",
+    "Audio": "Audio",
+    "Video": "Video",
+    "Text": "Testo"
+
 }

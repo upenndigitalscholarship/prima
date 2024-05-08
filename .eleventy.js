@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
         errorMode: "never"
     });
     eleventyConfig.addFilter("translate", function (word) {
-        return translations[word];
+        return translations[word] || word;
     });
     eleventyConfig.addFilter("thumbnail", function (collection, key) {
         if (collection && key) {
