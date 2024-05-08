@@ -57,7 +57,8 @@ class Prima {
     // add sort
     // if btnGroup  is vocab 
 
-    if (btnGroup === 'vocab') {
+    if (btnGroup === 'Vocabulary') {
+      console.log('howdy!')
       // select all with class vocab-display
       let vocabDisplay = document.querySelectorAll('.vocab-display');
       // loop through each element and make it visible
@@ -76,15 +77,21 @@ class Prima {
       cultureDisplay.forEach((element) => {
         element.style.display = 'none';
       });
-      this.shuffle.sort({
-        by: this._sortByVocab,
-      });
+      
+      function _sortByVocab(element) {
+        return element.getAttribute('data-vocab');
+      }
+
+      let options = {};
+      options = {
+        reverse: false,
+        by: _sortByVocab,
+      };
+      this.shuffle.sort(options);
     }
   }
 
-  _sortByVocab(element) {
-    return element.getAttribute('data-vocab');
-  }
+  
   _removeActiveClassFromChildren(parent) {
     const { children } = parent;
     for (let i = children.length - 1; i >= 0; i--) {
