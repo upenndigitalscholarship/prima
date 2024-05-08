@@ -58,7 +58,6 @@ class Prima {
     // if btnGroup  is vocab 
 
     if (btnGroup === 'Vocabulary') {
-      console.log('howdy!')
       // select all with class vocab-display
       let vocabDisplay = document.querySelectorAll('.vocab-display');
       // loop through each element and make it visible
@@ -89,6 +88,71 @@ class Prima {
       };
       this.shuffle.sort(options);
     }
+
+    if (btnGroup === 'Grammar') {
+      // select all with class vocab-display
+      let vocabDisplay = document.querySelectorAll('.vocab-display');
+      // loop through each element and make it visible
+      vocabDisplay.forEach((element) => {
+        element.style.display = 'none';
+      });
+      // select all with class grammar-display
+      let grammarDisplay = document.querySelectorAll('.grammar-display');
+      // loop through each element and hide it
+      grammarDisplay.forEach((element) => {
+        element.style.display = 'block';
+      });
+      // select all with class culture-display
+      let cultureDisplay = document.querySelectorAll('.culture-display');
+      // loop through each element and hide it
+      cultureDisplay.forEach((element) => {
+        element.style.display = 'none';
+      });
+      
+      function _sortByGrammar(element) {
+        return element.getAttribute('data-grammar');
+      }
+
+      let options = {};
+      options = {
+        reverse: false,
+        by: _sortByGrammar,
+      };
+      this.shuffle.sort(options);
+    }
+
+    if (btnGroup === 'Culture') {
+      // select all with class vocab-display
+      let vocabDisplay = document.querySelectorAll('.vocab-display');
+      // loop through each element and make it visible
+      vocabDisplay.forEach((element) => {
+        element.style.display = 'none';
+      });
+      // select all with class grammar-display
+      let grammarDisplay = document.querySelectorAll('.grammar-display');
+      // loop through each element and hide it
+      grammarDisplay.forEach((element) => {
+        element.style.display = 'none';
+      });
+      // select all with class culture-display
+      let cultureDisplay = document.querySelectorAll('.culture-display');
+      // loop through each element and hide it
+      cultureDisplay.forEach((element) => {
+        element.style.display = 'block';
+      });
+      
+      function _sortByCulture(element) {
+        return element.getAttribute('data-culture');
+      }
+
+      let options = {};
+      options = {
+        reverse: false,
+        by: _sortByCulture,
+      };
+      this.shuffle.sort(options);
+    }
+
   }
 
   
