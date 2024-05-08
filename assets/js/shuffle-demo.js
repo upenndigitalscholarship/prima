@@ -38,7 +38,6 @@ class Prima {
     const btn = evt.currentTarget;
     const isActive = btn.classList.contains('active');
     const btnGroup = btn.getAttribute('data-group');
-    console.log(btnGroup);
 
     this._removeActiveClassFromChildren(btn.parentNode);
     
@@ -54,8 +53,38 @@ class Prima {
     let currentFilters = Array.from(document.querySelectorAll('.filter-options input:checked')).map((el) => el.value);
     // .filter(['space', 'nature']);
     this.shuffle.filter(currentFilters);
+
+    // add sort
+    // if btnGroup  is vocab 
+
+    if (btnGroup === 'vocab') {
+      // select all with class vocab-display
+      let vocabDisplay = document.querySelectorAll('.vocab-display');
+      // loop through each element and make it visible
+      vocabDisplay.forEach((element) => {
+        element.style.display = 'block';
+      });
+      // select all with class grammar-display
+      let grammarDisplay = document.querySelectorAll('.grammar-display');
+      // loop through each element and hide it
+      grammarDisplay.forEach((element) => {
+        element.style.display = 'none';
+      });
+      // select all with class culture-display
+      let cultureDisplay = document.querySelectorAll('.culture-display');
+      // loop through each element and hide it
+      cultureDisplay.forEach((element) => {
+        element.style.display = 'none';
+      });
+      this.shuffle.sort({
+        by: this._sortByVocab,
+      });
+    }
   }
 
+  _sortByVocab(element) {
+    return element.getAttribute('data-vocab');
+  }
   _removeActiveClassFromChildren(parent) {
     const { children } = parent;
     for (let i = children.length - 1; i >= 0; i--) {
@@ -86,12 +115,16 @@ class Prima {
     const { value } = evt.target;
     let options = {};
     
-    function sortByDate(element) {
-      return element.getAttribute('data-created');
+    function sortByGrammar(element) {
+      return element.getAttribute('data-grammar');
+    }
+
+    function sortByVocab(element) {
+      return element.getAttribute('data-vocab');
     }
     
-    function sortByTitle(element) {
-      return element.getAttribute('data-title').toLowerCase();
+    function sortByCulture(element) {
+      return element.getAttribute('data-culture');
     }
     
     if (value === 'date-created') {
