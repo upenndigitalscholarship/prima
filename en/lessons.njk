@@ -83,16 +83,24 @@ title: Lessons
         {% for item in lesson.data.practice %}
           {% for key, value in item %} 
             {% if key == 'Grammar' %}
-              {% set grammar = (grammar.push(value), grammar) %}
               {% set all_values = (all_values.push(key), all_values) %}
+              {% for gram in value %}
+              {% set grammar = (grammar.push(gram), grammar|sort) %}
+              
+              {% endfor %}
             {% endif %}
             {% if key == 'Culture' %}
-              {% set culture = (culture.push(value), culture) %}
               {% set all_values = (all_values.push(key), all_values) %}
+              {% for cult in value %}
+              {% set culture = (culture.push(cult), culture|sort) %}
+              {% endfor %}
             {% endif %}
             {% if key == 'Vocabulary' %}
-              {% set vocab = (vocab.push(value), vocab) %}
               {% set all_values = (all_values.push(key), all_values) %}
+              {% for voc in value %}
+              {% set vocab = (vocab.push(voc), vocab|sort) %}
+              {% endfor %}
+              
             {% else %}
               {% set all_values = (all_values.push(key+'-'+value), all_values) %}
             {% endif %}
@@ -100,7 +108,10 @@ title: Lessons
         {% endfor %}
       {% endif %}
       
-        
+        {% set sorted_culture = culture|sort %}
+        {% for cult in sorted_culture %}
+          {{ cult }}
+        {% endfor %}
       {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
       {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
       <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}">
@@ -118,14 +129,15 @@ title: Lessons
           <div class="picture-item__description picture-item__title">
             <b><a class="picture-item__title" rel="noopener">{{ lesson.data.clip_name }}</a></b><br><hr>            
             <span class="vocab-display">
-              {{ vocab }}
+              {{ vocab|join(', ') }}
             </span>
             
             <span class="grammar-display">
-              {{ grammar}}
+              {{ grammar|join(', ') }}
+            </span>
             </span>
             <span class="culture-display">
-              {{ culture}}
+              {{ culture|join(', ') }}
             </span>
           </div>
         </div>
