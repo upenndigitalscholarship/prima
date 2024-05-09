@@ -9,15 +9,18 @@ title: Index
 
  {% for cat in collections.lessons | makeIndex %}
       
-        {% for key, items in cat | dictsort %}
-        <h4>{{ key }}</h4><br>
+        {% for key, items in cat %}
+        <h2>{{ key }}</h2>
+        <ul>
             {% for subkey, subitems in items %}
-            <h5>{{ subkey }} </h5>
+            <li><a href="{{ "/en/lessons/?q=" + subkey + "&filter=" + key }}">{{ subkey }} </a></li>
+                <ul>
                 {% for item in subitems %}
-                <a href="{{ item }}">{{ item }}</a><br>
+                <li><a href="{{ "/en/lessons/?q=" + item + "&filter=" + key }}">{{ item }}</a></li>
                 {% endfor %}
+                </ul>
             {% endfor %}
-          
+        </ul>  
         {% endfor %}
    {% endfor %}   
 </div>
