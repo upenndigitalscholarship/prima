@@ -36,53 +36,50 @@ module.exports = function (eleventyConfig) {
                 continue;
             }
             for (entry of item.data.index) {
+                // Object — Grammar: - Foul - Fish - fish|carp
                 for (let [key, value] of Object.entries(entry)) {
-                    // if not index[key] then create an array
+                    // Grammar, [ fish,foul, fish|carp ] 
+
                     if (!index[key]) {
                         index[key] = [];
                     }
-                    // if value is an array then add each element to the index
-                    if (Array.isArray(value)) {
-                        index[key].push(...value);
-                    } else {
-                        index[key].push(value);
-                    }
+                    index[key].push(...value);
+                    
                 }
             }
             
-        }
-        // for each key turn the array into a set, sort alphabetically and remove duplicates
-        for (let [key, value] of Object.entries(index)) {
-            
-            // value is an array of strings, some havea pipe, those should be split
-            // for each array in value 
-            for (let i = 0; i < value.length; i++) {
-                // if the value contains a pipe then split on |, add a key for the first value 
-                // and add the value to the key
-                if (typeof value[i] === 'string' && value[i].includes("|")) {
-                    let [first, second] = value[i].split("|");
-                    console.log(first, second)
-                    // create a new object with key of first 
-                    let sub = {};
-                    sub[first] = second;
-                    // add to the index
-                    index[key].push(sub);
-                    // remove the old value
-                    value.splice(i, 1);
-
-
-                }
-            }
-
-            index[key] = [...new Set(value)].sort();
-            // if the value contains a pipe then split on |, add a key for the first value 
-            
-            
-
         }
         
-        console.log(index);
-        return index;
+        //  remove duplicates  
+        for (let [key, value] of Object.entries(index)) {
+            index[key] = [...new Set(value)].sort();
+        }
+        
+        // iterate over index
+        let cats = [];
+        for (let [key, value] of Object.entries(index)) {
+            // convert value to object
+            
+            let obj = {};
+            for (v of value) {
+                if (v.includes("|")) {
+                    let [subkey, subvalue] = v.split("|");
+                    if (obj[key]) {
+                        obj[key][subkey] = obj[key][subkey] || [];
+                        obj[key][subkey].push(subvalue);
+                    } else {
+                        obj[key] = { [subkey]: [subvalue] };
+                    }
+                } else {
+                    obj[key] = obj[key] || {};
+                    obj[key][v] = [];
+                }
+            }
+            cats.push(obj)
+        }
+        console.log(cats);
+        return cats
+              
     });
     eleventyConfig.addFilter("markdownify", (markdownString) =>
         md.render(markdownString)
