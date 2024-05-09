@@ -42,19 +42,18 @@ title: Lessons
             {% set distinct_levels = (distinct_levels.push(lesson.data.level), distinct_levels) %}
             {% endif %}
         {% endfor %}
-
         {% for level in distinct_levels|sort %}
-          <input type="checkbox" data-group="{{ level }}" value="{{ level }}">
-          <label for="{{ level }}">{{ level }}</label><br>
+          <input id="level" onclick="pseudoRadio(this);" type="checkbox" data-group="{{ level }}" value="{{ level }}">
+          <label id="level" onclick="pseudoRadio(this);" for="{{ level }}">{{ level }}</label><br>
         {% endfor %}
 
         <p><b>Practice</b></p>
-        <input type="checkbox" data-group="Vocabulary" value="Vocabulary">
-        <label for="Grammar">Vocabulary</label><br>
-        <input type="checkbox" data-group="Grammar" value="Grammar">
-        <label for="Grammar">Grammar</label><br>
-        <input type="checkbox" data-group="Culture" value="Culture">
-        <label for="Grammar">Culture</label><br>
+        <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Vocabulary" value="Vocabulary">
+        <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Vocabulary</label><br>
+        <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Grammar" value="Grammar">
+        <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Grammar</label><br>
+        <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Culture" value="Culture">
+        <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Culture</label><br>
 
         {% set distinct_media = [] %}
         {% for lesson in collections.lessons %}
@@ -64,8 +63,8 @@ title: Lessons
         {% endfor %}
         <p><b>Media</b></p>
         {% for media in distinct_media|sort %}
-          <input type="checkbox" data-group="{{ media }}" value="{{ media }}">
-          <label for="{{ media }}">{{ media }}</label><br>
+          <input id="media" onclick="pseudoRadio(this);" type="checkbox" data-group="{{ media }}" value="{{ media }}">
+          <label id="media" onclick="pseudoRadio(this);" for="{{ media }}">{{ media }}</label><br>
         {% endfor %}
 
       </div>
@@ -148,5 +147,19 @@ title: Lessons
 {% endblock %}
 
 {% block js %}
+<script>
+    function pseudoRadio(element) {
+        // get the element's id
+        var id = element.id;
+        // select other elements with the same id
+        var elements = document.querySelectorAll('[id="' + id + '"]');
+        // loop through the elements and uncheck them
+        elements.forEach(function(el) {
+            if (el !== element) {
+                el.checked = false;
+            }
+        });
 
+    }
+</script>
 {% endblock %}
