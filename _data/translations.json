@@ -21,8 +21,8 @@
     "Adverbs": "Avverbi",
     "Future ": "Futuro",
     "Hypothetical Construction": "Costruzione ipotetica",
-    "Indirect Object:": "Oggetto indiretto",
-    "Past Perfect and Imperfect:": "Passato prossimo e imperfetto",
+    "Indirect Object": "Oggetto indiretto",
+    "Past Perfect and Imperfect": "Passato prossimo e imperfetto",
     "Plurals": "Plurali",
     "Prepositions": "Preposizioni",
     "Pronouns  ": "Pronomi",
@@ -33,7 +33,7 @@
     "Conditional": "Condizionale",
     "Imperative": "Imperativo",
     "Imperfect": "Imperfetto",
-    "Irregular:": "Irregolari",
+    "Irregular": "Irregolari",
     "Past Perfect, Future": "Passato prossimo, futuro",
     "Present Tense": "Presente",
     "To be and To have": "Essere e Avere",
@@ -62,5 +62,5 @@
     "Shopping": "Shopping",
     "Travel": "Viaggiare",
     "Indirect Object": "Oggetto indiretto",
-    " Relative":"Relativo"
+    " Relative": "Relativo"
 }
