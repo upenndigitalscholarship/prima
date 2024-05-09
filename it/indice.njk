@@ -1,3 +1,27 @@
 ---
 title: Indice
 ---
+
+<div class="container">
+    <div>
+    <h1>Indice</h1>
+    <p>Qui puoi trovare l'elenco di tutte le lezioni disponibili sul sito, organizzate per argomento.</p>
+
+ {% for cat in collections.lessons | makeIndex %}
+      
+        {% for key, items in cat %}
+        <h2>{{ key | translate }}</h2>
+        <ul>
+            {% for subkey, subitems in items %}
+            <li><a href="{{ "/it/lezioni/?q=" + subkey + "&filter=" + key }}">{{ subkey | translate }} </a></li>
+                <ul>
+                {% for item in subitems %}
+                <li><a href="{{ "/it/lezioni/?q=" + item + "&filter=" + key }}">{{ item | translate }}</a></li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+        </ul>  
+        {% endfor %}
+   {% endfor %}   
+</div>
+</div>

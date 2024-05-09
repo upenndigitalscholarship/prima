@@ -84,20 +84,20 @@ Effettuando una ricerca nella nostra raccolta multimediale, gli utenti possono s
             {% if key == 'Grammar' %}
               {% set all_values = (all_values.push(key), all_values) %}
               {% for gram in value %}
-              {% set grammar = (grammar.push(gram), grammar|sort) %}
+              {% set grammar = (grammar.push(gram|translate), grammar|sort) %}
               
               {% endfor %}
             {% endif %}
             {% if key == 'Culture' %}
               {% set all_values = (all_values.push(key), all_values) %}
               {% for cult in value %}
-              {% set culture = (culture.push(cult), culture|sort) %}
+              {% set culture = (culture.push(cult|translate), culture|sort) %}
               {% endfor %}
             {% endif %}
             {% if key == 'Vocabulary' %}
               {% set all_values = (all_values.push(key), all_values) %}
               {% for voc in value %}
-              {% set vocab = (vocab.push(voc), vocab|sort) %}
+              {% set vocab = (vocab.push(voc|translate), vocab|sort) %}
               {% endfor %}
               
             {% else %}
