@@ -66,9 +66,9 @@ module.exports = function (eleventyConfig) {
                     let [subkey, subvalue] = v.split("|");
                     if (obj[key]) {
                         obj[key][subkey] = obj[key][subkey] || [];
-                        obj[key][subkey].push(subvalue);
+                        obj[key][subkey].push(subvalue.trim());
                     } else {
-                        obj[key] = { [subkey]: [subvalue] };
+                        obj[key] = { [subkey]: [subvalue.trim()] };
                     }
                 } else {
                     obj[key] = obj[key] || {};
