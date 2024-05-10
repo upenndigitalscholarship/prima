@@ -1,19 +1,23 @@
-<h2> Team </h2>
+# Team
 
-**Julia Heim** is the ideator, primary grant writer, co-content creator, and diversity manager of PRIMA. 
+**Julia Heim** is the ideator, primary grant writer, co-content creator, and diversity manager of PRIMA.
 
 **Samantha Gillen** is the primary content creator, content manager, accessibility technician, and general PRIMA workhorse.
 
-Rossella Di Rosa is a content creator and the primary linguistic overseer of PRIMA. 
+**Rossella Di Rosa** is a content creator and the primary linguistic overseer of PRIMA.
 
-We could not do this without the help and support of: 
+**Design and Development Team**  
 
 - Cosette Bruhns Alonso (role)
-- Andy Janco (role)
-- Cassandra Hradil (role)
-- Kara Gaulrapp (role)
+- Cassandra Hradil (designer)
+- Andy Janco (developer)
+- Kara Gaulrapp (role)  
 
-And grants and/or support from: 
+**Financial Team**  
+
+With Grants/Support from  
+
+- SACHS
 - The Penn Language Center
 - The Center for Research Data & Digital Scholarship
 - The Price Lab

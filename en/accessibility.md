@@ -1,0 +1,25 @@
+# Accessibility
+
+PRIMA strives to meet the needs of all site users. Our content is accessible in multiple formats and offers accessibility tools like dual language subtitles, transcripts, and answer keys.
+
+<ins>SITE:</ins>  
+
+The layout of the site is intentionally designed to meet the needs of both learners and instructors. Those with a more grammar-specific focus are encouraged to search the site using the index feature, while those looking for media-type or level based content may choose the “browse media” feature and select their desired filters.
+
+The site is completely bilingual to meet users where they are most linguistically comfortable, and should be easily navigable from all devices with internet access.
+
+<ins>ACTIVITIES:</ins>
+
+On each activity page, users can choose from worksheets available as a “docx” or “pdf.” The word document is a better option for those wanting to modify the document for their classroom to make it more suitable to certain textbooks or teaching styles. Documents have also been formatted with heading styles to best suit those using screen readers.
+
+Each activity worksheet is available in Italian (with instructions in Italian) and English (with instructions in English) to accommodate a range of linguistic abilities. There is also an answer key .pdf that accompanies every activity.
+
+<ins>SUBTITLES AND TRANSCRIPTS:</ins>
+
+English and Italian transcripts are available for each video so users can read along with the video or visit the text at a later time.
+
+Subtitles are available in both Italian and English which also include closed-captioning when integral to the plot for hard-of-hearing viewers. In many cases, we have translated from the Italian ourselves and paid special attention to cultural and linguistic differences.
+
+<ins>HELP US IMPROVE:</ins>
+
+If you have ideas about how we might alter certain features to increase the accessibility of our site, please reach out and share your thoughts.
