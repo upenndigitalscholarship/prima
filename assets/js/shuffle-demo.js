@@ -238,16 +238,14 @@ class Prima {
         }
       }
       const titleElement = element.querySelector('.picture-item__title');
-      // also search in grammar-display, vocab-display, culture-display
-      const grammarElement = element.querySelector('.grammar-display');
-      const vocabElement = element.querySelector('.vocab-display');
-      const cultureElement = element.querySelector('.culture-display');
       const titleText = titleElement.textContent.toLowerCase().trim();
-      // use regex to find any match between searchText and titleText, grammarText, vocabText, or cultureText
-      const grammarText = grammarElement.textContent.toLowerCase().trim();
-      const vocabText = vocabElement.textContent.toLowerCase().trim();
-      const cultureText = cultureElement.textContent.toLowerCase().trim();
-      return titleText.indexOf(searchText) !== -1 || grammarText.indexOf(searchText) !== -1 || vocabText.indexOf(searchText) !== -1 || cultureText.indexOf(searchText) !== -1;
+
+      // also search in grammar-display, vocab-display, culture-display
+      const grammarText = element.dataset.grammar.toLowerCase().trim();
+      const vocabText = element.dataset.vocab.toLowerCase().trim();
+      const cultureText = element.dataset.culture.toLowerCase().trim();
+      const indexText = element.dataset.index.toLowerCase().trim();
+      return titleText.indexOf(searchText) !== -1 || grammarText.indexOf(searchText) !== -1 || vocabText.indexOf(searchText) !== -1 || cultureText.indexOf(searchText) !== -1 || indexText.indexOf(searchText) !== -1;
 
       
     });

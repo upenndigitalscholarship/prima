@@ -77,6 +77,8 @@ Effettuando una ricerca nella nostra raccolta multimediale, gli utenti possono s
       {% set grammar = [] %}
       {% set culture = [] %}
       {% set vocab = [] %}
+      {% set index = [] %}
+
       {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
       {% if lesson.data.practice %} 
         {% for item in lesson.data.practice %}
@@ -106,10 +108,18 @@ Effettuando una ricerca nella nostra raccolta multimediale, gli utenti possono s
           {% endfor %}
         {% endfor %}
       {% endif %}
-      
-      {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
-      {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
-      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}">
+
+      {% if lesson.data.index %}
+        {% for item in lesson.data.index %}
+          {% for key, value in item %}
+            {% set index = (index.push(value), index) %}
+          {% endfor %}
+        {% endfor %}
+      {% endif %}      
+      {% if lesson.data.vocab %}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
+      {% if lesson.data.media %}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
+
+      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}" data-index="{{ index }}">
         <div class="picture-item__inner">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
