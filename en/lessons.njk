@@ -3,173 +3,221 @@ title: Lessons
 ---
 
 {% block head %}
-    <script type="text/javascript" src="/assets/js/shuffle.js"></script>
-    <script type="text/javascript" src="/assets/js/shuffle-demo.js"></script>
+  <script type="text/javascript" src="/assets/js/shuffle.js"></script>
+  <script type="text/javascript" src="/assets/js/shuffle-demo.js"></script>
 
-    <link rel="stylesheet" href="/assets/css/shuffle.css">
+  <link rel="stylesheet" href="/assets/css/shuffle.css">
 {% endblock %}
 
 {% block content %}
 
-
-    <div class="container" data-pagefind-ignore>
-        <div>
-            <h2>Lessons</h2>
-            
-        </div>
+  <div class="container" data-pagefind-ignore>
+    <div>
+      <h2>Lessons</h2>
 
     </div>
 
-    <div><p style="margin-left:10vw; margin-right:10vw">
+  </div>
+
+  <div>
+    <p style="margin-left:10vw; margin-right:10vw">
     Searching through our media collection, users may choose to scroll through the various media clips, or may choose to click on the filter categories to help narrow their search. This is most useful for those looking to browse learning materials by level, learning goal, or or preferred media. If there isn’t something specific you’re looking for, this may be the browsing option for you. 
     </p>
-    </div>
+  </div>
 
-    <div class="shuffle-container" data-pagefind-ignore>
+  <div class="shuffle-container" data-pagefind-ignore>
 
-        <div class="shuffle-nav-container" style="border-right: #B61339 dashed;">
-    <div class="filters-group">
-      <label for="filters-search-input" class="filter-label">Search</label>
-      <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"/>
-    </div>
-    <div class="filters-group">
-      <p class="filter-label"></p>
-      <div class="btn-group filter-options">
-        <p><b>Level</b></p>
-        {% set distinct_levels = [] %}
-        {% for lesson in collections.lessons %}
+    <div class="shuffle-nav-container" style="border-right: #B61339 dashed;">
+      <div class="filters-group">
+        <label for="filters-search-input" class="filter-label">Search</label>
+        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"/>
+      </div>
+      <div class="filters-group">
+        <p class="filter-label"></p>
+        <div class="btn-group filter-options">
+          <p>
+            <b>Level</b>
+          </p>
+          {% set distinct_levels = [] %}
+          {% for lesson in collections.lessons %}
             {% if lesson.data.level and lesson.data.level not in distinct_levels %}
-            {% set distinct_levels = (distinct_levels.push(lesson.data.level), distinct_levels) %}
+              {% set distinct_levels = (distinct_levels.push(lesson.data.level), distinct_levels) %}
             {% endif %}
-        {% endfor %}
-        {% for level in distinct_levels|sort %}
-          <input id="level" onclick="pseudoRadio(this);" type="checkbox" data-group="{{ level }}" value="{{ level }}">
-          <label id="level" onclick="pseudoRadio(this);" for="{{ level }}">{{ level }}</label><br>
-        {% endfor %}
+          {% endfor %}
+          {% for level in distinct_levels | sort %}
+            <input id="level" onclick="pseudoRadio(this);" type="checkbox" data-group="{{ level }}" value="{{ level }}">
+            <label id="level" onclick="pseudoRadio(this);" for="{{ level }}">{{ level }}</label><br>
+          {% endfor %}
 
-        <p><b>Practice</b></p>
-        <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Vocabulary" value="Vocabulary">
-        <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Vocabulary</label><br>
-        <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Grammar" value="Grammar">
-        <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Grammar</label><br>
-        <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Culture" value="Culture">
-        <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Culture</label><br>
+          <p>
+            <b>Practice</b>
+          </p>
+          <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Vocabulary" value="Vocabulary">
+          <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Vocabulary</label><br>
+          <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Grammar" value="Grammar">
+          <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Grammar</label><br>
+          <input id="practice" onclick="pseudoRadio(this);" type="checkbox" data-group="Culture" value="Culture">
+          <label id="practice" onclick="pseudoRadio(this);" for="Grammar">Culture</label><br>
 
-        {% set distinct_media = [] %}
-        {% for lesson in collections.lessons %}
+          {% set distinct_media = [] %}
+          {% for lesson in collections.lessons %}
             {% if lesson.data.media and lesson.data.media not in distinct_media %}
-            {% set distinct_media = (distinct_media.push(lesson.data.media), distinct_media) %}
+              {% set distinct_media = (distinct_media.push(lesson.data.media), distinct_media) %}
             {% endif %}
-        {% endfor %}
-        <p><b>Media</b></p>
-        {% for media in distinct_media|sort %}
-          <input id="media" onclick="pseudoRadio(this);" type="checkbox" data-group="{{ media }}" value="{{ media }}">
-          <label id="media" onclick="pseudoRadio(this);" for="{{ media }}">{{ media }}</label><br>
-        {% endfor %}
+          {% endfor %}
+          <p>
+            <b>Media</b>
+          </p>
+          {% for media in distinct_media | sort %}
+            <input id="media" onclick="pseudoRadio(this);" type="checkbox" data-group="{{ media }}" value="{{ media }}">
+            <label id="media" onclick="pseudoRadio(this);" for="{{ media }}">{{ media }}</label><br>
+          {% endfor %}
 
+        </div>
       </div>
     </div>
-  </div>
 
-<div id="grid" class="my-shuffle-container" data-pagefind-ignore>
-    {%- for lesson in collections.lessons -%}
-      {% set all_values = [] %}
-      {% set grammar = [] %}
-      {% set culture = [] %}
-      {% set vocab = [] %}
-      {% set index = [] %}
-      {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
-      {% if lesson.data.practice %} 
-        {% for item in lesson.data.practice %}
-          {% for key, value in item %} 
-            {% if key == 'Grammar' %}
-              {% set all_values = (all_values.push(key), all_values) %}
-              {% for gram in value %}
-              {% set grammar = (grammar.push(gram), grammar|sort) %}
-              
+    <div id="grid" class="my-shuffle-container" data-pagefind-ignore>
+      {%- for lesson in collections.lessons -%}
+        {% set all_values = [] %}
+        {% set grammar = [] %}
+        {% set culture = [] %}
+        {% set vocab = [] %}
+        {% set index = [] %}
+        {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
+          {% if lesson.data.practice %}
+            {% for item in lesson.data.practice %}
+              {% for key, value in item %}
+                {% if key == 'Grammar' %}
+                  {% set all_values = (all_values.push(key), all_values) %}
+                  {% for gram in value %}
+                    {% set grammar = (grammar.push(gram), grammar | sort) %}
+
+                  {% endfor %}
+                {% endif %}
+                {% if key == 'Culture' %}
+                  {% set all_values = (all_values.push(key), all_values) %}
+                  {% for cult in value %}
+                    {% set culture = (culture.push(cult), culture | sort) %}
+                  {% endfor %}
+                {% endif %}
+                {% if key == 'Vocabulary' %}
+                  {% set all_values = (all_values.push(key), all_values) %}
+                  {% for voc in value %}
+                    {% set vocab = (vocab.push(voc), vocab | sort) %}
+                  {% endfor %}
+
+                {% else %}
+                  {% set all_values = (all_values.push(key+'-'+value), all_values) %}
+                {% endif %}
               {% endfor %}
-            {% endif %}
-            {% if key == 'Culture' %}
-              {% set all_values = (all_values.push(key), all_values) %}
-              {% for cult in value %}
-              {% set culture = (culture.push(cult), culture|sort) %}
+            {% endfor %}
+          {% endif %}
+
+          {% if lesson.data.index %}
+            {% for item in lesson.data.index %}
+              {% for key, value in item %}
+                {% set index = (index.push(value), index) %}
               {% endfor %}
-            {% endif %}
-            {% if key == 'Vocabulary' %}
-              {% set all_values = (all_values.push(key), all_values) %}
-              {% for voc in value %}
-              {% set vocab = (vocab.push(voc), vocab|sort) %}
-              {% endfor %}
-              
-            {% else %}
-              {% set all_values = (all_values.push(key+'-'+value), all_values) %}
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      {% endif %}
+            {% endfor %}
+          {% endif %}
 
-      {% if lesson.data.index %}
-        {% for item in lesson.data.index %}
-          {% for key, value in item %}
-            {% set index = (index.push(value), index) %}
-          {% endfor %}
-        {% endfor %}
-      {% endif %}
+          {% if lesson.data.vocab%}
+            {% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}
+            {% endfor %}{% endif%}
+            {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
 
-      {% if lesson.data.vocab%}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
-      {% if lesson.data.media%}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
-
-      <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}" data-index="{{ index }}">
-        <div class="picture-item__inner">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner">
-              <img src="{{ lesson.data.thumbnail}}"
+              <figure onclick="window.location.href='{{ lesson.url }}';" class="col-5@xs col-5@sm col-4@md picture-item picture-item--h2" data-groups='[{% if all_values %}{% for value in all_values %}{% if loop.last %}"{{ value }}"{% else %}"{{ value }}",{% endif %}{% endfor %}{% endif%}]' data-title="{{ lesson.data.lesson }}" data-grammar="{{ grammar }}" data-vocab="{{ vocab }}" data-culture="{{ culture }}" data-index="{{ index }}">
+                <div class="picture-item__inner">
+                  <div class="aspect aspect--16x9">
+                    <div class="aspect__inner">
+                      <img src="{{ lesson.data.thumbnail}}"
               alt="{{ lesson.data.title }}"/>
-            </div>
-          </div>
-          <div class="picture-item__details container">
-           
-            {# <p class="picture-item__tags hidden@xs">space</p> #}
-          </div>
-          <div class="picture-item__description picture-item__title">
-            <b><a class="picture-item__title" rel="noopener">{{ lesson.data.clip_name }}</a></b><br><hr>            
-            <span class="vocab-display">
-              {{ vocab|join(', ') }}
-            </span>
-            
-            <span class="grammar-display">
-              {{ grammar|join(', ') }}
-            </span>
-            </span>
-            <span class="culture-display">
-              {{ culture|join(', ') }}
-            </span>
-          </div>
+                    </div>
+                  </div>
+                  <div class="picture-item__details container">
+
+                    {# <p class="picture-item__tags hidden@xs">space</p> #}
+                  </div>
+                  <div class="picture-item__description picture-item__title">
+                    <b>
+                      <a class="picture-item__title" rel="noopener">{{ lesson.data.clip_name }}</a>
+                    </b><br><hr>
+                    <span class="vocab-display">
+                      {{ vocab|join(', ') }}
+                    </span>
+
+                    <span class="grammar-display">
+                      {{ grammar|join(', ') }}
+                    </span>
+                  </span>
+                  <span class="culture-display">
+                    {{ culture|join(', ') }}
+                  </span>
+                </div>
+              </div>
+            </figure>
+          {%- endfor -%}
+
+          <div class="col-1@sm col-1@xs my-sizer-element"></div>
         </div>
-      </figure>
-    {%- endfor -%}
+      </div>
 
-    <div class="col-1@sm col-1@xs my-sizer-element"></div>
-  </div>
-</div>
+    {% endblock %}
 
-
-{% endblock %}
-
-{% block js %}
-<script>
-    function pseudoRadio(element) {
-        // get the element's id
-        var id = element.id;
-        // select other elements with the same id
-        var elements = document.querySelectorAll('[id="' + id + '"]');
-        // loop through the elements and uncheck them
-        elements.forEach(function(el) {
+    {% block js %}
+      <script>
+        function pseudoRadio(element) {
+          // get the element's id
+          var id = element.id;
+          // select other elements with the same id
+          var elements = document.querySelectorAll('[id="' + id + '"]');
+          // loop through the elements and uncheck them
+          elements.forEach(function (el) {
             if (el !== element) {
-                el.checked = false;
+              el.checked = false;
             }
-        });
+          });
 
-    }
-</script>
-{% endblock %}
+        }
+        function waitForPrima() {
+          return new Promise(resolve => {
+            if (window.prima) {
+              return resolve(window.prima);
+            }
+
+            const observer = new MutationObserver(mutations => {
+              if (window.prima) {
+                observer.disconnect();
+                resolve(window.prima);
+              }
+            });
+
+            // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+            observer.observe(document.body, {
+              childList: true,
+              subtree: true
+            });
+          });
+        }
+        waitForPrima().then((elm) => {
+          let data = {
+          "url": "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+          "clip_name": "I am the lesson!",
+          "level": "A1",
+          "practice": 'Nope',
+          "media": "Video",
+          "thumbnail": "/assets/img/antologaia.jpg",
+          "grammar": "Present Tense",
+          "culture": "N/A",
+          "index": "N/A",
+          "vocabulary": "Hi, I am a vocabulary word"
+
+        };
+        console.log(data)
+        window.prima._addDataItem(data);
+        });
+        
+        
+      </script>
+    {% endblock %}

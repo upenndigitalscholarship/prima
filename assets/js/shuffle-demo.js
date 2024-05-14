@@ -1,5 +1,6 @@
 var Shuffle = window.Shuffle;
 
+
 class Prima {
   constructor(element) {
     this.element = element;
@@ -10,11 +11,81 @@ class Prima {
     this.shuffle.options.filterMode = Shuffle.FilterMode.ALL;
     // Log events.
     this._activeFilters = [];
+    this._gridSize = 6
+    this.itemBackup = this.shuffle.items
     this.addFilterButtons();
     this.addSorting();
     this.addSearchFilter();
+    this._pagination(this._gridSize);
+  }
+  _getItems() {
+    return Array.from(this.element.children)
+      .filter((el) => el.matches(this.options.itemSelector))
+      .map((el) => new ShuffleItem(el, this.options.isRTL));
   }
 
+  _addDataItem(json_data) {
+    // a function to create a new ShuffleItem and add it to shuffle.items from JSON data
+    let parentNode = document.getElementById('grid');
+    // create a new child (figure element) of grid
+    let newElement = document.createElement('figure');
+    parentNode.appendChild(newElement);
+
+    newElement.classList.add('col-5@xs', 'col-5@sm', 'col-4@md', 'picture-item', 'picture-item--h2', 'shuffle-item', 'shuffle-item--visible');
+    newElement.setAttribute('onclick', 'window.location.href =' + json_data["url"]);
+    // add data-title attribute
+    newElement.setAttribute('data-title', json_data.clip_name);
+    newElement.setAttribute('data-grammar', json_data.grammar);
+    newElement.setAttribute('data-vocab',   json_data.vocab);
+    newElement.setAttribute('data-culture', json_data.culture);
+    newElement.setAttribute('data-index',   json_data.index);
+    let innerElement = document.createElement('div');
+    innerElement.classList.add('picture-item__inner');
+    newElement.appendChild(innerElement);
+    let aspectElement = document.createElement('div');
+    aspectElement.classList.add('aspect', 'aspect--16x9');
+    innerElement.appendChild(aspectElement);
+    let aspectInnerElement = document.createElement('div');
+    aspectInnerElement.classList.add('aspect__inner');
+    aspectElement.appendChild(aspectInnerElement);
+    let imgElement = document.createElement('img');
+    imgElement.setAttribute('src', json_data.thumbnail);
+    imgElement.setAttribute('alt', json_data.clip_name);
+    aspectInnerElement.appendChild(imgElement);
+    let detailsElement = document.createElement('div');
+    detailsElement.classList.add('picture-item__details', 'container');
+    innerElement.appendChild(detailsElement);
+    let descriptionElement = document.createElement('div');
+    descriptionElement.classList.add('picture-item__description', 'picture-item__title');
+    detailsElement.appendChild(descriptionElement);
+    let titleElement = document.createElement('b');
+    let titleLink = document.createElement('a');
+    titleLink.classList.add('picture-item__title');
+    titleLink.setAttribute('rel', 'noopener');
+    titleLink.textContent = json_data.clip_name;
+    titleElement.appendChild(titleLink);
+    descriptionElement.appendChild(titleElement);
+    descriptionElement.appendChild(document.createElement('br'));
+    descriptionElement.appendChild(document.createElement('hr'));
+    let vocabElement = document.createElement('span');
+    vocabElement.classList.add('vocab-display');
+    //vocabElement.textContent = json_data.vocabulary.join(', ');
+    descriptionElement.appendChild(vocabElement);
+    let grammarElement = document.createElement('span');
+    grammarElement.classList.add('grammar-display');
+    grammarElement.textContent = json_data.grammar;
+    descriptionElement.appendChild(grammarElement);
+    let cultureElement = document.createElement('span');
+    cultureElement.classList.add('culture-display');
+    cultureElement.textContent = json_data.culture;
+    descriptionElement.appendChild(cultureElement);
+    //console.log(newElement);
+    // re initialize shuffle
+    this.shuffle = new Shuffle(this.element, {
+      itemSelector: '.picture-item',
+      sizer: this.element.querySelector('.my-sizer-element'),
+    });
+  }
 
   addFilterButtons() {
     const options = document.querySelector('.filter-options');
@@ -163,6 +234,56 @@ class Prima {
     }
   }
 
+  _watchScroll() {
+    let grid = document.querySelector('#grid');
+    var bounds = grid.getBoundingClientRect();
+    // when the user scrolls to the bottom of the grid
+    if (bounds.bottom < window.innerHeight) {
+      this._pagination(this._gridSize);
+    }
+    
+  }
+
+  _pagination(maxItems) {
+    
+    // get value of how many items have isVisible = true
+    // note: shuffle.visibleItems only changes on update
+    let visibleItems = this.shuffle.items.filter((item) => item.isVisible).length;
+    // if visibleItems is greater than maxItems
+    if (visibleItems > maxItems) {
+      // get the difference of visibleItems and maxItems
+      let difference = visibleItems - maxItems;
+      // loop through the shuffle items in reverse
+      for (let i = this.shuffle.items.length - 1; i >= 0; i--) {
+        // if the item is visible
+        if (this.shuffle.items[i].isVisible) {
+          // hide the item
+          this.shuffle.items[i].hide();
+          this.shuffle.items[i].wasHidden = true;
+          // subtract 1 from difference
+          difference--;
+          // if difference is 0, break the loop
+          if (difference === 0) {
+            break;
+          }
+        }
+      }
+    } else {
+      let count = 0;
+      for (let i = 0; i < this.shuffle.items.length; i++) {
+        if (this.shuffle.items[i].wasHidden) {
+          if (count < (maxItems + 3)) {
+            this.shuffle.items[i].show();
+            this.shuffle.items[i].wasHidden = false;          
+            count++;
+          }
+        }
+      }
+      
+    }
+    this.shuffle.update() 
+  }
+
   addSorting() {
     const buttonGroup = document.querySelector('.sort-options');
     if (!buttonGroup) {
@@ -251,9 +372,12 @@ class Prima {
     });
   }
 }
+document.addEventListener('scroll', () => {
+  window.prima._watchScroll();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
-  window.demo = new Prima(document.getElementById('grid'));
+  window.prima = new Prima(document.getElementById('grid'));
   //get arguments from url
   let url = new URL(window.location.href);
   let filter = url.searchParams.get("filter");
