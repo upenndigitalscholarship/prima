@@ -15,50 +15,75 @@ layout: base.njk
 <h3 class="lesson-title">{{ clip_name }}</h3>
 
 
-<div class="container lesson-metadata-box" style="row-gap:20px">
+
+<div class="container lesson-metadata-box">
   <div id="left-box">
   <div>
-    
-    </div>
+  <div class="container lesson-metadata-box" style="row-gap:20px">
+  <div id="left-box">
+
+{% if citation_information %}
+<p style="font-weight:bolder">
+    {{ citation_information  | markdownify | safe }}
+  </p>
+  <hr style="border: 1px dashed #B61339;"><br>
+{% endif %}
 
     <div class="container" style="justify-content:center">
-    <div class="container buttons">
+
+    <div class="buttons" style="justify-content:left">
+
+{% if lesson_pdf or lesson_doc %}<div class="container" style="justify-content:left">
+<span>Download lesson:</span>
+
 {% if lesson_pdf %}
 
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ lesson_pdf }}';">
-                        {% if page.lang == 'it' %}Scarica in formato pdf{% else %}Download as pdf{% endif %}
+                        {% if page.lang == 'it' %}Scarica in formato PDF{% else %}Lesson PDF{% endif %}
                     </button>
 
 {% endif %}
 
 {% if lesson_doc %}
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ lesson_doc }}';">
-                        {% if page.lang == 'it' %}Scarica in formato docx{% else %}Download as docx{% endif %}
+                        {% if page.lang == 'it' %}Scarica in formato DOCX{% else %}Lesson DOCX{% endif %}
                     </button>
+                    </div>
 {% endif %}
-
+<br>
+{% endif %}
+{% if transcript_doc or transcript_pdf %}<div class="container" style="justify-content:left">
+<span>Download transcript:</span>
 {% if transcript_doc %}
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ transcript_doc }}';">
                         
-                        {% if page.lang == 'it' %}Trascrizione come docx{% else %}Transcription as docx{% endif %}
+                        {% if page.lang == 'it' %}Trascrizione come DOCX{% else %}Transcription DOCX{% endif %}
 {% endif %}
   
 {% if transcript_pdf %}
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ transcript_pdf }}';">
-                        {% if page.lang == 'it' %}Trascrizione come pdf{% else %}Transcription as pdf{% endif %}
+                        {% if page.lang == 'it' %}Trascrizione come PDF{% else %}Transcription PDF{% endif %}
                     </button>
+                    </div>
 {% endif %}
+<br>
+{% endif %}
+
+{% if solution_doc or solution_pdf %}<div class="container" style="justify-content:left">
+<span>Download solution:</span>
 
 {% if solution_doc %}
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ solution_doc }}';">
-                        {% if page.lang == 'it' %}Soluzione come docx{% else %}Solution as docx{% endif %}
+                        {% if page.lang == 'it' %}Soluzione come DOCX{% else %}Solution DOCX{% endif %}
                     </button>
 {% endif %}
   
 {% if solution_pdf %}
   <button class="button meta-button" target="_blank" onclick="window.location.href='{{ solution_pdf }}';">
-                        {% if page.lang == 'it' %}Soluzione come pdf{% else %}Solution as pdf{% endif %}
-                    </button>
+                        {% if page.lang == 'it' %}Soluzione come PDF{% else %}Solution PDF{% endif %}
+                    </button></div>
+{% endif %}
+<br>
 {% endif %}
 {% if video %}
 
@@ -68,12 +93,8 @@ layout: base.njk
                     </button>
 {% endif %}
 </div>
-<div class="container lesson-metadata-box">
-  <div id="left-box">
+  </div>
   <div>
-    
-    {{ citation_information  | markdownify | safe }}
-    
     
         </div>
 
@@ -93,11 +114,11 @@ layout: base.njk
 
 {{ content | safe }}
 {% if text %}
-  <embed style="margin-left: 10%;" src="{{ text }}" width="80%" height="600px" /> 
+  <embed style="" src="{{ text }}" width="70%" height="600px" /> 
 {% endif %}
 
 {% if lesson_pdf %}
-  <embed style="margin-left: 10%;" src="{{ lesson_pdf }}" width="80%" height="600px" /> 
+  <embed style="" src="{{ lesson_pdf }}" width="70%" height="600px" /> 
 {% endif %}
 
 

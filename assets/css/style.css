@@ -57,9 +57,9 @@ video {
 }
 
 .buttons{
-    max-width:40%;
-    row-gap:20px;
-    justify-content:right;
+/*    max-width:28em;
+*/    row-gap:20px;
+    justify-content:left;
 
 }
 
@@ -104,6 +104,10 @@ video {
 
 .meta-button{
     margin:0px !important;
+    background-color:#F9FCF3 !important;
+    color:#B61339 !important;
+    border: 2px solid #B61339 !important;
+    font-weight:bolder !important;
 }
 
 .lesson-image:hover {
