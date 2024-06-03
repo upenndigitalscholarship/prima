@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/Commesse_1_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Commesse_1_transcript_ITAL.pdf"
 solution: "/assets/media/Commesse_1_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Commesse (serie)</p>
+    <p>Anni: 1999-2002</p>
+    <p>Creato da: Giorgio Capitani</p>
+    <p>Rete: RAI 1</p>
 ---
