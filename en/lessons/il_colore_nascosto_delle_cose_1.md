@@ -19,5 +19,9 @@ lesson_doc: ""
 transcript_doc: ""
 transcript_pdf: "/assets/media/Il_colore_nascosto_delle_cose_1_transcript_ENG.pdf"
 solution: ""
-citation_information: ""
+citation_information: >- 
+    <p>Title: Il colore nascosto delle cose</p>
+    <p>Year: 2017</p>
+    <p>Directed by: Silvio Soldini</p>
+    <p>Produced by: Lumière & Co. & Rai Cinema & Ventura Film</p>
 ---
