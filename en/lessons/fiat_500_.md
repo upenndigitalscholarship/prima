@@ -21,5 +21,11 @@ lesson_doc: "/assets/media/fiat_500_(eng).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/fiat_500_transcript_eng.pdf"
 solution: "/assets/media/fiat_500_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Backseat Italians</p>
+    <p>Year: 2013</p>
+    <p>Directed by: Sergio Cilli</p>
+    <p>Written by: Juliet Senif</p>
+    <p>Produced for: Fiat 500L</p>
+    <p>Source: YouTube</p>
 ---
