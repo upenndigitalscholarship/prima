@@ -18,5 +18,9 @@ lesson_doc: "/assets/media/Sanremo_ENG.docx"
 transcript_doc: ""
 transcript_pdf: ""
 solution: ""
-citation_information: ""
+citation_information: >- 
+    <p>Title: Il festival di Sanremo</p>
+    <p>Years: 1951-present</p>
+    <p>Artist: Varied</p>
+    <p>Produced by: RAI</p>
 ---

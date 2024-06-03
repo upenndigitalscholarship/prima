@@ -18,5 +18,9 @@ lesson_doc: "/assets/media/Sanremo_ITAL.docx"
 transcript_doc: ""
 transcript_pdf: ""
 solution: ""
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Il festival di Sanremo</p>
+    <p>Anni: 1951-present</p>
+    <p>Artista: Variə</p>
+    <p>Prodotto da: RAI</p>
 ---
