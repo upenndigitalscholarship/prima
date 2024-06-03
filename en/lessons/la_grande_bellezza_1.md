@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/La_grande_bellezza_1_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: ""
 solution: "/assets/media/La_grande_bellezza_1_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: La grande bellezza</p>
+    <p>Year: 2013</p>
+    <p>Directed by: Paolo Sorrentino</p>
+    <p>Produced by: Indigo Film & Medusa Film & Pathé</p>
 ---

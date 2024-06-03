@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/La_grande_bellezza_1_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/La_grande_bellezza_1_transcript_ITAL.pdf"
 solution: "/assets/media/La_grande_bellezza_1_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: La grande bellezza</p>
+    <p>Anno: 2013</p>
+    <p>Regia: Paolo Sorrentino</p>
+    <p>Prodotto da: Indigo Film & Medusa Film & Pathé</p>
 ---
