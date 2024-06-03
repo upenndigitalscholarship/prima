@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/prisencolinensinainciusol_(eng).docx"
 transcript_doc: "/assets/media/prisencolineninainciusol_transcript_eng.docx"
 transcript_pdf: "/assets/media/prisencolineninainciusol_transcript_eng.pdf"
 solution: "/assets/media/prisencolinensinainciusol_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Prisencolinensinainciusol</p>
+    <p>Year: 1972</p>
+    <p>Artist: Adriano Celentano</p>
+    <p>Performed on: Milleluci</p>
+    <p>Source: YouTube</p>
 ---
