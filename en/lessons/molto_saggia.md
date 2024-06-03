@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/Molto_saggia_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Molto_saggia_transcript_ENG.pdf"
 solution: "/assets/media/Molto_saggia_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Molto Saggia</p>
+    <p>Year: 2011</p>
+    <p>Author: Patrizia Cavalli</p>
+    <p>Directed by: Wolfgang Achtner</p>
+    <p>Source: YouTube</p>
 ---
