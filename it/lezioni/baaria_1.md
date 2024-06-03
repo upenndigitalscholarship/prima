@@ -18,5 +18,9 @@ transcript_doc: ""
 transcript_pdf: "/assets/media/baaria_1_transcript_ital.pdf"
 solution_doc: ""
 solution_pdf: "/assets/media/baaria_1_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Baaria</p>
+    <p>Anno: 2009</p>
+    <p>Regia: Giuseppe Tornatore</p>
+    <p>Prodotto da: Medusa Film</p>
 ---
