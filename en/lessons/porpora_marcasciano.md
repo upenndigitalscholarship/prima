@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/Porpora_Marcasciano_ENG.docx"
 transcript_doc: ""
 transcript_pdf: ""
 solution: "/assets/media/Porpora_Marcasciano_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Intervista Porpora Marcasciano</p>
+    <p>Year: 2016</p>
+    <p>Author: Porpora Marcasciano</p>
+    <p>Channel: Liberi.tv</p>
+    <p>Source: YouTube</p>
 ---
