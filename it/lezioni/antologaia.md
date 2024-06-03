@@ -16,5 +16,9 @@ lesson_doc: "/assets/media/antologaia_(ital).docx"
 transcript_doc: ""
 transcript_pdf: ""
 solution: "/assets/media/antologaia_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: AntoloGaia</p>
+    <p>Anno: 2015</p>
+    <p>Scrittrice: Porpora Marcasciano</p>
+    <p>Pubblicato da: Edizioni Alegre</p>
 ---
