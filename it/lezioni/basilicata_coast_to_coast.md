@@ -18,5 +18,9 @@ transcript_doc: ""
 transcript_pdf: "/assets/media/Basilicata_coast_to_coast_transcript_ITAL.pdf"
 solution_doc: ""
 solution_pdf: "/assets/media/Basilicata_coast_to_coast_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Basilicata coast to coast</p>
+    <p>Anno: 2010</p>
+    <p>Regia: Rocco Papaleo</p>
+    <p>Prodotto da: Eagle Pictures</p>
 ---
