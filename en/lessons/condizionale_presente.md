@@ -17,7 +17,11 @@ lesson_doc: "/assets/media/Condizionale_presente_ENG.docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Condizionale_presente_transcript_ENG.pdf"
 solution: "/assets/media/Condizionale_presente_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Condizionale presente</p>
+    <p>Year: 2017</p>
+    <p>Artist: Marco Martinelli</p>
+    <p>Directed by: Federico Malvaldi</p>
+    <p>Source: YouTube</p>
 ---
-
 
