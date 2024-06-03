@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/Le_fate_ignoranti_2_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Le_fate_ignoranti_2_transcript_ITAL.pdf"
 solution: "/assets/media/Le_fate_ignoranti_2_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Le fate ignoranti</p>
+    <p>Anno: 2002</p>
+    <p>Regia: Ferzan Özpetek</p>
+    <p>Prodotto da: R&C Produzioni, Les Films Balenciaga</p>
 ---
