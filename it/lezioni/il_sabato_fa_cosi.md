@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/Il sabato fa così (ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Il sabato fa così_transcript_ITAL.pdf"
 solution: "/assets/media/Il sabato fa così_SOLUZIONI.docx"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Il sabato fa così</p>
+    <p>Anno: 2016</p>
+    <p>Artista: La Rua</p>
+    <p>Prodotto da: Dario Faini & Nacor Fischetti</p>
+    <p>Fonte: YouTube</p>
 ---
