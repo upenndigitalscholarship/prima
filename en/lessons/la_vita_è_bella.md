@@ -19,5 +19,9 @@ lesson_doc: "/assets/media/La_vita_è_bella_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/La_vita_è_bella_transcript_ENG.pdf"
 solution: "/assets/media/La_vita_è_bella_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: La vita è bella</p>
+    <p>Year: 1997</p>
+    <p>Directed by: Roberto Benigni</p>
+    <p>Produced by: Cecchi Gori Group, Melampo Cinematografica</p>
 ---
