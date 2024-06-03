@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/benvenuti_al_sud_(ENG).docx"
 transcript_doc: "assets/media/benvenuti_al_Sud_transcript_ENG.docx"
 transcript_pdf: "/assets/media/benvenuti_al_sud_transcript_ENG.pdf"
 solution: "/assets/media/benvenuti_al_sud_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Benvenuti al Sud</p>
+    <p>Year: 2010</p>
+    <p>Directed by: Luca Miniero</p>
+    <p>Produced by: Medusa Film & Cattleya</p>
 ---
