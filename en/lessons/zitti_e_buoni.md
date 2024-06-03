@@ -18,5 +18,10 @@ transcript_doc: ""
 transcript_pdf: "/assets/media/Zitti_e_buoni_transcript_ENG.pdf"
 solution_doc: ""
 solution_pdf: "/assets/media/Zitti_e_buoni_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Zitti e buoni</p>
+    <p>Year: 2021</p>
+    <p>Artist: Måneskin</p>
+    <p>Directed by: Simone Peluso</p>
+    <p>Source: YouTube</p>
 ---
