@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/La_mia_casa_è_dove_sono_2.docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/La_mia_casa_è_dove_sono_2_transcript_ITAL.pdf"
 solution: "/assets/media/La_grande_bellezza_2_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: La mia casa è dove sono</p>
+    <p>Anno: 2010</p>
+    <p>Scrittrice: Igiaba Scego</p>
+    <p>Pubblicato da: Rizzoli</p>
 ---
