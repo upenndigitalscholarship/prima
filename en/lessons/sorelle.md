@@ -21,5 +21,9 @@ lesson_doc: "/assets/media/sorelle_(eng).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/sorelle_transcript_eng.pdf"
 solution: "/assets/media/sorelle_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Sorelle (series)</p>
+    <p>Year: 2017</p>
+    <p>Created by: Cinzia Torrini</p>
+    <p>Network: RAI</p>
 ---
