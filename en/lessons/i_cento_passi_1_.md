@@ -17,5 +17,9 @@ lesson_doc: ""
 transcript_doc: ""
 transcript_pdf: "/assets/media/i_cento_passi_1_transcript_eng.pdf"
 solution: "/assets/media/i_cento_passi_1_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: I cento passi</p>
+    <p>Year: 2000</p>
+    <p>Directed by: Marco Tullio Giordana</p>
+    <p>Produced by: Titti Film, Rai Cinema, TELE +</p>
 ---
