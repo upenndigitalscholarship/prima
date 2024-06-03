@@ -20,5 +20,9 @@ transcript_doc: ""
 transcript_pdf: "/assets/media/18_ius_soli_transcript_ital.pdf"
 solution_doc: "/assets/media/18_ius_soli_soluzioni.docx"
 solution_pdf: "/assets/media/18_ius_soli_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: 18 ius soli</p>
+    <p>Anno: 2011</p>
+    <p>Regia: Fred Kudjo Kuwornu</p>
+    <p>Prodotto da: Struggle Filmworks</p>
 ---
