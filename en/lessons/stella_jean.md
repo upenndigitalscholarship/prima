@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/Stella_Jean_ENG.docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Stella_Jean_transcript_ENG.pdf"
 solution: "/assets/media/Stella_Jean_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Stella Jean for Marina Rinaldi (interview)</p>
+    <p>Year: 2016</p>
+    <p>Designer: Stella Jean</p>
+    <p>Channel: Marina Rinaldi Channel</p>
+    <p>Source: YouTube</p>
 ---
