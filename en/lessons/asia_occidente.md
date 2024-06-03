@@ -19,5 +19,10 @@ transcript_doc: ""
 transcript_pdf: "/assets/media/Asia_occidente_transcript_ENG.pdf"
 solution_doc: ""
 solution_pdf: "/assets/media/Asia_occidente_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Asia Occidente</p>
+    <p>Year: 2018</p>
+    <p>Artist: Mahmood</p>
+    <p>Produced by: Cattiti</p>
+    <p>Source: YouTube</p>
 ---
