@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/ciao_ciao_eng.docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/ciao_ciao_transcript_eng.pdf"
 solution: "/assets/media/ciao_ciao_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Ciao Ciao</p>
+    <p>Year: 2022</p>
+    <p>Artist: Rappresentante di lista</p>
+    <p>Produced by: Simone Privitera & Papa D & Piccolo Cobra</p>
+    <p>Source: YouTube</p>
 ---
