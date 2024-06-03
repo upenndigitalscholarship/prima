@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/carnevale_(eng).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/carnevale_transcript_eng.pdf"
 solution: "/assets/media/carnevale_(ital)_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Carnevale</p>
+    <p>Years: 2016-2017</p>
+    <p>Host: Alberto Toso Fei</p>
+    <p>Channel: Venezia in un minuto</p>
+    <p>Source: YouTube</p>
 ---
