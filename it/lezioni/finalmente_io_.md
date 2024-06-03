@@ -17,7 +17,12 @@ lesson_doc: "/assets/media/Finalmente_io_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Finalmente_io_transcript_ITAL.pdf"
 solution: "/assets/media/Finalmente_io_(ITAL)_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Finalmente io</p>
+    <p>Anno: 2020</p>
+    <p>Artista: Irene Grandi</p>
+    <p>Regia: Giorgio Testi</p>
+    <p>Fonte: YouTube</p>
 ---
 
 

@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/Finalmente_io_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Finalmente_io_transcript_ENG.pdf"
 solution: "/assets/media/Finalmente_io_(ITAL)_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: Finalmente io</p>
+    <p>Year: 2020</p>
+    <p>Artist: Irene Grandi</p>
+    <p>Directed by: Giorgio Testi</p>
+    <p>Source: YouTube</p>
 ---
