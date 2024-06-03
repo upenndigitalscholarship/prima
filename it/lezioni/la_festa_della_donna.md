@@ -16,5 +16,9 @@ lesson_doc: "/assets/media/la_festa_della_donna_ital.doc"
 transcript_doc: ""
 transcript_pdf: ""
 solution: "/assets/media/la_festa_della_donna_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: La festa delle donne</p>
+    <p>Anno: 2022</p>
+    <p>Scrittore: Niccolò De Rosa</p>
+    <p>Pubblicato da: Focus Jr (magazine)</p>
 ---
