@@ -17,5 +17,9 @@ lesson_doc: "/assets/media/Lanno_che_verrà_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Lanno_che_verrà_transcript_ENG.pdf"
 solution: "/assets/media/Lanno_che_verrà_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Title: L'anno che verrà</p>
+    <p>Year: 1979</p>
+    <p>Artist: Lucio Dalla</p>
+    <p>Source: YouTube</p>
 ---
