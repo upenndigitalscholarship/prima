@@ -17,5 +17,10 @@ lesson_doc: "/assets/media/Mettici_la_salsa_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Mettici_la_salsa_transcript_ITAL.pdf"
 solution: "/assets/media/Mettici_la_salsa_SOLUZIONI.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Mettici la salsa</p>
+    <p>Anno: 2019</p>
+    <p>Regia: Piccolo Coro dell'Antoniano</p>
+    <p>Prodotto da: Zecchino D'oro 62nd Edition</p>
+    <p>Fonte: YouTube</p>
 ---
