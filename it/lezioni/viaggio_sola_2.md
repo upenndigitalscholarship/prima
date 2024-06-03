@@ -18,5 +18,9 @@ transcript_doc: ""
 transcript_pdf: "/assets/media/viaggio_sola_2_transcript_ITAL.pdf"
 solution_doc: ""
 solution_pdf: "/assets/media/Viaggio_sola_2_ITAL_soluzioni.pdf"
-citation_information: ""
+citation_information: >- 
+    <p>Titolo: Viaggio Sola</p>
+    <p>Anno: 2013</p>
+    <p>Regia: Maria Sole Tognazzi</p>
+    <p>Prodotto da: Rai Cinema</p>
 ---
