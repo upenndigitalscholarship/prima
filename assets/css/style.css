@@ -27,6 +27,10 @@ video {
 /*    height:50%;
 */}
 
+.kaltura_player{
+    width:50vw !important;
+}
+
 .clip-title{
     font-size:1.6rem;
     text-align:center;
@@ -121,9 +125,13 @@ video {
 
 iframe{
     min-width:300px !important;
-    width:40vw !important;
+    width:45vw !important;
     height:100% !important;
     aspect-ratio: 16/9 !important;
+}
+
+#left-box p{
+    font-size:0.9em;
 }
 
 .flex-item{
@@ -330,4 +338,14 @@ footer {
 .shuffle-nav-container{
     padding-left: 10px !important;
     padding-right: 10px !important;
+}
+
+a.download{
+    color: #B61339;
+    text-decoration:underline 2px solid #B61339;
+    font-size:0.9em;
+}
+
+a.download:hover{
+    cursor:pointer;
 }

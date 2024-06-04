@@ -37,7 +37,7 @@ p {
 
 .my-shuffle-container {
   position: relative;
-  width: 70%;
+  width: 90%;
 }
 
 .my-sizer-element {
@@ -64,7 +64,7 @@ p {
   }
 }
 .picture-item--h2 {
-  height: 464px;
+  height: fit-content;
   /* 2x the height + 1 gutter */
 }
 
