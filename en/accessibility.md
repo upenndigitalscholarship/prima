@@ -23,5 +23,5 @@ Subtitles are available in both Italian and English which also include closed-ca
 
 Users can toggle on English or Italian subtitles for all videos.
 
-<h2>HELP US IMPROVE</h2>
+<h3>HELP US IMPROVE</h3>
 If you have ideas about how we might alter certain features to increase the accessibility of our site, please reach out and share your thoughts.
