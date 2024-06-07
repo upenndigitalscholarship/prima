@@ -6,19 +6,19 @@
 
 **Julia Heim** is the ideator, primary grant writer, co-content creator, and diversity manager of PRIMA. 
 
-<h2>Design and Development Team</h2>
+<h3>Design and Development Team</h3>
 Cosette Bruhns Alonso, project manager<br>
 Cassandra Hradil, designer and front-end developer<br>
 Andy Janco, developer<br>
 
-<h2>Legal and Accessibility Team</h2>
+<h3>Legal and Accessibility Team</h3>
 Nicky Agate<br>
 Kara Gaulrapp<br>
 Stewart Varner<br>
 Christine Weller<br>
 Steven Manual Wolfson
 
-<h2>Financial Team</h2>
+<h3>Financial Team</h3>
 With Grants/Support from  
 
 - SACHS
