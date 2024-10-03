@@ -8,8 +8,6 @@ media: Video
 index: 
     - Vocabulary: 
         - Food
-    - Grammar:
-        - Food
 layout: lesson.njk
 thumbnail: /assets/img/La_vita_è_bella.jpeg
 video: https://mediaspace.library.upenn.edu/id/1_f43nr3d8?width=400&height=285&playerId=52628472
