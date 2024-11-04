@@ -110,8 +110,8 @@ layout: base.njk
 
 
 {{ content | safe }}
-{% if text %}
-  <embed style="" src="{{ text }}" width="70%" height="600px" /> 
+{% if text_pdf %}
+  <embed style="" src="{{ text_pdf }}" width="70%" height="600px" /> 
 {% endif %}
 
 {% if lesson_pdf %}
