@@ -1,12 +1,13 @@
 # I nostri termini
 
-Dichiarazione sull'uso corretto
+## Dichiarazione sull'uso corretto
+
 Questo sito è solo per scopi educativi.
 Dichiarazione di non responsabilità sul copyright ai sensi della sezione 107 del Copyright Act del 1976, è concesso il "fair use" per scopi quali critiche, commenti, notizie, insegnamento, borse di studio, istruzione e ricerca.
 
 Per ulteriori informazioni sulla dichiarazione di utilizzo corretto per qualsiasi attività su questo sito, contattare: [prima.contact.us@gmail.com](mailto:prima.contact.us@gmail.com)
 
-Come contribuire
+## Come contribuire
 
 Gli utenti che hanno contenuti ritenuti adatti a PRIMA sono invitati a scriverci a [prima.contact.us@gmail.com](mailto:prima.contact.us@gmail.com)
 
