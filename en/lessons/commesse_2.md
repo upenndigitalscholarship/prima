@@ -18,7 +18,7 @@ lesson_pdf: "/assets/media/commesse_fare_compere_(ENG).pdf"
 lesson_doc: "/assets/media/Commesse_2_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Commesse_2_transcript_ENG.pdf"
-solution: "/assets/media/Commesse_2_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Commesse_2_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Title: Commesse (series)</p>
     <p>Years: 1999-2002</p>

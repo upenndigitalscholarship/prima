@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Mettici_la_salsa_(ENG).pdf"
 lesson_doc: "/assets/media/Mettici_la_salsa_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Mettici_la_salsa_transcript_ENG.pdf"
-solution: "/assets/media/Mettici_la_salsa_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Mettici_la_salsa_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Title: Mettici la salsa</p>
     <p>Year: 2019</p>

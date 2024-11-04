@@ -21,7 +21,8 @@ title: Lezioni
     </div>
 
     <div><p style="margin-left:10vw; margin-right:10vw">
-Effettuando una ricerca nella nostra raccolta multimediale, gli utenti possono scegliere di scorrere i vari clip multimediali oppure scegliere di fare clic sulle categorie di filtro per restringere la ricerca. Ciò è molto utile per coloro che desiderano sfogliare i materiali didattici per livello, obiettivo di apprendimento o media preferito. Se non c'è qualcosa di specifico che stai cercando, questa potrebbe essere l'opzione di navigazione adatta a te.    </p>
+    Effettuando una ricerca nella nostra raccolta multimediale, gli utenti possono scegliere di scorrere i vari clip multimediali oppure scegliere di fare clic sulle categorie di filtro per restringere la ricerca. Ciò è molto utile per coloro che desiderano sfogliare i materiali didattici per livello, obiettivo di apprendimento o media preferito. Se non c'è qualcosa di specifico che stai cercando, questa potrebbe essere l'opzione di navigazione adatta a te.    
+    </p>
     </div>
 
     <div class="shuffle-container" data-pagefind-ignore>
@@ -41,7 +42,6 @@ Effettuando una ricerca nella nostra raccolta multimediale, gli utenti possono s
             {% set distinct_levels = (distinct_levels.push(lesson.data.level), distinct_levels) %}
             {% endif %}
         {% endfor %}
-
         {% for level in distinct_levels|sort %}
           <input id="level" onclick="pseudoRadio(this);"type="checkbox" data-group="{{ level }}" value="{{ level }}">
           <label id="level" onclick="pseudoRadio(this);" for="{{ level }}">{{ level|translate }}</label><br>

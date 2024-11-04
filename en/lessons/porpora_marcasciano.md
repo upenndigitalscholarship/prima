@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Porpora_Marcasciano_ENG.pdf"
 lesson_doc: "/assets/media/Porpora_Marcasciano_ENG.docx"
 transcript_doc: ""
 transcript_pdf: ""
-solution: "/assets/media/Porpora_Marcasciano_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Porpora_Marcasciano_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Title: Intervista Porpora Marcasciano</p>
     <p>Year: 2016</p>

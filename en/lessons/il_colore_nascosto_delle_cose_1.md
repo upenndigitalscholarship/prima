@@ -18,7 +18,7 @@ lesson_pdf: ""
 lesson_doc: ""
 transcript_doc: ""
 transcript_pdf: "/assets/media/Il_colore_nascosto_delle_cose_1_transcript_ENG.pdf"
-solution: ""
+solution_pdf: ""
 citation_information: >- 
     <p>Title: Il colore nascosto delle cose</p>
     <p>Year: 2017</p>

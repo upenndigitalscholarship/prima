@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/La_vita_è_bella_(ENG).pdf"
 lesson_doc: "/assets/media/La_vita_è_bella_(ENG).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/La_vita_è_bella_transcript_ENG.pdf"
-solution: "/assets/media/La_vita_è_bella_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/La_vita_è_bella_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Title: La vita è bella</p>
     <p>Year: 1997</p>

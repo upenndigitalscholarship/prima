@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/benjamin_button_(eng).pdf"
 lesson_doc: "/assets/media/benjamin_button_(eng).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/benjamin_button_transcript_eng.pdf"
-solution: "/assets/media/benjamin_button_soluzioni.pdf"
+solution_pdf: "/assets/media/benjamin_button_soluzioni.pdf"
 citation_information: >- 
     <p>Title: The Curious Case of Benjamin Button</p>
     <p>Year: 2008</p>

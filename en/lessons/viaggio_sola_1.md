@@ -21,7 +21,7 @@ lesson_pdf: "/assets/media/viaggio_sola_1_(eng).pdf"
 lesson_doc: ""
 transcript_doc: ""
 transcript_pdf: "/assets/media/viaggio_sola_1_transcript_eng.pdf"
-solution: "/assets/media/viaggio_sola_1_ital_soluzioni.docx"
+solution_doc: "/assets/media/viaggio_sola_1_ital_soluzioni.docx"
 citation_information: >- 
     <p>Title: Viaggio Sola</p>
     <p>Year: 2013</p>

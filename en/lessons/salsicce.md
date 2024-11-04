@@ -17,7 +17,7 @@ lesson_pdf: "/assets/media/salsicce_(eng).pdf"
 lesson_doc: "/assets/media/salsicce_(eng).docx"
 transcript_doc: ""
 transcript_pdf: ""
-solution: "/assets/media/salsicce_soluzioni.pdf"
+solution_pdf: "/assets/media/salsicce_soluzioni.pdf"
 citation_information: >- 
     <p>Title: Salsicce</p>
     <p>Year: 2003</p>

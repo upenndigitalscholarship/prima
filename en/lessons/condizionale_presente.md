@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Condizionale_presente_ENG.pdf"
 lesson_doc: "/assets/media/Condizionale_presente_ENG.docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Condizionale_presente_transcript_ENG.pdf"
-solution: "/assets/media/Condizionale_presente_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Condizionale_presente_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Title: Condizionale presente</p>
     <p>Year: 2017</p>

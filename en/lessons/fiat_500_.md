@@ -20,7 +20,7 @@ lesson_pdf: "/assets/media/fiat_500_(eng).pdf"
 lesson_doc: "/assets/media/fiat_500_(eng).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/fiat_500_transcript_eng.pdf"
-solution: "/assets/media/fiat_500_soluzioni.pdf"
+solution_pdf: "/assets/media/fiat_500_soluzioni.pdf"
 citation_information: >- 
     <p>Title: Backseat Italians</p>
     <p>Year: 2013</p>

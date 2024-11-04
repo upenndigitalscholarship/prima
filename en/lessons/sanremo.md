@@ -17,7 +17,7 @@ lesson_pdf: ""
 lesson_doc: "/assets/media/Sanremo_ENG.docx"
 transcript_doc: ""
 transcript_pdf: ""
-solution: ""
+solution_pdf: ""
 citation_information: >- 
     <p>Title: Il festival di Sanremo</p>
     <p>Years: 1951-present</p>

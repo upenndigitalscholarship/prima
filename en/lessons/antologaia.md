@@ -15,7 +15,7 @@ lesson_pdf: "/assets/media/antologaia_(eng).pdf"
 lesson_doc: "/assets/media/antologaia_(eng).docx"
 transcript_doc: ""
 transcript_pdf: ""
-solution: "/assets/media/antologaia_soluzioni.pdf"
+solution_pdf: "/assets/media/antologaia_soluzioni.pdf"
 citation_information: >- 
     <p>Title: AntoloGaia</p>
     <p>Year: 2015</p>

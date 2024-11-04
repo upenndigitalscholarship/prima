@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Stella_Jean_ENG.pdf"
 lesson_doc: "/assets/media/Stella_Jean_ENG.docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Stella_Jean_transcript_ENG.pdf"
-solution: "/assets/media/Stella_Jean_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Stella_Jean_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Title: Stella Jean for Marina Rinaldi (interview)</p>
     <p>Year: 2016</p>
