@@ -31,10 +31,11 @@
             <a href="/it/cerca">Cerca</a>
             
         </div> #}
+        
             {% if 'lezioni' in page.url and page.fileSlug != 'lezioni' %}
                 <a href="/en/lessons/{{ page.fileSlug }}"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
             {% elif 'lezioni' in page.url and page.fileSlug == 'lezioni' %}
-                <a href="/en/lessons/"><img height="30" style="margin-right:10px" src="/assets/img/it.svg" /></a>
+                <a href="/en/lessons/"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
             {% elif page.fileSlug == 'it' %}
                 <a href="/en"><img height="30" style="margin-right:10px" src="/assets/img/en.svg" /></a>
             {% else %}              
