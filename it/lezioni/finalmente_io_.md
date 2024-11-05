@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Finalmente_io_(ITAL).pdf"
 lesson_doc: "/assets/media/Finalmente_io_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Finalmente_io_transcript_ITAL.pdf"
-solution: "/assets/media/Finalmente_io_(ITAL)_soluzioni.pdf"
+solution_pdf: "/assets/media/Finalmente_io_(ITAL)_soluzioni.pdf"
 citation_information: >- 
     <p>Titolo: Finalmente io</p>
     <p>Anno: 2020</p>

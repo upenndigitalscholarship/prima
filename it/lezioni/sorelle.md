@@ -20,7 +20,7 @@ lesson_pdf: "/assets/media/sorelle_(ital).pdf"
 lesson_doc: "/assets/media/sorelle_(ital).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/sorelle_transcript_ital.pdf"
-solution: "/assets/media/sorelle_soluzioni.pdf"
+solution_pdf: "/assets/media/sorelle_soluzioni.pdf"
 citation_information: >- 
     <p>Titolo: Sorelle (serie)</p>
     <p>Anno: 2017</p>

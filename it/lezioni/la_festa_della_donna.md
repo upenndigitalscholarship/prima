@@ -15,7 +15,7 @@ lesson_pdf: "/assets/media/la_festa_della_donna_ital.pdf"
 lesson_doc: "/assets/media/la_festa_della_donna_ital.doc"
 transcript_doc: ""
 transcript_pdf: ""
-solution: "/assets/media/la_festa_della_donna_soluzioni.pdf"
+solution_pdf: "/assets/media/la_festa_della_donna_soluzioni.pdf"
 citation_information: >- 
     <p>Titolo: La festa delle donne</p>
     <p>Anno: 2022</p>

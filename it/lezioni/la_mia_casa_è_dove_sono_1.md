@@ -17,7 +17,7 @@ lesson_pdf: "/assets/media/La_mia_casa_è_dove_sono_1_ITAL.pdf"
 lesson_doc: "/assets/media/La_mia_casa_è_dove_sono_1_ITAL.docx"
 transcript_doc: ""
 transcript_pdf: ""
-solution: "/assets/media/La_mia_casa_è_dove_sono_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/La_mia_casa_è_dove_sono_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: La mia casa è dove sono</p>
     <p>Anno: 2010</p>

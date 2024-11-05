@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Molto_saggia_(ITAL).pdf"
 lesson_doc: "/assets/media/Molto_saggia_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Molto_saggia_transcript_ITAL.pdf"
-solution: "/assets/media/Molto_saggia_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Molto_saggia_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: Molto Saggia</p>
     <p>Anno: 2011</p>

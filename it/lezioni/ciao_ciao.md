@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/ciao_ciao_ital.pdf"
 lesson_doc: "/assets/media/ciao_ciao_ital.docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/ciao_ciao_transcript_ital.pdf"
-solution: "/assets/media/ciao_ciao_soluzioni.pdf"
+solution_pdf: "/assets/media/ciao_ciao_soluzioni.pdf"
 citation_information: >- 
     <p>Titolo: Ciao Ciao</p>
     <p>Anno: 2022</p>

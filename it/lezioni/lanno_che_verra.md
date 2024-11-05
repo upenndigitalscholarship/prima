@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Lanno_che_verrà_(ITAL).pdf"
 lesson_doc: "/assets/media/Lanno_che_verrà_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Lanno_che_verrà_transcript_ITAL.pdf"
-solution: "/assets/media/Lanno_che_verrà_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Lanno_che_verrà_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: L'anno che verrà</p>
     <p>Anno: 1979</p>

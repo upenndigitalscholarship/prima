@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/carnevale_(ital).pdf"
 lesson_doc: "/assets/media/carnevale_(ital).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/carnevale_transcript_ital.pdf"
-solution: "/assets/media/carnevale_(ital)_soluzioni.pdf"
+solution_pdf: "/assets/media/carnevale_(ital)_soluzioni.pdf"
 citation_information: >- 
     <p>Titolo: Carnevale</p>
     <p>Anni: 2016-2017</p>

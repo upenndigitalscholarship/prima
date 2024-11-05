@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/prisencolinensinainciusol_(ital).pdf"
 lesson_doc: "/assets/media/prisencolinensinainciusol_(ital).docx"
 transcript_doc: "/assets/media/prisencolineninainciusol_transcript_ital.docx"
 transcript_pdf: "/assets/media/prisencolineninainciusol_transcript_ital.pdf"
-solution: "/assets/media/prisencolinensinainciusol_soluzioni.pdf"
+solution_pdf: "/assets/media/prisencolinensinainciusol_soluzioni.pdf"
 citation_information: >- 
     <p>Titolo: Prisencolinensinainciusol</p>
     <p>Anno: 1972</p>

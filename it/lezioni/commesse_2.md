@@ -18,7 +18,7 @@ lesson_pdf: "/assets/media/Commesse_2(ITAL).pdf"
 lesson_doc: "/assets/media/Commesse_2_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/Commesse_2_transcript_ITAL.pdf"
-solution: "/assets/media/Commesse_2_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Commesse_2_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: Commesse (serie)</p>
     <p>Anni: 1999-2002</p>

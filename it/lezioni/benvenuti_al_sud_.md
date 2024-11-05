@@ -17,7 +17,7 @@ lesson_pdf: "/assets/media/benvenuti_al_sud_(ITAL).pdf"
 lesson_doc: "/assets/media/benvenuti_al_sud_(ITAL).docx"
 transcript_doc: "assets/media/benvenuti_al_Sud_transcript_ITAL.docx"
 transcript_pdf: "/assets/media/benvenuti_al_sud_transcript_ITAL.pdf"
-solution: "/assets/media/benvenuti_al_sud_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/benvenuti_al_sud_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: Benvenuti al Sud</p>
     <p>Anno: 2010</p>

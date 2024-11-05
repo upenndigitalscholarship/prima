@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/La_grande_bellezza_1_(ITAL).pdf"
 lesson_doc: "/assets/media/La_grande_bellezza_1_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/La_grande_bellezza_1_transcript_ITAL.pdf"
-solution: "/assets/media/La_grande_bellezza_1_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/La_grande_bellezza_1_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: La grande bellezza</p>
     <p>Anno: 2013</p>

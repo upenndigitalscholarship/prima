@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/I_cento_passi_2_(ITAL).pdf"
 lesson_doc: "/assets/media/I_cento_passi_2_(ITAL).docx"
 transcript_doc: ""
 transcript_pdf: "/assets/media/I_cento_passi_2_transcript_ITAL.pdf"
-solution: "/assets/media/I_cento_passi_2_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/I_cento_passi_2_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: I cento passi</p>
     <p>Anno: 2000</p>
