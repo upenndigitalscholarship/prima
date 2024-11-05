@@ -12,7 +12,7 @@ index:
         - Music
 layout: lesson.njk
 thumbnail: /assets/img/sanremo.jpg
-text_pdf: /assets/media/Sanremo_text.doc
+text_pdf: /assets/media/Sanremo_text.pdf
 lesson_pdf: ""
 lesson_doc: "/assets/media/Sanremo_ENG.docx"
 transcript_doc: ""
