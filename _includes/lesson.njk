@@ -27,14 +27,14 @@ layout: base.njk
           <div class="buttons" style="justify-content:left">
 
             {% if lesson_pdf or lesson_doc %}
-                <span style="font-size:0.9rem">Download lesson:</span>
+                <span style="font-size:0.9rem">Download lesson:</span><br>
 
                 {% if lesson_pdf %}
 
                   <a class="download" target="_blank" onclick="window.location.href='{{ lesson_pdf }}';">
                     {% if page.lang == 'it' %}Scarica in formato PDF{% else %}Lesson PDF{% endif %}
                   </a>
-
+                <br>
                 {% endif %}
 
                 {% if lesson_doc %}
@@ -45,12 +45,14 @@ layout: base.njk
               <br>
             {% endif %}
             {% if transcript_doc or transcript_pdf %}
-                <span style="font-size:0.9rem">Download transcript:</span>
+            <br>
+                <span style="font-size:0.9rem">Download transcript:</span><br>
                 {% if transcript_doc %}
                   <a class="download" target="_blank" onclick="window.location.href='{{ transcript_doc }}';">
 
                     {% if page.lang == 'it' %}Trascrizione come DOCX{% else %}Transcription DOCX{% endif %}
                   </a>
+                  <br>
               {% endif %}
 
               {% if transcript_pdf %}
@@ -62,6 +64,7 @@ layout: base.njk
           {% endif %}
 
           {% if solution_doc or solution_pdf %}
+          <br>
               <span style="font-size:0.9rem">Download solution:</span>
 
               {% if solution_doc %}
@@ -77,7 +80,7 @@ layout: base.njk
             {% endif %}
           {% endif %}
           {% if video %}
-            <br>
+            <br><br>
             <a class="download" target="_blank" onclick="window.open('{{ video }}', '_blank')">
               {% if page.lang == 'it' %}Apri il video in una nuova scheda{% else %}Open video in new tab{% endif %}
             </a>
