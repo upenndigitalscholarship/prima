@@ -52,13 +52,13 @@ video {
 
 .container {
     display: flex;
-    /* or inline-flex */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
 }
+
 
 .buttons{
 /*    max-width:28em;
@@ -134,6 +134,9 @@ iframe{
     font-size:0.9em;
 }
 
+#right-box p{
+    font-size:0.9em;
+}
 .flex-item{
     width:max-content;
     display:inline-block;

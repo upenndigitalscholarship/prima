@@ -2,123 +2,109 @@
 layout: base.njk
 ---
 
-
 <a class="breadcrumb" onclick="window.history.back();">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
   </svg>
   {% if page.lang == 'it' %}Indietro{% else %}Back{% endif %}
-  </a>
+</a>
 <h2 class="lesson-title">{{ clip_name }}</h2>
-
-
 
 <div class="container lesson-metadata-box">
   <div>
-  <div class="container lesson-metadata-box" style="row-gap:20px">
-  <div id="left-box">
+    <div class="container lesson-metadata-box" style="row-gap:20px">
+      <div id="left-box">
 
-{% if citation_information %}
-<p style="font-weight:bolder">
-    {{ citation_information  | markdownify | safe }}
-  </p>
-  <hr style="border: 1px solid #B61339;"><br>
-{% endif %}
+        {% if citation_information %}
+          <p style="font-weight:bolder">
+            {{ citation_information  | markdownify | safe }}
+          </p>
+          <hr style="border: 1px solid #B61339;"><br>
+        {% endif %}
 
-    <div class="container" style="justify-content:center">
+        <div class="container" style="justify-content:center">
 
-    <div class="buttons" style="justify-content:left">
+          <div class="buttons" style="justify-content:left">
 
-{% if lesson_pdf or lesson_doc %}<div class="container" style="justify-content:left">
-<span style="font-size:0.9rem">Download lesson:</span>
+            {% if lesson_pdf or lesson_doc %}
+                <span style="font-size:0.9rem">Download lesson:</span>
 
-{% if lesson_pdf %}
+                {% if lesson_pdf %}
 
-  <a class="download" target="_blank" onclick="window.location.href='{{ lesson_pdf }}';">
-                        {% if page.lang == 'it' %}Scarica in formato PDF{% else %}Lesson PDF{% endif %}
-                    </a>
+                  <a class="download" target="_blank" onclick="window.location.href='{{ lesson_pdf }}';">
+                    {% if page.lang == 'it' %}Scarica in formato PDF{% else %}Lesson PDF{% endif %}
+                  </a>
 
-{% endif %}
+                {% endif %}
 
-{% if lesson_doc %}
-  <a class="download" target="_blank" onclick="window.location.href='{{ lesson_doc }}';">
-                        {% if page.lang == 'it' %}Scarica in formato DOCX{% else %}Lesson DOCX{% endif %}
-                    </a>
-                    </div>
-{% endif %}
-<br>
-{% endif %}
-{% if transcript_doc or transcript_pdf %}<div class="container" style="justify-content:left">
-<span style="font-size:0.9rem">Download transcript:</span>
-{% if transcript_doc %}
-  <a class="download" target="_blank" onclick="window.location.href='{{ transcript_doc }}';">
-                        
-                        {% if page.lang == 'it' %}Trascrizione come DOCX{% else %}Transcription DOCX{% endif %}
-                        </a>
-                    </div>
-{% endif %}
-  
-{% if transcript_pdf %}
-  <a class="download" target="_blank" onclick="window.location.href='{{ transcript_pdf }}';">
-                        {% if page.lang == 'it' %}Trascrizione come PDF{% else %}Transcription PDF{% endif %}
-                    </a>
-                    </div>
-{% endif %}
-<br>
-{% endif %}
+                {% if lesson_doc %}
+                  <a class="download" target="_blank" onclick="window.location.href='{{ lesson_doc }}';">
+                    {% if page.lang == 'it' %}Scarica in formato DOCX{% else %}Lesson DOCX{% endif %}
+                  </a>
+              {% endif %}
+              <br>
+            {% endif %}
+            {% if transcript_doc or transcript_pdf %}
+                <span style="font-size:0.9rem">Download transcript:</span>
+                {% if transcript_doc %}
+                  <a class="download" target="_blank" onclick="window.location.href='{{ transcript_doc }}';">
 
-{% if solution_doc or solution_pdf %}<div class="container" style="justify-content:left">
-<span style="font-size:0.9rem">Download solution:</span>
+                    {% if page.lang == 'it' %}Trascrizione come DOCX{% else %}Transcription DOCX{% endif %}
+                  </a>
+              {% endif %}
 
-{% if solution_doc %}
-  <a class="download" target="_blank" onclick="window.location.href='{{ solution_doc }}';">
-                        {% if page.lang == 'it' %}Soluzione come DOCX{% else %}Solution DOCX{% endif %}
-                    </a>
-{% endif %}
-  
-{% if solution_pdf %}
-  <a class="download" target="_blank" onclick="window.location.href='{{ solution_pdf }}';">
-                        {% if page.lang == 'it' %}Soluzione come PDF{% else %}Solution PDF{% endif %}
-                    </a></div>
-{% endif %}
-<br>
-{% endif %}
-{% if video %}
+              {% if transcript_pdf %}
+                <a class="download" target="_blank" onclick="window.location.href='{{ transcript_pdf }}';">
+                  {% if page.lang == 'it' %}Trascrizione come PDF{% else %}Transcription PDF{% endif %}
+                </a>
+            {% endif %}
+            <br>
+          {% endif %}
 
-<a class="download" target="_blank" onclick="window.open('{{ video }}', '_blank')">
-      {% if page.lang == 'it' %}Apri il video in una nuova scheda{% else %}Open video in new tab{% endif %}
+          {% if solution_doc or solution_pdf %}
+              <span style="font-size:0.9rem">Download solution:</span>
 
-                    </a>
-{% endif %}
-</div>
-  </div>
-  <div>
-    
+              {% if solution_doc %}
+                <a class="download" target="_blank" onclick="window.location.href='{{ solution_doc }}';">
+                  {% if page.lang == 'it' %}Soluzione come DOCX{% else %}Solution DOCX{% endif %}
+                </a>
+              {% endif %}
+
+              {% if solution_pdf %}
+                <a class="download" target="_blank" onclick="window.location.href='{{ solution_pdf }}';">
+                  {% if page.lang == 'it' %}Soluzione come PDF{% else %}Solution PDF{% endif %}
+                </a>
+            {% endif %}
+          {% endif %}
+          {% if video %}
+            <br>
+            <a class="download" target="_blank" onclick="window.open('{{ video }}', '_blank')">
+              {% if page.lang == 'it' %}Apri il video in una nuova scheda{% else %}Open video in new tab{% endif %}
+            </a>
+          {% endif %}
         </div>
+      </div>
+      <div></div>
 
     </div>
 
-  
-  <div id="right-box" 
-    <div id="video_embed">
-      {% if video_embed %}
-      {{ video_embed | safe }}
-      {% endif %}
+    <div id="right-box">
+      <div id="video_embed">
+        {% if video_embed %}
+          {{ video_embed | safe }}
+        
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
+  {{ content | safe }}
+  {% if text_pdf %}
+    <embed style="" src="{{ text_pdf }}" width="70%" height="600px"/>
+  {% endif %}
 
+  {% if lesson_pdf %}
+    <embed style="" src="{{ lesson_pdf }}" width="70%" height="600px"/>
+  {% endif %}
 
-{{ content | safe }}
-{% if text_pdf %}
-  <embed style="" src="{{ text_pdf }}" width="70%" height="600px" /> 
-{% endif %}
-
-{% if lesson_pdf %}
-  <embed style="" src="{{ lesson_pdf }}" width="70%" height="600px" /> 
-{% endif %}
-
-
-{% block js %}
-  
-{% endblock %}
+  {% block js %}{% endblock %}
