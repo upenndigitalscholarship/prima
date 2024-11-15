@@ -12,7 +12,7 @@ index:
         - Multiculturalism
 layout: lesson.njk
 thumbnail: /assets/img/scego.jpg
-text: /assets/media/salsicce_text.pdf
+text_pdf: /assets/media/salsicce_text.pdf
 lesson_pdf: "/assets/media/salsicce_(ital).pdf"
 lesson_doc: "/assets/media/salsicce_(ital).docx"
 transcript_doc: ""

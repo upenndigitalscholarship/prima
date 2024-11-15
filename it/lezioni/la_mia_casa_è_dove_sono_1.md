@@ -12,7 +12,7 @@ index:
         - Citizenship
 layout: lesson.njk
 thumbnail: /assets/img/la-mia-casa.jpg
-text: /assets/media/La_mia_casa_è_dove_sono_1_text.pdf
+text_pdf: /assets/media/La_mia_casa_è_dove_sono_1_text.pdf
 lesson_pdf: "/assets/media/La_mia_casa_è_dove_sono_1_ITAL.pdf"
 lesson_doc: "/assets/media/La_mia_casa_è_dove_sono_1_ITAL.docx"
 transcript_doc: ""

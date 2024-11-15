@@ -10,7 +10,7 @@ index:
         - International Women's Day
 layout: lesson.njk
 thumbnail: /assets/img/la_festa_della_donna.png
-text: /assets/media/la_festa_della_donna_text.pdf
+text_pdf: /assets/media/la_festa_della_donna_text.pdf
 lesson_pdf: "/assets/media/la_festa_della_donna_ital.pdf"
 lesson_doc: "/assets/media/la_festa_della_donna_ital.doc"
 transcript_doc: ""
