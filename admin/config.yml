@@ -2,203 +2,255 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: main
-  
+
+local_backend:
+  # when using a custom proxy server port
+  url: http://localhost:8082/api/v1
+  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+  #allowed_hosts: ['192.168.0.1']
+
 media_folder: "/assets/media"
 public_folder: "/assets/media"
 
-# Please run "npx netlify-cms-proxy-server" for local backend
-local_backend: true
 # publish_mode: editorial_workflow
 collections:
   - name: "lezioni" # Used in routes, e.g., /admin/collections/blog
     editor:
       preview: false
     label: "Lezioni (IT)" # Used in the UI
-    identifier_field: lezione
+    identifier_field: clip_name # The field that should be used for the document path
     folder: "it/lezioni" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       # Title
       - label: "Titolo"
-        name: "title"
+        name: "clip_name"
         widget: "string"
-      # Media
-      - label: "Media"
-        name: "media"
-        widget: "list"
-        fields:
-          - label: MediaFile
-            name: mediafile
-            widget: object
-            fields:
-              # Title
-              - label: Titulo
-                name: titulo
-                widget: string
-              # Video Embed
-              - label: "Incorporamento video" 
-                name: "video_embed" 
-                widget: "string" 
-                required: false
-              - label: "File"
-                name: "file"
-                widget: "file"
-              # Thumbnail
-              - label: "Immagine in primo piano"
-                name: "thumbnail"
-                widget: "image"
-                choose_url: true
-                required: false
-                default: "/assets/img/default.png"
-                media_library:
-                  config:
-                    multiple: true
-              #Citation Information
-              - label: "Informazioni sulla citazione"
-                name: citation_information
-                widget: markdown
-                required: false
-      
-      - label: "Lesson Files"
-        name: "lesson-files"
-        widget: "list"
-        fields:
-          - label: "File"
-            name: "file"
-            widget: "file"
-      
-
-      
-      
-      
-      
-      # Video Embed Subtitles
-      - label: "Sottotitoli incorporati nel video" 
-        name: "video_embed_subtitles" 
-        widget: "string" 
-        required: false
-      # Second Video Embed
-      - label: "Secondo incorporamento video" 
-        name: "second_video_embed" 
-        widget: "string" 
-        required: false
-      # English Version
-      - label: "English Version"
-        name: "lesson"
-        required: false
-        widget: "relation"
-        collection: "lessons"
-        search_fields: ["lesson"]
-        value_field: "lesson"
-        display_fields: ["lesson"]
-      # Fair Use File
-      - label: "File di uso corretto"
-        name: "fair-use"
-        widget: "file"
-        required: false
-      - label: "Visible"
-        name: "visible"
-        widget: "boolean"
-        required: false
-
-  - name: "lessons" # Used in routes, e.g., /admin/collections/blog
-    label: "Video (EN)" # Used in the UI
-    editor:
-      preview: false
-    identifier_field: lesson
-    folder: "en/lessons" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - label: "Lesson Name"
-        name: "lesson"
-        widget: "string"
-
-      - label: "Medium / Media Type"
-        name: "medium"
-        widget: "list"
-        required: false
-        allow_add: true
-
-      - label: "Practice"
-        name: "practice"
-        required: false
-        widget: "list"
-        allow_add: true
-
-      - label: "Learning Outcome"
-        name: "learning_outcome"
-        required: false
-        widget: "list"
-        allow_add: true
-
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        allow_multiple: false
+        required: true
       - label: "Level"
         name: "level"
-        required: false
-        widget: "list"
-        allow_add: true
-
-      - label: "Week"
-        name: "week"
-        widget: "string"
-        required: false
-
+        widget: "select"
+        options: ["Elementary","Intermediate","Advanced"]
+      - label: "Media"
+        name: "media"
+        widget: "select"
+        options: ["Video","Text","Audio"]
       - label: "Citation Information"
         name: citation_information
         widget: markdown
+      - label: "Video"
+        name: "video"
+        hint: "The video URL"
+        widget: "string"
         required: false
-
-      - label: "Prerequisites" 
-        name: "prerequisites" 
-        widget: "string" 
+      - label: "Video Embed"
+        name: "video_embed"
+        hint: "Copy the video embed element from Kaltura, YouTube or Vimeo"
+        widget: "text"
         required: false
-
-      - label: "Text" 
-        name: "body" 
-        widget: "markdown" 
+      - label: "Lesson PDF"
+        name: lesson_pdf
+        widget: file
         required: false
+        allow_multiple: false
+      - label: "Lesson DOC"
+        name: lesson_doc
+        widget: file
+        required: false
+        allow_multiple: false
+      - label: "Transcript PDF"
+        name: transcript_pdf
+        widget: file
+        required: false
+        allow_multiple: false
+      - label: "Transcript DOC"
+        name: transcript_doc
+        widget: file
+        required: false
+        allow_multiple: false
+      - label: "Solution PDF"
+        name: solution_pdf
+        widget: file
+        required: false
+        allow_multiple: false
+      - label: "Solution DOC"
+        name: solution_doc
+        widget: file
+        required: false
+        allow_multiple: false
+      - label: "Practice"
+        name: "practice"
+        widget: "list"
+        fields:
+          - label: "Grammar"
+            name: "Grammar"
+            widget: "object"
+            field:
+              label: "Grammar items"
+              name: "grammar_item"
+              widget: "list"
+          - label: "Vocabulary"
+            name: "Vocabulary"
+            widget: "object"
+            field:
+              label: "Vocabulary items"
+              name: "vocabulary_item"
+              widget: "list"      
+          - label: "Culture"
+            name: "Culture"
+            widget: "object"
+            field:
+              label: "Culture items"
+              name: "culture_item"
+              widget: "list"   
+      - label: "Index"
+        name: "index"
+        widget: "list"
+        fields:
+          - label: "Grammar"
+            name: "Grammar"
+            widget: "object"
+            field:
+              label: "Grammar items"
+              name: "grammar_item"
+              widget: "list"
+          - label: "Vocabulary"
+            name: "Vocabulary"
+            widget: "object"
+            field:
+              label: "Vocabulary items"
+              name: "vocabulary_item"
+              widget: "list"      
+          - label: "Culture"
+            name: "Culture"
+            widget: "object"
+            field:
+              label: "Culture items"
+              name: "culture_item"
+              widget: "list"   
 
-      - label: "Featured Image" 
+
+  - name: "lessons"
+    editor:
+      preview: false
+    label: "Lessons (EN)"
+    identifier_field: clip_name
+    folder: "en/lessons"
+    create: true
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      # Title
+      - label: "Titolo"
+        name: "clip_name"
+        widget: "string"
+      - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
-        choose_url: true
+        allow_multiple: false
+        required: true
+      - label: "Level"
+        name: "level"
+        widget: "select"
+        options: ["Elementary","Intermediate","Advanced"]
+      - label: "Media"
+        name: "media"
+        widget: "select"
+        options: ["Video","Text","Audio"]
+      - label: "Citation Information"
+        name: citation_information
+        widget: markdown
+      - label: "Video"
+        name: "video"
+        hint: "The video URL"
+        widget: "string"
         required: false
-        default: "/assets/img/default.png"
-        media_library:
-          config:
-            multiple: true
-      
-      - label: "Video Embed" 
-        name: "video_embed" 
-        widget: "string" 
+      - label: "Video Embed"
+        name: "video_embed"
+        hint: "Copy the video embed element from Kaltura, YouTube or Vimeo"
+        widget: "text"
         required: false
-
-      - label: "Video Embed Subtitles" 
-        name: "video_embed_subtitles" 
-        widget: "string" 
+      - label: "Lesson PDF"
+        name: lesson_pdf
+        widget: file
         required: false
- 
-      - label: "Second Video Embed" 
-        name: "second_video_embed" 
-        widget: "string" 
+        allow_multiple: false
+      - label: "Lesson DOC"
+        name: lesson_doc
+        widget: file
         required: false
-
-      - label: "Italian Version"
-        name: "lezioni"
+        allow_multiple: false
+      - label: "Transcript PDF"
+        name: transcript_pdf
+        widget: file
         required: false
-        widget: "relation"
-        collection: "lezioni"
-        search_fields: ["lezione"]
-        value_field: "lezione"
-        display_fields: ["lezione"]
-
-      - label: "Fair Use File"
-        name: "fair-use"
-        widget: "file"
+        allow_multiple: false
+      - label: "Transcript DOC"
+        name: transcript_doc
+        widget: file
         required: false
-      
-      - label: "Visible"
-        name: "visible"
-        widget: "boolean"
+        allow_multiple: false
+      - label: "Solution PDF"
+        name: solution_pdf
+        widget: file
         required: false
+        allow_multiple: false
+      - label: "Solution DOC"
+        name: solution_doc
+        widget: file
+        required: false
+        allow_multiple: false
+      - label: "Practice"
+        name: "practice"
+        widget: "list"
+        fields:
+          - label: "Grammar"
+            name: "Grammar"
+            widget: "object"
+            field:
+              label: "Grammar items"
+              name: "grammar_item"
+              widget: "list"
+          - label: "Vocabulary"
+            name: "Vocabulary"
+            widget: "object"
+            field:
+              label: "Vocabulary items"
+              name: "vocabulary_item"
+              widget: "list"      
+          - label: "Culture"
+            name: "Culture"
+            widget: "object"
+            field:
+              label: "Culture items"
+              name: "culture_item"
+              widget: "list"   
+      - label: "Index"
+        name: "index"
+        widget: "list"
+        fields:
+          - label: "Grammar"
+            name: "Grammar"
+            widget: "object"
+            field:
+              label: "Grammar items"
+              name: "grammar_item"
+              widget: "list"
+          - label: "Vocabulary"
+            name: "Vocabulary"
+            widget: "object"
+            field:
+              label: "Vocabulary items"
+              name: "vocabulary_item"
+              widget: "list"      
+          - label: "Culture"
+            name: "Culture"
+            widget: "object"
+            field:
+              label: "Culture items"
+              name: "culture_item"
+              widget: "list"   
