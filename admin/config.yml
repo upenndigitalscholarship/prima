@@ -63,6 +63,11 @@ collections:
         widget: file
         required: false
         allow_multiple: false
+      - label: "Text PDF"
+        name: text_pdf
+        widget: file
+        required: false
+        allow_multiple: false
       - label: "Transcript PDF"
         name: transcript_pdf
         widget: file
@@ -181,6 +186,11 @@ collections:
         allow_multiple: false
       - label: "Lesson DOC"
         name: lesson_doc
+        widget: file
+        required: false
+        allow_multiple: false
+      - label: "Text PDF"
+        name: text_pdf
         widget: file
         required: false
         allow_multiple: false
