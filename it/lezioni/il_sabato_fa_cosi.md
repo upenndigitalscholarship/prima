@@ -19,7 +19,7 @@ transcript_pdf: "/assets/media/Il_sabato_fa_così_transcript_ITAL.pdf"
 solution_doc: "/assets/media/Il_sabato_fa_così_SOLUZIONI.docx"
 citation_information: >- 
     <p>Titolo: Il sabato fa così</p>
-    <p>Anno: 2016</p>
+    <p>Anno: 2025</p>
     <p>Artista: La Rua</p>
     <p>Prodotto da: Dario Faini & Nacor Fischetti</p>
     <p>Fonte: YouTube</p>
