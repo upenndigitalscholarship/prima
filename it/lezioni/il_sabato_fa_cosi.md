@@ -16,7 +16,7 @@ lesson_pdf: "/assets/media/Il_sabato_fa_così_(ITAL).pdf"
 lesson_doc: "/assets/media/Il_sabato_fa_così_(ITAL).docx"
 transcript_doc: "" 
 transcript_pdf: "/assets/media/Il_sabato_fa_così_transcript_ITAL.pdf"
-solution_doc: "/assets/media/Il_sabato_fa_così_SOLUZIONI.pdf"
+solution_pdf: "/assets/media/Il_sabato_fa_così_SOLUZIONI.pdf"
 citation_information: >- 
     <p>Titolo: Il sabato fa così</p>
     <p>Anno: 2016</p>
