@@ -1,7 +1,7 @@
 <!-- -->
 ---
 clip_name: In a heartbeat 
-level: Elementary, Intermediate
+level: Intermediate
 practice: 
     - Grammar: 
         - Past perfect

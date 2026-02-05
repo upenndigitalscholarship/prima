@@ -1,7 +1,7 @@
 <!-- English -->
 ---
 clip_name: La ragazza con la treccia
-level: Elementary, Intermediate
+level: Intermediate
 practice: 
     - Vocabulary: 
         - Parts of the body
