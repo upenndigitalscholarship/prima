@@ -5,7 +5,7 @@ practice:
     - Vocabulario: 
         - parti del corpo
         - aggettivi
-media: Testo
+media: Text
 index: 
     - Vocabulario: 
         - parti del corpo
