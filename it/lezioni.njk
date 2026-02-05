@@ -115,7 +115,8 @@ title: Lezioni
             {% set index = (index.push(value), index) %}
           {% endfor %}
         {% endfor %}
-      {% endif %}      
+      {% endif %} 
+           
       {% if lesson.data.vocab %}{% for vocab in lesson.data.vocab%}{% set all_values = (all_values.push(vocab), all_values) %}{% endfor %}{% endif%}
       {% if lesson.data.media %}{% set all_values = (all_values.push(lesson.data.media), all_values) %}{% endif%}
 

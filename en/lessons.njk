@@ -43,7 +43,7 @@ title: Lessons
             {% endif %}
         {% endfor %}
         {% for level in distinct_levels|sort %}
-          <input id="level" onclick="pseudoRadio(this);" type="checkbox" data-group="{{ level }}" value="{{ level }}">
+          <input id="level" onclick="pseudoRadio(this);"type="checkbox" data-group="{{ level }}" value="{{ level }}">
           <label id="level" onclick="pseudoRadio(this);" for="{{ level }}">{{ level }}</label><br>
         {% endfor %}
 
@@ -78,6 +78,7 @@ title: Lessons
       {% set culture = [] %}
       {% set vocab = [] %}
       {% set index = [] %}
+      
       {% if lesson.data.level%}{% set all_values = (all_values.push(lesson.data.level), all_values) %}{% endif%}
       {% if lesson.data.practice %} 
         {% for item in lesson.data.practice %}
