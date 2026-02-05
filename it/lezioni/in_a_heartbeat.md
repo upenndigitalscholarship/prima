@@ -12,7 +12,7 @@ index:
         - Impersonal Si
         - Adjectives
 layout: lesson.njk
-thumbnail: 
+thumbnail: "/assets/img/in_a_heartbeat.jpg"
 video: 
 video_embed: 
 lesson_pdf: "/assets/media/In_a_Heartbeat_Passato_Prossimo_[ITA].pdf"
