@@ -9,9 +9,9 @@ practice:
 media: Video
 index: 
     - Grammar: 
-        - Verbs:
-        	- Past perfect
-        	- Reflexives
+        - Verbs
+        - Past perfect
+        - Reflexives
 layout: lesson.njk
 thumbnail: /assets/img/in_a_heartbeat.jpg
 video: https://youtu.be/2REkk9SCRn0?si=fQYt3YYI4ghM1M-b
