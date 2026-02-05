@@ -1,4 +1,3 @@
-<!-- Italiano -->
 ---
 clip_name: In a heartbeat
 level: Elementary, Intermedio
