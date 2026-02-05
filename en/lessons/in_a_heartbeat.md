@@ -1,4 +1,3 @@
-<!-- -->
 ---
 clip_name: In a heartbeat 
 level: Intermediate

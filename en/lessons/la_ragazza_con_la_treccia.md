@@ -1,4 +1,3 @@
-<!-- English -->
 ---
 clip_name: La ragazza con la treccia
 level: Intermediate
