@@ -1,6 +1,5 @@
-<!-- English -->
 ---
-clip_name: In a Heartbeat 
+clip_name: In a heartbeat 
 level: Elementary, Intermediate
 practice: 
     - Grammar: 
@@ -13,7 +12,7 @@ index:
         	- Past perfect
         	- Reflexives
 layout: lesson.njk
-thumbnail: "/assets/img/in_a_heartbeat.jpg"
+thumbnail: /assets/img/in_a_heartbeat.jpg
 video:
 video_embed:
 lesson_pdf: "/assets/media/In_a_Heartbeat_Passato_Prossimo_[ENG].pdf"
