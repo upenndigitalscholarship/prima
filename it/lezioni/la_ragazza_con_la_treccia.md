@@ -4,12 +4,12 @@ level: Elementary, Intermediate
 practice: 
     - Vocabulary: 
         - Parti del corpo
-        - Aggettivi
+        - aggettivi
 media: Text
 index: 
     - Vocabulary: 
         - Parti del corpo
-        - Aggettivi
+        - aggettivi
 layout: lesson.njk
 thumbnail: /assets/img/la_ragazza_con_la_treccia.jpg
 text_pdf: /assets/media/la_ragazza_con_la_treccia.pdf
