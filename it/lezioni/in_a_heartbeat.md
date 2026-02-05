@@ -2,14 +2,12 @@
 clip_name: In a heartbeat
 level: Elementary, Intermedio
 practice: 
-    - Grammatica: 
-        - passato prossimo
-        - riflessivi
+    - Grammar: 
+        - Past perfect | Reflexive
 media: Video
 index: 
     - Grammar: 
-        - Impersonal Si
-        - Adjectives
+    	- Verbs | Past perfect
 layout: lesson.njk
 thumbnail: /assets/img/in_a_heartbeat.jpg
 video: 
