@@ -17,7 +17,6 @@ lesson_doc: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_
 transcript_doc: ""
 transcript_pdf: ""
 solution_pdf: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_SOLUZIONI.pdf
-solution_doc: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_SOLUZIONI.docx
 citation_information: >- 
     <p>Titolo: La ragazza con la treccia</p>
     <p>Anno: 1994</p>
