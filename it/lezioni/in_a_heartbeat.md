@@ -3,7 +3,8 @@ clip_name: In a heartbeat
 level: Elementary, Intermediate
 practice: 
     - Grammar: 
-        - Passato prossimo, riflessivi
+        - Passato prossimo
+        - riflessivi
 media: Video
 index: 
     - Grammar: 
