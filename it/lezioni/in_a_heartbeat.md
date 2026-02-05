@@ -1,9 +1,9 @@
 ---
 clip_name: In a heartbeat
-level: Elementary, Intermedio
+level: Elementary, Intermediate
 practice: 
     - Grammar: 
-        - passato prossimo, riflessivi
+        - Passato prossimo, riflessivi
 media: Video
 index: 
     - Grammar: 
