@@ -14,12 +14,12 @@ index:
 layout: lesson.njk
 thumbnail: /assets/img/la_ragazza_con_la_treccia.jpg
 text_pdf: /assets/media/la_ragazza_con_la_treccia.pdf
-lesson_pdf: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_(ENG).pdf
-lesson_doc: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_(ENG).docx
+lesson_pdf: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_ENG.pdf
+lesson_doc: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_ENG.docx
 transcript_doc: ""
 transcript_pdf: ""
-solution_pdf: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_[SOLUZIONI].pdf
-solution_doc: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_[SOLUZIONI].docx
+solution_pdf: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_SOLUZIONI.pdf
+solution_doc: /assets/media/La_ragazza_con_la_treccia_Descrizioni_parti_del_corpo_SOLUZIONI.docx
 citation_information: >- 
     <p>Title: La ragazza con la treccia</p>
     <p>Year: 1994</p>
